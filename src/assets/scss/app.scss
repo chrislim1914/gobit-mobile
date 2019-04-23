@@ -1,6 +1,12 @@
+/**
+  app style
+*/
+@import './libs/_fonts.scss';
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Malgun Gothic';
 }
 
 #app {
