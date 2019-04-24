@@ -62,6 +62,23 @@
           </div>
         </div>
       </div>
+      <!-- symbol selections -->
+      <div id="exchange-symbol-row" class="row py-2">
+        <div class="col">
+          <div class="btn-group symbol-button-group" role="group">
+            <a href="#" class="btn active">KRW</a>
+            <a href="#" class="btn">BTC</a>
+            <a href="#" class="btn">ETH</a>
+            <a href="#" class="btn">DSN</a>
+          </div>
+        </div>
+        <div class="col-2 pt-2 my-1">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="exchange-symbol-attention" name="exchange-symbol-attention" class="custom-control-input">
+            <label class="custom-control-label" for="exchange-symbol-attention">관심</label>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- extra -->
     <div id="extra-colored-space"></div>
