@@ -4,7 +4,7 @@ import Router from 'vue-router'
 /*
 import exchange component
 */
-import Exchange from '@/components/Exchange'
+import Exchange from '@/components/Exchange/Index'
 /*
 import investment component
 */
