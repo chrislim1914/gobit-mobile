@@ -1,6 +1,6 @@
 <template>
   <!-- footer -->
-  <div class="app-footer fixed-bottom">
+  <div class="app-footer">
     <div class="container">
       <div id="footer-button-row" class="row text-center">
         <ul class="col-12 list-inline">
