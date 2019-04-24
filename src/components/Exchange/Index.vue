@@ -79,6 +79,46 @@
           </div>
         </div>
       </div>
+      <!-- exchange table -->
+      <div id="exchange-table-row" class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">지수</th>
+              <th scope="col" class="text-left">한글명</th>
+              <th scope="col" class="text-right">현재가</th>
+              <th scope="col" class="text-right">전일대비</th>
+              <th scope="col" class="text-right">거래대금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr :key="index" v-for="index in 10">
+              <td id="exchange-table-text-1" class="text-center text-danger">
+                <i class="fa fa-long-arrow-up"></i>
+                999
+              </td>
+              <td class="text-left">
+                <h6 id="exchange-table-text-2">비트코인 캐시</h6>
+                <h6 id="exchange-table-text-3">BCH/KRW</h6>
+              </td>
+              <td class="text-right">
+                <h6 id="exchange-table-text-4" class="text-danger">369,650</h6>
+              </td>
+              <td class="text-right">
+                <h6 id="exchange-table-text-5" class="text-danger">
+                  1.55%
+                </h6>
+                <h6 id="exchange-table-text-6" class="text-danger">
+                  <small>5,650</small>
+                </h6>
+              </td>
+              <td id="exchange-table-text-7" class="text-right">
+                <h6>137,816 천원</h6>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <!-- extra -->
     <div id="extra-colored-space"></div>
