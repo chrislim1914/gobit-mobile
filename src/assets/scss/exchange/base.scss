@@ -3,11 +3,6 @@
 */
 @import '../libs/_colors.scss';
 
-#exchange-searchbar-row {
-  height: 60px;
-  border-bottom: 2px solid $exchange-searchbar-color;
-}
-
 #exchange-searchbar-icon {
   color: $exchange-searchbar-color;
 }
@@ -18,11 +13,6 @@
 .form-control:-ms-input-placeholder { color: $exchange-searchbar-color; }  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: $exchange-searchbar-color; }  /* Microsoft Edge */
 
-#extra-colored-space {
-  height: 15px;
-  background-color: $extra-background-color;
-}
-
 .input-group-text {
   border: none;
   background-color: transparent !important;
@@ -30,14 +20,44 @@
 
 .form-control {
   border: none;
+
+  &:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
-  
+  #exchange-searchbar-row {
+    height: 60px;
+    border-bottom: 2px solid $exchange-searchbar-color;
+  }
+
+  #extra-colored-space {
+    height: 15px;
+    background-color: $extra-background-color;
+  }
+
+  #exchange-searchbar-field {
+    font-size: 23px;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  
+  #exchange-searchbar-row {
+    height: 60px;
+    border-bottom: 2px solid $exchange-searchbar-color;
+  }
+
+  #extra-colored-space {
+    height: 15px;
+    background-color: $extra-background-color;
+  }
+
+  #exchange-searchbar-field {
+    font-size: 23px;
+  }
 }
 
 .debugger {

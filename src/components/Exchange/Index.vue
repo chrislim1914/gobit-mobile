@@ -4,14 +4,14 @@
     <div class="container-fluid">
       <div id="exchange-searchbar-row" class="row">
         <div class="col-12 pt-2">
-          <label class="sr-only" for="inlineFormInputGroup">코인명 검색</label>
+          <label class="sr-only" for="exchange-searchbar-field">코인명 검색</label>
           <div class="input-group">
-            <div class="input-group-prepend mr-0 pr-0">
+            <div class="input-group-prepend">
               <div class="input-group-text">
-                <i id="exchange-searchbar-icon" class="fa fa-search"></i>
+                <i id="exchange-searchbar-icon" class="fa-2x fa fa-search"></i>
               </div>
             </div>
-            <input type="text" class="form-control ml-0 pl-0" id="x" placeholder="코인명 검색">
+            <input type="text" class="form-control" id="exchange-searchbar-field" placeholder="코인명 검색">
           </div>
         </div>
       </div>
