@@ -1,6 +1,21 @@
 <template>
   <div class="app-exchange">
-
+    <!-- search -->
+    <div class="container-fluid">
+      <div id="exchange-searchbar-row" class="row">
+        <div class="col-12 pt-2">
+          <label class="sr-only" for="inlineFormInputGroup">코인명 검색</label>
+          <div class="input-group">
+            <div class="input-group-prepend mr-0 pr-0">
+              <div class="input-group-text">
+                <i id="exchange-searchbar-icon" class="fa fa-search"></i>
+              </div>
+            </div>
+            <input type="text" class="form-control ml-0 pl-0" id="x" placeholder="코인명 검색">
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- extra -->
     <div id="extra-colored-space"></div>
     <!-- globals -->
