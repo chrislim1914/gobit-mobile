@@ -1,3 +1,21 @@
 /*
   exchange base style
 */
+@import '../libs/_colors.scss';
+
+#extra-colored-space {
+  height: 15px;
+  background-color: $extra-background-color;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  
+}
+
+.debugger {
+  border: 1px solid red;
+}
