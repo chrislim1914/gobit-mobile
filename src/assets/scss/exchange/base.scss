@@ -28,6 +28,10 @@
   }
 }
 
+.exchange-tickerbar-right-values {
+  color: $exchange-tickerbar-value-color;
+}
+
 @media (min-width: 641px) and (max-width: 767px) {
   #exchange-searchbar-row {
     height: 60px;
@@ -41,6 +45,20 @@
 
   #exchange-searchbar-field {
     font-size: 23px;
+  }
+
+  #exchange-tickerbar-row {
+    height: 95px;
+    background-color: $exchange-tickerbar-background-color;
+  }
+
+  #exchange-tickerbar-content-row {
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+    h6 {
+      font-size: 19px;
+    }
   }
 }
 
@@ -57,6 +75,20 @@
 
   #exchange-searchbar-field {
     font-size: 23px;
+  }
+
+  #exchange-tickerbar-row {
+    height: 95px;
+    background-color: $exchange-tickerbar-background-color;
+  }
+
+  #exchange-tickerbar-content-row {
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+    h6 {
+      font-size: 19px;
+    }
   }
 }
 
