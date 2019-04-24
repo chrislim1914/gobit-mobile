@@ -1,5 +1,7 @@
 <template>
   <div class="app-exchange">
+    <!-- header -->
+    <global-header></global-header>
     <div class="container-fluid">
       <!-- search -->
       <div id="exchange-searchbar-row" class="row">
@@ -70,11 +72,13 @@
 </template>
 
 <script>
+import Header from '../Globals/Header'
 import CustomerService from '../Globals/CustomerService'
 import Footer from '../Globals/Footer'
 export default {
   name: 'Exchange',
   components: {
+    'global-header': Header,
     'global-footer': Footer,
     'global-cs': CustomerService
   }

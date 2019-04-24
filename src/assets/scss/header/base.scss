@@ -1,0 +1,88 @@
+/**
+  footer style
+*/
+@import '../libs/_colors.scss';
+
+.app-header {
+  background-color: $header-background-color;
+  padding: 35px 20px 79px 20px;
+  display: inline-box;
+}
+
+.logo {  
+  float: left;
+}
+
+.group-header {
+  float: right;
+  color: #afafaf;
+  a {
+    color: #afafaf;
+  }
+}
+
+.border-line {
+  border: 1px solid #ff0000
+}
+
+.menu {
+  color: $header-menu-color;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-header {
+      
+    .logo img {
+      width: 133px;
+      height: 49px;
+    }
+
+    .inline {
+      font-size: 16.5px;   
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-header {
+    font-size: 10px;
+
+    .logo img {
+      width: 64px;
+      height: 24px;
+    }
+
+    .inline {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        text-align: center;
+        padding: 2px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
