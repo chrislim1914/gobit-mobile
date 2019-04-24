@@ -1,6 +1,7 @@
 /**
   app style
 */
+@import './libs/_colors.scss';
 @import './libs/_fonts.scss';
 
 * {
@@ -10,6 +11,7 @@
 }
 
 #app {
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

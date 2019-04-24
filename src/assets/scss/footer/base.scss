@@ -1,3 +1,47 @@
 /**
   footer style
 */
+@import '../libs/_colors.scss';
+
+.app-footer {
+  background-color: $footer-background-color;
+}
+
+.footer-buttons {
+  border: 1px solid $footer-button-border-color;
+}
+
+#footer-sentence {
+  color: $footer-sentence-color;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .footer-buttons {
+    font-size: 19px;
+  }
+
+  #footer-sentence {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .footer-buttons {
+    font-size: 19px;
+    padding: 14px 14px;
+  }
+
+  #footer-button-row {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  #footer-sentence {
+    font-size: 19px;
+    margin-bottom: 42px;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
