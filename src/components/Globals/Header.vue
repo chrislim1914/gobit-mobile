@@ -1,24 +1,24 @@
 <template>
   <!-- header -->
   <div class="app-header">
-      <div class="logo">
+      <div class="logo border-line">
         <img src="~img/gobit-logo.png" alt="gobit logo">
       </div>
-      <div class="group-header">
+      <div class="group-header border-line">
         <ul class="inline">
           <li id="language-list" class="list-inline-item">
             <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
               <span class="text-uppercase">
-                <img src="~img/south-korea.png" alt=""> KOR
+                <img src="~img/south-korea.png" alt="gobit logo"> KOR
               </span>
             </a>
             <div aria-labelledby="navbarDropdown" class="dropdown-menu">
-              <a href="#" class="dropdown-item text-uppercase">
-                <img src="~img/united-states.png" alt=""> US
-              </a>
-              <a href="#" class="dropdown-item text-uppercase">
-                <img src="~img/china.png" alt=""> CHINA
-              </a>
+              <a href="#" class="dropdown-item text-uppercase text-left">
+                <img src="~img/united-states.png" alt="gobit logo"> US
+                </a>
+              <a href="#" class="dropdown-item text-uppercase text-left">
+                <img src="~img/china.png" alt="gobit logo"> CHN
+                </a>
             </div>
           </li>
           <li class="list-inline-item">

@@ -21,29 +21,33 @@
   }
 }
 
+.text-left {
+  text-align: left;
+}
+
 .border-line {
   border: 1px solid #ff0000
 }
 
-.menu {
-  color: $header-menu-color;
-}
-
 @media (min-width: 641px) and (max-width: 767px) {
   .app-header {
-      
-    .logo img {
-      width: 133px;
-      height: 49px;
-    }
 
+    .logo img {
+      width: 97px;
+      height: 40px;
+    }
+      
     .inline {
-      font-size: 16.5px;   
+      font-size: 16.5px;
       list-style-type: none;
       margin: 0;
       padding: 0;
       li {
         float: left;
+        .menu {
+          color: $header-menu-color;
+          font-size: 30px;
+        }
       }
       
       li a {
@@ -61,8 +65,7 @@
     font-size: 10px;
 
     .logo img {
-      width: 64px;
-      height: 24px;
+      width: 75%;
     }
 
     .inline {
@@ -71,6 +74,10 @@
       padding: 0;
       li {
         float: left;
+        .menu {
+          color: $header-menu-color;
+          font-size: 20px;
+        }
       }
       
       li a {
