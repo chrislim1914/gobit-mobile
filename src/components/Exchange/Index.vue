@@ -124,8 +124,8 @@
     <div id="extra-colored-space"></div>
     <!-- globals -->
     <global-cs></global-cs>
-    <global-banner></global-banner>
-    <global-notice></global-notice>
+    <global-banner @close-banner="closeBanner" :is-banner-shown="bannerStatus" :is-notice-shown="noticeStatus"></global-banner>
+    <global-notice @close-notice="closeNotice" :is-notice-shown="noticeStatus"></global-notice>
     <global-footer></global-footer>
   </div>
 </template>
@@ -136,6 +136,7 @@ import CustomerService from '../Globals/CustomerService'
 import Banner from '../Globals/Banner'
 import Footer from '../Globals/Footer'
 import Notice from '../Globals/Notice'
+import { mapState, mapActions } from 'vuex'
 export default {
   name: 'Exchange',
   components: {
@@ -144,6 +145,21 @@ export default {
     'global-banner': Banner,
     'global-notice': Notice,
     'global-cs': CustomerService
+  },
+  computed: {
+    ...mapState({
+      'bannerStatus': ({misc}) => misc.isBannerShown,
+      'noticeStatus': ({misc}) => misc.isNoticeShown
+    })
+  },
+  methods: {
+    ...mapActions(['setBannerStatus', 'setNoticeStatus']),
+    closeBanner (status) {
+      this.setBannerStatus({ status: status })
+    },
+    closeNotice (status) {
+      this.setNoticeStatus({ status: status })
+    }
   }
 }
 </script>

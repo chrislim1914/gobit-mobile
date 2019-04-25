@@ -1,6 +1,6 @@
 <template>
   <!-- banner -->
-  <div class="app-banner fixed-bottom">
+  <div class="app-banner fixed-bottom" :class="{'d-none': !isBannerShown, 'mb-65': isNoticeShown, 'mb-0': !isNoticeShown}">
     <div class="container-fluid">
       <div id="banner-row" class="row">
         <div class="col-1 mt-3 text-right">
@@ -51,7 +51,7 @@
           </ul>
         </div>
         <div class="col-1 mt-3 text-center">
-          <a id="banner-close" href="#">
+          <a id="banner-close" href="#" @click="hideBanner">
             <i class="material-icons">close</i>
           </a>
         </div>
@@ -62,7 +62,13 @@
 
 <script>
 export default {
-  name: 'GlobalBanner'
+  name: 'GlobalBanner',
+  props: ['isBannerShown', 'isNoticeShown'],
+  methods: {
+    hideBanner () {
+      this.$emit('close-banner', true)
+    }
+  }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <!-- notice -->
-  <div class="app-notice fixed-bottom">
+  <div class="app-notice fixed-bottom" :class="{'d-none': !isNoticeShown}">
     <div class="container-fluid">
       <div id="notice-row" class="row">
         <div class="col-1 text-center">
@@ -12,7 +12,7 @@
           </h6>
         </div>
         <div class="col-1 text-center">
-          <a id="notice-close" href="#">
+          <a id="notice-close" @click="hideNotice">
             <i class="material-icons">close</i>
           </a>
         </div>
@@ -23,7 +23,13 @@
 
 <script>
 export default {
-  name: 'GlobalNotice'
+  name: 'GlobalNotice',
+  props: ['isNoticeShown'],
+  methods: {
+    hideNotice () {
+      this.$emit('close-notice', true)
+    }
+  }
 }
 </script>
 
