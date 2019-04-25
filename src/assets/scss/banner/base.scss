@@ -40,20 +40,30 @@
 @media (min-width: 641px) and (max-width: 767px) {
   .app-banner {
     height: 85px;
+    margin-bottom: 65px;
   }
 
   #banner-row {
-    padding: 15px 0 15px 0;
+    padding-top: 15px;
+  }
+
+  #banner-close {
+    font-size: 15px !important;
   }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
   .app-banner {
     height: 85px;
+    margin-bottom: 64px;
   }
 
   #banner-row {
-    padding: 15px 0 15px 0;
+    padding-top: 15px;
+  }
+
+  #banner-close {
+    font-size: 15px !important;
   }
 }
 

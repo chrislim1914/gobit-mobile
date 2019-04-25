@@ -125,6 +125,7 @@
     <!-- globals -->
     <global-cs></global-cs>
     <global-banner></global-banner>
+    <global-notice></global-notice>
     <global-footer></global-footer>
   </div>
 </template>
@@ -134,12 +135,14 @@ import Header from '../Globals/Header'
 import CustomerService from '../Globals/CustomerService'
 import Banner from '../Globals/Banner'
 import Footer from '../Globals/Footer'
+import Notice from '../Globals/Notice'
 export default {
   name: 'Exchange',
   components: {
     'global-header': Header,
     'global-footer': Footer,
     'global-banner': Banner,
+    'global-notice': Notice,
     'global-cs': CustomerService
   }
 }
