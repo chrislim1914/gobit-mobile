@@ -124,6 +124,7 @@
     <div id="extra-colored-space"></div>
     <!-- globals -->
     <global-cs></global-cs>
+    <global-banner></global-banner>
     <global-footer></global-footer>
   </div>
 </template>
@@ -131,12 +132,14 @@
 <script>
 import Header from '../Globals/Header'
 import CustomerService from '../Globals/CustomerService'
+import Banner from '../Globals/Banner'
 import Footer from '../Globals/Footer'
 export default {
   name: 'Exchange',
   components: {
     'global-header': Header,
     'global-footer': Footer,
+    'global-banner': Banner,
     'global-cs': CustomerService
   }
 }
