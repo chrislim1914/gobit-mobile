@@ -6,7 +6,7 @@
       </div>
       <div class="group-header">
         <ul class="inline">
-          <li id="language-list" class="list-inline-item">
+          <li id="language-list" class="list-inline-item menu">
             <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
               <span class="text-uppercase">
                 <img src="~img/south-korea.png" alt="gobit logo"> KOR
@@ -31,9 +31,9 @@
               회원가입
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item menu">
             <a href="#">
-              <i class="fa fa-bars menu"></i>
+              <img src="~img/menu.png" data-effect="sidebar" alt="gobit logo">
             </a>
           </li>
         </ul>
