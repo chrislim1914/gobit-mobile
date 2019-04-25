@@ -66,7 +66,7 @@
       <div id="exchange-symbol-row" class="row py-2">
         <div class="col">
           <div class="btn-group symbol-button-group" role="group">
-            <a href="#" class="btn active">KRW</a>
+            <a href="#" ref="firstsymbol" class="btn">KRW</a>
             <a href="#" class="btn">BTC</a>
             <a href="#" class="btn">ETH</a>
             <a href="#" class="btn">DSN</a>
@@ -109,6 +109,30 @@
                   1.55%
                 </h6>
                 <h6 id="exchange-table-text-6" class="text-danger">
+                  <small>5,650</small>
+                </h6>
+              </td>
+              <td id="exchange-table-text-7" class="text-right">
+                <h6>137,816 천원</h6>
+              </td>
+            </tr>
+            <tr :key="index" v-for="index in 5">
+              <td id="exchange-table-text-1" class="text-center text-primary">
+                <i class="fa fa-long-arrow-down"></i>
+                999
+              </td>
+              <td class="text-left">
+                <h6 id="exchange-table-text-2">비트코인 캐시</h6>
+                <h6 id="exchange-table-text-3">BCH/KRW</h6>
+              </td>
+              <td class="text-right">
+                <h6 id="exchange-table-text-4" class="text-primary">369,650</h6>
+              </td>
+              <td class="text-right">
+                <h6 id="exchange-table-text-5" class="text-primary">
+                  1.55%
+                </h6>
+                <h6 id="exchange-table-text-6" class="text-primary">
                   <small>5,650</small>
                 </h6>
               </td>
@@ -160,6 +184,9 @@ export default {
     closeNotice (status) {
       this.setNoticeStatus({ status: status })
     }
+  },
+  mounted () {
+    this.$refs.firstsymbol.focus()
   }
 }
 </script>

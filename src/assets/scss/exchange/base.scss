@@ -88,9 +88,20 @@
   }
 
   #exchange-symbol-attention {
-    font-size: 20px;
+    font-size: 21px;
   }
 
+  thead tr th {
+    font-size: 19px;
+  }
+
+  tbody {
+    tr {
+      padding-top: 11px;
+      padding-bottom: 12px;
+    }
+  }
+  
   #exchange-table-text-1 {
     font-size: 16px;
   }
@@ -163,7 +174,18 @@
   }
 
   #exchange-symbol-attention {
-    font-size: 20px;
+    font-size: 21px;
+  }
+
+  thead tr th {
+    font-size: 19px;
+  }
+
+  tbody {
+    tr {
+      padding-top: 11px;
+      padding-bottom: 12px;
+    }
   }
 
   #exchange-table-text-1 {
@@ -175,18 +197,22 @@
   }
 
   #exchange-table-text-3 {
-    font-size: 19px;
+    font-size: 16px;
   }
   
   #exchange-table-text-4 {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   #exchange-table-text-5 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   #exchange-table-text-6 {
+    font-size: 15px;
+  }
+
+  #exchange-table-text-7 {
     font-size: 19px;
   }
 }
