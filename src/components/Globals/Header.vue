@@ -1,10 +1,10 @@
 <template>
   <!-- header -->
   <div class="app-header">
-      <div class="logo border-line">
+      <div class="logo">
         <img src="~img/gobit-logo.png" alt="gobit logo">
       </div>
-      <div class="group-header border-line">
+      <div class="group-header">
         <ul class="inline">
           <li id="language-list" class="list-inline-item">
             <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
