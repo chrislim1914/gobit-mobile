@@ -1,0 +1,41 @@
+/*
+  notice stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-notice {
+  border-top: 1px solid $notice-top-border-color;
+  background-color: $notice-background-color;
+}
+
+#notice-close {
+  color: $notice-close-color;
+}
+
+#notice-icon {
+  color: $notice-icon-color;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-notice {
+    height: 65px;
+  }
+
+  #notice-row {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-notice {
+    height: 65px;
+  }
+
+  #notice-row {
+    padding-top: 15px;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

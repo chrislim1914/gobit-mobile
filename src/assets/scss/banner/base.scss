@@ -1,0 +1,75 @@
+/*
+  banner stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-banner {
+  background-color: $banner-background-color;
+}
+
+#banner-symbol-1 {
+  color: $banner-divider-symbol-color;
+}
+
+#banner-symbol-2 {
+  color: $banner-divider-symbol-color;
+}
+
+#banner-badge {
+  color: $banner-badge-color;
+  border: 1px solid $banner-badge-color;
+  border-radius: 25px;
+}
+
+#banner-divider {
+  color: $banner-divider-symbol-color;
+}
+
+#banner-number-1 {
+  color: $banner-number-one-color;
+}
+
+#banner-number-2 {
+  color: $banner-number-two-color;
+}
+
+#banner-close {
+  color: $banner-close-color;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-banner {
+    height: 85px;
+  }
+
+  #banner-row {
+    padding-top: 15px;
+  }
+
+  #banner-close {
+    font-size: 15px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-banner {
+    height: 85px;
+    margin-bottom: 64px;
+  }
+
+  #banner-row {
+    padding-top: 15px;
+  }
+
+  #banner-close {
+    font-size: 15px !important;
+  }
+}
+
+.mb-65 {
+  margin-bottom: 65px;
+}
+
+.debugger {
+  border: 1px solid red;
+}

@@ -46,7 +46,7 @@
                     평가손익
                   </div>
                   <div class="col-6 text-right">
-                   <h6 class="exchange-tickerbar-right-values">-136,936</h6>
+                   <h6 class="exchange-tickerbar-right-values font-weight-bold">-136,936</h6>
                   </div>
                 </div>
                 <div class="row">
@@ -54,7 +54,7 @@
                     수익률
                   </div>
                   <div class="col-6 text-right">
-                    <h6 class="exchange-tickerbar-right-values">-51.39%</h6>
+                    <h6 class="exchange-tickerbar-right-values font-weight-bold">-51.39%</h6>
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@
       <div id="exchange-symbol-row" class="row py-2">
         <div class="col">
           <div class="btn-group symbol-button-group" role="group">
-            <a href="#" class="btn active">KRW</a>
+            <a href="#" ref="firstsymbol" class="btn">KRW</a>
             <a href="#" class="btn">BTC</a>
             <a href="#" class="btn">ETH</a>
             <a href="#" class="btn">DSN</a>
@@ -84,11 +84,26 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col" class="text-center">지수</th>
-              <th scope="col" class="text-left">한글명</th>
-              <th scope="col" class="text-right">현재가</th>
-              <th scope="col" class="text-right">전일대비</th>
-              <th scope="col" class="text-right">거래대금</th>
+              <th scope="col" class="text-center">
+                지수
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-left">
+                한글명
+                <img src="~img/opposite-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-right">
+                현재가
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-right">
+                전일대비
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-right">
+                거래대금
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -109,7 +124,7 @@
                   1.55%
                 </h6>
                 <h6 id="exchange-table-text-6" class="text-danger">
-                  <small>5,650</small>
+                  5,650
                 </h6>
               </td>
               <td id="exchange-table-text-7" class="text-right">
@@ -124,6 +139,8 @@
     <div id="extra-colored-space"></div>
     <!-- globals -->
     <global-cs></global-cs>
+    <global-banner @close-banner="closeBanner" :is-banner-shown="bannerStatus" :is-notice-shown="noticeStatus"></global-banner>
+    <global-notice @close-notice="closeNotice" :is-notice-shown="noticeStatus"></global-notice>
     <global-footer></global-footer>
   </div>
 </template>
@@ -131,13 +148,36 @@
 <script>
 import Header from '../Globals/Header'
 import CustomerService from '../Globals/CustomerService'
+import Banner from '../Globals/Banner'
 import Footer from '../Globals/Footer'
+import Notice from '../Globals/Notice'
+import { mapState, mapActions } from 'vuex'
 export default {
   name: 'Exchange',
   components: {
     'global-header': Header,
     'global-footer': Footer,
+    'global-banner': Banner,
+    'global-notice': Notice,
     'global-cs': CustomerService
+  },
+  computed: {
+    ...mapState({
+      'bannerStatus': ({misc}) => misc.isBannerShown,
+      'noticeStatus': ({misc}) => misc.isNoticeShown
+    })
+  },
+  methods: {
+    ...mapActions(['setBannerStatus', 'setNoticeStatus']),
+    closeBanner (status) {
+      this.setBannerStatus({ status: status })
+    },
+    closeNotice (status) {
+      this.setNoticeStatus({ status: status })
+    }
+  },
+  mounted () {
+    this.$refs.firstsymbol.focus()
   }
 }
 </script>

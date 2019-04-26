@@ -5,9 +5,6 @@
 
 .app-header {
   background-color: $header-background-color;
-  padding: 35px 20px 20px 20px;
-  display: inline-box;
-  overflow: hidden;
 }
 
 .logo {  
@@ -15,7 +12,6 @@
 }
 
 .group-header {
-  float: right;
   color: #afafaf;
   a {
     color: #afafaf;
@@ -28,57 +24,42 @@
 
 @media (min-width: 641px) and (max-width: 767px) {
   .app-header {
+    height: 85px;
 
-    .logo img {
-      width: 97px;
-      height: 40px;
+    #header-row {
+      padding-top: 30px;
     }
-      
-    .inline {
-      font-size: 16.5px;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      li {
-        float: left;        
+
+    .group-header {
+      a {
+        font-size: 16.5px;
       }
-      
-      li a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-      }
+    }
+
+    .menu img {
+      width: 20px;
+      height: 20px;
     }
   }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
   .app-header {
-    font-size: 13px;
+    height: 85px;
 
-    .logo img {
-      width: 75%;
+    #header-row {
+      padding-top: 30px;
     }
 
-    .inline {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      li {
-        float: left;
+    .group-header {
+      a {
+        font-size: 16.5px;
       }
+    }
 
-      .menu img {
-        height: 22px;
-      }
-      
-      li a {
-        display: block;
-        text-align: center;
-        padding: 2px;
-        text-decoration: none;
-      }
+    .menu img {
+      width: 20px;
+      height: 20px;
     }
   }
 }

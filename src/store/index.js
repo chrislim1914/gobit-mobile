@@ -4,13 +4,13 @@ import Vuex from 'vuex'
 /**
  * modules import
  */
-import user from './modules/user'
+import misc from './modules/misc'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   strict: true,
   modules: {
-    user
+    misc
   }
 })
