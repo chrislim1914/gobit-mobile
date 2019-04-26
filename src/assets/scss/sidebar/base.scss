@@ -1,0 +1,31 @@
+/**
+  sidebar style
+*/
+@import '../libs/_colors.scss';
+
+.app-sidebar {
+  height: 100%;
+  width: 420px;  
+  margin-right: 0px;
+  background-color: #ffffff;
+  border: 1px solid #efeff4;
+  box-shadow: 5px 10px 8px #888888;
+  z-index: 1;
+  float: right;
+}
+
+.border-line {
+  border: 1px solid #ff0000
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  
+}
+
+.debugger {
+  border: 1px solid red;
+}
