@@ -146,6 +146,7 @@
 </template>
 
 <script>
+// import Sidebar from '../Globals/Sidebar'
 import Header from '../Globals/Header'
 import CustomerService from '../Globals/CustomerService'
 import Banner from '../Globals/Banner'
@@ -155,6 +156,7 @@ import { mapState, mapActions } from 'vuex'
 export default {
   name: 'Exchange',
   components: {
+    // 'global-sidebar': Sidebar,
     'global-header': Header,
     'global-footer': Footer,
     'global-banner': Banner,
