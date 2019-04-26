@@ -9,6 +9,10 @@ import Exchange from '@/components/Exchange/Index'
 import investment component
 */
 import Investment from '@/components/Investment/Index'
+/*
+import trading component
+*/
+import Trading from '@/components/Trading/Index'
 
 Vue.use(Router)
 
@@ -24,6 +28,11 @@ export default new Router({
       path: '/invesment',
       name: 'Investment',
       component: Investment
+    },
+    {
+      path: '/trading',
+      name: 'Trading',
+      component: Trading
     }
   ]
 })

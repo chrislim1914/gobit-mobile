@@ -1,0 +1,58 @@
+/*
+  trading menu stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.active {
+  color: $trading-menu-link-color-selected !important;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-tradingmenu {
+    height: 59px;
+    background-color: $trading-menu-background-color;
+  }
+
+  #trading-menu-row {
+    padding: 12px 0px 12px 0px;
+
+    a {
+      color: $trading-menu-link-color-unselected;
+      font-size: 22px;
+    }
+  }
+
+  #trading-menu-dropdownarrow {
+    color: $trading-menu-link-color-unselected;
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+    transform: rotate(-30deg);
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-tradingmenu {
+    height: 59px;
+    background-color: $trading-menu-background-color;
+  }
+
+  #trading-menu-row {
+    padding: 12px 0px 12px 0px;
+
+    a {
+      color: $trading-menu-link-color-unselected;
+      font-size: 22px;
+    }
+  }
+
+  #trading-menu-dropdownarrow {
+    color: $trading-menu-link-color-unselected;
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+    transform: rotate(-30deg);
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

@@ -1,0 +1,47 @@
+/*
+  trading topbar stylesheet
+*/
+@import '../libs/_colors.scss';
+
+
+#trading-pairing-active {
+  color: $trading-topbar-pairing-active-color;
+}
+
+#trading-topbar-dropdownarrow {
+  -ms-transform: rotate(-30deg); /* IE 9 */
+  -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+  transform: rotate(-30deg);
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-tradingtopbar {
+    height: 85px;
+  }
+
+  #trading-topbar-row {
+    padding-top: 25px;
+  }
+
+  #trading-pairing-active {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-tradingtopbar {
+    height: 85px;
+  }
+
+  #trading-topbar-row {
+    padding-top: 25px;
+  }
+
+  #trading-pairing-active {
+    font-size: 20px;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
