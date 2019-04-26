@@ -101,6 +101,14 @@
       padding-bottom: 12px;
     }
   }
+
+  table td {
+    padding: 0px 20px 0px 20px;
+
+    h6 {
+      line-height: 0.8 !important;
+    }
+  }
   
   #exchange-table-text-1 {
     font-size: 16px;
@@ -185,6 +193,14 @@
     tr {
       padding-top: 11px;
       padding-bottom: 12px;
+    }
+  }
+
+  table td {
+    padding: 11px 20px 12px 20px;
+
+    h6 {
+      line-height: 0.8 !important;
     }
   }
 

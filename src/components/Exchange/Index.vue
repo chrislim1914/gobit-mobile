@@ -46,7 +46,7 @@
                     평가손익
                   </div>
                   <div class="col-6 text-right">
-                   <h6 class="exchange-tickerbar-right-values">-136,936</h6>
+                   <h6 class="exchange-tickerbar-right-values font-weight-bold">-136,936</h6>
                   </div>
                 </div>
                 <div class="row">
@@ -54,7 +54,7 @@
                     수익률
                   </div>
                   <div class="col-6 text-right">
-                    <h6 class="exchange-tickerbar-right-values">-51.39%</h6>
+                    <h6 class="exchange-tickerbar-right-values font-weight-bold">-51.39%</h6>
                   </div>
                 </div>
               </div>
@@ -84,11 +84,26 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col" class="text-center">지수</th>
-              <th scope="col" class="text-left">한글명</th>
-              <th scope="col" class="text-right">현재가</th>
-              <th scope="col" class="text-right">전일대비</th>
-              <th scope="col" class="text-right">거래대금</th>
+              <th scope="col" class="text-center">
+                지수
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-left">
+                한글명
+                <img src="~img/opposite-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-right">
+                현재가
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-right">
+                전일대비
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
+              <th scope="col" class="text-right">
+                거래대금
+                <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid">
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -109,31 +124,7 @@
                   1.55%
                 </h6>
                 <h6 id="exchange-table-text-6" class="text-danger">
-                  <small>5,650</small>
-                </h6>
-              </td>
-              <td id="exchange-table-text-7" class="text-right">
-                <h6>137,816 천원</h6>
-              </td>
-            </tr>
-            <tr :key="index" v-for="index in 5">
-              <td id="exchange-table-text-1" class="text-center text-primary">
-                <i class="fa fa-long-arrow-down"></i>
-                999
-              </td>
-              <td class="text-left">
-                <h6 id="exchange-table-text-2">비트코인 캐시</h6>
-                <h6 id="exchange-table-text-3">BCH/KRW</h6>
-              </td>
-              <td class="text-right">
-                <h6 id="exchange-table-text-4" class="text-primary">369,650</h6>
-              </td>
-              <td class="text-right">
-                <h6 id="exchange-table-text-5" class="text-primary">
-                  1.55%
-                </h6>
-                <h6 id="exchange-table-text-6" class="text-primary">
-                  <small>5,650</small>
+                  5,650
                 </h6>
               </td>
               <td id="exchange-table-text-7" class="text-right">
