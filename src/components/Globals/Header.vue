@@ -33,7 +33,7 @@
           </li>
           <li class="list-inline-item menu">
             <a href="#">
-              <img src="~img/menu.png" data-effect="sidebar" alt="gobit logo">
+              <img src="~img/menu.png" data-effect="sidebar" alt="Menu">
             </a>
           </li>
         </ul>

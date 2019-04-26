@@ -1,12 +1,13 @@
 /**
-  footer style
+  header style
 */
 @import '../libs/_colors.scss';
 
 .app-header {
   background-color: $header-background-color;
-  padding: 35px 20px 79px 20px;
+  padding: 35px 20px 20px 20px;
   display: inline-box;
+  overflow: hidden;
 }
 
 .logo {  
@@ -23,10 +24,6 @@
 
 .text-left {
   text-align: left;
-}
-
-.border-line {
-  border: 1px solid #ff0000
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
