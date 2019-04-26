@@ -1,0 +1,128 @@
+/*
+  coin info stylesheet
+*/
+@import '../libs/_colors.scss';
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-tradingcoininfo {
+    height: 105px;
+  }
+
+  .trading-coininfo-navigator > img {
+    padding-top: 4.6vh;
+  }
+
+  #trading-coininfo-value {
+    color: $trading-coininfo-value-color;
+    font-size: 34px;
+  }
+
+  #trading-coininfo-text-1 {
+    font-size: 18px;
+  }
+
+  #trading-coininfo-text-2 {
+    color: $trading-coininfo-text-2-color;
+    font-size: 20px;
+  }
+
+  #trading-coininfo-text-3 {
+    color: $trading-coininfo-text-3-color;
+    font-size: 20px;
+
+    i {
+      font-size: 28px;
+      top: 3px;
+    }
+  }
+
+  #trading-coininfo-text-4 {
+    font-size: 18px;
+
+    span {
+      color: $trading-coininfo-text-sub-color;
+      font-size: 15px;
+    }
+  }
+
+  #trading-coininfo-text-5 {
+    color: $trading-coininfo-text-5-color;
+    font-size: 20px;
+  }
+
+  #trading-coininfo-text-6 {
+    font-size: 18px;
+
+    span {
+      color: $trading-coininfo-text-sub-color;
+      font-size: 15px;
+    }
+  }
+
+  #trading-coininfo-text-7 {
+    color: $trading-coininfo-text-7-color;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-tradingcoininfo {
+    height: 105px;
+  }
+
+  .trading-coininfo-navigator > img {
+    margin-top: 4.6vh;
+  }
+
+  #trading-coininfo-value {
+    color: $trading-coininfo-value-color;
+    font-size: 34px;
+  }
+
+  #trading-coininfo-text-1 {
+    font-size: 18px;
+  }
+
+  #trading-coininfo-text-2 {
+    color: $trading-coininfo-text-2-color;
+    font-size: 20px;
+  }
+
+  #trading-coininfo-text-3 {
+    color: $trading-coininfo-text-3-color;
+    font-size: 20px;
+
+    i {
+      font-size: 28px;
+      top: 3px;
+    }
+  }
+
+  #trading-coininfo-text-4 {
+    font-size: 18px;
+
+    span {
+      color: $trading-coininfo-text-sub-color;
+      font-size: 15px;
+    }
+  }
+
+  #trading-coininfo-text-5 {
+    color: $trading-coininfo-text-5-color;
+    font-size: 20px;
+  }
+
+  #trading-coininfo-text-6 {
+    font-size: 18px;
+
+    span {
+      color: $trading-coininfo-text-sub-color;
+      font-size: 15px;
+    }
+  }
+
+  #trading-coininfo-text-7 {
+    color: $trading-coininfo-text-7-color;
+    font-size: 20px;
+  }
+}
