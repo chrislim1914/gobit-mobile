@@ -4,6 +4,7 @@
     <topbar></topbar>
     <coininfo></coininfo>
     <exchangeinfo></exchangeinfo>
+    <tradingmenu></tradingmenu>
   </div>
 </template>
 
@@ -11,12 +12,14 @@
 import Topbar from './Topbar'
 import CoinInfo from './CoinInfo'
 import ExchangeInfo from './ExchangeInfo'
+import TradingMenu from './TradingMenu'
 export default {
   name: 'Trading',
   components: {
     'topbar': Topbar,
     'coininfo': CoinInfo,
-    'exchangeinfo': ExchangeInfo
+    'exchangeinfo': ExchangeInfo,
+    'tradingmenu': TradingMenu
   }
 }
 </script>
