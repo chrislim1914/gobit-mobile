@@ -5,13 +5,17 @@
 
 @media (min-width: 641px) and (max-width: 767px) {
   .app-trading {
-    padding: 0px 20px 0px 20px;
+    .app-tradingtopbar, .app-tradingcoininfo {
+      padding: 0px 20px 0px 20px;
+    }
   }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
   .app-trading {
-    padding: 0px 20px 0px 20px;
+    .app-tradingtopbar, .app-tradingcoininfo {
+      padding: 0px 20px 0px 20px;
+    }
   }
 }
 

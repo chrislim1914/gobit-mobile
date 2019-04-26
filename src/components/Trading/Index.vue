@@ -3,17 +3,20 @@
   <div class="app-trading">
     <topbar></topbar>
     <coininfo></coininfo>
+    <exchangeinfo></exchangeinfo>
   </div>
 </template>
 
 <script>
 import Topbar from './Topbar'
 import CoinInfo from './CoinInfo'
+import ExchangeInfo from './ExchangeInfo'
 export default {
   name: 'Trading',
   components: {
     'topbar': Topbar,
-    'coininfo': CoinInfo
+    'coininfo': CoinInfo,
+    'exchangeinfo': ExchangeInfo
   }
 }
 </script>

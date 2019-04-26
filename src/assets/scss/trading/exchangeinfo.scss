@@ -1,0 +1,86 @@
+/*
+  exchange info stylesheet
+*/
+@import '../libs/_colors.scss';
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-tradingexchangeinfo {
+    height: 40px;
+    border-top: 2px solid $trading-exchangeinfo-border-color;
+
+    ul {
+      padding: 12px 20px 12px 20px;
+    }
+  }
+
+  #trading-exchangeinfo-text-1 {
+    font-size: 15px;
+  }
+
+  #trading-exchangeinfo-text-2 {
+    font-size: 15px;
+  }
+
+  #trading-exchangeinfo-text-1-value {
+    color: $trading-exchangeinfo-value-color;
+    font-size: 15px;
+    
+    span {
+      color: $trading-exchangeinfo-subvalue-color;
+      font-size: 11.5px;
+      font-weight: normal;
+    }
+  }
+
+  #trading-exchangeinfo-text-2-value {
+    color: $trading-exchangeinfo-value-color;
+    font-size: 15px;
+    
+    span {
+      color: $trading-exchangeinfo-subvalue-color;
+      font-size: 11.5px;
+      font-weight: normal;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-tradingexchangeinfo {
+    height: 40px;
+    border-top: 2px solid $trading-exchangeinfo-border-color;
+
+    ul {
+      padding: 12px 20px 12px 20px;
+    }
+  }
+
+  #trading-exchangeinfo-text-1 {
+    font-size: 15px;
+  }
+
+  #trading-exchangeinfo-text-2 {
+    font-size: 15px;
+  }
+
+  #trading-exchangeinfo-text-1-value {
+    color: $trading-exchangeinfo-value-color;
+    font-size: 15px;
+    
+    span {
+      color: $trading-exchangeinfo-subvalue-color;
+      font-size: 11.5px;
+      font-weight: normal;
+    }
+  }
+
+  #trading-exchangeinfo-text-2-value {
+    color: $trading-exchangeinfo-value-color;
+    font-size: 15px;
+    
+    span {
+      color: $trading-exchangeinfo-subvalue-color;
+      font-size: 11.5px;
+      font-weight: normal;
+    }
+  }
+}
