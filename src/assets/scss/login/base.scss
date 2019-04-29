@@ -1,0 +1,121 @@
+/*
+  login stylesheet
+*/
+@import '../libs/_colors.scss';
+
+#login-header-bottom-border {
+  // height: 5px;
+  border: 1px solid $extra-border-green-color;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  #login-header {
+    padding: 0px 20px 0px 20px;
+  }
+  
+  #login-container {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #login-title-row {
+    height: 128px;
+
+    #login-title {
+      color: $login-title-color;
+      font-size: 28px;
+      padding: 55px 0px 55px 0px;
+    }
+  }
+
+  #login-fields-row {
+    input {
+      height: 69px;
+      border-radius: 0px;
+    }
+
+    #login-email-field, #login-password-field {
+      font-size: 20px;
+    }
+
+    #login-password-field {
+      margin-top: 25px;
+    }
+  }
+
+  #login-button {
+    width: 600px;
+    height: 70px;
+    color: $login-button-text-color;
+    font-size: 22.5px;
+    border-radius: 0px;
+    margin-top: 45px;
+    background-color: $login-button-background-color;
+  }
+
+  #login-links-row {
+    margin-top: 45px;
+  }
+
+  #login-link-1, #login-link-2 {
+    color: $login-link-color;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  #login-header {
+    padding: 0px 20px 0px 20px;
+  }
+  
+  #login-container {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #login-title-row {
+    height: 128px;
+
+    #login-title {
+      color: $login-title-color;
+      font-size: 28px;
+      padding: 55px 0px 55px 0px;
+    }
+  }
+
+  #login-fields-row {
+    input {
+      height: 69px;
+      border-radius: 0px;
+    }
+
+    #login-email-field, #login-password-field {
+      font-size: 20px;
+    }
+
+    #login-password-field {
+      margin-top: 25px;
+    }
+  }
+
+  #login-button {
+    width: 600px;
+    height: 70px;
+    color: $login-button-text-color;
+    font-size: 22.5px;
+    border-radius: 0px;
+    margin-top: 45px;
+    background-color: $login-button-background-color;
+  }
+
+  #login-links-row {
+    margin-top: 45px;
+  }
+
+  #login-link-1, #login-link-2 {
+    color: $login-link-color;
+    font-size: 22px;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

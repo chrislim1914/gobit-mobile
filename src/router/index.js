@@ -13,6 +13,10 @@ import Investment from '@/components/Investment/Index'
 import trading component
 */
 import Trading from '@/components/Trading/Index'
+/*
+import login component
+*/
+import Login from '@/components/Login/Index'
 
 Vue.use(Router)
 
@@ -23,6 +27,11 @@ export default new Router({
       path: '/',
       name: 'Exchange',
       component: Exchange
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     },
     {
       path: '/invesment',
