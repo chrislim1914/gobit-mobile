@@ -1,7 +1,7 @@
 <template>
   <!-- signup verification -->
   <div class="app-signup-verification">
-    <div id="signup-verification-fields" class="container-fluid px-0 py-0 d-none">
+    <div id="signup-verification-fields" class="container-fluid px-0 py-0">
       <div id="signup-verification-row" class="row">
         <div class="col-12">
           <h6 id="signup-title">
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div id="signup-verification-message" class="container-fluid px-0 py-0">
+    <div id="signup-verification-message" class="container-fluid px-0 py-0 d-none">
       <div id="signup-verification-row" class="row">
         <div class="col-12">
           <h6 id="signup-title">

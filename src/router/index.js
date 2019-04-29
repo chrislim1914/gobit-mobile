@@ -21,6 +21,7 @@ import Login from '@/components/Login/Index'
 import signup component
 */
 import Signup from '@/components/Signup/Index'
+import SignupPasswordForm from '@/components/Signup/PasswordForm'
 import SignupEmailVerification from '@/components/Signup/EmailVerification'
 
 Vue.use(Router)
@@ -43,9 +44,14 @@ export default new Router({
       component: Signup,
       children: [
         {
-          path: 'verify-email',
+          path: '',
           component: SignupEmailVerification,
           name: 'SignupEmailVerification'
+        },
+        {
+          path: 'setup-password',
+          component: SignupPasswordForm,
+          name: 'SignupPasswordForm'
         }
       ]
     },
