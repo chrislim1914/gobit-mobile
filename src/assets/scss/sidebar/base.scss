@@ -3,27 +3,311 @@
 */
 @import '../libs/_colors.scss';
 
+* {
+  margin: 0 auto;
+}
+
 .app-sidebar {
   height: 100%;
-  width: 420px;  
+  max-width: 420px;  
   margin-right: 0px;
-  background-color: #ffffff;
-  border: 1px solid #efeff4;
-  box-shadow: 5px 10px 8px #888888;
+  background-color: $header-background-color;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
-  float: right;
+  margin-bottom: 20px;
+}
+
+.headleft {
+  color: $rank-font-color;
+}
+.headlast {
+  color: $sidebar-black-color;
+}
+.headright {
+  color: $rank-font-color;
+  text-align: center;
+}
+
+.level {
+  color: $level-font-color;
+  font-size: 25px;
+  padding-left: 30px;
+}
+
+.closeside {
+  padding: 17px 1px;
+}
+
+.rank {
+  margin: 0 -15px;
+  padding: 0 0;  
+  color: $rank-plain-color;
+  text-align: left;
+  .rankleft {
+    background-color: $rank-bg-color;
+    margin-left: -40px;
+    padding: 10px 20px;
+    width: 212px;
+  }
+  .rankright {
+    background-color: $rank-bg-color;
+    padding: 10px 20px;
+    width: 212px;
+    margin-left: -18px;
+    border-left: 1px solid #ffffff;
+  } 
+}
+
+.side-exchange {
+  margin-left: -16px;
+  padding: 19px 20px 0px 20px;
+}
+
+.side-echange-head {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+
+.exchange-sub {
+  background-color: $exchange-bg-color;
+  border-top: 1px solid $exchange-border-color;
+  border-bottom: 1px solid $exchange-border-color;
+  font-size: 19px;
+  margin-right: -52px;
+  margin-left: -19px;
+  a {
+    color: $sidebar-black-color;
+    text-decoration: none;
+  }
+
+  .exchange-content {
+    font-size: 20px;
+    padding: 17px 32px;
+    border-top: 1px solid $exchange-border-color;
+    border-bottom: 1px solid $exchange-border-color;
+  }
+}
+
+.service-menu {
+  font-size: 20px;
+  margin-left: -16px;
+  padding: 19px 20px 15px 20px;
+}
+
+.make-bold {
+  font-weight: 800;
+}
+
+.app-menu {
+  font-size: 20px;
+  font-weight: 800;
+  color: $app-color;
+  text-align: center;
+  border: 1px solid $app-color;
+  width: 381px;
+  margin:  0 0 16px -35px;
+  padding: 12px 0;
 }
 
 .border-line {
+  padding: 0 0;
   border: 1px solid #ff0000
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
-  
+  .app-sidebar {
+    .headleft {
+      color: $rank-font-color;
+      font-size: 22px;
+      padding: 15px 0;
+    }
+    .headlast {
+      color: #000000;
+      font-size: 15px;
+    }
+    .headright {
+      color: $rank-font-color;
+      font-size: 21px;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .level {
+      color: $level-font-color;
+      font-size: 25px;
+      padding-left: 30px;
+    }
+    
+    .closeside {
+      padding: 17px 1px;
+    }
+    
+    .rank {
+      margin: 0 -15px;
+      padding: 0 0;  
+      color: $rank-plain-color;
+      text-align: left;
+      .rankleft {
+        background-color: $rank-bg-color;
+        margin-left: -40px;
+        padding: 10px 20px;
+        width: 212px;
+      }
+      .rankright {
+        background-color: $rank-bg-color;
+        padding: 10px 20px;
+        width: 212px;
+        margin-left: -18px;
+        border-left: 1px solid #ffffff;
+      } 
+    }
+    
+    .side-exchange {
+      margin-left: -16px;
+      padding: 19px 20px 0px 20px;
+    }    
+    .side-echange-head {
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 9px;
+    }    
+    .exchange-sub {
+      background-color: $exchange-bg-color;
+      border-top: 1px solid $exchange-border-color;
+      border-bottom: 1px solid $exchange-border-color;
+      font-size: 19px;
+      margin-right: -52px;
+      margin-left: -19px;
+      a {
+        color: $sidebar-black-color;
+        text-decoration: none;
+      }    
+      .exchange-content {
+        font-size: 20px;
+        padding: 17px 32px;
+        border-top: 1px solid $exchange-border-color;
+        border-bottom: 1px solid $exchange-border-color;
+      }
+    }    
+    .service-menu {
+      font-size: 20px;
+      margin-left: -16px;
+      padding: 19px 20px 15px 20px;
+    }    
+    .make-bold {
+      font-weight: 800;
+    }    
+    .app-menu {
+      font-size: 20px;
+      font-weight: 800;
+      color: $app-color;
+      text-align: center;
+      border: 1px solid $app-color;
+      width: 381px;
+      margin:  0 0 16px -35px;
+      padding: 12px 0;
+    }
+    
+  }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
-  
+@media (min-width: 640px) and (max-width: 767px) {
+  .app-sidebar {
+    max-width: 420px;  
+    .headleft {
+      color: $rank-font-color;
+      font-size: 22px;
+      padding: 15px 0;
+    }
+    .headlast {
+      color: #000000;
+      font-size: 15px;
+    }
+    .headright {
+      color: $rank-font-color;
+      font-size: 21px;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .level {
+      color: $level-font-color;
+      font-size: 25px;
+      padding-left: 30px;
+    }
+    
+    .closeside {
+      padding: 17px 1px;
+    }
+    
+    .rank {
+      margin: 0 -15px;
+      padding: 0 0;  
+      color: $rank-plain-color;
+      text-align: left;
+      .rankleft {
+        background-color: $rank-bg-color;
+        margin-left: -40px;
+        padding: 10px 20px;
+        width: 212px;
+      }
+      .rankright {
+        background-color: $rank-bg-color;
+        padding: 10px 20px;
+        width: 212px;
+        margin-left: -18px;
+        border-left: 1px solid #ffffff;
+      } 
+    }
+    
+    .side-exchange {
+      margin-left: -16px;
+      padding: 19px 20px 0px 20px;
+    }    
+    .side-echange-head {
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 9px;
+    }    
+    .exchange-sub {
+      background-color: $exchange-bg-color;
+      border-top: 1px solid $exchange-border-color;
+      border-bottom: 1px solid $exchange-border-color;
+      font-size: 19px;
+      margin-right: -52px;
+      margin-left: -19px;
+      a {
+        color: $sidebar-black-color;
+        text-decoration: none;
+      }    
+      .exchange-content {
+        font-size: 20px;
+        padding: 17px 32px;
+        border-top: 1px solid $exchange-border-color;
+        border-bottom: 1px solid $exchange-border-color;
+      }
+    }    
+    .service-menu {
+      font-size: 20px;
+      margin-left: -16px;
+      padding: 19px 20px 15px 20px;
+    }    
+    .make-bold {
+      font-weight: 800;
+    }    
+    .app-menu {
+      font-size: 20px;
+      font-weight: 800;
+      color: $app-color;
+      text-align: center;
+      border: 1px solid $app-color;
+      width: 381px;
+      margin:  0 0 16px -35px;
+      padding: 12px 0;
+    }
+    
+  }
 }
 
 .debugger {
