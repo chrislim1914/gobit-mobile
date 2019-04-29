@@ -23,6 +23,10 @@ import signup component
 import Signup from '@/components/Signup/Index'
 import SignupPasswordForm from '@/components/Signup/PasswordForm'
 import SignupEmailVerification from '@/components/Signup/EmailVerification'
+/*
+import forgot password component
+*/
+import ForgotPassword from '@/components/ForgotPassword/Index'
 
 Vue.use(Router)
 
@@ -30,7 +34,7 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/exchange',
       name: 'Exchange',
       component: Exchange
     },
@@ -54,6 +58,10 @@ export default new Router({
           name: 'SignupPasswordForm'
         }
       ]
+    },
+    {
+      path: '/forgot-password',
+      component: ForgotPassword
     },
     {
       path: '/invesment',
