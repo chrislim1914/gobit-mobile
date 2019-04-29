@@ -12,43 +12,74 @@
     margin-top: 55px;
   }
 
-  #signup-subheader {
-    font-size: 22px;
-    margin-top: 35px;
-  }
-
-  #signup-title {
-    color: $signup-title-color;
-    font-size: 28px;
-  }
-
-  #signup-email-field {
-    height: 69px;
-    font-size: 20px;
-    margin-top: 30px;
-    border-radius: 0px;
-  }
-
-  #signup-button {
-    width: 600px;
-    height: 70px;
-    color: $signup-button-text-color;
-    font-size: 22.5px;
-    border-radius: 0px;
-    margin-top: 45px;
-    background-color: $signup-button-background-color;
-  }
-
-  #signup-link-row {
-    margin-top: 45px;
-    
-    h6 {
+  #signup-verification-fields {
+    #signup-subheader {
       font-size: 22px;
+      margin-top: 35px;
+    }
+
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email-field {
+      height: 69px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 0px;
+    }
+
+    #signup-button {
+      width: 600px;
+      height: 70px;
+      color: $signup-button-text-color;
+      font-size: 22.5px;
+      border-radius: 0px;
+      margin-top: 45px;
+      background-color: $signup-button-background-color;
+    }
+
+    #signup-link-row {
+      margin-top: 45px;
+      
+      h6 {
+        font-size: 22px;
+      }
+    }
+
+    #signup-signin-link {
+      color: $signup-signin-link-color;
     }
   }
 
-  #signup-signin-link {
-    color: $signup-signin-link-color;
+  #signup-verification-message {
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email {
+      color: $signup-email-color;
+      font-size: 28px;
+      margin: 50px 0px 50px 0px;
+    }
+
+    #signup-message-column {
+      #signup-message-1 {
+        font-size: 22px;
+      }
+
+      #signup-message-2 {
+        color: $signup-message-text-color;
+        font-size: 18px;
+      }
+
+      #signup-message-3, #signup-message-4, #signup-message-5 {
+        margin-top: 45px;
+        font-size: 22px;
+      }
+    }
   }
 }
 
@@ -61,43 +92,74 @@
     margin-top: 55px;
   }
 
-  #signup-subheader {
-    font-size: 22px;
-    margin-top: 35px;
-  }
-
-  #signup-title {
-    color: $signup-title-color;
-    font-size: 28px;
-  }
-
-  #signup-email-field {
-    height: 69px;
-    font-size: 20px;
-    margin-top: 30px;
-    border-radius: 0px;
-  }
-
-  #signup-button {
-    width: 600px;
-    height: 70px;
-    color: $login-button-text-color;
-    font-size: 22.5px;
-    border-radius: 0px;
-    margin-top: 45px;
-    background-color: $login-button-background-color;
-  }
-
-  #signup-link-row {
-    margin-top: 45px;
-    
-    h6 {
+  #signup-verification-fields {
+    #signup-subheader {
       font-size: 22px;
+      margin-top: 35px;
+    }
+
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email-field {
+      height: 69px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 0px;
+    }
+
+    #signup-button {
+      width: 600px;
+      height: 70px;
+      color: $signup-button-text-color;
+      font-size: 22.5px;
+      border-radius: 0px;
+      margin-top: 45px;
+      background-color: $signup-button-background-color;
+    }
+
+    #signup-link-row {
+      margin-top: 45px;
+      
+      h6 {
+        font-size: 22px;
+      }
+    }
+
+    #signup-signin-link {
+      color: $signup-signin-link-color;
     }
   }
 
-  #signup-signin-link {
-    color: $signup-signin-link-color;
+  #signup-verification-message {
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email {
+      color: $signup-email-color;
+      font-size: 28px;
+      margin: 50px 0px 50px 0px;
+    }
+
+    #signup-message-column {
+      #signup-message-1 {
+        font-size: 22px;
+      }
+
+      #signup-message-2 {
+        color: $signup-message-text-color;
+        font-size: 18px;
+      }
+
+      #signup-message-3, #signup-message-4, #signup-message-5 {
+        margin-top: 45px;
+        font-size: 22px;
+      }
+    }
   }
 }
 
