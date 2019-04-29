@@ -17,6 +17,11 @@ import Trading from '@/components/Trading/Index'
 import login component
 */
 import Login from '@/components/Login/Index'
+/*
+import signup component
+*/
+import Signup from '@/components/Signup/Index'
+import SignupEmailVerification from '@/components/Signup/EmailVerification'
 
 Vue.use(Router)
 
@@ -32,6 +37,17 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/signup',
+      component: Signup,
+      children: [
+        {
+          path: 'verify-email',
+          component: SignupEmailVerification,
+          name: 'SignupEmailVerification'
+        }
+      ]
     },
     {
       path: '/invesment',
