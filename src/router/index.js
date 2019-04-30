@@ -15,7 +15,7 @@ import investment component
 import Investment from '@/components/Investment/Index'
 import InvestmentBalance from '@/components/Investment/Balance'
 import InvestmentHistory from '@/components/Investment/History'
-// import InvestmentWaitOrders from '@/components/Investment/Index'
+import InvestmentWaitOrders from '@/components/Investment/Order'
 /*
 import trading component
 */

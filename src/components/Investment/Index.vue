@@ -9,12 +9,14 @@
 import Topbar from './Topbar'
 import Balance from './Balance'
 import History from './History'
+import Order from './Order'
 export default {
   name: 'Investment',
   components: {
     'topbar': Topbar,
     'balance': Balance,
-    'history': History
+    'history': History,
+    'order': Order
   }
 }
 </script>
