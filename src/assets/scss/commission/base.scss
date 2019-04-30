@@ -1,0 +1,136 @@
+/*
+  Commission Page stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-commission {
+  background-color: $fee-bg-color;
+  height: 100%;
+}
+
+.fee-head {
+  color: $fee-head-font-color;
+  a {
+    color: $fee-head-font-color;
+  }
+}
+
+.coin-list {
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid $fee-table-color;
+  border-bottom: 1px solid $fee-table-color;
+  .coin-panel {
+    margin: 0 0;
+    float: left;
+    border-right: 1px solid $fee-table-color;
+    border-bottom: 1px solid $fee-table-color;
+    p {
+      margin: 0 0;
+    }
+  }
+  .charge {
+    color: $fee-color;
+    margin: 0 0;
+    float: left;
+    border-right: 1px solid $fee-table-color;
+    border-bottom: 1px solid $fee-table-color;
+    p {
+      margin: 0 0;
+    }    
+  }
+}
+
+.fee-title {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fee-notes {
+  width: 100%;
+  margin: 0 auto;
+  a {
+    color: $fee-note-link-color;
+    text-decoration: underline solid $fee-note-link-color;
+  }
+  p {
+    margin: 0 0;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-commission {
+    .fee-head {
+      font-size: 30px;
+      font-weight: 800;
+      padding: 19px 20px;
+      a {
+        color: $fee-head-font-color;
+      }
+    }
+    
+    .coin-list {
+      .coin-panel {
+        font-size: 22px;
+        padding: 21px 0;
+      }
+      .charge {
+        font-size: 22px;
+        padding: 62px 0;
+      }
+    }
+    
+    .fee-title {
+      font-size: 32px;
+      padding: 52px 0 36px 0;
+    }
+    
+    .fee-notes {
+      padding: 25px 0 0 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .app-commission {
+    .fee-head {
+      font-size: 30px;
+      font-weight: 800;
+      padding: 19px 20px;
+      a {
+        color: $fee-head-font-color;
+      }
+    }
+    
+    .coin-list {
+      .coin-panel {
+        font-size: 22px;
+        padding: 21px 0;
+      }
+      .charge {
+        font-size: 22px;
+        padding: 62px 0;
+      }
+    }
+    
+    .fee-title {
+      font-size: 32px;
+      padding: 52px 0 36px 0;
+    }
+    
+    .fee-notes {
+      padding: 25px 0 0 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

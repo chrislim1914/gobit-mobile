@@ -1,0 +1,280 @@
+/**
+  investment page stylesheet
+*/
+@import '../libs/_colors.scss';
+
+* {
+  margin: 0 auto;
+}
+
+hr {
+  width: 96%;
+}
+
+.app-investment {
+  width: 100%;
+  height: 100%;
+}
+
+.invest-head {
+  display: flex;
+  margin: 0 -15px;
+  padding: 18.5px 0 20px 12px;
+  font-size: 30px;
+  color: $fee-head-font-color;
+  .invest-back {
+    width: 106.66px;
+    float: left;
+    margin: 0;
+  }
+  .invest-title {
+    width: 424.66px;
+    float: left;
+    margin: 0;
+    text-align: center;    
+    font-weight: 600;
+  }
+  .invest-icons {
+    width: 53.33px;
+    float: left;
+    margin: 0;
+  }
+  a {
+    color: $fee-head-font-color;
+  }
+}
+
+.invest-tab {
+  font-size: 23px;
+  margin: 0 -15px;
+  .listing {
+    padding: 13.5px 0;
+    margin: 0;
+    width: 212.5px;
+    text-align: center;
+    border-bottom: 1.5px solid $fee-tab-border-inactive;
+    .active {
+      color: $fee-tab-active-color;
+      border-bottom: 1.5px solid $fee-tab-border-active;
+    }
+    a {
+      margin: 0;
+      text-decoration: none;
+      color: $fee-tab-inactive-color;
+      display: inline;
+      padding: 16px 58px;
+    }
+  }  
+  
+}
+
+.balance-panel {
+  background-color: $balance-head-bg-color;
+  .bheadleft {
+    padding: 32px 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .bheadright {
+    padding: 32px 20px;
+    font-size: 24px;
+    color: $bheadright-font-color;
+    text-align: right;
+  }
+  .assetsleft {
+    padding: 0 0 0 20px;
+    border-right: 1px solid $assets-border-color;
+    .assetslefttop {
+      font-size: 19px;      
+    }
+    .assetsleftbottom {
+      font-size: 33px;
+    }
+  }
+  .assetsright {
+    padding-left: 34px;
+    .assetsrighttop {
+      font-size: 19px;      
+    }
+    .assetsrightbottom {      
+      font-size: 33px;
+    }
+  }
+  .total {
+    width: 100%;
+    padding: 30px 0 34px 0;
+    .totalleft {
+      margin: 0 -15px;      
+    }
+    .totalright {
+      margin-right: -1px;
+      padding-left: 6px;
+    }
+    .totaldata {
+      font-size: 19px;
+    }
+  }
+}
+
+.the-coin {
+  background-color: $fee-bg-color;
+  margin: 0 auto;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 22px;
+  .coinleft {
+    color: $the-coin-font-color;
+    margin: 0 -1px;
+  }
+  .coinright {
+    padding: 0 0 0 21px;
+    margin-right: 1px;
+  }
+}
+
+.retention {
+  background-color: $fee-bg-color;
+  width: 100%;
+  font-size: 21px;
+  padding: 19px 0 1px 0;
+  border-bottom: 2px solid $retension-border-color;
+  .sub-retention {
+    font-size: 19px;
+    color: $retention-sub-font-color;
+    padding: 0 0 22px 0;
+  }
+  .r-quantity {
+    text-align: right;
+  }
+}
+
+.balance-footer {
+  font-size: 18px;
+  color: $retention-sub-font-color;
+  padding: 16px 0;
+}
+
+.history-panel {
+  font-size: 24px;
+  padding: 24px 4px;
+  .history-dd {
+    text-align: right;
+    .dd {
+      margin: 0 0 0 auto;      
+      a {
+        background-color: $history-dd-bg-color;
+        padding: 11px 15px;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.history-table {
+  font-size: 19px;
+  height: 100%;
+  .frozen {
+    background-color: $history-table-frozen-cell-bg-color;
+  }
+  .table {
+    td {
+      border-right: 1px solid $history-htable-border-color;
+    }
+    td:last-child {
+      border-right: none;
+    }
+    thead {
+      font-size: 19px;
+      color: $history-htable-font-color;
+      th {
+        border-right: 1px solid $history-htable-border-color;
+      }
+      th:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .invest-tab {
+    .listing {
+      width: 100%;
+      a {
+        padding: 16px 113px;
+      }
+    }  
+    .balance-panel {
+      text-align: center;
+      }
+    .bheadright {
+      text-align: center;
+    }
+    .assetsleft {      
+      padding: 0 0 0 20px;
+      border-bottom: 1px solid $assets-border-color;
+      .assetslefttop {
+        font-size: 19px;      
+      }
+      .assetsleftbottom {
+        font-size: 33px;
+      }
+    }
+    .assetsright {
+      text-align: center;
+      .assetsrighttop {
+        font-size: 19px;
+      }
+      .assetsrightbottom {      
+        font-size: 33px;
+      }
+    }
+    .total {
+      margin: 0 auto;
+      .totalleft {        
+        margin: 0 auto;
+      }
+      .totalright {
+        margin: 0 auto;
+      }      
+    .totaldata {
+      font-size: 13px;
+    }
+    }
+    .the-coin {
+      font-size: 16px;
+    }
+    .retention {
+      font-size: 16px;
+      .r-quantity {
+        text-align: center;
+      }
+    }
+    .balance-footer {
+      font-size: 12px;
+      padding: 10px 0;
+    }
+  }
+
+  .history-panel {
+    font-size: 16px;
+    padding: 24px 4px;
+    text-align: center;
+    .history-dd {
+      text-align: center;
+      padding: 17px 0;
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
+.debugger2 {
+  border: 1px solid blue;
+}
