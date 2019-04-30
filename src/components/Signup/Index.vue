@@ -2,9 +2,9 @@
   <!-- signup -->
   <div class="app-signup">
     <!-- signup header -->
-    <signup-header id="signup-header"></signup-header>
+    <signup-header></signup-header>
     <!-- -->
-    <hr id="signup-header-bottom-border">
+    <hr id="signup-header-bottom-border" class="mx-0 my-0">
     <!-- -->
     <router-view></router-view>
   </div>
