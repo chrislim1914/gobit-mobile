@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm-4 menus">
           <a href="">
-            보유코인
+            거래내역
           </a>
         </div>
         <div class="col-sm-4 menus">
