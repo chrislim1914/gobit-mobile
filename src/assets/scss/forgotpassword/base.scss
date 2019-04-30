@@ -1,0 +1,24 @@
+/*
+  forgot password stylesheet
+*/
+@import '../libs/_colors.scss';
+
+#forgotpassword-header-bottom-border {
+  border: 1px solid $extra-border-green-color;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  #forgotpassword-header {
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  #forgotpassword-header {
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

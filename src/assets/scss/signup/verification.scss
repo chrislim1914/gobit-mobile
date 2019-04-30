@@ -1,0 +1,170 @@
+/*
+  signup verification stylesheet
+*/
+@import '../libs/_colors.scss';
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-signup-verification {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #signup-verification-row {
+    margin-top: 55px;
+  }
+
+  #signup-verification-fields {
+    #signup-subheader {
+      font-size: 22px;
+      margin-top: 35px;
+    }
+
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email-field {
+      width: 604px;
+      height: 70px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 0px;
+    }
+
+    #signup-button {
+      width: 604px;
+      height: 70px;
+      color: $signup-button-text-color;
+      font-size: 22.5px;
+      border-radius: 0px;
+      margin-top: 45px;
+      background-color: $signup-button-background-color;
+    }
+
+    #signup-link-row {
+      margin-top: 45px;
+      
+      h6 {
+        font-size: 22px;
+      }
+    }
+
+    #signup-signin-link {
+      color: $signup-signin-link-color;
+    }
+  }
+
+  #signup-verification-message {
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email {
+      color: $signup-email-color;
+      font-size: 28px;
+      margin: 50px 0px 50px 0px;
+    }
+
+    #signup-message-column {
+      #signup-message-1 {
+        font-size: 22px;
+      }
+
+      #signup-message-2 {
+        color: $signup-message-text-color;
+        font-size: 18px;
+      }
+
+      #signup-message-3, #signup-message-4, #signup-message-5 {
+        margin-top: 45px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-signup-verification {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #signup-verification-row {
+    margin-top: 55px;
+  }
+
+  #signup-verification-fields {
+    #signup-subheader {
+      font-size: 22px;
+      margin-top: 35px;
+    }
+
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email-field {
+      width: 604px;
+      height: 70px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 0px;
+    }
+
+    #signup-button {
+      width: 604px;
+      height: 70px;
+      color: $signup-button-text-color;
+      font-size: 22.5px;
+      border-radius: 0px;
+      margin-top: 45px;
+      background-color: $signup-button-background-color;
+    }
+
+    #signup-link-row {
+      margin-top: 45px;
+      
+      h6 {
+        font-size: 22px;
+      }
+    }
+
+    #signup-signin-link {
+      color: $signup-signin-link-color;
+    }
+  }
+
+  #signup-verification-message {
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email {
+      color: $signup-email-color;
+      font-size: 28px;
+      margin: 50px 0px 50px 0px;
+    }
+
+    #signup-message-column {
+      #signup-message-1 {
+        font-size: 22px;
+      }
+
+      #signup-message-2 {
+        color: $signup-message-text-color;
+        font-size: 18px;
+      }
+
+      #signup-message-3, #signup-message-4, #signup-message-5 {
+        margin-top: 45px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
