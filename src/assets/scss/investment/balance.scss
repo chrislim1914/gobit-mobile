@@ -1,0 +1,219 @@
+/*
+  investment balance stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-balance {
+  width: 100%;
+  height: 100%;
+}
+
+hr {
+  width: 96%;
+}
+
+.tab-menu {
+  text-align: center;
+  font-size: 23px;
+  
+  .menus {    
+    padding: 13.5px 0;
+    border-bottom: 1.5px solid $fee-tab-border-inactive;
+    a {
+      text-decoration: none;
+      color: $fee-tab-inactive-color;
+    }
+  }
+  .active {
+    color: $fee-tab-active-color;
+    border-bottom: 1.5px solid $fee-tab-border-active;
+  }
+}
+
+.balance {  
+  .bheader {
+    display: flex;
+    width: 100%;
+    background-color: $balance-head-bg-color;    
+  }
+  .bheadleft {
+    padding: 32px 18px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .bheadright {
+    padding: 32px 18px;
+    font-size: 24px;
+    color: $bheadright-font-color;
+    text-align: right;
+  }
+  .assetsleft {
+    padding: 0 0 0 18px;
+    border-right: 1px solid $assets-border-color;
+    .assetslefttop {
+      font-size: 19px;      
+    }
+    .assetsleftbottom {
+      font-size: 33px;
+    }
+  }
+  .assetsright {
+    padding-left: 34px;
+    .assetsrighttop {
+      font-size: 19px;      
+    }
+    .assetsrightbottom {      
+      font-size: 33px;
+    }
+  }
+  .total {
+    padding: 30px 0 34px 0;
+    .totalright {
+      padding-left: 32px;
+    }
+    .totaldata {
+      font-size: 19px;
+    }
+  }
+  .the-coin {
+    background-color: $fee-bg-color;
+    margin: 0 auto;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 22px;
+    .coinleft {
+      color: $the-coin-font-color;
+      margin: 0 -1px;
+    }
+    .coinright {
+      margin-right: 1px;
+    }
+  }
+  .retention {
+    background-color: $fee-bg-color;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 21px;
+    padding: 19px 0 1px 0;
+    border-bottom: 2px solid $retension-border-color;
+    .sub-retention {
+      font-size: 19px;
+      color: $retention-sub-font-color;
+      padding: 0 0 22px 0;
+    }
+    .r-quantity {
+      text-align: right;
+    }
+  }  
+  .balance-footer {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 18px;
+    color: $retention-sub-font-color;
+    padding: 16px 0;
+  }  
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .balance {      
+    .bheadleft {
+      font-size: 12;
+      font-weight: 600;
+    }
+    .bheadright {
+      font-size: 12px;
+    }
+    .assetsleft {
+      .assetslefttop {
+        font-size: 12px;      
+      }
+      .assetsleftbottom {
+        font-size: 24px;
+      }
+    }
+    .assetsright {
+      .assetsrighttop {
+        font-size: 12px;      
+      }
+      .assetsrightbottom {      
+        font-size: 24px;
+      }
+    }
+    .total {
+      .totalright {
+        padding-left: 24px;
+      }
+      .totaldata {
+        font-size: 12px;
+      }
+    }
+    .the-coin {
+      font-size: 14px;
+    }
+    .retention {
+      .sub-retention {
+        font-size: 12px;
+      }
+    }  
+    .balance-footer {
+      font-size: 12px;
+    }  
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .balance-panel {
+    text-align: center;
+    }
+  .bheadright {
+    text-align: center;
+  }
+  .assetsleft {      
+    padding: 0 0 0 20px;
+    border-bottom: 1px solid $assets-border-color;
+    .assetslefttop {
+      font-size: 19px;      
+    }
+    .assetsleftbottom {
+      font-size: 33px;
+    }
+  }
+  .assetsright {
+    text-align: center;
+    .assetsrighttop {
+      font-size: 19px;
+    }
+    .assetsrightbottom {      
+      font-size: 33px;
+    }
+  }
+  .total {
+    margin: 0 auto;
+    .totalleft {        
+      margin: 0 auto;
+    }
+    .totalright {
+      margin: 0 auto;
+    }      
+  .totaldata {
+    font-size: 13px;
+  }
+  }
+  .the-coin {
+    font-size: 16px;
+  }
+  .retention {
+    font-size: 16px;
+    .r-quantity {
+      text-align: center;
+    }
+  }
+  .balance-footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

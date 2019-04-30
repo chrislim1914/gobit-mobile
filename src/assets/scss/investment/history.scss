@@ -1,0 +1,112 @@
+/*
+  investment history stylesheet
+*/
+@import '../libs/_colors.scss';
+@import './balance.scss';
+
+.app-history {
+  width: 100%;
+  height: 100%;
+}
+
+.history-panel {
+  font-size: 24px;
+  padding: 24px 4px;
+  .history-dd {
+    text-align: right;
+    .dd {
+      margin: 0 0 0 auto;      
+      a {
+        background-color: $history-dd-bg-color;
+        padding: 11px 15px;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.history-table {
+  font-size: 19px;
+  height: 100%;
+  .frozen {
+    background-color: $history-table-frozen-cell-bg-color;
+  }
+  .table {
+    td {
+      border-right: 1px solid $history-htable-border-color;
+    }
+    td:last-child {
+      border-right: none;
+    }
+    thead {
+      font-size: 19px;
+      color: $history-htable-font-color;
+      th {
+        border-right: 1px solid $history-htable-border-color;
+      }
+      th:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .history-panel {
+    font-size: 24px;
+    padding: 24px 4px;
+    .history-dd {
+      text-align: right;
+      .dd {
+        margin: 0 0 0 auto;      
+        a {
+          background-color: $history-dd-bg-color;
+          padding: 11px 15px;
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .history-table {
+    font-size: 19px;
+    height: 100%;
+    .frozen {
+      background-color: $history-table-frozen-cell-bg-color;
+    }
+    .table {
+      td {
+        border-right: 1px solid $history-htable-border-color;
+      }
+      td:last-child {
+        border-right: none;
+      }
+      thead {
+        font-size: 19px;
+        color: $history-htable-font-color;
+        th {
+          border-right: 1px solid $history-htable-border-color;
+        }
+        th:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .history-panel {
+    font-size: 16px;
+    padding: 24px 4px;
+    text-align: center;
+    .history-dd {
+      text-align: center;
+      padding: 17px 0;
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
