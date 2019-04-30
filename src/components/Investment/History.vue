@@ -4,18 +4,20 @@
     <div class="container-fluid">
        <!-- menu -->
       <div class="row tab-menu">
-        <div class="col-sm-4 menus">
-          <a href="">
-            보유코인
-          </a>
-        </div>
         <div class="col-sm-4 menus active">
-            거래내역
+          <router-link to="/investment/balance">
+            보유코인
+          </router-link>
         </div>
         <div class="col-sm-4 menus">
-          <a href="">
+          <router-link to="/investment/history">
+            거래내역
+          </router-link>
+        </div>
+        <div class="col-sm-4 menus">
+          <router-link to="/investment/wait_orders">
             미체결
-          </a>
+          </router-link>
         </div>
       </div>
       <!-- end menu -->

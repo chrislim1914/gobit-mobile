@@ -1,8 +1,6 @@
 <template>
   <div class="app-investment">
     <topbar></topbar>
-    <!-- <balance></balance> -->
-    <history></history>
     <router-view></router-view>
   </div>
 </template>

@@ -13,6 +13,9 @@ import Exchange from '@/components/Exchange/Index'
 import investment component
 */
 import Investment from '@/components/Investment/Index'
+import InvestmentBalance from '@/components/Investment/Balance'
+import InvestmentHistory from '@/components/Investment/History'
+// import InvestmentWaitOrders from '@/components/Investment/Index'
 /*
 import trading component
 */
@@ -88,8 +91,19 @@ export default new Router({
     },
     {
       path: '/investment',
-      name: 'Investment',
-      component: Investment
+      component: Investment,
+      children: [
+        {
+          path: 'balance',
+          component: InvestmentBalance,
+          name: 'InvestmentBalance'
+        },
+        {
+          path: 'history',
+          component: InvestmentHistory,
+          name: 'InvestmentHistory'
+        }
+      ]
     },
     {
       path: '/trading',
