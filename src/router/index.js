@@ -102,6 +102,11 @@ export default new Router({
           path: 'history',
           component: InvestmentHistory,
           name: 'InvestmentHistory'
+        },
+        {
+          path: 'wait_orders',
+          component: InvestmentWaitOrders,
+          name: 'InvestmentWaitOrders'
         }
       ]
     },

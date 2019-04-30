@@ -5,17 +5,19 @@
       <!-- menu -->
       <div class="row tab-menu">
         <div class="col-sm-4 menus">
-          <a href="">
+          <router-link to="/investment/balance">
             보유코인
-          </a>
+          </router-link>
         </div>
         <div class="col-sm-4 menus">
-          <a href="">
+          <router-link to="/investment/history">
             거래내역
-          </a>
+          </router-link>
         </div>
         <div class="col-sm-4 menus active">
+          <router-link to="/investment/wait_orders">
             미체결
+          </router-link>
         </div>
       </div>
       <!-- end menu -->
