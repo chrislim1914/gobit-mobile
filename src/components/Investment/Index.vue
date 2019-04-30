@@ -2,7 +2,8 @@
   <div class="app-investment">
     <topbar></topbar>
     <!-- <balance></balance> -->
-    <history></history>
+    <!-- <history></history> -->
+    <order></order>
     <router-view></router-view>
   </div>
 </template>
@@ -11,12 +12,14 @@
 import Topbar from './Topbar'
 import Balance from './Balance'
 import History from './History'
+import Order from './Order'
 export default {
   name: 'Investment',
   components: {
     'topbar': Topbar,
     'balance': Balance,
-    'history': History
+    'history': History,
+    'order': Order
   }
 }
 </script>
