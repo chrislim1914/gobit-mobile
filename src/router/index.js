@@ -41,6 +41,18 @@ import ServicePolicy from '@/components/Service/Policy'
 import ServiceQna from '@/components/Service/Qna'
 import ServiceQnaList from '@/components/Service/QnaList'
 import ServiceFaq from '@/components/Service/Faq'
+/*
+import mypage component
+*/
+import MyPage from '@/components/MyPage/Index'
+import MyPageCustomerInfo from '@/components/MyPage/CustomerInfo'
+import MyPageSecurityCertificate from '@/components/MyPage/SecurityCertificate'
+import MyPageApplicationListing from '@/components/MyPage/ApplicationListing'
+import MyPageInquireListing from '@/components/MyPage/InquireListing'
+import MyPageManagement from '@/components/MyPage/Management/Index'
+import MyPageManagementInformationManagement from '@/components/MyPage/Management/InformationManagement'
+import MyPageManagementModifyInformation from '@/components/MyPage/Management/ModifyInformation'
+import MyPageManagementCoinManagement from '@/components/MyPage/Management/CoinManagement'
 
 Vue.use(Router)
 
@@ -140,6 +152,53 @@ export default new Router({
           path: 'faq',
           component: ServiceFaq,
           name: 'ServiceFaq'
+        }
+      ]
+    },
+    {
+      path: '/mypage',
+      component: MyPage,
+      children: [
+        {
+          path: 'customer_info',
+          component: MyPageCustomerInfo,
+          name: 'MyPageCustomerInfo'
+        },
+        {
+          path: 'security_certificate',
+          component: MyPageSecurityCertificate,
+          name: 'MyPageSecurityCertificate'
+        },
+        {
+          path: 'application_listing',
+          component: MyPageApplicationListing,
+          name: 'MyPageApplicationListing'
+        },
+        {
+          path: 'inquire_listing',
+          component: MyPageInquireListing,
+          name: 'MyPageInquireListing'
+        },
+        {
+          path: 'management',
+          component: MyPageManagement,
+          children: [
+            {
+              path: 'information_management',
+              component: MyPageManagementInformationManagement,
+              name: 'MyPageManagementInformationManagement'
+            },
+            {
+              path: 'modify_information',
+              component: MyPageManagementModifyInformation,
+              name: 'MyPageManagementModifyInformation'
+            },
+            {
+              path: 'coin_management',
+              component: MyPageManagementCoinManagement,
+              name: 'MyPageManagementCoinManagement'
+            }
+          ]
         }
       ]
     }
