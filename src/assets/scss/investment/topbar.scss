@@ -1,0 +1,93 @@
+/*
+  investment topbar stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-investmentTopbar {
+  width: 100%;
+  height: 100%;
+}
+
+.invest-head {
+  display: flex;
+  margin: 0 -15px;
+  padding: 18.5px 0 20px 12px;
+  font-size: 30px;
+  color: $fee-head-font-color;
+  .invest-back {
+    width: 106.66px;
+    float: left;
+    margin: 0;
+  }
+  .invest-title {
+    width: 424.66px;
+    float: left;
+    margin: 0;
+    text-align: center;    
+    font-weight: 600;
+  }
+  .invest-icons {
+    width: 53.33px;
+    float: left;
+    margin: 0;
+  }
+  a {
+    color: $fee-head-font-color;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .invest-head {
+    font-size: 30px;
+    .invest-back {
+      width: 106.66px;
+      float: left;
+      margin: 0;
+    }
+    .invest-title {
+      width: 424.66px;
+      float: left;
+      margin: 0;
+      text-align: center;    
+      font-weight: 600;
+    }
+    .invest-icons {
+      width: 53.33px;
+      float: left;
+      margin: 0;
+    }
+    a {
+      color: $fee-head-font-color;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .invest-head {
+    font-size: 22px;
+    .invest-back {
+      width: 106.66px;
+      float: left;
+      margin: 0;
+    }
+    .invest-title {
+      width: 424.66px;
+      float: left;
+      margin: 0;
+      text-align: center;    
+      font-weight: 600;
+    }
+    .invest-icons {
+      width: 53.33px;
+      float: left;
+      margin: 0;
+    }
+    a {
+      color: $fee-head-font-color;
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

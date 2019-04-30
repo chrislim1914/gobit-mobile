@@ -87,7 +87,7 @@ export default new Router({
       component: ForgotPassword
     },
     {
-      path: '/invesment',
+      path: '/investment',
       name: 'Investment',
       component: Investment
     },
