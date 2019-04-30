@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 /*
+import error component
+*/
+import FourOFour from '@/components/FourOFour'
+/*
 import exchange component
 */
 import Exchange from '@/components/Exchange/Index'
@@ -53,12 +57,21 @@ import MyPageManagement from '@/components/MyPage/Management/Index'
 import MyPageManagementInformationManagement from '@/components/MyPage/Management/InformationManagement'
 import MyPageManagementModifyInformation from '@/components/MyPage/Management/ModifyInformation'
 import MyPageManagementCoinManagement from '@/components/MyPage/Management/CoinManagement'
+/*
+import deposit component
+*/
+import DepositBalance from '@/components/DepositBalance'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [
+    {
+      path: '*',
+      name: 'FourOFour',
+      component: FourOFour
+    },
     {
       path: '/exchange',
       name: 'Exchange',
@@ -70,23 +83,7 @@ export default new Router({
       component: Login
     },
     {
-      path: '/signup',
-      component: Signup,
-      children: [
-        {
-          path: '',
-          component: SignupEmailVerification,
-          name: 'SignupEmailVerification'
-        },
-        {
-          path: 'setup-password',
-          component: SignupPasswordForm,
-          name: 'SignupPasswordForm'
-        }
-      ]
-    },
-    {
-      path: '/forgot-password',
+      path: '/forgot_password',
       component: ForgotPassword
     },
     {
@@ -99,6 +96,42 @@ export default new Router({
       name: 'Trading',
       component: Trading
     },
+    {
+      path: '/balance',
+      name: 'DepositBalance',
+      component: DepositBalance
+    },
+    // Sign up routes
+    {
+      path: '/signup',
+      component: Signup,
+      children: [
+        {
+          path: '',
+          component: SignupEmailVerification,
+          name: 'SignupEmailVerification'
+        },
+        {
+          path: 'setup_password',
+          component: SignupPasswordForm,
+          name: 'SignupPasswordForm'
+        }
+      ]
+    },
+    /**
+     * Service routes
+      A. 공지사항 : /service/notice
+      B. 이벤트 안내 : /service/press
+      C. 이달의승급코인 : /service/promotion_coin
+      D. 이용안내 : /service/guide
+      E. 입출금현황 : /service/wallet_status
+      F. Open API 안내 : /service/open_api_guide
+      G. 정책 및 고지 : /service/policy
+      H. 1:1문의하기 : /service/qna
+      I. 문의내역 : /service/qna_list
+      J. 자주하는 질문 : /service/faq
+      K. 카카오톡 문의(24시간) : Gobit 비즈니스 전용 주소 URL 링크
+     */
     {
       path: '/service',
       component: Service,
@@ -155,6 +188,16 @@ export default new Router({
         }
       ]
     },
+    /**
+      A. 회원정보 : /mypage/customer_info
+      B. 보안인증 : /mypage/security_certificate
+      C. 상장신청 : /mypage/application_listing
+      D. 상장문의 : /mypage/inquire_listing
+      E. 상장관리 (management)
+        i. 상장 정보 관리 : /mypage/management/information_management
+        ii. 정보 등록 수정 : /mypage/management/modify_information
+        iii. 코인 정보 관리 : /mypage/management/coin_management
+    */
     {
       path: '/mypage',
       component: MyPage,
