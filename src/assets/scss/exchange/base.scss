@@ -3,35 +3,6 @@
 */
 @import '../libs/_colors.scss';
 
-#exchange-searchbar-icon {
-  color: $exchange-searchbar-color;
-}
-
-.form-control::-webkit-input-placeholder { color: $exchange-searchbar-color; }  /* WebKit, Blink, Edge */
-.form-control:-moz-placeholder { color: $exchange-searchbar-color; }  /* Mozilla Firefox 4 to 18 */
-.form-control::-moz-placeholder { color: $exchange-searchbar-color; }  /* Mozilla Firefox 19+ */
-.form-control:-ms-input-placeholder { color: $exchange-searchbar-color; }  /* Internet Explorer 10-11 */
-.form-control::-ms-input-placeholder { color: $exchange-searchbar-color; }  /* Microsoft Edge */
-
-.input-group-text {
-  border: none;
-  background-color: transparent !important;
-}
-
-.form-control {
-  border: none;
-
-  &:focus{
-    border-color: #cccccc;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-}
-
-.exchange-tickerbar-right-values {
-  color: $exchange-tickerbar-value-color;
-}
-
 .symbol-button-group {
   border: 1px solid $exchange-symbol-border-color;
   border-radius: 0px;
@@ -46,32 +17,9 @@
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
-  #exchange-searchbar-row {
-    height: 60px;
-    border-bottom: 2px solid $exchange-searchbar-color;
-  }
-
   #extra-colored-space {
     height: 15px;
     background-color: $extra-background-color;
-  }
-
-  #exchange-searchbar-field {
-    font-size: 23px;
-  }
-
-  #exchange-tickerbar-row {
-    height: 95px;
-    background-color: $exchange-tickerbar-background-color;
-  }
-
-  #exchange-tickerbar-content-row {
-    margin-top: 22px;
-    margin-bottom: 22px;
-
-    h6 {
-      font-size: 19px;
-    }
   }
 
   #exchange-symbol-row {
@@ -140,32 +88,9 @@
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  #exchange-searchbar-row {
-    height: 60px;
-    border-bottom: 2px solid $exchange-searchbar-color;
-  }
-
   #extra-colored-space {
     height: 15px;
     background-color: $extra-background-color;
-  }
-
-  #exchange-searchbar-field {
-    font-size: 23px;
-  }
-
-  #exchange-tickerbar-row {
-    height: 95px;
-    background-color: $exchange-tickerbar-background-color;
-  }
-
-  #exchange-tickerbar-content-row {
-    margin-top: 22px;
-    margin-bottom: 22px;
-
-    h6 {
-      font-size: 19px;
-    }
   }
 
   #exchange-symbol-row {

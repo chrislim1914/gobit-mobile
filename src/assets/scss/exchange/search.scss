@@ -1,0 +1,61 @@
+/*
+  exchange search stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.form-control::-webkit-input-placeholder { color: $exchange-searchbar-color; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: $exchange-searchbar-color; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: $exchange-searchbar-color; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: $exchange-searchbar-color; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: $exchange-searchbar-color; }  /* Microsoft Edge */
+
+.input-group-text {
+  border: none;
+  background-color: transparent !important;
+}
+
+.form-control {
+  border: none;
+
+  &:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  #exchange-search-holder {
+    height: 60px;
+    border-bottom: 2px solid $exchange-searchbar-color;
+  }
+
+  #exchange-search-content {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #exchange-searchbar-field {
+    font-size: 23px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  #exchange-search-holder {
+    height: 60px;
+    border-bottom: 2px solid $exchange-searchbar-color;
+  }
+
+  #exchange-search-content {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #exchange-searchbar-field {
+    font-size: 23px;
+    margin-left: 10px;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

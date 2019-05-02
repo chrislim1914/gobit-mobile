@@ -77,7 +77,7 @@ export default new Router({
       component: FourOFour
     },
     {
-      path: '/exchange',
+      path: '/exchange/:market',
       name: 'Exchange',
       component: Exchange
     },
