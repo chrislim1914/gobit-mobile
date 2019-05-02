@@ -1,0 +1,25 @@
+/*
+  depositwithdraw topbar stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-depositwithdrawTopbar {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+@media (min-width: 360px) and (max-width: 639px) {
+}
+
+.debugger {
+  border: 1px solid red;
+}
