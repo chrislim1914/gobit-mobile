@@ -38,6 +38,7 @@ import ForgotPassword from '@/components/ForgotPassword/Index'
 import service component
 */
 import Service from '@/components/Service/Index'
+import ServiceList from '@/components/Service/List'
 import ServiceNotice from '@/components/Service/Notice'
 import ServicePress from '@/components/Service/Press'
 import ServicePromotionCoin from '@/components/Service/PromotionCoin'
@@ -155,6 +156,11 @@ export default new Router({
       path: '/service',
       component: Service,
       children: [
+        {
+          path: '',
+          component: ServiceList,
+          name: 'ServiceList'
+        },
         {
           path: 'notice',
           component: ServiceNotice,

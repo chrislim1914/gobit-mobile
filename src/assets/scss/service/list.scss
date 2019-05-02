@@ -1,0 +1,60 @@
+/*
+  service list stylesheet
+*/
+@import '../libs/_colors.scss';
+
+#service-list-item-holder {
+  li {
+    list-style-type: none;
+    
+    a {
+      color: $service-list-item-color;
+    }
+  }
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .service-list-item {
+    height: 83px;
+  }
+
+  #service-list-item-holder li a {
+    font-size: 24px;
+    padding-left: 56px; // 20px left + 36px left
+  }
+
+  .service-list-item {
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px solid $service-list-item-border-color;
+  }
+
+  #extra-colored-space {
+    height: 15px;
+    background-color: $extra-background-color;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .service-list-item {
+    height: 83px;
+  }
+
+  #service-list-item-holder li a {
+    font-size: 24px;
+    padding-left: 56px; // 20px left + 36px left
+  }
+
+  .service-list-item {
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px solid $service-list-item-border-color;
+  }
+
+  #extra-colored-space {
+    height: 15px;
+    background-color: $extra-background-color;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
