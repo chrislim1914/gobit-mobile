@@ -1,0 +1,78 @@
+/*
+  service topbar stylesheet
+*/
+@import '../libs/_colors.scss';
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .app-servicetopbar {
+    height: 85px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  #service-topbar-title {
+    color: $service-topbar-title-color;
+    font-size: 30px;
+    margin: 0px 160px 0px 210px;
+  }
+
+  #service-topbar-content {
+    padding: 25px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  #service-topbar-back {
+    width: 26px;
+    height: 28px;
+  }
+
+  #service-topbar-home {
+    width: 26px;
+    height: 28px;
+    margin-right: 25px;
+  }
+
+  #service-topbar-menu {
+    width: 26px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .app-servicetopbar {
+    height: 85px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  #service-topbar-title {
+    color: $service-topbar-title-color;
+    font-size: 30px;
+    margin: 0px 160px 0px 210px;
+  }
+
+  #service-topbar-content {
+    padding: 25px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  #service-topbar-back {
+    width: 26px;
+    height: 28px;
+  }
+
+  #service-topbar-home {
+    width: 26px;
+    height: 28px;
+    margin-right: 25px;
+  }
+
+  #service-topbar-menu {
+    width: 26px;
+    height: 28px;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

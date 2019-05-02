@@ -14,7 +14,8 @@ $customerservice-icon-color: #609F9B;
 */
 $exchange-searchbar-color: #14A58B;
 $exchange-tickerbar-background-color: #EEEEF3;
-$exchange-tickerbar-value-color: #465CBD;
+$exchange-tickerbar-negative-value-color: #465CBD;
+$exchange-tickerbar-label-color: #5e5c5e;
 $exchange-symbol-border-color: #E9E9E9;
 $exchange-symbol-border-active-color: #14A58B;
 /*
@@ -137,3 +138,9 @@ $t-head-border-color: #d9d9d8;
 $thead-black-font-color: #000000;
 $thead-green-font-color: #007473;
 $thead-gray-font-color: #696969;
+/*
+  service
+*/
+$service-topbar-title-color: #005358;
+$service-list-item-color: #000000;
+$service-list-item-border-color: #e7e7e7;

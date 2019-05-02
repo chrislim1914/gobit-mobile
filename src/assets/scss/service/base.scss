@@ -4,11 +4,15 @@
 @import '../libs/_colors.scss';
 
 @media (min-width: 641px) and (max-width: 767px) {
-  
+  #service-header-bottom-border {
+    border: 2px solid $extra-border-green-color;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  
+  #service-header-bottom-border {
+    border: 2px solid $extra-border-green-color;
+  }
 }
 
 .debugger {
