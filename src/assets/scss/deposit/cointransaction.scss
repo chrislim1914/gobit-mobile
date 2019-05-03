@@ -1,0 +1,56 @@
+/*
+  depositwithdraw cointransaction stylesheet
+*/
+@import '../libs/_colors.scss';
+@import './base.scss';
+
+.app-cointransaction {
+  width: 100%;
+  height: 100%;
+}
+
+.generic-title {
+  text-align: left;
+  padding-left: 10px;
+}
+.transaction {
+  height: 100%;
+  .t-head {
+    display: flex;
+    .t-head-left {
+      background-color: $t-head-bg-color;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+      color:  $thead-black-font-color;
+    }
+    .t-head-right {
+      background-color: $t-head-bg-color;
+      width: 50%;
+      float: left;
+      font-size: 33px;
+      text-align: right;
+      color:  $thead-green-font-color;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .transaction {
+    .t-head {
+      .t-head-left {
+        width: 100%;
+      }
+      .t-head-right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

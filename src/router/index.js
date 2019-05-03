@@ -64,7 +64,7 @@ import MyPageManagementCoinManagement from '@/components/MyPage/Management/CoinM
 /*
 import deposit component
 */
-import DepositBalance from '@/components/DepositBalance'
+import DepositBalance from '@/components/DepositWithdraw/Index'
 
 Vue.use(Router)
 
@@ -117,8 +117,8 @@ export default new Router({
       component: Trading
     },
     {
-      path: '/balance',
-      name: 'DepositBalance',
+      path: '/depositwithdraw',
+      name: 'DepositWithdraw',
       component: DepositBalance
     },
     // Sign up routes
