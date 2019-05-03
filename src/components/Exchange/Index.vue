@@ -11,6 +11,13 @@
     <exchange-symbolbar></exchange-symbolbar>
     <!-- exchange table -->
     <exchange-table></exchange-table>
+    <!-- extra -->
+    <div id="extra-colored-space"></div>
+    <!-- globals -->
+    <global-cs></global-cs>
+    <!-- <global-banner @close-banner="closeBanner" :is-banner-shown="bannerStatus" :is-notice-shown="noticeStatus"></global-banner>
+    <global-notice @close-notice="closeNotice" :is-notice-shown="noticeStatus"></global-notice> -->
+    <global-footer></global-footer>
   </div>
 </template>
 
