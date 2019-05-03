@@ -7,6 +7,8 @@
     <exchange-search></exchange-search>
     <!-- exchange tickerbar -->
     <exchange-tickerbar></exchange-tickerbar>
+    <!-- exchange symbols -->
+    <exchange-symbolbar></exchange-symbolbar>
   </div>
 </template>
 
@@ -15,6 +17,7 @@
 import Header from '../Globals/Header'
 import Search from './Search'
 import Tickerbar from './Tickerbar'
+import Symbolbar from './Symbolbar'
 import CustomerService from '../Globals/CustomerService'
 import Banner from '../Globals/Banner'
 import Footer from '../Globals/Footer'
@@ -26,6 +29,7 @@ export default {
     // 'global-sidebar': Sidebar,
     'exchange-search': Search,
     'exchange-tickerbar': Tickerbar,
+    'exchange-symbolbar': Symbolbar,
     'global-header': Header,
     'global-footer': Footer,
     'global-banner': Banner,
