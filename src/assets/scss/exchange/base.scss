@@ -3,87 +3,10 @@
 */
 @import '../libs/_colors.scss';
 
-.symbol-button-group {
-  border: 1px solid $exchange-symbol-border-color;
-  border-radius: 0px;
-  a:focus {
-    font-weight: bold;
-    color: $exchange-symbol-border-active-color;
-    border-radius: 0px;
-    border-color: $exchange-symbol-border-active-color;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-}
-
 @media (min-width: 641px) and (max-width: 767px) {
   #extra-colored-space {
     height: 15px;
     background-color: $extra-background-color;
-  }
-
-  #exchange-symbol-row {
-    height: 70px;
-  }
-
-  .symbol-button-group {
-    a {
-      width: 103px;
-      height: 45px;
-      font-size: 20px;
-      border-right: 1px solid $exchange-symbol-border-color;
-    }
-  }
-
-  #exchange-symbol-attention {
-    font-size: 21px;
-  }
-
-  thead tr th {
-    font-size: 19px;
-  }
-
-  tbody {
-    tr {
-      padding-top: 11px;
-      padding-bottom: 12px;
-    }
-  }
-
-  table td {
-    padding: 11px 20px 12px 20px;
-
-    h6 {
-      line-height: 0.8 !important;
-    }
-  }
-  
-  #exchange-table-text-1 {
-    font-size: 16px;
-  }
-
-  #exchange-table-text-2 {
-    font-size: 20px;
-  }
-
-  #exchange-table-text-3 {
-    font-size: 16px;
-  }
-
-  #exchange-table-text-4 {
-    font-size: 19px;
-  }
-
-  #exchange-table-text-5 {
-    font-size: 20px;
-  }
-
-  #exchange-table-text-6 {
-    font-size: 15px;
-  }
-
-  #exchange-table-text-7 {
-    font-size: 19px;
   }
 }
 
@@ -91,70 +14,6 @@
   #extra-colored-space {
     height: 15px;
     background-color: $extra-background-color;
-  }
-
-  #exchange-symbol-row {
-    height: 70px;
-  }
-
-  .symbol-button-group {
-    a {
-      width: 103px;
-      height: 45px;
-      font-size: 20px;
-      border-right: 1px solid $exchange-symbol-border-color;
-    }
-  }
-
-  #exchange-symbol-attention {
-    font-size: 21px;
-  }
-
-  thead tr th {
-    font-size: 19px;
-  }
-
-  tbody {
-    tr {
-      padding-top: 11px;
-      padding-bottom: 12px;
-    }
-  }
-
-  table td {
-    padding: 11px 20px 12px 20px;
-
-    h6 {
-      line-height: 0.8 !important;
-    }
-  }
-
-  #exchange-table-text-1 {
-    font-size: 16px;
-  }
-
-  #exchange-table-text-2 {
-    font-size: 20px;
-  }
-
-  #exchange-table-text-3 {
-    font-size: 16px;
-  }
-  
-  #exchange-table-text-4 {
-    font-size: 19px;
-  }
-
-  #exchange-table-text-5 {
-    font-size: 20px;
-  }
-
-  #exchange-table-text-6 {
-    font-size: 15px;
-  }
-
-  #exchange-table-text-7 {
-    font-size: 19px;
   }
 }
 
