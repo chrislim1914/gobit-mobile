@@ -4,7 +4,7 @@
     <topbar></topbar>
     <coininfo></coininfo>
     <exchangeinfo></exchangeinfo>
-    <!-- <tradingmenu></tradingmenu> -->
+    <tradingmenu></tradingmenu>
   </div>
 </template>
 
