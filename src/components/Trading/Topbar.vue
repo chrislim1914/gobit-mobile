@@ -2,11 +2,11 @@
   <!-- trading topbar -->
   <div class="app-tradingtopbar">
     <div id="trading-topbar-holder">
-      <div id="trading-topbar-content" class="debugger">
+      <div id="trading-topbar-content">
         <img src="~img/back-arrow32x32.png" alt="Gobit trading topbar back icon" class="img-fluid">
         <span>
           <h6 class="font-weight-bold mb-0">
-            샘플 기호(ETH/KRW)
+            이더리움(ETH/KRW)
           </h6>
         </span>
         <img src="~img/star32x32.png" alt="Gobit trading topbar star icon" id="trading-topbar-favorite" class="img-fluid">

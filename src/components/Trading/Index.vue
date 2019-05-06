@@ -2,8 +2,8 @@
   <!-- trading -->
   <div class="app-trading">
     <topbar></topbar>
-    <!-- <coininfo></coininfo>
-    <exchangeinfo></exchangeinfo>
+    <coininfo></coininfo>
+    <!--<exchangeinfo></exchangeinfo>
     <tradingmenu></tradingmenu> -->
   </div>
 </template>
