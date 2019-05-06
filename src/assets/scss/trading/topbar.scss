@@ -3,42 +3,75 @@
 */
 @import '../libs/_colors.scss';
 
-
-#trading-pairing-active {
-  color: $trading-topbar-pairing-active-color;
-}
-
-#trading-topbar-dropdownarrow {
-  -ms-transform: rotate(-30deg); /* IE 9 */
-  -webkit-transform: rotate(-30deg); /* Safari 3-8 */
-  transform: rotate(-30deg);
-}
-
 @media (min-width: 641px) and (max-width: 767px) {
-  .app-tradingtopbar {
+  #trading-topbar-holder {
     height: 85px;
   }
 
-  #trading-topbar-row {
-    padding-top: 25px;
-  }
+  #trading-topbar-content {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px 20px 20px;
 
-  #trading-pairing-active {
-    font-size: 20px;
+    span h6 {
+      color: $trading-topbar-pairing-active-color;
+      font-size: 30px;
+      margin-left: 10px;
+      display: inline;
+    }
+
+    #trading-topbar-favorite {
+      padding-left: 30px;
+    }
+  }
+  
+  #trading-topbar-right-section {
+    padding-left: 94px;
+
+    img:nth-child(1) {
+      vertical-align: middle;
+    }
+
+    img:nth-child(2) {
+      padding-left: 30px;
+      vertical-align: middle;
+    }
   }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  .app-tradingtopbar {
+  #trading-topbar-holder {
     height: 85px;
   }
 
-  #trading-topbar-row {
-    padding-top: 25px;
-  }
+  #trading-topbar-content {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px 20px 20px;
 
-  #trading-pairing-active {
-    font-size: 20px;
+    span h6 {
+      color: $trading-topbar-pairing-active-color;
+      font-size: 30px;
+      margin-left: 10px;
+      display: inline;
+    }
+
+    #trading-topbar-favorite {
+      padding-left: 30px;
+    }
+  }
+  
+  #trading-topbar-right-section {
+    padding-left: 94px;
+
+    img:nth-child(1) {
+      vertical-align: middle;
+    }
+
+    img:nth-child(2) {
+      padding-left: 30px;
+      vertical-align: middle;
+    }
   }
 }
 

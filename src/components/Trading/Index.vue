@@ -2,9 +2,9 @@
   <!-- trading -->
   <div class="app-trading">
     <topbar></topbar>
-    <coininfo></coininfo>
+    <!-- <coininfo></coininfo>
     <exchangeinfo></exchangeinfo>
-    <tradingmenu></tradingmenu>
+    <tradingmenu></tradingmenu> -->
   </div>
 </template>
 
