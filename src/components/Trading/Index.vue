@@ -1,10 +1,15 @@
 <template>
   <!-- trading -->
   <div class="app-trading">
-    <topbar></topbar>
-    <coininfo></coininfo>
-    <exchangeinfo></exchangeinfo>
-    <tradingmenu></tradingmenu>
+    <div id="trading-upper-div" class="fixed-top">
+      <topbar></topbar>
+      <coininfo></coininfo>
+      <exchangeinfo></exchangeinfo>
+      <tradingmenu></tradingmenu>
+    </div>
+    <div id="trading-lower-div">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 

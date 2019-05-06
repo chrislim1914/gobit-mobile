@@ -4,11 +4,23 @@
 @import '../libs/_colors.scss';
 
 @media (min-width: 641px) and (max-width: 767px) {
+  #trading-upper-div {
+    background-color: #fff;
+  }
 
+  #trading-lower-div {
+    margin-top: 289px;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
+  #trading-upper-div {
+    background-color: #fff;
+  }
 
+  #trading-lower-div {
+    margin-top: 289px;
+  }
 }
 
 .debugger {
