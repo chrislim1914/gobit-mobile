@@ -1,34 +1,32 @@
 <template>
   <!-- exchange info -->
   <div class="app-tradingexchangeinfo">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <h6 id="trading-exchangeinfo-text-1">
-                Binance
+    <div id="app-trading-exchangeinfo-holder">
+      <div id="app-trading-exchangeinfo-content">
+        <ul class="list-inline my-0 py-0 mx-0 px-0">
+          <li class="list-inline-item mx-0 my-0">
+            <h1 class="mx-0">Binance</h1>
+            <span>
+              <h6>
+                5,935,947
               </h6>
-            </li>
-            <li id="trading-exchangeinfo-text-1-value" class="list-inline-item font-weight-bold">
-              5,935,947
-              <span>
+              <h6>
                 ($5,212.00)
-              </span>
-            </li>
-            <li class="list-inline-item ml-5">
-              <h6 id="trading-exchangeinfo-text-2">
-                Huobi
               </h6>
-            </li>
-            <li id="trading-exchangeinfo-text-2-value" class="list-inline-item font-weight-bold">
-              5,935,947
-              <span>
+            </span>
+          </li>
+          <li class="list-inline-item mx-0 my-0">
+            <h1>Huobi</h1>
+            <span>
+              <h6>
+                5,935,947
+              </h6>
+              <h6>
                 ($5,212.00)
-              </span>
-            </li>
-          </ul>
-        </div>
+              </h6>
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

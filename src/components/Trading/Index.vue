@@ -3,8 +3,8 @@
   <div class="app-trading">
     <topbar></topbar>
     <coininfo></coininfo>
-    <!--<exchangeinfo></exchangeinfo>
-    <tradingmenu></tradingmenu> -->
+    <exchangeinfo></exchangeinfo>
+    <!-- <tradingmenu></tradingmenu> -->
   </div>
 </template>
 
