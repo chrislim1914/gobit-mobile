@@ -11,11 +11,12 @@
     position: relative;
     float: left;
     padding-left: 12px;
+    width: 9%;
   }
   .title {
     position: relative;
     float: left;
-    width: 540px;
+    width: 73%;
     font-size: 30px;
     font-weight: 600;
     color: $fee-head-font-color;
@@ -23,12 +24,15 @@
   }
   .home-icon {
     position: relative;
-    float: left;
-    margin-right: 36px;
+    float: right;
+    width: 9%;
+    text-align: center;
   }
   .menu-icon {
     position: relative;
-    float: left;
+    float: right;
+    width: 9%;
+    text-align: right;
     margin-right: 20px;
   }
 }

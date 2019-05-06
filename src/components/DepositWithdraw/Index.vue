@@ -1,8 +1,8 @@
 <template>
   <div class="app-depositwithdraw">
-    <!-- <coinTransaction></coinTransaction> -->
     <topbar></topbar>
     <depositwithdraw></depositwithdraw>
+    <!-- <coinTransaction></coinTransaction> -->
     <router-view></router-view>
   </div>
 </template>
