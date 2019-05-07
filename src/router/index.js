@@ -69,7 +69,12 @@ import MyPageManagementCoinManagement from '@/components/MyPage/Management/CoinM
 /*
 import deposit component
 */
-import DepositBalance from '@/components/DepositWithdraw/Index'
+import IndexDeposit from '@/components/DepositWithdraw/Index'
+import DepositBalance from '@/components/DepositWithdraw/Depositwithdraw'
+import CoinTransaction from '@/components/DepositWithdraw/CoinTransaction'
+import WalletAddress from '@/components/DepositWithdraw/WalletAddress'
+import NoWalletAddress from '@/components/DepositWithdraw/NoWalletAddress'
+import Withdrawal from '@/components/DepositWithdraw/Withdrawal'
 
 Vue.use(Router)
 
@@ -118,8 +123,34 @@ export default new Router({
     },
     {
       path: '/depositwithdraw',
-      name: 'DepositWithdraw',
-      component: DepositBalance
+      component: IndexDeposit,
+      children: [
+        {
+          path: '/',
+          component: DepositBalance,
+          name: 'DepositBalance'
+        },
+        {
+          path: 'coin-transaction',
+          component: CoinTransaction,
+          name: 'CoinTransaction'
+        },
+        {
+          path: 'wallet',
+          component: WalletAddress,
+          name: 'WalletAddress'
+        },
+        {
+          path: 'new-address',
+          component: NoWalletAddress,
+          name: 'NoWalletAddress'
+        },
+        {
+          path: 'withdraw',
+          component: Withdrawal,
+          name: 'Withdrawal'
+        }
+      ]
     },
     // Trading routes
     // TODO: update trading placeholder routes to client specific routes.
