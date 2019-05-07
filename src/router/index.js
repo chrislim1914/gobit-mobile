@@ -20,6 +20,11 @@ import InvestmentWaitOrders from '@/components/Investment/Order'
 import trading component
 */
 import Trading from '@/components/Trading/Index'
+import TradingLinkOne from '@/components/Trading/LinkOne'
+import TradingLinkTwo from '@/components/Trading/LinkTwo'
+import TradingLinkThree from '@/components/Trading/LinkThree'
+import TradingLinkFour from '@/components/Trading/LinkFour'
+import TradingLinkFive from '@/components/Trading/LinkFive'
 /*
 import login component
 */
@@ -117,11 +122,6 @@ export default new Router({
       ]
     },
     {
-      path: '/trading',
-      name: 'Trading',
-      component: Trading
-    },
-    {
       path: '/depositwithdraw',
       component: IndexDeposit,
       children: [
@@ -149,6 +149,39 @@ export default new Router({
           path: 'withdraw',
           component: Withdrawal,
           name: 'Withdrawal'
+        }
+      ]
+    },
+    // Trading routes
+    // TODO dasd
+    {
+      path: '/trading',
+      component: Trading,
+      children: [
+        {
+          path: '',
+          component: TradingLinkOne,
+          name: 'TradingLinkOne'
+        },
+        {
+          path: 'ltwo',
+          component: TradingLinkTwo,
+          name: 'TradingLinkTwo'
+        },
+        {
+          path: 'lthree',
+          component: TradingLinkThree,
+          name: 'TradingLinkThree'
+        },
+        {
+          path: 'lfour',
+          component: TradingLinkFour,
+          name: 'TradingLinkFour'
+        },
+        {
+          path: 'lfive',
+          component: TradingLinkFive,
+          name: 'TradingLinkFive'
         }
       ]
     },

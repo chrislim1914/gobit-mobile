@@ -8,48 +8,58 @@
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
-  .app-tradingmenu {
+  #trading-tradingmenu-holder {
     height: 59px;
     background-color: $trading-menu-background-color;
   }
+  
+  #trading-tradingmenu-content {
+    padding: 0px 20px 0px 20px;
+  }
 
-  #trading-menu-row {
-    padding: 12px 0px 12px 0px;
+  ul li {
+    padding: 15px 0px 10px 55px;
 
     a {
       color: $trading-menu-link-color-unselected;
       font-size: 22px;
-    }
-  }
 
-  #trading-menu-dropdownarrow {
-    color: $trading-menu-link-color-unselected;
-    -ms-transform: rotate(-30deg); /* IE 9 */
-    -webkit-transform: rotate(-30deg); /* Safari 3-8 */
-    transform: rotate(-30deg);
+      & .active {
+        color: $trading-menu-link-color-selected;
+      }
+    }
+
+    &:nth-child(1) {
+      padding-left: 20px !important;
+    }
   }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  .app-tradingmenu {
+  #trading-tradingmenu-holder {
     height: 59px;
     background-color: $trading-menu-background-color;
   }
+  
+  #trading-tradingmenu-content {
+    padding: 0px 20px 0px 20px;
+  }
 
-  #trading-menu-row {
-    padding: 12px 0px 12px 0px;
+  ul li {
+    padding: 15px 0px 10px 55px;
 
     a {
       color: $trading-menu-link-color-unselected;
       font-size: 22px;
-    }
-  }
 
-  #trading-menu-dropdownarrow {
-    color: $trading-menu-link-color-unselected;
-    -ms-transform: rotate(-30deg); /* IE 9 */
-    -webkit-transform: rotate(-30deg); /* Safari 3-8 */
-    transform: rotate(-30deg);
+      & .active {
+        color: $trading-menu-link-color-selected;
+      }
+    }
+
+    &:nth-child(1) {
+      padding-left: 20px !important;
+    }
   }
 }
 

@@ -1,34 +1,35 @@
 <template>
   <!-- trading menu -->
   <div class="app-tradingmenu">
-    <div class="container-fluid">
-      <div id="trading-menu-row" class="row text-center">
-        <div class="col">
-          <a href="#" class="active">
-            본문
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            본문
-            <img id="trading-menu-dropdownarrow" src="~img/drop-down-arrow16x16.png" alt="Gobit trading dropdown" class="img-fluid pt-3">
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            본문
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            본문
-          </a>
-        </div>
-        <div class="col">
-          <a href="#">
-            본문
-          </a>
-        </div>
+    <div id="trading-tradingmenu-holder">
+      <div id="trading-tradingmenu-content">
+        <ul class="list-inline mx-0 my-0 px-0">
+          <li class="list-inline-item mx-0">
+            <a href="#" class="active">
+              주문
+            </a>
+          </li>
+          <li class="list-inline-item mx-0">
+            <a href="#">
+              호가
+            </a>
+          </li>
+          <li class="list-inline-item mx-0">
+            <a href="#">
+              차트
+            </a>
+          </li>
+          <li class="list-inline-item mx-0">
+            <a href="#">
+              체결기록
+            </a>
+          </li>
+          <li class="list-inline-item mx-0">
+            <a href="#">
+              코인 정보
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

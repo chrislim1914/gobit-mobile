@@ -4,18 +4,22 @@
 @import '../libs/_colors.scss';
 
 @media (min-width: 641px) and (max-width: 767px) {
-  .app-trading {
-    .app-tradingtopbar, .app-tradingcoininfo, .app-tradingmenu {
-      padding: 0px 20px 0px 20px;
-    }
+  #trading-upper-div {
+    background-color: #fff;
+  }
+
+  #trading-lower-div {
+    margin-top: 289px;
   }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  .app-trading {
-    .app-tradingtopbar, .app-tradingcoininfo, .app-tradingmenu {
-      padding: 0px 20px 0px 20px;
-    }
+  #trading-upper-div {
+    background-color: #fff;
+  }
+
+  #trading-lower-div {
+    margin-top: 289px;
   }
 }
 
