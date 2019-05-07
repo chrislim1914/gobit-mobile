@@ -1,0 +1,108 @@
+/**
+  exchange market selection stylesheet
+*/
+@import '../libs/colors.scss';
+
+@media (min-width: 641px) and (max-width: 767px) {
+  #exchange-marketselection-holder {
+    padding-top: 12px;
+  }
+
+  ul {
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid $exchange-marketselection-border-color;
+
+    li {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+
+      a {
+        color: $exchange-marketselection-inactive-text-color;
+        text-decoration: none;
+      }
+
+      h6 {
+        display: inline;
+        font-size: 24px;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+    }
+
+    li:nth-child(1) {
+      width: 214px;
+      height: 60px;
+    }
+
+    li:nth-child(2) {
+      width: 213px;
+      height: 60px;
+    }
+
+    li:nth-child(3) {
+      width: 213px;
+      height: 60px;
+    }
+  }
+
+  .active {
+    color: $exchange-marketselection-active-text-color;
+    background-color: $exchange-marketselection-active-background-color;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  #exchange-marketselection-holder {
+    padding-top: 12px;
+  }
+
+  ul {
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid $exchange-marketselection-border-color;
+
+    li {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+
+      a {
+        color: $exchange-marketselection-inactive-text-color;
+        text-decoration: none;
+      }
+
+      h6 {
+        display: inline;
+        font-size: 24px;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+    }
+
+    li:nth-child(1) {
+      width: 214px;
+      height: 60px;
+    }
+
+    li:nth-child(2) {
+      width: 213px;
+      height: 60px;
+    }
+
+    li:nth-child(3) {
+      width: 213px;
+      height: 60px;
+    }
+  }
+
+  .active {
+    color: $exchange-marketselection-active-text-color;
+    background-color: $exchange-marketselection-active-background-color;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

@@ -3,6 +3,8 @@
   <div class="app-exchange">
     <!-- exchange header -->
     <global-header></global-header>
+    <!-- exchange market selection -->
+    <exchange-marketselection></exchange-marketselection>
     <!-- exchange search -->
     <exchange-search></exchange-search>
     <!-- exchange tickerbar -->
@@ -24,6 +26,7 @@
 <script>
 // import Sidebar from '../Globals/Sidebar'
 import Header from '../Globals/Header'
+import MarketSelection from './MarketSelection'
 import Search from './Search'
 import Tickerbar from './Tickerbar'
 import Symbolbar from './Symbolbar'
@@ -37,6 +40,7 @@ export default {
   name: 'Exchange',
   components: {
     // 'global-sidebar': Sidebar,
+    'exchange-marketselection': MarketSelection,
     'exchange-search': Search,
     'exchange-tickerbar': Tickerbar,
     'exchange-symbolbar': Symbolbar,

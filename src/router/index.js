@@ -153,7 +153,7 @@ export default new Router({
       ]
     },
     // Trading routes
-    // TODO dasd
+    // TODO: update trading placeholder routes to client specific routes.
     {
       path: '/trading',
       component: Trading,
