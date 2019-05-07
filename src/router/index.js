@@ -122,7 +122,7 @@ export default new Router({
       ]
     },
     {
-      path: '/depositwithdraw',
+      path: '/deposit',
       component: IndexDeposit,
       children: [
         {
