@@ -25,7 +25,7 @@ export default {
     'coinTransaction': CoinTransaction,
     'walletAddress': WalletAddress,
     'nowalletAddress': NoWalletAddress,
-    'withdrawal': Withdrawal,
+    'withdrawal': Withdrawal
   }
 }
 </script>
