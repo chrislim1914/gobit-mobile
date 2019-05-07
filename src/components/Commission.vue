@@ -1,51 +1,63 @@
 <template>
   <!-- commission -->
   <div class="app-commission">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="fee-head">
-          <a href=""><i class="fa fa-chevron-left"></i></a> 수수료 등급
+    <!-- start topbar -->
+      <div class="topbar-container">
+        <div class="back">
+          <img src="~img/back-arrow32x32.png" alt="back icon">
         </div>
-        <div class="fee-title">
-          현재 거래수수료
-        </div>
-        <div class="coin-list">
-          <div class="col-3 coin-panel">
-            <p>KRW</p>
-            <p>코인</p>
-          </div>
-          <div class="col-3 coin-panel">
-            <p>BTC</p>
-            <p>코인</p>
-          </div>
-          <div class="col-3 coin-panel">
-            <p>ETH</p>
-            <p>코인</p>
-          </div>
-          <div class="col-3 coin-panel">
-            <p>USDT</p>
-            <p>코인</p>
-          </div>
-          <div class="col-3 coin-panel charge">
-            <p>0.05%</p>
-          </div>
-          <div class="col-3 coin-panel charge">
-            <p>0.05%</p>
-          </div>
-          <div class="col-3 coin-panel charge">
-            <p>0.05%</p>
-          </div>
-          <div class="col-3 coin-panel charge">
-            <p>0.05%</p>
-          </div>
-        </div>
-        <div class="fee-notes">
-          <p>구매 이전에 기능적인 부분은 제외하고,</p>
-          <p>구매 이전에 기능적인 부분은 제외하고,</p>
-          <a href="">구매 이전에 기능적인 부분은 제외하고</a>
+        <div class="title">
+          수수료 등급
         </div>
       </div>
+    <!-- end topbar -->
+
+    <!-- title -->
+      <div class="body-title">
+        회원님의 현재 거래 수수료
+      </div>
+    <!-- title -->
+
+    <!-- table -->
+    <div class="comm-table">
+      <table>
+        <thead>
+          <td>
+            <p>KRW</p>
+            <p>마켓</p>
+          </td>
+          <td>
+            <p>BTC</p>
+            <p>마켓</p>
+          </td>
+          <td>
+            <p>ETH</p>
+            <p>마켓</p>
+          </td>
+          <td>
+            <p>USDT</p>
+            <p>마켓</p>
+          </td>
+        </thead>
+        <tr>
+          <td>0.05%</td>
+          <td>0.25%</td>
+          <td>0.25%</td>
+          <td>0.25%</td>
+        </tr>
+      </table>
     </div>
+    <!-- table -->
+
+    <!-- lower part -->
+    <div class="lower">
+      <ul>
+        <li>향후 회원등급에 따른 수수료 우대 정책을 준비할 예정입니다</li>
+        <li>거래 수수료에는 부가세가 포함되어 있습니다</li>
+      </ul>
+      <div><a href="">거래 수수료 (부가세포함) 상세 안내></a></div>
+    </div>
+    <!-- lower part -->
   </div>
 </template>
 

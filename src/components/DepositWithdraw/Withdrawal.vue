@@ -18,8 +18,8 @@
       </div>
       <!-- end topbar -->
       <!-- withdraw-header -->
-      <div class="w-header-holder debugger">
-        <div class="w-head-up debugger">
+      <div class="w-header-holder">
+        <div class="w-head-up">
           <div class="w-head-left">출금 방식 <img src="~img/info32x32.png" alt="info32x32"></div>
           <div class="w-head-right">
             <label>
@@ -32,20 +32,38 @@
             </label>
           </div>
         </div>
-        <div class="w-head-up debugger">
+        <div class="w-head-up">
           <div class="w-head-left">출금 가능</div>
           <div class="w-head-right">
             0 <span>ETH</span>
           </div>
         </div>
         <div class="w-head-up">
-          <form>
-            <input type="text" class="debugger" name="" placeholder="출금수량 (최소 0.02)"><label for="name">Name</label>
-            <input type="submit" name="name" value="최대">
+          <form action="">
+              <input type="text" name="search" placeholder="출금수량 (최소 0.02)" >
+              <label for="search">ETH</label>
+              <input class="wh-btn" type="submit" value="최대">
           </form>
+        </div>
+        <div class="w-head-up">
+          <div class="w-head-lower">
+            &asymp;0 KRW
+          </div>
         </div>
       </div>
       <!-- withdraw-header -->
+      <!-- withdraw body -->
+      <div class="w-body-container">
+        <div class="w-body-data">
+          <div class="w-body-data-l">수수료 <span>(부가세 포함)</span></div>
+          <div class="w-body-data-r">0.01 <span>ETH</span></div>
+        </div>
+        <div class="w-body-data">
+          <div class="w-body-data-l">총출금 <span>(수수료 포함)</span></div>
+          <div class="w-body-data-r makeit-green">0.01 <span>ETH</span></div>
+        </div>
+      </div>
+      <!-- withdraw body -->
   </div>
 </template>
 

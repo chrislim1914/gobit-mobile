@@ -122,7 +122,7 @@ export default new Router({
       ]
     },
     {
-      path: '/balance',
+      path: '/deposit',
       component: IndexDeposit,
       children: [
         {
