@@ -6,7 +6,8 @@
     <walletAddress></walletAddress>
     <nowalletAddress></nowalletAddress>
     <withdrawal></withdrawal> -->
-    <router-view></router-view>
+    <commission></commission>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import CoinTransaction from './CoinTransaction'
 import WalletAddress from './WalletAddress'
 import NoWalletAddress from './NoWalletAddress'
 import Withdrawal from './Withdrawal'
+import Commission from '../Commission'
 export default {
   name: 'DepositWithdraw',
   components: {
@@ -25,7 +27,8 @@ export default {
     'coinTransaction': CoinTransaction,
     'walletAddress': WalletAddress,
     'nowalletAddress': NoWalletAddress,
-    'withdrawal': Withdrawal
+    'withdrawal': Withdrawal,
+    'commission': Commission
   }
 }
 </script>
