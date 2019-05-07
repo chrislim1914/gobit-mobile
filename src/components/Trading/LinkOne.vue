@@ -1,6 +1,6 @@
 <template>
   <div class="app-trading-lone">
-
+    lone
   </div>
 </template>
 

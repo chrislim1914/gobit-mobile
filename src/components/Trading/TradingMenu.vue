@@ -5,29 +5,29 @@
       <div id="trading-tradingmenu-content">
         <ul class="list-inline mx-0 my-0 px-0">
           <li class="list-inline-item mx-0">
-            <a href="#" class="active">
+            <router-link to="/trading" :class="{ 'active': $route.path === '/trading' }">
               주문
-            </a>
+            </router-link>
           </li>
           <li class="list-inline-item mx-0">
-            <a href="#">
+            <router-link to="/trading/ltwo" :class="{ 'active': $route.path === '/trading/ltwo' }">
               호가
-            </a>
+            </router-link>
           </li>
           <li class="list-inline-item mx-0">
-            <a href="#">
+            <router-link to="/trading/lthree" :class="{ 'active': $route.path === '/trading/lthree' }">
               차트
-            </a>
+            </router-link>
           </li>
           <li class="list-inline-item mx-0">
-            <a href="#">
+            <router-link to="/trading/lfour" :class="{ 'active': $route.path === '/trading/lfour' }">
               체결기록
-            </a>
+            </router-link>
           </li>
           <li class="list-inline-item mx-0">
-            <a href="#">
+            <router-link to="/trading/lfive" :class="{ 'active': $route.path === '/trading/lfive' }">
               코인 정보
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>

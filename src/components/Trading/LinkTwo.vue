@@ -1,6 +1,6 @@
 <template>
   <div class="app-trading-ltwo">
-
+    ltwo view
   </div>
 </template>
 
