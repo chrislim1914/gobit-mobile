@@ -122,7 +122,7 @@ export default new Router({
       ]
     },
     {
-      path: '/depositwithdraw',
+      path: '/balance',
       component: IndexDeposit,
       children: [
         {
@@ -179,7 +179,7 @@ export default new Router({
           name: 'TradingLinkFour'
         },
         {
-          path: 'lfive',
+          path: 'coin_information',
           component: TradingLinkFive,
           name: 'TradingLinkFive'
         }
