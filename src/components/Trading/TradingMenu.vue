@@ -25,7 +25,7 @@
             </router-link>
           </li>
           <li class="list-inline-item mx-0">
-            <router-link to="/trading/lfive" :class="{ 'active': $route.path === '/trading/lfive' }">
+            <router-link to="/trading/coin_information" :class="{ 'active': $route.path === '/trading/coin_information' }">
               코인 정보
             </router-link>
           </li>

@@ -1,13 +1,284 @@
 /*
   trading link five stylesheet
 */
+@import '../libs/colors.scss';
 
 @media (min-width: 641px) and (max-width: 767px) {
-  
+  #trading-coin-masthead {
+    height: 163px;
+    padding: 30px 20px 0px 20px;
+
+    #trading-coin-logo-holder {
+
+      img {
+        border: 2px solid $trading-menu-icon-border-color;
+        padding: 27px;
+      }
+    }
+
+    #trading-coin-text {
+      display: inline;
+      font-size: 21px;
+      padding-left: 30px;
+      font-weight: bold;
+    }
+  }
+
+  #trading-coin-extra-space-upper {
+    height: 15px;
+    background-color: $extra-trading-space-background-color;
+  }
+
+  #trading-coin-extra-space-bottom {
+    height: 15px;
+    padding-top: 17px;
+    background-color: $extra-trading-space-background-color;
+  }
+
+  #trading-coin-info-table {
+    border-bottom: 1px solid $trading-menu-coin-information-list-bottom-border-color;
+
+    a {
+      color: $trading-coin-information-list-link-color;
+      text-decoration: underline;
+    }
+  }
+
+  .trading-coin-information-description-label {
+    font-size: 18px;
+    width: 125px;
+    color: $trading-coin-information-text-color;
+    font-weight: bold;
+  }
+
+  .trading-coin-information-description-value {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 40px;
+  }
+
+  #trading-coin-information-list {
+    padding: 0px 20px 17px 20px;
+  }
+
+  #trading-coin-information-title-section {
+    height: 72px;
+    margin: 0px 20px 0px 20px;
+    border-bottom: 1px solid $trading-menu-coin-information-list-bottom-border-color;
+  }
+
+  #trading-coin-information-title {
+    font-size: 18px;
+    padding-top: 25px;
+    color: $trading-coin-information-text-color;
+    font-weight: bold;
+  }
+
+  #trading-coin-information-paragraph-section {
+    height: 260px;
+    padding: 25px 20px 15px 40px;
+
+    ul li {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: $trading-coin-information-text-color;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+
+  #trading-coin-information-sns-section {
+    height: 62px;
+    margin: 0px 20px 0px 20px;
+    border-bottom: 1px solid $trading-menu-coin-information-list-bottom-border-color;
+  }
+
+  #trading-coin-information-sns-link-section {
+    height: 88px;
+
+    ul {
+      padding-top: 18px;
+      padding-left: 40px;
+      padding-bottom: 20px;
+    }
+
+    ul li {
+      display: inline;
+      list-style-type: none;
+
+      &:nth-child(2) {
+        padding-left: 30px;
+      }
+    }
+  }
+
+  #trading-coin-information-sns-title {
+    padding: 15px 0px 0px 0px;
+    font-size: 18px;
+    color: $trading-coin-information-text-color;
+    font-weight: bold;
+  }
+
+  #trading-coin-information-bottom-list-section {
+    height: 120px;
+    padding: 25px 20px 0px 40px;
+    margin-bottom: 23px;
+
+    ul {
+      color: $trading-coin-information-text-color;
+      font-weight: bold;
+    }
+  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  
+  #trading-coin-masthead {
+    height: 163px;
+    padding: 30px 20px 0px 20px;
+
+    #trading-coin-logo-holder {
+
+      img {
+        border: 2px solid $trading-menu-icon-border-color;
+        padding: 27px;
+      }
+    }
+
+    #trading-coin-text {
+      display: inline;
+      font-size: 21px;
+      padding-left: 30px;
+      font-weight: bold;
+    }
+  }
+
+  #trading-coin-extra-space-upper {
+    height: 15px;
+    background-color: $extra-trading-space-background-color;
+  }
+
+  #trading-coin-extra-space-bottom {
+    height: 15px;
+    padding-top: 17px;
+    background-color: $extra-trading-space-background-color;
+  }
+
+  #trading-coin-info-table tr {
+    height: 65px;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid $trading-menu-coin-information-list-bottom-border-color;
+
+    a {
+      color: $trading-coin-information-list-link-color;
+      text-decoration: underline;
+    }
+  }
+
+  .trading-coin-information-description-label {
+    font-size: 18px;
+    width: 125px;
+    color: $trading-coin-information-text-color;
+    font-weight: bold;
+  }
+
+  .trading-coin-information-description-value {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 40px;
+  }
+
+  #trading-coin-information-list {
+    padding: 0px 20px 17px 20px;
+  }
+
+  #trading-coin-information-title-section {
+    height: 72px;
+    margin: 0px 20px 0px 20px;
+    border-bottom: 1px solid $trading-menu-coin-information-list-bottom-border-color;
+  }
+
+  #trading-coin-information-title {
+    font-size: 18px;
+    padding-top: 25px;
+    color: $trading-coin-information-text-color;
+    font-weight: bold;
+  }
+
+  #trading-coin-information-paragraph-section {
+    height: 260px;
+    padding: 25px 20px 15px 40px;
+
+    ul li {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: $trading-coin-information-text-color;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+
+  #trading-coin-information-sns-section {
+    height: 62px;
+    margin: 0px 20px 0px 20px;
+    border-bottom: 1px solid $trading-menu-coin-information-list-bottom-border-color;
+  }
+
+  #trading-coin-information-sns-link-section {
+    height: 88px;
+
+    ul {
+      padding-top: 18px;
+      padding-left: 40px;
+      padding-bottom: 20px;
+    }
+
+    ul li {
+      display: inline;
+      list-style-type: none;
+
+      &:nth-child(2) {
+        padding-left: 30px;
+      }
+    }
+  }
+
+  #trading-coin-information-sns-title {
+    padding: 15px 0px 0px 0px;
+    font-size: 18px;
+    color: $trading-coin-information-text-color;
+    font-weight: bold;
+  }
+
+  #trading-coin-information-bottom-list-section {
+    height: 120px;
+    padding: 25px 20px 0px 40px;
+    margin-bottom: 23px;
+
+    ul {
+      color: $trading-coin-information-text-color;
+      font-weight: bold;
+    }
+  }
 }
 
 .debugger {
