@@ -14,12 +14,13 @@
 @media (min-width: 641px) and (max-width: 767px) {
   #app-trading-coininfo-holder {
     height: 105px;
+    margin-bottom: 20px;
   }
 
   #app-trading-coininfo-content {
     display: flex;
     align-items: center;
-    padding: 30px 20px 40px 20px;
+    padding: 30px 20px 0px 20px;
 
     span:nth-child(2) {
       padding-left: 20px;
@@ -81,12 +82,13 @@
 @media (min-width: 360px) and (max-width: 640px) {
   #app-trading-coininfo-holder {
     height: 105px;
+    margin-bottom: 20px;
   }
 
   #app-trading-coininfo-content {
     display: flex;
     align-items: center;
-    padding: 30px 20px 40px 20px;
+    padding: 30px 20px 0px 20px;
 
     span:nth-child(2) {
       padding-left: 20px;

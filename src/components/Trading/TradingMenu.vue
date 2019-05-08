@@ -20,7 +20,7 @@
             </router-link>
           </li>
           <li class="list-inline-item mx-0">
-            <router-link to="/trading/lfour" :class="{ 'active': $route.path === '/trading/lfour' }">
+            <router-link to="/trading/records" :class="{ 'active': $route.path === '/trading/records' }">
               체결기록
             </router-link>
           </li>

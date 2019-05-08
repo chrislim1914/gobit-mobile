@@ -174,7 +174,7 @@ export default new Router({
           name: 'TradingLinkThree'
         },
         {
-          path: 'lfour',
+          path: 'records',
           component: TradingLinkFour,
           name: 'TradingLinkFour'
         },
