@@ -79,6 +79,8 @@ import Withdrawal from '@/components/DepositWithdraw/Withdrawal'
 // sidebar
 import Sidebar from '@/components/Globals/Sidebar'
 
+// commision
+import Commission from '@/components/Commission'
 Vue.use(Router)
 
 export default new Router({
@@ -93,6 +95,11 @@ export default new Router({
       path: '/sidebar',
       name: 'Sidebar',
       component: Sidebar
+    },
+    {
+      path: '/commission',
+      name: 'Commission',
+      component: Commission
     },
     {
       path: '/exchange/:market',

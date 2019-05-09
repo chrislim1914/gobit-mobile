@@ -2,7 +2,7 @@
   <!-- header -->
   <div class="app-sidebar">
     <div class="user-status">
-      <!-- <div class="user-login">
+      <div class="user-login">
         <div class="ul-l">홍길동<span>님</span></div>
         <div class="ul-r">
           <p>로그아웃</p>
@@ -12,23 +12,27 @@
       <div class="user-level">
         <ul>
           <li class="">보안등급 ><span class="level">Lv.4</span></li>
-          <li class="">수수료 등급 ><span class="level">-</span></li>
+          <li class="">
+            <router-link to="/commission">
+              수수료 등급 ><span class="level">-</span>
+            </router-link>
+            </li>
         </ul>
-      </div> -->
-      <div class="user-logout">
+      </div>
+      <!-- <div class="user-logout">
         <div class="ul-l">가입이메일</div>
         <div class="ul-r">
           <a href="">회원가입</a>
           <img src="~img/close.png"  alt="close">
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- menus -->
     <div class="user-menu">
       <!-- exchange -->
       <div class="side-exchange">
-        <div class="side-echange-head" data-toggle="collapse" href="#exchangemenu" aria-expanded="false" aria-controls="exchangemenu">
-          거래소 <img src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
+        <div v-on:click="toggleExchange" class="side-echange-head" data-toggle="collapse" href="#exchangemenu" aria-expanded="false" aria-controls="exchangemenu">
+          거래소 <img v-show="!showItExchange" src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
         </div>
         <div class="collapse dd-sub-menus" id="exchangemenu">
           <div class="sub-menus">
@@ -44,8 +48,8 @@
       </div>
       <!-- investment -->
       <div class="side-exchange">
-        <div class="side-echange-head" data-toggle="collapse" href="#investmentmenu" aria-expanded="false" aria-controls="investmentmenu">
-          투자내역 <img src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
+        <div v-on:click="toggleInvest" class="side-echange-head" data-toggle="collapse" href="#investmentmenu" aria-expanded="false" aria-controls="investmentmenu">
+          투자내역 <img v-show="!showItInvest" src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
         </div>
         <div class="collapse dd-sub-menus" id="investmentmenu">
           <div class="sub-menus">
@@ -61,8 +65,8 @@
       </div>
       <!-- deposit -->
       <div class="side-exchange">
-        <div class="side-echange-head" data-toggle="collapse" href="#depositmenu" aria-expanded="false" aria-controls="depositmenu">
-          입출금 <img src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
+        <div v-on:click="toggleDepo" class="side-echange-head" data-toggle="collapse" href="#depositmenu" aria-expanded="false" aria-controls="depositmenu">
+          입출금 <img v-show="!showItDepo" src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
         </div>
         <div class="collapse dd-sub-menus" id="depositmenu">
           <div class="sub-menus">
@@ -78,8 +82,8 @@
       </div>
       <!-- service center -->
       <div class="side-exchange">
-        <div class="side-echange-head" data-toggle="collapse" href="#servicemenu" aria-expanded="false" aria-controls="servicemenu">
-          고객센터 <img src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
+        <div v-on:click="toggleService" class="side-echange-head" data-toggle="collapse" href="#servicemenu" aria-expanded="false" aria-controls="servicemenu">
+          고객센터 <img v-show="!showItService" src="~img/up-arrow16x16.png"  alt="up-arrow16x16">
         </div>
         <div class="collapse dd-sub-menus" id="servicemenu">
           <div class="sub-menus">
@@ -145,7 +149,29 @@
 
 <script>
 export default {
-  name: 'GlobalSidebar'
+  name: 'GlobalSidebar',
+  data () {
+    return {
+      showItExchange: true,
+      showItInvest: true,
+      showItDepo: true,
+      showItService: true
+    }
+  },
+  methods: {
+    toggleExchange () {
+      this.showItExchange = !this.showItExchange
+    },
+    toggleInvest () {
+      this.showItInvest = !this.showItInvest
+    },
+    toggleDepo () {
+      this.showItDepo = !this.showItDepo
+    },
+    toggleService () {
+      this.showItService = !this.showItService
+    }
+  }
 }
 </script>
 
