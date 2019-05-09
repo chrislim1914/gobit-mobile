@@ -15,7 +15,7 @@
             </router-link>
           </li>
           <li class="list-inline-item mx-0">
-            <router-link to="/trading/lthree" :class="{ 'active': $route.path === '/trading/lthree' }">
+            <router-link to="/trading/chart" :class="{ 'active': $route.path === '/trading/chart' }">
               차트
             </router-link>
           </li>
