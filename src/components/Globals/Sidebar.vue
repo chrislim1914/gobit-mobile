@@ -53,13 +53,19 @@
         </div>
         <div class="collapse dd-sub-menus" id="investmentmenu">
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 보유코인 </a>
+            <router-link to="/investment/balance">
+              <span>&#766;</span> 보유코인
+            </router-link>
           </div>
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 거래내역</a>
+            <router-link to="/investment/history">
+              <span>&#766;</span> 거래내역
+            </router-link>
           </div>
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 미체결</a>
+            <router-link to="/investment/wait_orders">
+              <span>&#766;</span> 미체결
+            </router-link>
           </div>
         </div>
       </div>

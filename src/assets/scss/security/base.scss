@@ -1,0 +1,24 @@
+/**
+  main security style
+*/
+@import '../libs/_colors.scss';
+
+* {
+  margin: 0 auto;
+}
+
+.app-security {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+.debugger {
+  border: 1px solid red;
+}

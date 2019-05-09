@@ -81,6 +81,12 @@ import Sidebar from '@/components/Globals/Sidebar'
 
 // commision
 import Commission from '@/components/Commission'
+
+// Security
+import IndexSecurity from '@/components/security/Index'
+import SecurityAuthentication from '@/components/security/SecurityAuthentication'
+import Accountauth from '@/components/security/Accountauth'
+
 Vue.use(Router)
 
 export default new Router({
@@ -114,6 +120,22 @@ export default new Router({
     {
       path: '/forgot_password',
       component: ForgotPassword
+    },
+    {
+      path: '/security',
+      component: IndexSecurity,
+      children: [
+        {
+          path: '/',
+          component: SecurityAuthentication,
+          name: 'SecurityAuthentication'
+        },
+        {
+          path: 'accountauth',
+          component: Accountauth,
+          name: 'Accountauth'
+        }
+      ]
     },
     {
       path: '/investment',
