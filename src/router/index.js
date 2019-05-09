@@ -129,7 +129,7 @@ export default new Router({
           path: '/',
           component: SecurityAuthentication,
           name: 'SecurityAuthentication'
-        // },
+        },
         // {
         //   path: 'accountauth',
         //   component: AccountAuth,
