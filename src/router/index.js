@@ -206,12 +206,12 @@ export default new Router({
           name: 'TradingLinkTwo'
         },
         {
-          path: 'lthree',
+          path: 'chart',
           component: TradingLinkThree,
           name: 'TradingLinkThree'
         },
         {
-          path: 'lfour',
+          path: 'records',
           component: TradingLinkFour,
           name: 'TradingLinkFour'
         },
