@@ -1,134 +1,163 @@
 <template>
   <!-- investment balance -->
   <div class="app-balance">
-    <div class="container-fluid">
-      <!-- menu -->
-      <div class="row tab-menu">
-        <div class="col-sm-4 menus active">
+    <!-- start tab menu -->
+      <div class="menu-handler">
+        <div class="menus active">
           <router-link to="/investment/balance">
             보유코인
           </router-link>
         </div>
-        <div class="col-sm-4 menus">
+        <div class="menus">
           <router-link to="/investment/history">
             거래내역
           </router-link>
         </div>
-        <div class="col-sm-4 menus">
+        <div class="menus">
           <router-link to="/investment/wait_orders">
             미체결
           </router-link>
         </div>
       </div>
-      <!-- end menu -->
-      <!-- start balance container -->
-      <div class="row balance">
-        <div class="bheader">
-          <div class="col-sm-6 bheadleft">내 보유자산</div>
-          <div class="col-sm-6 bheadright">KRW 환산 추정값 <i class="fa fa-question-circle"></i></div>
-        </div>
-        <div class="bheader">
-          <div class="col-sm-6 assetsleft">
-            <div class="assetslefttop">보유 KRW</div>
-            <div class="assetsleftbottom">0</div>
-          </div>
-          <div class="col-sm-6 assetsright">
-            <div class="assetsrighttop">총 보유자산</div>
-            <div class="assetsrightbottom">133,551</div>
-          </div>
-        </div>
-        <div class="bheader total">
-          <div class="col-sm-6 totalleft">
-            <div class="row totaldata">
-              <div class="col col-sm-6">총매수</div>
-              <div class="col col-sm-6 text-right">266,123</div>
-              <div class="col col-sm-6">총평가</div>
-              <div class="col col-sm-6 text-right">266,123</div>
-            </div>
-          </div>
-          <div class="col-sm-6 totalright">
-            <div class="row totaldata">
-              <div class="col col-sm-6">평가손익</div>
-              <div class="col col-sm-6 text-right text-primary">-166,123</div>
-              <div class="col col-sm-6">수익률</div>
-              <div class="col col-sm-6 text-right text-primary">-48.88%</div>
-            </div>
-          </div>
-        </div>
-        <!-- coin -->
-        <div class="row the-coin">
-          <div class="col-sm-6 coinleft font-weight-bold">
-            <div class="">시아코인</div>
-            <div class="">(DSN)</div>
-          </div>
-          <div class="col-sm-6 coinright">
-            <div class="row totaldata">
-              <div class="col col-sm-6">평가손익</div>
-              <div class="col col-sm-6 text-right text-primary">266,123</div>
-              <div class="col col-sm-6">수익률</div>
-              <div class="col col-sm-6 text-right text-primary">-48.88%</div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <!-- end on coin -->
-        <!-- retention -->
-        <div class="row retention">
-          <div class="col-sm-6 r-quantity">
-            <div class="">5,283.12345678 <span class="font-weight-bold">DSN</span></div>
-            <div class="sub-retention">보유수량</div>
-            <div class="">18,987 <span class="font-weight-bold">KRW</span></div>
-            <div class="sub-retention">평가금액</div>
-          </div>
-          <div class="col-sm-6 r-quantity">
-            <div class="">29.65 <span class="font-weight-bold">KRW</span></div>
-            <div class="sub-retention">매수평균가</div>
-            <div class="">56,647 <span class="font-weight-bold">KRW</span></div>
-            <div class="sub-retention">매수금액</div>
-          </div>
-        </div>
-        <!-- end retention -->
-        <!-- start of 이더리움 -->
-        <div class="row the-coin">
-          <div class="col-sm-6 coinleft font-weight-bold">
-            <div class="">시아코인</div>
-            <div class="">(DSN)</div>
-          </div>
-          <div class="col-sm-6 coinright">
-            <div class="row totaldata">
-              <div class="col col-sm-6">평가손익</div>
-              <div class="col col-sm-6 text-right text-danger">4,809</div>
-              <div class="col col-sm-6">수익률</div>
-              <div class="col col-sm-6 text-right text-danger">4.78%</div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <!-- end of 이더리움 -->
-        <div class="row retention">
-        <div class="col-sm-6 r-quantity">
-          <div class="">5,283.12345678 <span class="font-weight-bold">DSN</span></div>
-          <div class="sub-retention">보유수량</div>
-          <div class="">18,987 <span class="font-weight-bold">KRW</span></div>
-          <div class="sub-retention">평가금액</div>
-        </div>
-        <div class="col-sm-6 r-quantity">
-          <div class="">29.65 <span class="font-weight-bold">KRW</span></div>
-          <div class="sub-retention">매수평균가</div>
-          <div class="">56,647 <span class="font-weight-bold">KRW</span></div>
-          <div class="sub-retention">매수금액</div>
+    <!-- end tab menu -->
+    <!-- header -->
+    <div class="b-head-handler">
+      <div class="b-head-up">
+        <div class="bhu-l">내 보유 자산</div>
+        <div class="bhu-r">
+          KRW 환산 추정값 <img src="~img/info32x32.png" alt="info32x32 icon">
         </div>
       </div>
-      <!-- footer -->
-      <div class="row balance-footer">
-        <div class="col-sm-12">
-          *매수평균가, 평가손익, 수익률은 모두 KRW로 환산한 추정값으로 참고용입니다. <i class="fa fa-question-circle"></i>
+      <div class="b-head-middle">
+        <ul>
+          <li>
+            <div class="li-left">
+              <div>보유 KRW</div>
+              <div class="numbered">0</div>
+            </div>
+          </li>
+          <li>
+            <div class="li-right">
+              <div>총 보유자산</div>
+              <div class="numbered">133,551</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="b-head-lower">
+        <div class="bhl-holder">
+          <div class="bhl-l">
+            <ul>
+              <li>총매수</li>
+              <li>266,123</li>
+            </ul>
+          </div>
+          <div class="bhl-r">
+            <ul>
+              <li>평가손익</li>
+              <li>-266,123</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bhl-holder">
+          <div class="bhl-l">
+            <ul>
+              <li>총매수</li>
+              <li>266,123</li>
+            </ul>
+          </div>
+          <div class="bhl-r">
+            <ul>
+              <li>평가손익</li>
+              <li>-49.78%</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!-- end footer -->
-      </div>
-      <!-- end balance container -->
     </div>
+    <!-- header -->
+    <!-- balance body -->
+    <div class="b-body-container">
+      <div class="b-body">
+        <div class="b-body-up">
+          <div class="bb-up-l">
+            <p>시아코인</p>
+            <p>(SC)</p>
+          </div>
+          <div class="bb-up-r">
+            <div class="to-left">평가손익</div>
+            <div class="to-right">-137,733</div>
+            <div class="to-left">수익률</div>
+            <div class="to-right">-48.88%</div>
+          </div>
+        </div>
+        <div class="b-body-down-container">
+          <div class="b-body-down">
+            <div class="bbd-l">
+              <p class="p-top">5,283.12345678 <span>SC</span></p>
+              <p class="r-down">보유수량</p>
+            </div>
+            <div class="bbd-l">
+              <p class="p-top">29.65 <span>KRW</span></p>
+              <p class="r-down">매수평균가</p>
+            </div>
+          </div>
+          <div class="b-body-down">
+            <div class="bbd-l">
+              <p class="p-top">18,913 <span>KRW</span></p>
+              <p class="r-down">평가금액</p>
+            </div>
+            <div class="bbd-l">
+              <p class="p-top">156,647 <span>KRW</span></p>
+              <p class="r-down">매수평균가</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-body">
+        <div class="b-body-up">
+          <div class="bb-up-l">
+            <p>시아코인</p>
+            <p>(SC)</p>
+          </div>
+          <div class="bb-up-r">
+            <div class="to-left">평가손익</div>
+            <div class="to-right">-137,733</div>
+            <div class="to-left">수익률</div>
+            <div class="to-right">-48.88%</div>
+          </div>
+        </div>
+        <div class="b-body-down-container">
+          <div class="b-body-down">
+            <div class="bbd-l">
+              <p class="p-top">5,283.12345678 <span>SC</span></p>
+              <p class="r-down">보유수량</p>
+            </div>
+            <div class="bbd-l">
+              <p class="p-top">29.65 <span>KRW</span></p>
+              <p class="r-down">매수평균가</p>
+            </div>
+          </div>
+          <div class="b-body-down">
+            <div class="bbd-l">
+              <p class="p-top">18,913 <span>KRW</span></p>
+              <p class="r-down">평가금액</p>
+            </div>
+            <div class="bbd-l">
+              <p class="p-top">156,647 <span>KRW</span></p>
+              <p class="r-down">매수평균가</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- balance body -->
+    <!-- balance footer -->
+    <div class="b-footer-container">
+      <p>*매수평균가, 평가손익, 수익률은 모두 KRW로 환산한 추정값으로 참고용입니다.</p>
+      <img src="~img/info32x32.png" alt="info32x32 icon">
+    </div>
+    <!-- balance footer -->
   </div>
 </template>
 

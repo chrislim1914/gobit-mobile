@@ -7,210 +7,333 @@
   width: 100%;
   height: 100%;
 }
-
-hr {
-  width: 96%;
-}
-
-.tab-menu {
-  text-align: center;
-  font-size: 23px;
-  
-  .menus {    
-    padding: 13.5px 0;
-    border-bottom: 1.5px solid $fee-tab-border-inactive;
+.menu-handler {
+  display: flex;
+  .menus {
+    float: left;
+    padding: 12px 0;
+    width: 33.333%;
+    text-align: center;
+    font-size : 23px;
+    border-bottom: 2px solid $fee-tab-inactive-color;
     a {
+      color: $thead-black-font-color;      
+    }
+    a:hover {
       text-decoration: none;
-      color: $fee-tab-inactive-color;
     }
   }
   .active {
-    color: $fee-tab-active-color;
-    border-bottom: 1.5px solid $fee-tab-border-active;
+    color: $fee-head-font-color;
+    border-bottom: 2px solid $fee-tab-active-color;
+    a {
+      color: $fee-head-font-color;
+    }
   }
 }
 
-.balance {  
-  .bheader {
+.b-head-handler {
+  background-color: $balance-head-bg-color;
+  .b-head-up {
+    padding: 25.5px 20px;
     display: flex;
-    width: 100%;
-    background-color: $balance-head-bg-color;    
-  }
-  .bheadleft {
-    padding: 32px 18px;
     font-size: 24px;
-    font-weight: 600;
-  }
-  .bheadright {
-    padding: 32px 18px;
-    font-size: 24px;
-    color: $bheadright-font-color;
-    text-align: right;
-  }
-  .assetsleft {
-    padding: 0 0 0 18px;
-    border-right: 1px solid $assets-border-color;
-    .assetslefttop {
-      font-size: 19px;      
-    }
-    .assetsleftbottom {
-      font-size: 33px;
-    }
-  }
-  .assetsright {
-    padding-left: 34px;
-    .assetsrighttop {
-      font-size: 19px;      
-    }
-    .assetsrightbottom {      
-      font-size: 33px;
-    }
-  }
-  .total {
-    padding: 30px 0 34px 0;
-    .totalright {
-      padding-left: 32px;
-    }
-    .totaldata {
-      font-size: 19px;
-    }
-  }
-  .the-coin {
-    background-color: $fee-bg-color;
-    margin: 0 auto;
-    width: 100%;
-    padding: 16px 0;
-    font-size: 22px;
-    .coinleft {
-      color: $the-coin-font-color;
-      margin: 0 -1px;
-    }
-    .coinright {
-      margin-right: 1px;
-    }
-  }
-  .retention {
-    background-color: $fee-bg-color;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 21px;
-    padding: 19px 0 1px 0;
-    border-bottom: 2px solid $retension-border-color;
-    .sub-retention {
-      font-size: 19px;
-      color: $retention-sub-font-color;
-      padding: 0 0 22px 0;
-    }
-    .r-quantity {
-      text-align: right;
-    }
-  }  
-  .balance-footer {
-    margin: 0 auto;
-    width: 100%;
-    font-size: 18px;
-    color: $retention-sub-font-color;
-    padding: 16px 0;
-  }  
-}
-
-@media (min-width: 641px) and (max-width: 767px) {
-  .balance {      
-    .bheadleft {
-      font-size: 12;
+    .bhu-l {
+      float: left;
+      width: 50%;
       font-weight: 600;
     }
-    .bheadright {
-      font-size: 12px;
-    }
-    .assetsleft {
-      .assetslefttop {
-        font-size: 12px;      
-      }
-      .assetsleftbottom {
-        font-size: 24px;
-      }
-    }
-    .assetsright {
-      .assetsrighttop {
-        font-size: 12px;      
-      }
-      .assetsrightbottom {      
-        font-size: 24px;
+    .bhu-r {
+      text-align: right;
+      float: left;
+      width: 50%;
+      color: $bheadright-font-color;
+      img {
+        margin-top: -7px;
+        width: 28px;
       }
     }
-    .total {
-      .totalright {
-        padding-left: 24px;
+  }
+  .b-head-middle {
+    text-align: center;
+    ul {
+      padding-bottom: 0;
+      li {
+        font-size: 19px;
+        display: inline-block;
+        border-right: 2px solid $fee-table-color;
+        width: 47.5%;
+        text-align: left;
       }
-      .totaldata {
-        font-size: 12px;
+      .numbered {
+        font-size: 33px;
+      }
+      .li-left {
+        position: relative;
+        padding-left: 20px;
+      }
+      .li-right {
+        position: relative;
+        padding-left: 22px;
+      }
+      li:last-child {
+        border-right: none;
       }
     }
-    .the-coin {
-      font-size: 14px;
-    }
-    .retention {
-      .sub-retention {
-        font-size: 12px;
+  }
+  .b-head-lower {
+    display: inline-block;
+    width: 100%;
+    padding: 7px 0 8px 0;
+    .bhl-holder {
+      padding: 0 20px;
+      font-size: 19px;
+      .bhl-l {
+        float: left;
+        width: 50%;
+        text-align: center;
+        ul {
+          li {
+            display: inline-block;
+            text-align: left;
+            width: 48.5%;
+          }
+          li:last-child {
+            text-align: right;
+            padding-right: 20px;
+          }
+        }
       }
-    }  
-    .balance-footer {
-      font-size: 12px;
-    }  
+      .bhl-r {
+        float: left;
+        width: 50%;
+        ul {
+          li {
+            display: inline-block;
+            text-align: left;
+            width: 48.5%;
+            padding-left: 20px;
+          }
+          li:last-child {
+            text-align: right;
+            color: $balance-font-blue-color;
+          }
+        }
+      }
+    }
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
-  .balance-panel {
-    text-align: center;
+.b-body-container {
+  .b-body {    
+    padding: 0 20px;
+    border-bottom: 2px solid $fee-table-color;
+    .b-body-up {
+      display: flex;
+      border-bottom: 2px solid $fee-table-color;
+      padding: 16.5px 0;
+      font-size: 22px;
+      .bb-up-l {
+        float: left;
+        width: 50%;
+        color: $the-coin-font-color;
+        p {
+          padding: 0;
+          margin: 0;
+          font-weight: 600;
+        }
+        p:last-child {
+          font-weight: 800;
+        }
+      }
+      .bb-up-r {
+        padding-left: 20px;        
+        display: inline-block;
+        width: 50%;
+        .to-left {
+          float: left;
+          width: 50%;
+          text-align: left;
+        }
+        .to-right {
+          float: left;
+          width: 50%;
+          text-align: right;
+          color: $balance-font-blue-color;
+        }
+      }
     }
-  .bheadright {
-    text-align: center;
   }
-  .assetsleft {      
-    padding: 0 0 0 20px;
-    border-bottom: 1px solid $assets-border-color;
-    .assetslefttop {
-      font-size: 19px;      
+  .b-body-down-container {
+    padding: 3px 0 23px 0;
+    .b-body-down {    
+      display: flex;
+      padding-top: 19px;
+      .bbd-l {
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+        p {
+          text-align: right;
+          padding-top: 2px;
+          margin: 0;
+          span {
+            font-weight: 800;
+          }
+        }
+        .p-top {
+          font-size: 21px;
+        }
+        .r-down {
+          font-size: 19px;
+          color: $bheadright-font-color;
+        }
+      }
     }
-    .assetsleftbottom {
-      font-size: 33px;
-    }
   }
-  .assetsright {
-    text-align: center;
-    .assetsrighttop {
-      font-size: 19px;
-    }
-    .assetsrightbottom {      
-      font-size: 33px;
-    }
+}
+
+.b-footer-container {
+  padding: 17px 20px 24px 20px;
+  color: $bheadright-font-color;
+  p {
+    margin: 0;
   }
-  .total {
-    margin: 0 auto;
-    .totalleft {        
-      margin: 0 auto;
-    }
-    .totalright {
-      margin: 0 auto;
-    }      
-  .totaldata {
-    font-size: 13px;
+  img {
+    width: 24px;
   }
-  }
-  .the-coin {
-    font-size: 16px;
-  }
-  .retention {
-    font-size: 16px;
-    .r-quantity {
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .menu-handler {
+    display: flex;
+    .menus {
+      float: left;
+      padding: 12px 0;
+      width: 33.333%;
       text-align: center;
+      font-size : 23px;
+      border-bottom: 2px solid $fee-tab-inactive-color;
+      a {
+        color: $thead-black-font-color;      
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    .active {
+      color: $fee-head-font-color;
+      border-bottom: 2px solid $fee-tab-active-color;
+      a {
+        color: $fee-head-font-color;
+      }
     }
   }
-  .balance-footer {
-    font-size: 12px;
-    padding: 10px 0;
+  
+  .b-head-handler {
+    background-color: $balance-head-bg-color;
+    .b-head-up {
+      padding: 25.5px 20px;
+      display: flex;
+      font-size: 24px;
+      .bhu-l {
+        float: left;
+        width: 50%;
+        font-weight: 600;
+      }
+      .bhu-r {
+        text-align: right;
+        float: left;
+        width: 50%;
+        color: $bheadright-font-color;
+        img {
+          margin-top: -7px;
+        }
+      }
+    }
+    .b-head-middle {
+      text-align: center;
+      ul {
+        padding-bottom: 0;
+        li {
+          font-size: 19px;
+          display: inline-block;
+          border-right: 2px solid $fee-table-color;
+          width: 47.5%;
+          text-align: left;
+        }
+        .numbered {
+          font-size: 33px;
+        }
+        .li-left {
+          position: relative;
+          padding-left: 20px;
+        }
+        .li-right {
+          position: relative;
+          padding-left: 22px;
+        }
+        li:last-child {
+          border-right: none;
+        }
+      }
+    }
+    .b-head-lower {
+      display: inline-block;
+      width: 100%;
+      padding: 7px 0 8px 0;
+      .bhl-holder {
+        padding: 0 20px;
+        font-size: 19px;
+        .bhl-l {
+          float: left;
+          width: 50%;
+          text-align: center;
+          ul {
+            li {
+              display: inline-block;
+              text-align: left;
+              width: 48.5%;
+            }
+            li:last-child {
+              text-align: right;
+              padding-right: 20px;
+            }
+          }
+        }
+        .bhl-r {
+          float: left;
+          width: 50%;
+          ul {
+            li {
+              display: inline-block;
+              text-align: left;
+              width: 48.5%;
+              padding-left: 20px;
+            }
+            li:last-child {
+              text-align: right;
+              color: $balance-font-blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 560px) and (max-width: 639px) {
+  .b-head-middle {
+    ul {
+      li {
+        font-size: 19px;
+        display: inline-block;
+        width: 47.5%;
+      }
+      li:last-child {
+        border-right: none;
+      }
+    }
   }
 }
 

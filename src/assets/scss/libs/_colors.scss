@@ -116,16 +116,16 @@ $extra-trading-space-background-color: #f5f7fa;
 $header-background-color: #ffffff;
 $header-menu-color: #049a8d;
 
-// sidebart
-$rank-bg-color: #68c2bb;
-$rank-font-color: #049a8d;
-$rank-plain-color: #ffffff;
-$level-font-color: #fffc00;
-$exchange-bg-color: #e7f8f7;
-$exchange-border-color: #8cd3cc;
-$sidebar-black-color: #000000;
-$app-color: #049a8d;
-
+// sidebar
+$ul-l-font-color: #05796f;
+$ul-l-span-font-color: #000000;
+$ul-r-font-color: #049a8d;
+$ul-security-level-bg-color: #68c2bb;
+$lv-font-color: #fffc00;
+$dd-sub-menu-bg-color: #e7f8f7;
+$dd-sub-menu-border-color: #8cd3cc;
+$other-menu-border-color: #cfcfcf;
+$app-d-color: #049a8d;
 // commission
 $fee-bg-color: #ffffff;
 $fee-head-font-color: #668b8e;
@@ -134,10 +134,11 @@ $fee-color: #138085;
 $fee-note-link-color: #35acad;
 $fee-head-font-color: #138085;
 $fee-tab-active-color: #04706b;
-$fee-tab-inactive-color: #2c2c2c;
+$fee-tab-inactive-color: #d7d7d7;
 $fee-tab-border-inactive: #dedede;
 $fee-tab-border-active: #009990;
 $balance-head-bg-color: #eeeff3;
+$balance-font-blue-color: #6c90d0;
 $bheadright-font-color: #959595;
 $assets-border-color: #d9d9d9;
 $the-coin-font-color: #006d74;

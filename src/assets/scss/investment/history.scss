@@ -9,102 +9,121 @@
   height: 100%;
 }
 
-.history-panel {
-  font-size: 24px;
-  padding: 24px 4px;
-  .history-dd {
-    text-align: right;
-    .dd {
-      margin: 0 0 0 auto;      
-      a {
-        background-color: $history-dd-bg-color;
-        padding: 11px 15px;
-        color: inherit;
-        text-decoration: none;
-      }
+.menu-handler {
+  display: flex;
+  .menus {
+    float: left;
+    padding: 12px 0;
+    width: 33.333%;
+    text-align: center;
+    font-size : 23px;
+    border-bottom: 2px solid $fee-tab-inactive-color;
+    a {
+      color: $thead-black-font-color;      
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .active {
+    color: $fee-head-font-color;
+    border-bottom: 2px solid $fee-tab-active-color;
+    a {
+      color: $fee-head-font-color;
     }
   }
 }
-.history-table {
-  font-size: 19px;
-  height: 100%;
-  .frozen {
-    background-color: $history-table-frozen-cell-bg-color;
+
+.h-head {
+  display: flex;
+  padding: 23.5px 20px;
+  font-size: 24px;
+  .hh-box {    
+    font-weight: 800;
+    float: left;
+    width: 50%;
   }
-  .table {
-    td {
-      border-right: 1px solid $history-htable-border-color;
+  .drop-box {
+    text-align: right;
+    float: right;
+    width: 50%;
+    a {
+      padding: 11px 6px;
+      color: $thead-black-font-color;
+      background-color: $history-dd-bg-color;
     }
-    td:last-child {
-      border-right: none;
+    a:hover {
+      text-decoration: none;
     }
+  }
+}
+
+.h-table-data {
+  table {
+    width: 100%;
+    text-align: center;
+    font-size: 19px;    
     thead {
-      font-size: 19px;
-      color: $history-htable-font-color;
+      color: $bheadright-font-color;
+      border-top: 2px solid $bheadright-font-color;
+      border-bottom: 2px solid $bheadright-font-color;
       th {
-        border-right: 1px solid $history-htable-border-color;
+        border-right: 1px solid $bheadright-font-color;
+        font-weight: 500;
+        padding: 9px 0;
+      }
+      th:nth-child(1) {
+        width: 17.50%;
+        background-color: $history-table-frozen-cell-bg-color;
+      }
+      th:nth-child(2) {
+        width: 17.73%;
+        background-color: $history-table-frozen-cell-bg-color;
+      }
+      th:nth-child(3) {
+        width: 8.98%;
+      }
+      th:nth-child(4) {
+        width: 23.44%;
+      }
+      th:nth-child(5
+      ) {
+        width: 32.34%;
       }
       th:last-child {
         border-right: none;
+      }
+    }
+    tr {
+      border-bottom: 1px solid $bheadright-font-color;
+      td {
+        border-right: 1px solid $bheadright-font-color;
+      }
+      td:last-child {
+        border-right: none;
+      }
+      td:nth-child(1) {
+        background-color: $history-table-frozen-cell-bg-color;
+      }
+      td:nth-child(2) {
+        background-color: $history-table-frozen-cell-bg-color;
+      }
+      td:nth-child(4) {
+        text-align: right;
+        padding-right: 20px;
+      }
+      td:nth-child(5) {
+        text-align: right;
+        padding-right: 20px;
       }
     }
   }
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
-  .history-panel {
-    font-size: 24px;
-    padding: 24px 4px;
-    .history-dd {
-      text-align: right;
-      .dd {
-        margin: 0 0 0 auto;      
-        a {
-          background-color: $history-dd-bg-color;
-          padding: 11px 15px;
-          color: inherit;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  .history-table {
-    font-size: 19px;
-    height: 100%;
-    .frozen {
-      background-color: $history-table-frozen-cell-bg-color;
-    }
-    .table {
-      td {
-        border-right: 1px solid $history-htable-border-color;
-      }
-      td:last-child {
-        border-right: none;
-      }
-      thead {
-        font-size: 19px;
-        color: $history-htable-font-color;
-        th {
-          border-right: 1px solid $history-htable-border-color;
-        }
-        th:last-child {
-          border-right: none;
-        }
-      }
-    }
-  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  .history-panel {
-    font-size: 16px;
-    padding: 24px 4px;
-    text-align: center;
-    .history-dd {
-      text-align: center;
-      padding: 17px 0;
-    }
-  }
 }
 
 .debugger {
