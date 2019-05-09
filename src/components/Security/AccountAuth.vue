@@ -35,7 +35,7 @@
 <script>
 import Topbar from './Topbar'
 export default {
-  name: 'Accountauth',
+  name: 'AccountAuth',
   components: {
     'topbar': Topbar
   }
