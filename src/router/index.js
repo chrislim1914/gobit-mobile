@@ -76,6 +76,9 @@ import WalletAddress from '@/components/DepositWithdraw/WalletAddress'
 import NoWalletAddress from '@/components/DepositWithdraw/NoWalletAddress'
 import Withdrawal from '@/components/DepositWithdraw/Withdrawal'
 
+// sidebar
+import Sidebar from '@/components/Globals/Sidebar'
+
 Vue.use(Router)
 
 export default new Router({
@@ -85,6 +88,11 @@ export default new Router({
       path: '*',
       name: 'FourOFour',
       component: FourOFour
+    },
+    {
+      path: '/sidebar',
+      name: 'Sidebar',
+      component: Sidebar
     },
     {
       path: '/exchange/:market',

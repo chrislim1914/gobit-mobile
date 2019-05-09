@@ -14,300 +14,177 @@
   background-color: $header-background-color;
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
-  margin-bottom: 20px;
 }
-
-.headleft {
-  color: $rank-font-color;
-}
-.headlast {
-  color: $sidebar-black-color;
-}
-.headright {
-  color: $rank-font-color;
-  text-align: center;
-}
-
-.level {
-  color: $level-font-color;
-  font-size: 25px;
-  padding-left: 30px;
-}
-
-.closeside {
-  padding: 17px 1px;
-}
-
-.rank {
-  margin: 0 -15px;
-  padding: 0 0;  
-  color: $rank-plain-color;
-  text-align: left;
-  .rankleft {
-    background-color: $rank-bg-color;
-    margin-left: -40px;
-    padding: 10px 20px;
-    width: 212px;
-  }
-  .rankright {
-    background-color: $rank-bg-color;
-    padding: 10px 20px;
-    width: 212px;
-    margin-left: -18px;
-    border-left: 1px solid #ffffff;
-  } 
-}
-
-.side-exchange {
-  margin-left: -16px;
-  padding: 19px 20px 0px 20px;
-}
-
-.side-echange-head {
-  font-weight: 800;
-  font-size: 20px;
-  margin-bottom: 9px;
-}
-
-.exchange-sub {
-  background-color: $exchange-bg-color;
-  border-top: 1px solid $exchange-border-color;
-  border-bottom: 1px solid $exchange-border-color;
-  font-size: 19px;
-  margin-right: -52px;
-  margin-left: -19px;
-  a {
-    color: $sidebar-black-color;
-    text-decoration: none;
-  }
-
-  .exchange-content {
-    font-size: 20px;
-    padding: 17px 32px;
-    border-top: 1px solid $exchange-border-color;
-    border-bottom: 1px solid $exchange-border-color;
-  }
-}
-
-.service-menu {
-  font-size: 20px;
-  margin-left: -16px;
-  padding: 19px 20px 15px 20px;
-}
-
-.make-bold {
-  font-weight: 800;
-}
-
-.app-menu {
-  font-size: 20px;
-  font-weight: 800;
-  color: $app-color;
-  text-align: center;
-  border: 1px solid $app-color;
-  width: 381px;
-  margin:  0 0 16px -35px;
-  padding: 12px 0;
-}
-
-.border-line {
-  padding: 0 0;
-  border: 1px solid #ff0000
-}
-
-@media (min-width: 641px) and (max-width: 767px) {
-  .app-sidebar {
-    .headleft {
-      color: $rank-font-color;
+.user-status {
+  .user-login {
+    display: flex;
+    padding: 13px 20px;
+    .ul-l {
       font-size: 22px;
-      padding: 15px 0;
+      font-weight: 600;
+      float: left;
+      width: 50%;
+      color: $ul-l-font-color;
+      span {
+        font-size: 15px;
+        color: $ul-l-span-font-color;
+      }
     }
-    .headlast {
-      color: #000000;
-      font-size: 15px;
-    }
-    .headright {
-      color: $rank-font-color;
+    .ul-r {
       font-size: 21px;
-      text-align: center;
-      padding: 15px 0;
-    }
-
-    .level {
-      color: $level-font-color;
-      font-size: 25px;
-      padding-left: 30px;
-    }
-    
-    .closeside {
-      padding: 17px 1px;
-    }
-    
-    .rank {
-      margin: 0 -15px;
-      padding: 0 0;  
-      color: $rank-plain-color;
-      text-align: left;
-      .rankleft {
-        background-color: $rank-bg-color;
-        margin-left: -40px;
-        padding: 10px 20px;
-        width: 212px;
+      display: flex;
+      float: right;
+      width: 50%;
+      color: $ul-r-font-color;
+      p {
+        text-align: right;
+        margin-right: 20px;
       }
-      .rankright {
-        background-color: $rank-bg-color;
-        padding: 10px 20px;
-        width: 212px;
-        margin-left: -18px;
-        border-left: 1px solid #ffffff;
-      } 
+      img {
+        margin: 0;
+        width: 33px;
+        height: 33px;
+      }
     }
-    
-    .side-exchange {
-      margin-left: -16px;
-      padding: 19px 20px 0px 20px;
-    }    
-    .side-echange-head {
-      font-weight: 800;
-      font-size: 20px;
-      margin-bottom: 9px;
-    }    
-    .exchange-sub {
-      background-color: $exchange-bg-color;
-      border-top: 1px solid $exchange-border-color;
-      border-bottom: 1px solid $exchange-border-color;
-      font-size: 19px;
-      margin-right: -52px;
-      margin-left: -19px;
+  }
+  .user-level {
+    display: inline-block;
+    width: 100%;
+    ul {
+      li {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        background-color: $ul-security-level-bg-color;
+        color: $white-font-color;
+        border-right: 1px solid $white-font-color;
+        padding: 11.75px 20px;
+        font-size: 18px;
+      }
+      li:last-child {
+        border-right: none;
+      }
+      span {
+        font-size: 25px;
+        color: $lv-font-color;
+        padding-left: 30px;
+      }
+    }
+  }
+  .user-logout {
+    display: flex;
+    padding: 13px 20px;
+    border-bottom: 2px solid $ul-l-font-color;
+    .ul-l {
+      font-size: 22px;
+      font-weight: 600;
+      float: left;
+      width: 50%;
+      color: $ul-l-font-color;
+      span {
+        font-size: 15px;
+        color: $ul-l-span-font-color;
+      }
+    }
+    .ul-r {
+      font-size: 21px;
+      display: flex;
+      float: right;
+      width: 50%;
+      color: $ul-r-font-color;
       a {
-        color: $sidebar-black-color;
-        text-decoration: none;
-      }    
-      .exchange-content {
-        font-size: 20px;
-        padding: 17px 32px;
-        border-top: 1px solid $exchange-border-color;
-        border-bottom: 1px solid $exchange-border-color;
+        margin-right: 20px;
+        font-size: 16px;
+        color: $ul-r-font-color;
+        border: 1px solid $ul-l-font-color;
+        padding: 5px 15px;
       }
-    }    
+      a:hover {
+        text-decoration: none;
+      }
+      img {
+        margin: 0;
+        width: 37px;
+        height: 37px;
+      }
+    }
+  }
+}
+
+.user-menu {  
+  margin-top: -6px;
+  .side-exchange {
+    .side-echange-head {
+      font-size: 20px;
+      font-weight: 800;
+      padding: 14.5px 20px;
+      img {
+        margin-top: -0.4em;
+        margin-left: 0.5em;
+      }
+    }
+    .dd-sub-menus {
+      background-color: $dd-sub-menu-bg-color;
+      font-size: 19px;
+      border-top: 1px solid $dd-sub-menu-border-color;
+      .sub-menus {
+        font-size: 19px;
+        padding: 14.5px 20px;
+        border-bottom: 1px solid $dd-sub-menu-border-color;
+        a {
+          color: $thead-black-font-color;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+  .other-menus {
+    margin: 0 20px;
+    padding: 7.5px 20px;
+    border-top: 2px solid $other-menu-border-color;
     .service-menu {
       font-size: 20px;
-      margin-left: -16px;
-      padding: 19px 20px 15px 20px;
-    }    
-    .make-bold {
-      font-weight: 800;
-    }    
-    .app-menu {
-      font-size: 20px;
-      font-weight: 800;
-      color: $app-color;
-      text-align: center;
-      border: 1px solid $app-color;
-      width: 381px;
-      margin:  0 0 16px -35px;
-      padding: 12px 0;
+      margin: 28.5px 0;
+      a {
+        color: $thead-black-font-color;
+      }
+      a:hover {
+        text-decoration: none;
+      }
     }
-    
   }
+  .app-download {
+    display: block;
+    padding: 0 20px 32px 20px;
+    .app-d-box {
+      font-size: 18px;
+      color: $app-d-color;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      border: 1px solid $app-d-color;
+      margin-bottom: 17px;
+      padding: 10.5px 0;
+    }
+    a {
+      color: $app-d-color;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 767px) {
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  .app-sidebar {
-    max-width: 420px;  
-    .headleft {
-      color: $rank-font-color;
-      font-size: 22px;
-      padding: 15px 0;
-    }
-    .headlast {
-      color: #000000;
-      font-size: 15px;
-    }
-    .headright {
-      color: $rank-font-color;
-      font-size: 21px;
-      text-align: center;
-      padding: 15px 0;
-    }
-
-    .level {
-      color: $level-font-color;
-      font-size: 25px;
-      padding-left: 30px;
-    }
-    
-    .closeside {
-      padding: 17px 1px;
-    }
-    
-    .rank {
-      margin: 0 -15px;
-      padding: 0 0;  
-      color: $rank-plain-color;
-      text-align: left;
-      .rankleft {
-        background-color: $rank-bg-color;
-        margin-left: -40px;
-        padding: 10px 20px;
-        width: 212px;
-      }
-      .rankright {
-        background-color: $rank-bg-color;
-        padding: 10px 20px;
-        width: 212px;
-        margin-left: -18px;
-        border-left: 1px solid #ffffff;
-      } 
-    }
-    
-    .side-exchange {
-      margin-left: -16px;
-      padding: 19px 20px 0px 20px;
-    }    
-    .side-echange-head {
-      font-weight: 800;
-      font-size: 20px;
-      margin-bottom: 9px;
-    }    
-    .exchange-sub {
-      background-color: $exchange-bg-color;
-      border-top: 1px solid $exchange-border-color;
-      border-bottom: 1px solid $exchange-border-color;
-      font-size: 19px;
-      margin-right: -52px;
-      margin-left: -19px;
-      a {
-        color: $sidebar-black-color;
-        text-decoration: none;
-      }    
-      .exchange-content {
-        font-size: 20px;
-        padding: 17px 32px;
-        border-top: 1px solid $exchange-border-color;
-        border-bottom: 1px solid $exchange-border-color;
-      }
-    }    
-    .service-menu {
-      font-size: 20px;
-      margin-left: -16px;
-      padding: 19px 20px 15px 20px;
-    }    
-    .make-bold {
-      font-weight: 800;
-    }    
-    .app-menu {
-      font-size: 20px;
-      font-weight: 800;
-      color: $app-color;
-      text-align: center;
-      border: 1px solid $app-color;
-      width: 381px;
-      margin:  0 0 16px -35px;
-      padding: 12px 0;
-    }
-    
-  }
 }
 
 .debugger {
