@@ -85,7 +85,7 @@ import Commission from '@/components/Commission'
 // Security
 import IndexSecurity from '@/components/Security/Index'
 import SecurityAuthentication from '@/components/Security/SecurityAuthentication'
-import AccountAuth from '@/components/Security/AccountAuth'
+// import AccountAuth from '@/components/Security/AccountAuth'
 
 Vue.use(Router)
 
@@ -129,12 +129,12 @@ export default new Router({
           path: '/',
           component: SecurityAuthentication,
           name: 'SecurityAuthentication'
-        },
-        {
-          path: 'accountauth',
-          component: AccountAuth,
-          name: 'AccountAuth'
-        }
+        // },
+        // {
+        //   path: 'accountauth',
+        //   component: AccountAuth,
+        //   name: 'AccountAuth'
+        // }
       ]
     },
     {
