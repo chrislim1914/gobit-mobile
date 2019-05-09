@@ -83,9 +83,9 @@ import Sidebar from '@/components/Globals/Sidebar'
 import Commission from '@/components/Commission'
 
 // Security
-import IndexSecurity from '@/components/security/Index'
-import SecurityAuthentication from '@/components/security/SecurityAuthentication'
-import Accountauth from '@/components/security/Accountauth'
+import IndexSecurity from '@/components/Security/Index'
+import SecurityAuthentication from '@/components/Security/SecurityAuthentication'
+import Accountauth from '@/components/Security/Accountauth'
 
 Vue.use(Router)
 
