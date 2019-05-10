@@ -1,0 +1,113 @@
+/**
+  security style
+*/
+@import '../libs/_colors.scss';
+
+* {
+  margin: 0 auto;
+}
+
+.app-securityauth {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.lvl-indicate {
+  background-color: $security-lvl-bg-color;
+  font-size: 22px;
+  text-align: center;
+  padding: 18.8px 0;
+  span {
+    font-size: 25px;
+    color: $security-lvl-span-font-color;
+  }
+}
+.four-way-container {
+  padding: 30px 20px 24px 20px;
+  .f-w-box {
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid $f-w-box-border-color;
+    background-color: $f-w-box-bg-color;
+    padding: 25.5px 0;
+    ul {
+      margin: 0;
+      li {
+        display: flex;
+      }
+      li:nth-child(1) {
+        float: left;
+        max-width: 19%;
+      }
+      li:nth-child(2) {
+        float: left;
+        width: 54%;
+      }
+      li:nth-child(3) {
+        float: left;
+        width: 27%;
+      }
+    }
+  }
+  .fw-box-l {
+    float: left;
+    width: 19%;
+    font-size: 19px;
+    p {
+      line-height: 65px;
+      text-align: center;
+    }
+  }
+  .fw-box-m {
+    float: left;
+    width: 54%;
+    span {
+      background-color: $fw-box-bg-color;
+      color: $white-font-color;
+      font-size: 16px;
+      padding: 5px 13px;
+      border-radius: 7px;
+      margin-left: 4px;
+    }
+    p{
+      font-size: 23px;
+    }
+    p:last-child {
+      font-size: 16px;
+    }
+  }
+  .fw-box-r {
+    float: left;
+    width: 27%;
+    text-align: center;
+    a {
+      line-height: 1px;
+      line-height: 65px;
+      background-color: $fw-box-bg-color;
+      color: $white-font-color;
+      padding: 12px 19.5px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-note {
+  padding: 0 20px 20px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+@media (min-width: 420px) and (max-width: 639px) {
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+}
+
+.debugger {
+  border: 1px solid red;
+}

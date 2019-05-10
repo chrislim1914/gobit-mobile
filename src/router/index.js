@@ -83,6 +83,13 @@ import Sidebar from '@/components/Globals/Sidebar'
 
 // commision
 import Commission from '@/components/Commission'
+
+// Security
+import IndexSecurity from '@/components/Security/Index'
+import SecurityAuthentication from '@/components/Security/SecurityAuthentication'
+import AccountAuth from '@/components/Security/AccountAuth'
+import OTPAuth from '@/components/Security/OTPAuth'
+
 Vue.use(Router)
 
 export default new Router({
@@ -126,6 +133,27 @@ export default new Router({
           path: 'new',
           component: ForgotPasswordForm,
           name: 'ForgotPasswordForm'
+        }
+      ]
+    },
+    {
+      path: '/security',
+      component: IndexSecurity,
+      children: [
+        {
+          path: '/',
+          component: SecurityAuthentication,
+          name: 'SecurityAuthentication'
+        },
+        {
+          path: 'accountauth',
+          component: AccountAuth,
+          name: 'AccountAuth'
+        },
+        {
+          path: 'otpauth',
+          component: OTPAuth,
+          name: 'OTPAuth'
         }
       ]
     },

@@ -1,0 +1,28 @@
+/**
+  otp style
+*/
+@import '../libs/_colors.scss';
+
+* {
+  margin: 0 auto;
+}
+
+.app-accountauth {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+@media (min-width: 420px) and (max-width: 639px) {
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+}
+
+.debugger {
+  border: 1px solid red;
+}
