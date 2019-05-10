@@ -4,101 +4,76 @@
 @import '../libs/_colors.scss';
 
 * {
-  margin: 0 auto;
-}
-
-.app-topbar {
-  width: 100%;
   margin: 0;
   padding: 0;
+  vertical-align: middle;
 }
 
-//  for topbar
-.topbar-container {
-  display: flex;
-  padding: 20px 0;
-  img {
-    width: 32px;
-    height: 32px;
+@media (min-width: 641px) and (max-width: 767px) {
+  #security-topbar-holder {
+    height: 85px;
+    border-bottom: 3px $account-auth-border-color solid;
   }
-  .back {
-    position: relative;
-    float: left;
-    padding-left: 12px;
-    width: 9%;
-  }
-  .title {
-    text-align: center;
-    position: relative;
-    float: left;
-    width: 73%;
-    font-size: 30px;
-    font-weight: 600;
-    color: $fee-head-font-color;
-    margin-top: -6px;
-  }
-  .home-icon {
-    position: relative;
-    float: right;
-    width: 9%;
-    text-align: center;
-  }
-  .menu-icon {
-    position: relative;
-    float: right;
-    width: 9%;
-    text-align: right;
-    margin-right: 20px;
-  }
-}
 
-@media (min-width: 640px) and (max-width: 767px) {
-  .topbar-container {
-    img {
-      width: 32px;
-      height: 32px;
+  #security-topbar-content {
+    padding: 25px 20px 0px 20px;
+  }
+
+  ul li {
+    display: inline;
+
+    h6 {
+      display: inline;
+      color: $security-lvl-span-font-color;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    &:nth-child(2) {
+      padding-left: 180px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 83px;
+    }
+
+    &:nth-child(4) {
+      padding-left: 28px;
     }
   }
 }
 
-@media (min-width: 420px) and (max-width: 639px) {
-  .topbar-container {
-    img {
-      width: 32px;
-      height: 32px;
-    }
-    .back {
-      width: 15%;
-    }
-    .title {
-      width: 65%;
-    }
-    .home-icon {
-      width: 10%;
-    }
-    .menu-icon {
-      width: 10%;
-    }
+@media (min-width: 360px) and (max-width: 640px) {
+  #security-topbar-holder {
+    height: 85px;
+    border-bottom: 3px $account-auth-border-color solid;
   }
-}
 
-@media (min-width: 320px) and (max-width: 419px) {
-  .topbar-container {
-    img {
-      width: 32px;
-      height: 32px;
+  #security-topbar-content {
+    padding: 25px 20px 0px 20px;
+  }
+
+  ul li {
+    display: inline;
+
+    h6 {
+      font-size: 30px;
+      display: inline;
+      color: $security-lvl-span-font-color;
+      font-size: 30px;
+      font-weight: bold;
     }
-    .back {
-      width: 15%;
+
+    &:nth-child(2) {
+      padding-left: 180px;
     }
-    .title {
-      width: 55%;
+
+    &:nth-child(3) {
+      padding-left: 83px;
     }
-    .home-icon {
-      width: 15%;
-    }
-    .menu-icon {
-      width: 15%;
+
+    &:nth-child(4) {
+      padding-left: 28px;
     }
   }
 }

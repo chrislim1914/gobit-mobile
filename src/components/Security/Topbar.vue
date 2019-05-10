@@ -1,28 +1,32 @@
 <template>
-  <div class="app-topbar">
-    <div class="topbar-container">
-      <div class="back">
-        <img src="~img/back-arrow32x32.png" alt="back icon">
-      </div>
-      <div class="title text-align">
-        <span v-if="$route.path === '/security'">
-          보안 인증
-        </span>
-        <span v-if="$route.path === '/security/otpauth'">
-          OTP 설정
-        </span>
-        <span v-if="$route.path === '/security/accountauth'">
-          계좌번호 인증
-        </span>
-        <span v-if="$route.path === '/security/mobile_authorize'">
-          휴대폰 재인증
-        </span>
-      </div>
-      <div class="home-icon">
-        <img src="~img/home32x32.png" alt="back icon">
-      </div>
-      <div class="menu-icon">
-        <img src="~img/menu.png" alt="back icon">
+  <div id="security-topbar">
+    <div id="security-topbar-holder">
+      <div id="security-topbar-content">
+        <ul>
+          <li>
+            <img src="~img/back-arrow32x32.png" alt="Gobit security topbar back icon" class="img-fluid">
+          </li>
+          <li>
+            <h6 v-if="$route.path === '/security'">
+              보안 인증
+            </h6>
+            <h6 v-if="$route.path === '/security/otpauth'">
+              OTP 설정
+            </h6>
+            <h6 v-if="$route.path === '/security/accountauth'">
+              계좌번호 인증
+            </h6>
+            <h6 v-if="$route.path === '/security/mobile_authorize'">
+              휴대폰 재인증
+            </h6>
+          </li>
+          <li>
+            <img src="~img/home32x32.png" class="img-fluid" alt="Gobit security topbar home icon">
+          </li>
+          <li>
+            <img src="~img/menu.png" class="img-fluid" alt="Gobit security topbar menu icon">
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -30,7 +34,7 @@
 
 <script>
 export default {
-  name: 'Topbar'
+  name: 'SecurityTopbar'
 }
 </script>
 

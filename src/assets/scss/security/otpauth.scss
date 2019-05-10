@@ -90,16 +90,13 @@ a:hover {
   }
 }
 
+@media (min-width: 641px) and (max-width: 767px) {
 
-@media (min-width: 640px) and (max-width: 767px) {
 }
 
-@media (min-width: 420px) and (max-width: 639px) {
-}
+@media (min-width: 360px) and (max-width: 640px) {
 
-@media (min-width: 320px) and (max-width: 419px) {
 }
-
 .debugger {
   border: 1px solid red;
 }
