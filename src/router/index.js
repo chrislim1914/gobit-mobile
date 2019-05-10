@@ -39,6 +39,7 @@ import SignupEmailVerification from '@/components/Signup/EmailVerification'
 import forgot password component
 */
 import ForgotPassword from '@/components/ForgotPassword/Index'
+import ForgotPasswordForm from '@/components/ForgotPassword/PasswordForm'
 /*
 import service component
 */
@@ -113,7 +114,14 @@ export default new Router({
     },
     {
       path: '/forgot_password',
-      component: ForgotPassword
+      component: ForgotPassword,
+      children: [
+        {
+          path: 'new',
+          component: ForgotPasswordForm,
+          name: 'ForgotPasswordForm'
+        }
+      ]
     },
     {
       path: '/investment',

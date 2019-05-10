@@ -49,7 +49,8 @@
                 <td>{{ record.pricekrw }}</td>
                 <td class="rt">{{ record.fullday }}</td>
                 <td class="bt">{{ record.percentage }}</td>
-                <td>{{ record.priceeth }}</td>
+                <td>{{ record.priceeth.substr(0, record.priceeth.indexOf('.')) }}.<span class="trading-record-table-2-decimal">{{ record.priceeth.substr(-3) }}</span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -116,7 +117,7 @@ export default {
           pricekrw: '186,800',
           fullday: '-7,200',
           percentage: '-3.71%',
-          priceeth: '1,906.696'
+          priceeth: '1,906,000.696'
         }
       ],
       activeTable: '실시간 체결기록'
