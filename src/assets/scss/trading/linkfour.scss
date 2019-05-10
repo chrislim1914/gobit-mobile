@@ -194,6 +194,10 @@
       text-align: left !important;
     }
   }
+
+  .trading-record-table-2-decimal {
+    color: $trading-record-table-text-color;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
@@ -378,6 +382,10 @@
       display: inline-block;
       text-align: left !important;
     }
+  }
+
+  .trading-record-table-2-decimal {
+    color: $trading-record-table-text-color;
   }
 }
 
