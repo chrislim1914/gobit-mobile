@@ -1,0 +1,126 @@
+/**
+  authorize security style
+*/
+@import '../libs/_colors.scss';
+
+@media (min-width: 641px) and (max-width: 767px) {
+  #security-authorize-holder {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #security-authorize-title-section {
+    margin-top: 55px;
+  }
+
+  #security-authorize-title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  #security-authorize-list-section {
+    margin-top: 64px;
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: $trading-coin-information-text-color;
+      display: inline-block;
+    }
+
+    ul {
+      li:nth-child(2) {
+        margin-top: 39px;
+      }
+
+      li:nth-child(3) {
+        margin-top: 39px;
+      }
+    }
+
+    ul li h6 {
+      color: $security-mobileauthorize-list-text-color;
+      display: inline;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  #security-authorize-button-section {
+    margin-top: 50px;
+  }
+
+  #security-authorize-button {
+    width: 604px;
+    height: 70px;
+    border-radius: 0;
+    font-weight: bold;
+    color: $security-mobileauthorize-button-text-color;
+    background-color: $security-mobileauthorize-button-background-color;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  #security-authorize-holder {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #security-authorize-title-section {
+    margin-top: 55px;
+  }
+
+  #security-authorize-title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  #security-authorize-list-section {
+    margin-top: 64px;
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: $trading-coin-information-text-color;
+      display: inline-block;
+    }
+
+    ul {
+      li:nth-child(2) {
+        margin-top: 39px;
+      }
+
+      li:nth-child(3) {
+        margin-top: 39px;
+      }
+    }
+
+    ul li h6 {
+      color: $security-mobileauthorize-list-text-color;
+      display: inline;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  #security-authorize-button-section {
+    margin-top: 50px;
+  }
+
+  #security-authorize-button {
+    width: 604px;
+    height: 70px;
+    border-radius: 0;
+    font-weight: bold;
+    color: $security-mobileauthorize-button-text-color;
+    background-color: $security-mobileauthorize-button-background-color;
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

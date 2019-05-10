@@ -1,6 +1,6 @@
 <template>
   <div class="app-security">
-    <!-- <topbar></topbar> -->
+    <topbar></topbar>
     <router-view></router-view>
   </div>
 </template>

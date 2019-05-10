@@ -1,8 +1,5 @@
 <template>
   <div class="app-securityauth">
-    <!-- topbar -->
-    <topbar titlename="보안 인증"></topbar>
-    <!-- end of topbar -->
     <!-- level indicator -->
     <div class="lvl-indicate">
       회원님의 현재 보안레벨은 <span>Lv.1</span>  입니다

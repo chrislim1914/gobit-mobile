@@ -89,6 +89,7 @@ import IndexSecurity from '@/components/Security/Index'
 import SecurityAuthentication from '@/components/Security/SecurityAuthentication'
 import AccountAuth from '@/components/Security/AccountAuth'
 import OTPAuth from '@/components/Security/OTPAuth'
+import MobileAuthorize from '@/components/Security/MobileAuthorize'
 
 Vue.use(Router)
 
@@ -154,6 +155,11 @@ export default new Router({
           path: 'otpauth',
           component: OTPAuth,
           name: 'OTPAuth'
+        },
+        {
+          path: 'mobile_authorize',
+          component: MobileAuthorize,
+          name: 'MobileAuthorize'
         }
       ]
     },
