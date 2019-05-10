@@ -1,0 +1,166 @@
+/*
+  forgot password email stylesheet
+*/
+@import '../libs/_colors.scss';
+
+@media (min-width: 641px) and (max-width: 767px) {
+  #forgotpassword-email-holder {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #forgotpassword-email-title-section {
+    margin-top: 55px;
+  }
+
+  #forgotpassword-email-title {
+    font-size: 28px;
+    color: $forgotpassword-text-color;
+  }
+
+  #forgotpassword-email-field-section {
+    margin-top: 30px;
+
+    input {
+      width: 604px;
+      height: 69px;
+      font-size: 20px;
+      padding-left: 28px;
+
+      &::placeholder {
+        font-weight: bold;
+      }
+    }
+  }
+
+  #forgotpassword-email-button-section {
+    margin-top: 45px;
+  }
+
+  #forgotpassword-email-submit-button {
+    font-size: 22.5px;
+    width: 604px;
+    height: 70px;
+    border-radius: 0px;
+    font-weight: bold;
+    background-color: $forgotpassword-emailform-button-background-color;
+    color: $forgotpassword-emailform-button-text-color;
+  }
+
+  #forgotpassword-message-email-section {
+    margin-top: 50px;
+  }
+
+  #forgotpassword-message-email {
+    font-size: 28px;
+    color: $forgotpassword-email-color;
+  }
+
+  #forgotpassword-message-sentence-section {
+    margin-top: 43px;
+
+    h6 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    h6:nth-child(1) {
+      font-size: 22px;
+    }
+
+    h6:nth-child(2) {
+      font-size: 18px !important;
+      color: $forgotpassword-message-text-color;
+    }
+
+    #forgotpassword-message-sentence-3, #forgotpassword-message-sentence-4 {
+      margin-top: 45px;
+    }
+
+    #forgotpassword-message-sentence-5 {
+      margin-top: 48px;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  #forgotpassword-email-holder {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #forgotpassword-email-title-section {
+    margin-top: 55px;
+  }
+
+  #forgotpassword-email-title {
+    font-size: 28px;
+    color: $forgotpassword-text-color;
+  }
+
+  #forgotpassword-email-field-section {
+    margin-top: 30px;
+
+    input {
+      width: 604px;
+      height: 69px;
+      font-size: 20px;
+      padding-left: 28px;
+
+      &::placeholder {
+        font-weight: bold;
+      }
+    }
+  }
+
+  #forgotpassword-email-button-section {
+    margin-top: 45px;
+  }
+
+  #forgotpassword-email-submit-button {
+    font-size: 22.5px;
+    width: 604px;
+    height: 70px;
+    border-radius: 0px;
+    font-weight: bold;
+    background-color: $forgotpassword-emailform-button-background-color;
+    color: $forgotpassword-emailform-button-text-color;
+  }
+
+  #forgotpassword-message-email-section {
+    margin-top: 50px;
+  }
+
+  #forgotpassword-message-email {
+    font-size: 28px;
+    color: $forgotpassword-email-color;
+  }
+
+  #forgotpassword-message-sentence-section {
+    margin-top: 43px;
+
+    h6 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    h6:nth-child(1) {
+      font-size: 22px;
+    }
+
+    h6:nth-child(2) {
+      font-size: 18px !important;
+      color: $forgotpassword-message-text-color;
+    }
+
+    #forgotpassword-message-sentence-3, #forgotpassword-message-sentence-4 {
+      margin-top: 45px;
+    }
+
+    #forgotpassword-message-sentence-5 {
+      margin-top: 48px;
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
