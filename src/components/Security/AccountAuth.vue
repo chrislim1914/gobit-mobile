@@ -1,7 +1,7 @@
 <template>
   <div class="app-accountauth">
     <!-- topbar -->
-    <topbar></topbar>
+    <topbar titlename="계좌번호 인증"></topbar>
     <!-- end of topbar -->
     <!-- bank info -->
     <div class="bank-info">

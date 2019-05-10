@@ -7,10 +7,87 @@
   margin: 0 auto;
 }
 
-.app-accountauth {
+.app-otpauth {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.otp-container {
+  border-top: 2px solid $account-auth-border-color;
+  padding: 58px 20px;
+  .otp-box {
+    display: grid;
+    .otp-title {
+      float: left;
+      width: 100%;
+      font-size: 27px;
+      margin-bottom: 22px;
+      font-weight: 600;
+    }
+    .otp-body {
+      float: left;
+      width: 100%;
+      text-align: center;
+      ul {
+        margin: 0 0 67px 0;
+        li {
+          display: inline-flex;
+          margin-bottom: 10px;
+          a {
+            font-size: 22.5px;
+            color: $white-font-color;
+            background-color: $account-auth-border-color;
+            width: 292px;
+            padding: 19.1px 0;
+            font-weight: 600;
+          }
+        }
+      }
+      .qr-box {
+        float: left;
+        border-right: 1px solid $border-gray-color;
+        height: 145px;
+        margin-bottom: 58px;
+        img {
+          width: 145px;
+        }
+      }
+      .qr-data {
+        float: left;
+        height: 145px;
+        text-align: left;
+        padding: 45px 24px;
+        font-size: 12px;
+        p:last-child {
+          color: $security-lvl-span-font-color;
+          font-weight: 500;
+        }
+        span {
+          color: $thead-gray-font-color;
+        }
+      }
+      input[type=text] {
+        font-size: 17px;
+        width: 100%;
+        padding: 20.8px 29px;
+        font-weight: 600;
+      }
+      button {
+        margin-top: 34px;
+        border-radius: 0;
+        width: 100%;
+        font-size: 22.5px;
+        font-weight: 600;
+        background-color: $account-auth-border-color;
+        color: $white-font-color;
+        padding: 17.2px 0;
+      }
+    }
+  }
 }
 
 

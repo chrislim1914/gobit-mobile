@@ -23,13 +23,21 @@
     <!-- header -->
     <div class="b-head-handler">
       <div class="b-head-up">
-        <div class="bhu-l">내 보유 자산</div>
+        <div class="bhu-l">내 보유자산</div>
         <div class="bhu-r">
           KRW 환산 추정값 <img src="~img/info32x32.png" alt="info32x32 icon">
         </div>
       </div>
-      <div class="b-head-middle">
-        <ul>
+      <div class="b-head-middle debugger">
+        <div class="bhm-data-l">
+          <div>보유 KRW</div>
+          <div class="numbered">0</div>
+        </div>
+        <div class="bhm-data-r">
+          <div>총 보유자산</div>
+          <div class="numbered">133,551</div>
+        </div>
+        <!-- <ul>
           <li>
             <div class="li-left">
               <div>보유 KRW</div>
@@ -42,7 +50,7 @@
               <div class="numbered">133,551</div>
             </div>
           </li>
-        </ul>
+        </ul> -->
       </div>
       <div class="b-head-lower">
         <div class="bhl-holder">
@@ -86,9 +94,9 @@
           </div>
           <div class="bb-up-r">
             <div class="to-left">평가손익</div>
-            <div class="to-right">-137,733</div>
+            <div class="to-right to-blue">-137,733</div>
             <div class="to-left">수익률</div>
-            <div class="to-right">-48.88%</div>
+            <div class="to-right to-blue">-48.88%</div>
           </div>
         </div>
         <div class="b-body-down-container">
@@ -97,7 +105,7 @@
               <p class="p-top">5,283.12345678 <span>SC</span></p>
               <p class="r-down">보유수량</p>
             </div>
-            <div class="bbd-l">
+            <div class="bbd-r">
               <p class="p-top">29.65 <span>KRW</span></p>
               <p class="r-down">매수평균가</p>
             </div>
@@ -107,7 +115,7 @@
               <p class="p-top">18,913 <span>KRW</span></p>
               <p class="r-down">평가금액</p>
             </div>
-            <div class="bbd-l">
+            <div class="bbd-r">
               <p class="p-top">156,647 <span>KRW</span></p>
               <p class="r-down">매수평균가</p>
             </div>
@@ -122,9 +130,9 @@
           </div>
           <div class="bb-up-r">
             <div class="to-left">평가손익</div>
-            <div class="to-right">-137,733</div>
+            <div class="to-right to-red">-137,733</div>
             <div class="to-left">수익률</div>
-            <div class="to-right">-48.88%</div>
+            <div class="to-right to-red">-48.88%</div>
           </div>
         </div>
         <div class="b-body-down-container">
@@ -133,7 +141,7 @@
               <p class="p-top">5,283.12345678 <span>SC</span></p>
               <p class="r-down">보유수량</p>
             </div>
-            <div class="bbd-l">
+            <div class="bbd-r">
               <p class="p-top">29.65 <span>KRW</span></p>
               <p class="r-down">매수평균가</p>
             </div>
@@ -143,7 +151,7 @@
               <p class="p-top">18,913 <span>KRW</span></p>
               <p class="r-down">평가금액</p>
             </div>
-            <div class="bbd-l">
+            <div class="bbd-r">
               <p class="p-top">156,647 <span>KRW</span></p>
               <p class="r-down">매수평균가</p>
             </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="app-securityauth">
     <!-- topbar -->
-    <topbar></topbar>
+    <topbar titlename="보안 인증"></topbar>
     <!-- end of topbar -->
     <!-- level indicator -->
     <div class="lvl-indicate">

@@ -15,6 +15,7 @@
     width: 33.333%;
     text-align: center;
     font-size : 23px;
+    font-weight: 600;
     border-bottom: 2px solid $fee-tab-inactive-color;
     a {
       color: $thead-black-font-color;      
@@ -44,42 +45,57 @@
       font-weight: 600;
     }
     .bhu-r {
+      font-size: 17px;
       text-align: right;
       float: left;
       width: 50%;
       color: $bheadright-font-color;
       img {
-        margin-top: -7px;
-        width: 28px;
+        margin-top: -5px;
+        width: 18px;
       }
     }
   }
   .b-head-middle {
-    text-align: center;
-    ul {
-      padding-bottom: 0;
-      li {
-        font-size: 19px;
-        display: inline-block;
-        border-right: 2px solid $fee-table-color;
-        width: 47.5%;
-        text-align: left;
-      }
-      .numbered {
-        font-size: 33px;
-      }
-      .li-left {
-        position: relative;
-        padding-left: 20px;
-      }
-      .li-right {
-        position: relative;
-        padding-left: 22px;
-      }
-      li:last-child {
-        border-right: none;
-      }
+    display: flex;
+    padding: 0 20px;
+    .bhm-data-l {
+      width: 50%;
+      border-right: 2px solid $fee-table-color;
+      display: inline-block;
+      text-align: left;
+      font-weight: 600;      
     }
+    .bhm-data-r {
+      float: left;
+      width: 50%;
+    }
+    // text-align: center;
+    // ul {
+    //   padding-bottom: 0;
+    //   li {
+    //     font-size: 19px;
+    //     display: inline-block;
+    //     border-right: 2px solid $fee-table-color;
+    //     width: 47.5%;
+    //     text-align: left;
+    //     font-weight: 600;
+    //   }
+    //   .numbered {
+    //     font-size: 33px;
+    //   }
+    //   .li-left {
+    //     position: relative;
+    //     padding-left: 20px;
+    //   }
+    //   .li-right {
+    //     position: relative;
+    //     padding-left: 22px;
+    //   }
+    //   li:last-child {
+    //     border-right: none;
+    //   }
+    // }
   }
   .b-head-lower {
     display: inline-block;
@@ -97,6 +113,7 @@
             display: inline-block;
             text-align: left;
             width: 48.5%;
+            font-weight: 600;
           }
           li:last-child {
             text-align: right;
@@ -113,10 +130,12 @@
             text-align: left;
             width: 48.5%;
             padding-left: 20px;
+            font-weight: 600;
           }
           li:last-child {
             text-align: right;
             color: $balance-font-blue-color;
+            font-size: 20px;
           }
         }
       }
@@ -154,12 +173,18 @@
           float: left;
           width: 50%;
           text-align: left;
+          font-weight: 600;
         }
         .to-right {
           float: left;
           width: 50%;
-          text-align: right;
+          text-align: right;          
+        }
+        .to-blue {
           color: $balance-font-blue-color;
+        }
+        .to-red {
+          color: $balance-font-red-color;
         }
       }
     }
@@ -178,7 +203,7 @@
           padding-top: 2px;
           margin: 0;
           span {
-            font-weight: 800;
+            font-weight: 900;
           }
         }
         .p-top {
@@ -187,6 +212,27 @@
         .r-down {
           font-size: 19px;
           color: $bheadright-font-color;
+          font-weight: 600;
+        }
+      }
+      .bbd-r {
+        float: left;
+        width: 50%;
+        p {
+          text-align: right;
+          padding-top: 2px;
+          margin: 0;
+          span {
+            font-weight: 900;
+          }
+        }
+        .p-top {
+          font-size: 21px;
+        }
+        .r-down {
+          font-size: 19px;
+          color: $bheadright-font-color;
+          font-weight: 600;
         }
       }
     }
@@ -252,31 +298,31 @@
       }
     }
     .b-head-middle {
-      text-align: center;
-      ul {
-        padding-bottom: 0;
-        li {
-          font-size: 19px;
-          display: inline-block;
-          border-right: 2px solid $fee-table-color;
-          width: 47.5%;
-          text-align: left;
-        }
-        .numbered {
-          font-size: 33px;
-        }
-        .li-left {
-          position: relative;
-          padding-left: 20px;
-        }
-        .li-right {
-          position: relative;
-          padding-left: 22px;
-        }
-        li:last-child {
-          border-right: none;
-        }
-      }
+      // text-align: center;
+      // ul {
+      //   padding-bottom: 0;
+      //   li {
+      //     font-size: 19px;
+      //     display: inline-block;
+      //     border-right: 2px solid $fee-table-color;
+      //     width: 47.5%;
+      //     text-align: left;
+      //   }
+      //   .numbered {
+      //     font-size: 33px;
+      //   }
+      //   .li-left {
+      //     position: relative;
+      //     padding-left: 20px;
+      //   }
+      //   .li-right {
+      //     position: relative;
+      //     padding-left: 22px;
+      //   }
+      //   li:last-child {
+      //     border-right: none;
+      //   }
+      // }
     }
     .b-head-lower {
       display: inline-block;

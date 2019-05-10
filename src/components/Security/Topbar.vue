@@ -5,7 +5,7 @@
         <img src="~img/back-arrow32x32.png" alt="back icon">
       </div>
       <div class="title text-align">
-        투자내역
+        {{ titlename }}
       </div>
       <div class="home-icon">
         <img src="~img/home32x32.png" alt="back icon">
@@ -19,7 +19,8 @@
 
 <script>
 export default {
-  name: 'Topbar'
+  name: 'Topbar',
+  props: ['titlename']
 }
 </script>
 
