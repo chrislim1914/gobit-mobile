@@ -28,29 +28,15 @@
           KRW 환산 추정값 <img src="~img/info32x32.png" alt="info32x32 icon">
         </div>
       </div>
-      <div class="b-head-middle debugger">
+      <div class="b-head-middle">
         <div class="bhm-data-l">
-          <div>보유 KRW</div>
+          <div>보유KRW</div>
           <div class="numbered">0</div>
         </div>
         <div class="bhm-data-r">
-          <div>총 보유자산</div>
+          <div>총보유자산</div>
           <div class="numbered">133,551</div>
         </div>
-        <!-- <ul>
-          <li>
-            <div class="li-left">
-              <div>보유 KRW</div>
-              <div class="numbered">0</div>
-            </div>
-          </li>
-          <li>
-            <div class="li-right">
-              <div>총 보유자산</div>
-              <div class="numbered">133,551</div>
-            </div>
-          </li>
-        </ul> -->
       </div>
       <div class="b-head-lower">
         <div class="bhl-holder">
@@ -70,13 +56,13 @@
         <div class="bhl-holder">
           <div class="bhl-l">
             <ul>
-              <li>총매수</li>
+              <li>총평가</li>
               <li>266,123</li>
             </ul>
           </div>
           <div class="bhl-r">
             <ul>
-              <li>평가손익</li>
+              <li>수익률</li>
               <li>-49.78%</li>
             </ul>
           </div>
@@ -125,8 +111,8 @@
       <div class="b-body">
         <div class="b-body-up">
           <div class="bb-up-l">
-            <p>시아코인</p>
-            <p>(SC)</p>
+            <p>이더리움</p>
+            <p>(ETH)</p>
           </div>
           <div class="bb-up-r">
             <div class="to-left">평가손익</div>
