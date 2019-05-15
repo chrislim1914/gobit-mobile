@@ -4,24 +4,26 @@
       <div id="trading-lone-content">
         <div class="container-fluid px-0">
           <div class="row mx-0">
-            <div id="trading-lone-left" class="px-0">
+            <div id="trading-lone-left">
               <table id="trading-lone-table-1">
-                <tr>
-                  <td>
-
+                <tr :key="index" v-for="index in 10">
+                  <td id="trading-lone-table-1-d1">
+                    <h6>190,450</h6>
+                    <h6>2.04%</h6>
                   </td>
-                  <td>
-
+                  <td id="trading-lone-table-1-d2">
+                    <h6>9.990</h6>
                   </td>
                 </tr>
               </table>
               <table id="trading-lone-table-2">
-                <tr>
-                  <td>
-
+                <tr :key="index" v-for="index in 10">
+                  <td id="trading-lone-table-1-d1">
+                    <h6>190,450</h6>
+                    <h6>2.04%</h6>
                   </td>
-                  <td>
-
+                  <td id="trading-lone-table-1-d2">
+                    <h6>9.990</h6>
                   </td>
                 </tr>
               </table>
