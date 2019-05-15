@@ -1,13 +1,118 @@
 /*
   trading link one stylesheet
 */
+@import '../libs/colors.scss';
 
 @media (min-width: 641px) and (max-width: 767px) {
-  
+  .nav {
+    text-align: center;
+    background-color: $trading-lone-tab-background-color;
+
+    .nav-item {
+      width: 116px;
+      height: 59px;
+    }
+
+    .nav-item a.active {
+      color: $trading-lone-tab-text-active-color;
+    }
+  }
+
+  #trading-lone-left {
+    width: 45.31% !important;
+  }
+
+  #trading-lone-right {
+    width: 54.69% !important;
+  }
+
+  .nav .nav-link {
+    height: 59px;
+    padding: 0;
+    color: $trading-lone-tab-text-color;
+  }
+
+  #v-divide-1 {
+    background-color: #ccc;
+    width: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    height: 21px;
+  }
+
+  #v-divide-2 {
+    background-color: #ccc;
+    width: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    height: 21px;
+  }
+
+  .tab-content {
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  
+  .nav {
+    text-align: center;
+    background-color: $trading-lone-tab-background-color;
+
+    .nav-item {
+      width: 116px;
+      height: 59px;
+    }
+
+    .nav-item a.active {
+      color: $trading-lone-tab-text-active-color;
+    }
+  }
+
+  #trading-lone-left {
+    width: 45.31% !important;
+  }
+
+  #trading-lone-right {
+    width: 54.69% !important;
+  }
+
+  .nav .nav-link {
+    height: 59px;
+    font-size: 21px;
+    color: $trading-lone-tab-text-color;
+  }
+
+  #v-divide-1 {
+    background-color: #ccc;
+    width: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -1px;
+    height: 21px;
+  }
+
+  #v-divide-2 {
+    background-color: #ccc;
+    width: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: -1px;
+    height: 21px;
+  }
+
+  .tab-content {
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 .debugger {
