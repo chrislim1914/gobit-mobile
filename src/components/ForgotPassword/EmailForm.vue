@@ -2,7 +2,7 @@
   <div id="app-forgotpassword-email">
     <div id="forgotpassword-email-holder">
       <div id="forgotpassword-email-content">
-        <span id="forgotpassword-form" class="d-none">
+        <span id="forgotpassword-form">
           <div id="forgotpassword-email-title-section">
             <h6 id="forgotpassword-email-title" class="font-weight-bold mb-0">
               비밀번호 찾기
@@ -17,7 +17,7 @@
             </button>
           </div>
         </span>
-        <span id="forgotpassword-message">
+        <span id="forgotpassword-message" class="d-none">
           <div id="forgotpassword-email-title-section">
             <h6 id="forgotpassword-email-title" class="font-weight-bold mb-0">
               비밀번호 찾기

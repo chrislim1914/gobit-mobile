@@ -75,6 +75,23 @@ $trading-record-table-border-color: #eaedef;
 $trading-record-table-text-color: #687586;
 $trading-record-table-blue-text-color: #2675b4;
 $trading-record-table-red-text-color: #b23a51;
+$trading-lone-tab-text-color: #000000;
+$trading-lone-tab-text-active-1-color: #536BBB;
+$trading-lone-tab-text-active-2-color: #c2584b;
+$trading-lone-tab-background-color: #f4f4f4;
+$trading-lone-tab-1-border-color: #ccc;
+$trading-lone-tab-1-button-background-color: #e7e7e7;
+$trading-lone-tab-1-button-1-background-color: #777777;
+$trading-lone-tab-1-button-2-background-color: #c2584b;
+$trading-lone-tab-2-button-2-background-color: #2d61bf;
+$trading-lone-tab-1-button-border-color: #177d83;
+$trading-lone-table-1-text-color: #bf5c52;
+$trading-lone-table-1-upper-background-color: #f2f7fe;
+$trading-lone-table-1-lower-background-color: #fbf2f1;
+$trading-lone-tab-3-text-color: #2d61bf;
+$trading-lone-tab-3-passive-text-color: #a2a2a2;
+$trading-lone-tab-3-link-color: #2e88a5;
+$trading-lone-tab-3-button-background-color: #177e82;
 /*
   login
 */
@@ -202,6 +219,7 @@ $f-w-box-border-color: #dfdede;
 $f-w-box-bg-color: #f6f5f5;
 $fw-box-bg-color: #459b8d;
 $account-auth-border-color: #08a085;
+$border-gray-color: #ebebeb;
 $border-gray-color: #ebebeb;
 $security-mobileauthorize-list-text-color: #a2a3a2;
 $security-mobileauthorize-button-background-color: #08a085;
