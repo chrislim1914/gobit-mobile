@@ -57,6 +57,10 @@
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
+  #search-input-group {
+    margin-top: 9px;
+  }
+
   #exchange-search-holder {
     height: 60px;
     border-bottom: 2px solid $exchange-searchbar-color;
