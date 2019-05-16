@@ -116,6 +116,10 @@
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
+  #exchange-symbol-preference-label {
+    font-size: 15px;
+  }
+
   #exchange-symbol-holder {
     height: 70px;
     border-bottom: 2px solid $exchange-symbol-bottom-border-color;
@@ -132,7 +136,7 @@
   .list-group-item {
     width: 103px;
     height: 45px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     border-radius: 0px !important;
     border: 1px solid $exchange-symbol-border-color;

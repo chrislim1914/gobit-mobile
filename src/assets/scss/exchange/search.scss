@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 415px) and (max-width: 640px) {
   #exchange-search-holder {
     height: 60px;
     border-bottom: 2px solid $exchange-searchbar-color;
@@ -53,6 +53,27 @@
   #exchange-searchbar-field {
     font-size: 23px;
     margin-left: 10px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  #exchange-search-holder {
+    height: 60px;
+    border-bottom: 2px solid $exchange-searchbar-color;
+  }
+
+  #exchange-search-content {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #exchange-searchbar-field {
+    font-size: 11px;
+    margin-left: 10px;
+  }
+
+  #search-icon {
+    height: 27px;
+    width: 27px;
   }
 }
 

@@ -12,25 +12,25 @@
       <div id="customer-service-link-row" class="row text-center">
         <div class="col-3 border-right">
           <h1 class="customer-service-link-text font-weight-bold">
-            <img src="~img/call.png" class="img-fluid pb-2" alt="Gobit download"><br/>
+            <img src="~img/call.png" class="pb-2 customer-service-link-img" alt="Gobit download"><br/>
             1544-0000
           </h1>
         </div>
         <div class="col-3 border-right">
           <h1 class="customer-service-link-text font-weight-bold">
-            <img src="~img/message.png" class="img-fluid pb-2" alt="Gobit download"><br/>
+            <img src="~img/message.png" class="pb-2 customer-service-link-img" alt="Gobit download"><br/>
             카톡 상담
           </h1>
         </div>
         <div class="col-3 border-right">
           <h1 class="customer-service-link-text font-weight-bold">
-            <img src="~img/download.png" class="img-fluid pb-2" alt="Gobit download"><br/>
+            <img src="~img/download.png" class="pb-2 customer-service-link-img" alt="Gobit download"><br/>
             App 다운
           </h1>
         </div>
         <div class="col-3">
           <h1 class="customer-service-link-text font-weight-bold">
-            <img src="~img/notice32x32.png" class="img-fluid pb-2" alt="Gobit notice"><br/>
+            <img src="~img/notice32x32.png" class="pb-2 customer-service-link-img" alt="Gobit notice"><br/>
             공지사항
           </h1>
         </div>

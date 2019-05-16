@@ -7,7 +7,7 @@
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text px-0 py-0">
-              <img src="~img/search32x32.png" alt="Gobit search icon" class="img-fluid">
+              <img src="~img/search32x32.png" alt="Gobit search icon" id="search-icon" class="img-fluid">
             </div>
           </div>
           <input type="text" class="form-control font-weight-bold px-0 py-0" id="exchange-searchbar-field" placeholder="코인명 검색">

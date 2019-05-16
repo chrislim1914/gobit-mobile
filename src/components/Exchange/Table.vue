@@ -2,8 +2,8 @@
   <!-- exchange table -->
   <div class="app-exchangetable">
     <div id="exchange-table-holder">
-      <div id="exchange-table-content" class="table-responsive">
-        <table id="exchange-table" class="table" cellpadding="0" cellspacing="0">
+      <div id="exchange-table-content">
+        <table id="exchange-table" cellpadding="0" cellspacing="0">
           <tr id="exchange-table-head-row">
             <th class="position-relative">
               지수
