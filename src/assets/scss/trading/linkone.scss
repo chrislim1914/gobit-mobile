@@ -23,426 +23,6 @@
 }
 
 @media (min-width: 641px) and (max-width: 767px) {
-.nav {
-    text-align: center;
-    background-color: $trading-lone-tab-background-color;
-
-    li:nth-child(2) {
-      // border: 1px solid blue;
-
-      &:before {
-        content : "";
-        position: absolute;
-        left    : 0;
-        z-index: 100;
-        top  : 25%;
-        width  : 1px;
-        height   : 50%;  /* or 100px */
-        background: #ccc;
-      }
-
-      &:after {
-        content : "";
-        position: absolute;
-        right    : 0;
-        z-index: 100;
-        top  : 25%;
-        width  : 1px;
-        height   : 50%;  /* or 100px */
-        background: #ccc;
-      }
-    }
-
-    .nav-item {
-      width: 116.55px;
-      height: 59px;
-    }
-
-    .nav-item a.active {
-      color: $trading-lone-tab-text-active-color;
-    }
-  }
-
-  #trading-lone-left {
-    width: 45% !important;
-  }
-
-  #trading-lone-right {
-    width: 55% !important;
-  }
-
-  .nav .nav-link {
-    height: 59px;
-    font-size: 21px;
-    color: $trading-lone-tab-text-color;
-  }
-
-  #v-divide-1 {
-    background-color: #ccc;
-    width: 1px;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 15px;
-    left: -1px;
-    height: 21px;
-  }
-
-  #v-divide-2 {
-    background-color: #ccc;
-    width: 1px;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: -1px;
-    height: 21px;
-  }
-
-  .tab-content {
-    padding: 25px 20px 0px 20px;
-  }
-
-  ul {
-    list-style: none;
-
-    li {
-      display: inline;
-    }
-  }
-
-  #trading-lone-tab-1 {
-    font-size: 19px;
-    font-weight: bold;
-    padding-bottom: 28px;
-    
-    li:nth-child(1) {
-      img {
-        width: 21px;
-        height: 21px;
-      }
-    }
-
-    li:nth-child(2) {
-      padding-left: 35px;
-    }
-
-    li:nth-child(3) {
-      padding-left: 14px;
-      text-align: right;
-    }
-  }
-
-  #one {
-    #trading-lone-tab-1-div-1 {
-      margin-bottom: 22px; 
-    }
-
-    #trading-lone-tab-1-text-1 {
-      display: inline-block;
-      font-size: 21px;
-      width: 196px;
-      padding-right: 5px;
-    }
-
-    #trading-lone-tab-1-text-2 {
-      display: inline-block;
-      font-size: 21px;
-      font-weight: 800;
-      width: 110px;
-      text-align: right;
-    }
-
-    #trading-lone-tab-1-div-2 {
-      .dropbtn {
-        background-color: $trading-lone-tab-1-button-background-color;
-        color: #000;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        height: 52px;
-        width: 110px;
-        border-radius: 0;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        height: 52px;
-        width: 110px;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: $trading-lone-tab-1-button-background-color;
-        min-width: 110px;
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {background-color: #f1f1f1}
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: $trading-lone-tab-1-button-background-color;;
-      }
-
-      #trading-lone-tab-1-div-2-subdiv-1 {
-        display: inline-block;
-        position: relative;
-        border: 1px solid $trading-lone-tab-1-border-color;
-        width: 196px;
-        height: 52px;
-        vertical-align: middle;
-
-        h6:nth-child(1) {
-          font-size: 21px;
-          font-weight: bold;
-          padding: 0 12px;
-          height: 52px;
-          display: table-cell;
-          vertical-align: middle;
-        }
-
-        h6:nth-child(2) {
-          font-size: 21px; 
-          font-weight: bold; 
-          padding: 0 12px; 
-          height: 52px; 
-          position: absolute; 
-          top: 25%; 
-          right:0; 
-          display: table-cell; 
-          vertical-align: middle;
-        }
-      }
-
-      #trading-lone-tab-1-div-2-subdiv-2 {
-        display: inline-block; 
-        position: relative; 
-        width: 110px; 
-        height: 52px; 
-        vertical-align: middle;
-      }
-    }
-
-    #trading-lone-tab-1-div-3 {
-      margin-top: 7px;
-
-      #trading-lone-tab-1-div-3-subdiv-1 {
-        display: inline-block;
-        position: relative;
-        border: 1px solid $trading-lone-tab-1-border-color;
-        width: 196px;
-        height: 52px;
-        vertical-align: middle;
-
-        h6:nth-child(1) {
-          font-size: 21px;
-          font-weight: bold;
-          padding: 0 12px;
-          height: 52px;
-          display: table-cell;
-          vertical-align: middle;
-        }
-
-        h6:nth-child(2) {
-          font-size: 21px; 
-          font-weight: bold; 
-          padding: 0 12px; 
-          height: 52px; 
-          position: absolute; 
-          top: 25%; 
-          right:0; 
-          display: table-cell; 
-          vertical-align: middle;
-        }
-      }
-
-      #trading-lone-tab-1-div-3-subdiv-2 {
-        display: inline-block;
-        width: 110px; 
-        height: 52px; 
-        vertical-align: middle;
-
-        a {
-          width: 54px;
-          height: 52px;
-          font-size: 21px;
-          font-weight: bold;
-          display: inline-block;
-          border-radius: 0;
-          background-color: $trading-lone-tab-1-button-background-color;
-        }
-
-        a:nth-child(1) {
-          margin-right: 1px;
-        }
-
-        a:nth-child(2) {
-          margin-left: 1px;
-        }
-      }
-    }
-
-    #trading-lone-tab-1-div-4 {
-      margin-top: 7px;
-
-      .dropbtn {
-        background-color: $trading-lone-tab-1-button-background-color;
-        color: #000;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        height: 52px;
-        width: 196px;
-        border-radius: 0;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        height: 52px;
-        width: 196px;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: $trading-lone-tab-1-button-background-color;
-        min-width: 196px;
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {background-color: #f1f1f1}
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: $trading-lone-tab-1-button-background-color;
-      }
-    }
-
-    #trading-lone-tab-1-div-5 {
-      margin-top: 7px;
-      display: inline-block;
-      width: 100%;
-      height: 52px;
-      position: relative;
-      border: 1px solid $trading-lone-tab-1-button-background-color;
-
-      h6 {
-        font-size: 21px;
-        font-weight: bold;
-        height: 52px;
-        display: table-cell;
-        vertical-align: middle;
-      }
-
-      h6:nth-child(1) {
-        padding-left: 11px;
-      }
-
-      h6:nth-child(2) {
-        text-align: right;
-        padding-right: 11px;
-        position: absolute; 
-        top: 25%;
-        right:0;
-      }
-    }
-    
-    #trading-lone-tab-1-div-6 {
-      margin-top: 14px;
-
-      #trading-lone-tab-1-div-6-button-1 {
-        width: 153px;
-        height: 52px;
-        color: #fff;
-        font-size: 22px;
-        font-weight: bold;
-        border-radius: 0;
-        margin-right: 3px;
-        background-color: $trading-lone-tab-1-button-1-background-color;
-      }
-
-      #trading-lone-tab-1-div-6-button-2 {
-        width: 153px;
-        height: 52px;
-        color: #fff;
-        font-size: 22px;
-        font-weight: bold;
-        border-radius: 0;
-        margin-left: 3px;
-        background-color: $trading-lone-tab-1-button-2-background-color;
-      }
-    }
-
-    #trading-lone-tab-1-div-7 {
-      margin-top: 32px;
-
-      #trading-lone-tab-1-div-7-sub-1 {
-        h6 {
-          font-size: 18px;
-          display: inline-block;
-        }
-
-        h6:nth-child(2) {
-          float: right;
-        }
-      }
-
-      #trading-lone-tab-1-div-7-sub-2 {
-        h6 {
-          font-size: 18px;
-          display: inline-block;
-        }
-
-        h6:nth-child(2) {
-          float: right;
-        }
-      }
-    }
-
-    #trading-lone-tab-1-div-8 {
-      margin-top: 272px;
-      margin-bottom: 12px;
-
-      button {
-        width: 311px;
-        height: 52px;
-        border-radius: 0;
-        font-size: 20px;
-        font-weight: bold;
-        color: $trading-lone-tab-1-button-border-color;
-        border: 2px solid $trading-lone-tab-1-button-border-color;
-      }
-    }
-  }
-}
-
-@media (min-width: 360px) and (max-width: 640px) {
   .nav {
     text-align: center;
     background-color: $trading-lone-tab-background-color;
@@ -478,8 +58,12 @@
       height: 59px;
     }
 
-    .nav-item a.active {
-      color: $trading-lone-tab-text-active-color;
+    .nav-item #one-tab.active {
+      color: $trading-lone-tab-text-active-2-color;
+    }
+
+    .nav-item #two-tab.active {
+      color: $trading-lone-tab-text-active-1-color;
     }
   }
 
@@ -563,6 +147,8 @@
   #trading-lone-right {
     margin-top: 3.3px;
     width: 55% !important;
+    position: fixed;
+    right: 0;
   }
 
   .nav .nav-link {
@@ -584,6 +170,29 @@
   }
 
   #trading-lone-tab-1 {
+    height: 52px;
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 28px;
+    
+    li:nth-child(1) {
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    li:nth-child(2) {
+      padding-left: 35px;
+    }
+
+    li:nth-child(3) {
+      padding-left: 14px;
+      text-align: right;
+    }
+  }
+
+  #trading-lone-tab-2 {
     height: 52px;
     font-size: 19px;
     font-weight: bold;
@@ -895,6 +504,1095 @@
         bottom: 12px;
         color: $trading-lone-tab-1-button-border-color;
         border: 2px solid $trading-lone-tab-1-button-border-color;
+      }
+    }
+  }
+
+  #two {
+    #trading-lone-tab-2-div-1 {
+      height: 125px;
+    }
+
+    #trading-lone-tab-2-text-1 {
+      display: inline-block;
+      font-size: 21px;
+      width: 196px;
+      padding-right: 5px;
+    }
+
+    #trading-lone-tab-2-text-2 {
+      display: inline-block;
+      font-size: 21px;
+      font-weight: 800;
+      width: 110px;
+      text-align: right;
+    }
+
+    #trading-lone-tab-2-text-3 {
+      font-size: 18px;
+      font-weight: 800;
+      text-align: right;
+    }
+
+    #trading-lone-tab-2-div-2 {
+      .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+        color: #000;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 52px;
+        width: 110px;
+        border-radius: 0;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 52px;
+        width: 110px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $trading-lone-tab-1-button-background-color;
+        min-width: 110px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;;
+      }
+
+      #trading-lone-tab-2-div-2-subdiv-1 {
+        display: inline-block;
+        position: relative;
+        border: 1px solid $trading-lone-tab-1-border-color;
+        width: 196px;
+        height: 52px;
+        vertical-align: middle;
+
+        h6:nth-child(1) {
+          font-size: 21px;
+          font-weight: bold;
+          padding: 0 12px;
+          height: 52px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h6:nth-child(2) {
+          font-size: 21px; 
+          font-weight: bold; 
+          padding: 0 12px; 
+          height: 52px; 
+          position: absolute; 
+          top: 25%; 
+          right:0; 
+          display: table-cell; 
+          vertical-align: middle;
+        }
+      }
+
+      #trading-lone-tab-2-div-2-subdiv-2 {
+        display: inline-block; 
+        position: relative; 
+        width: 110px; 
+        height: 52px; 
+        vertical-align: middle;
+      }
+    }
+
+    #trading-lone-tab-2-div-3 {
+      margin-top: 7px;
+
+      #trading-lone-tab-2-div-3-subdiv-1 {
+        display: inline-block;
+        position: relative;
+        border: 1px solid $trading-lone-tab-1-border-color;
+        width: 196px;
+        height: 52px;
+        vertical-align: middle;
+
+        h6:nth-child(1) {
+          font-size: 21px;
+          font-weight: bold;
+          padding: 0 12px;
+          height: 52px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h6:nth-child(2) {
+          font-size: 21px; 
+          font-weight: bold; 
+          padding: 0 12px; 
+          height: 52px; 
+          position: absolute; 
+          top: 25%; 
+          right:0; 
+          display: table-cell; 
+          vertical-align: middle;
+        }
+      }
+
+      #trading-lone-tab-2-div-3-subdiv-2 {
+        display: inline-block;
+        width: 110px; 
+        height: 52px; 
+        vertical-align: middle;
+
+        a {
+          width: 54px;
+          height: 52px;
+          font-size: 21px;
+          font-weight: bold;
+          display: inline-block;
+          border-radius: 0;
+          background-color: $trading-lone-tab-1-button-background-color;
+        }
+
+        a:nth-child(1) {
+          margin-right: 1px;
+        }
+
+        a:nth-child(2) {
+          margin-left: 1px;
+        }
+      }
+    }
+
+    #trading-lone-tab-2-div-4 {
+      height: 52px;
+      margin-top: 7px;
+
+      .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+        color: #000;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 52px;
+        width: 196px;
+        border-radius: 0;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 52px;
+        width: 196px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $trading-lone-tab-1-button-background-color;
+        min-width: 196px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+      }
+    }
+
+    #trading-lone-tab-2-div-5 {
+      margin-top: 7px;
+      height: 52px;
+      border: 1px solid $trading-lone-tab-1-button-background-color;
+
+      div h6 {
+        font-size: 21px;
+        font-weight: bold;
+        padding: 15px 11px 0px 11px;
+      }
+    }
+    
+    #trading-lone-tab-2-div-6 {
+      margin-top: 14px;
+
+      #trading-lone-tab-2-div-6-button-1 {
+        width: 153px;
+        height: 52px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 0;
+        margin-right: 3px;
+        background-color: $trading-lone-tab-1-button-1-background-color;
+      }
+
+      #trading-lone-tab-2-div-6-button-2 {
+        width: 153px;
+        height: 52px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 0;
+        margin-left: 3px;
+        background-color: $trading-lone-tab-2-button-2-background-color;
+      }
+    }
+
+    #trading-lone-tab-2-div-7 {
+      margin-top: 32px;
+
+      #trading-lone-tab-2-div-7-sub-1 {
+        h6 {
+          font-size: 18px;
+          display: inline-block;
+        }
+
+        h6:nth-child(2) {
+          float: right;
+        }
+      }
+
+      #trading-lone-tab-2-div-7-sub-2 {
+        h6 {
+          font-size: 18px;
+          display: inline-block;
+        }
+
+        h6:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+
+    #trading-lone-tab-2-div-8 {
+      margin-top: 272px;
+
+      button {
+        width: 311px;
+        height: 52px;
+        border-radius: 0;
+        font-size: 20px;
+        font-weight: bold;
+        position: fixed;
+        bottom: 12px;
+        color: $trading-lone-tab-1-button-border-color;
+        border: 2px solid $trading-lone-tab-1-button-border-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .nav {
+    text-align: center;
+    background-color: $trading-lone-tab-background-color;
+
+    li:nth-child(2) {
+      // border: 1px solid blue;
+
+      &:before {
+        content : "";
+        position: absolute;
+        left    : 0;
+        z-index: 100;
+        top  : 25%;
+        width  : 1px;
+        height   : 50%;  /* or 100px */
+        background: #ccc;
+      }
+
+      &:after {
+        content : "";
+        position: absolute;
+        right    : 0;
+        z-index: 100;
+        top  : 25%;
+        width  : 1px;
+        height   : 50%;  /* or 100px */
+        background: #ccc;
+      }
+    }
+
+    .nav-item {
+      width: 116.55px;
+      height: 59px;
+    }
+
+    .nav-item #one-tab.active {
+      color: $trading-lone-tab-text-active-2-color;
+    }
+
+    .nav-item #two-tab.active {
+      color: $trading-lone-tab-text-active-1-color;
+    }
+  }
+
+  #trading-lone-left {
+    margin-top: 3.3px;
+    width: 45% !important;
+
+    #trading-lone-table-1 {
+      width: 100%;
+      tr {
+        background-color: $trading-lone-table-1-upper-background-color;
+        
+        #trading-lone-table-1-d1 {
+          text-align: right;
+          color: $trading-lone-table-1-text-color;
+          border: 2px solid #fff;
+          padding-right: 5px;
+
+          h6 {
+            margin-bottom: 0;
+          }
+
+          h6:nth-child(1) {
+            margin-top: 10px;
+            font-size: 20px;
+          }
+
+          h6:nth-child(2) {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+
+        #trading-lone-table-1-d2 {
+          border: 2px solid #fff;
+          h6 {
+            font-size: 18px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    #trading-lone-table-2 {
+      width: 100%;
+      tr {
+        background-color: $trading-lone-table-1-lower-background-color;
+        
+        #trading-lone-table-1-d1 {
+          text-align: right;
+          color: $trading-lone-table-1-text-color;
+          border: 2px solid #fff;
+          padding-right: 5px;
+
+          h6 {
+            margin-bottom: 0;
+          }
+
+          h6:nth-child(1) {
+            margin-top: 10px;
+            font-size: 20px;
+          }
+
+          h6:nth-child(2) {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+
+        #trading-lone-table-1-d2 {
+          border: 2px solid #fff;
+          h6 {
+            font-size: 18px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  #trading-lone-right {
+    margin-top: 3.3px;
+    width: 55% !important;
+    position: fixed;
+    right: 0;
+  }
+
+  .nav .nav-link {
+    height: 59px;
+    font-size: 21px;
+    color: $trading-lone-tab-text-color;
+  }
+
+  .tab-content {
+    padding: 25px 20px 0px 20px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+    }
+  }
+
+  #trading-lone-tab-1 {
+    height: 52px;
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 28px;
+    
+    li:nth-child(1) {
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    li:nth-child(2) {
+      padding-left: 35px;
+    }
+
+    li:nth-child(3) {
+      padding-left: 14px;
+      text-align: right;
+    }
+  }
+
+  #trading-lone-tab-2 {
+    height: 52px;
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 28px;
+    
+    li:nth-child(1) {
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    li:nth-child(2) {
+      padding-left: 35px;
+    }
+
+    li:nth-child(3) {
+      padding-left: 14px;
+      text-align: right;
+    }
+  }
+
+  #one {
+    #trading-lone-tab-1-div-1 {
+      height: 125px;
+    }
+
+    #trading-lone-tab-1-text-1 {
+      display: inline-block;
+      font-size: 21px;
+      width: 196px;
+      padding-right: 5px;
+    }
+
+    #trading-lone-tab-1-text-2 {
+      display: inline-block;
+      font-size: 21px;
+      font-weight: 800;
+      width: 110px;
+      text-align: right;
+    }
+
+    #trading-lone-tab-1-div-2 {
+      .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+        color: #000;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 52px;
+        width: 110px;
+        border-radius: 0;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 52px;
+        width: 110px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $trading-lone-tab-1-button-background-color;
+        min-width: 110px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;;
+      }
+
+      #trading-lone-tab-1-div-2-subdiv-1 {
+        display: inline-block;
+        position: relative;
+        border: 1px solid $trading-lone-tab-1-border-color;
+        width: 196px;
+        height: 52px;
+        vertical-align: middle;
+
+        h6:nth-child(1) {
+          font-size: 21px;
+          font-weight: bold;
+          padding: 0 12px;
+          height: 52px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h6:nth-child(2) {
+          font-size: 21px; 
+          font-weight: bold; 
+          padding: 0 12px; 
+          height: 52px; 
+          position: absolute; 
+          top: 25%; 
+          right:0; 
+          display: table-cell; 
+          vertical-align: middle;
+        }
+      }
+
+      #trading-lone-tab-1-div-2-subdiv-2 {
+        display: inline-block; 
+        position: relative; 
+        width: 110px; 
+        height: 52px; 
+        vertical-align: middle;
+      }
+    }
+
+    #trading-lone-tab-1-div-3 {
+      margin-top: 7px;
+
+      #trading-lone-tab-1-div-3-subdiv-1 {
+        display: inline-block;
+        position: relative;
+        border: 1px solid $trading-lone-tab-1-border-color;
+        width: 196px;
+        height: 52px;
+        vertical-align: middle;
+
+        h6:nth-child(1) {
+          font-size: 21px;
+          font-weight: bold;
+          padding: 0 12px;
+          height: 52px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h6:nth-child(2) {
+          font-size: 21px; 
+          font-weight: bold; 
+          padding: 0 12px; 
+          height: 52px; 
+          position: absolute; 
+          top: 25%; 
+          right:0; 
+          display: table-cell; 
+          vertical-align: middle;
+        }
+      }
+
+      #trading-lone-tab-1-div-3-subdiv-2 {
+        display: inline-block;
+        width: 110px; 
+        height: 52px; 
+        vertical-align: middle;
+
+        a {
+          width: 54px;
+          height: 52px;
+          font-size: 21px;
+          font-weight: bold;
+          display: inline-block;
+          border-radius: 0;
+          background-color: $trading-lone-tab-1-button-background-color;
+        }
+
+        a:nth-child(1) {
+          margin-right: 1px;
+        }
+
+        a:nth-child(2) {
+          margin-left: 1px;
+        }
+      }
+    }
+
+    #trading-lone-tab-1-div-4 {
+      height: 52px;
+      margin-top: 7px;
+
+      .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+        color: #000;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 52px;
+        width: 196px;
+        border-radius: 0;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 52px;
+        width: 196px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $trading-lone-tab-1-button-background-color;
+        min-width: 196px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+      }
+    }
+
+    #trading-lone-tab-1-div-5 {
+      margin-top: 7px;
+      height: 52px;
+      border: 1px solid $trading-lone-tab-1-button-background-color;
+
+      div h6 {
+        font-size: 21px;
+        font-weight: bold;
+        padding: 15px 11px 0px 11px;
+      }
+    }
+    
+    #trading-lone-tab-1-div-6 {
+      margin-top: 14px;
+
+      #trading-lone-tab-1-div-6-button-1 {
+        width: 153px;
+        height: 52px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 0;
+        margin-right: 3px;
+        background-color: $trading-lone-tab-1-button-1-background-color;
+      }
+
+      #trading-lone-tab-1-div-6-button-2 {
+        width: 153px;
+        height: 52px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 0;
+        margin-left: 3px;
+        background-color: $trading-lone-tab-1-button-2-background-color;
+      }
+    }
+
+    #trading-lone-tab-1-div-7 {
+      margin-top: 32px;
+
+      #trading-lone-tab-1-div-7-sub-1 {
+        h6 {
+          font-size: 18px;
+          display: inline-block;
+        }
+
+        h6:nth-child(2) {
+          float: right;
+        }
+      }
+
+      #trading-lone-tab-1-div-7-sub-2 {
+        h6 {
+          font-size: 18px;
+          display: inline-block;
+        }
+
+        h6:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+
+    #trading-lone-tab-1-div-8 {
+      margin-top: 272px;
+
+      button {
+        width: 311px;
+        height: 52px;
+        border-radius: 0;
+        font-size: 20px;
+        font-weight: bold;
+        position: fixed;
+        bottom: 12px;
+        color: $trading-lone-tab-1-button-border-color;
+        border: 2px solid $trading-lone-tab-1-button-border-color;
+      }
+    }
+  }
+
+  #two {
+    #trading-lone-tab-2-div-1 {
+      height: 125px;
+    }
+
+    #trading-lone-tab-2-text-1 {
+      display: inline-block;
+      font-size: 21px;
+      width: 196px;
+      padding-right: 5px;
+    }
+
+    #trading-lone-tab-2-text-2 {
+      display: inline-block;
+      font-size: 21px;
+      font-weight: 800;
+      width: 110px;
+      text-align: right;
+    }
+
+    #trading-lone-tab-2-text-3 {
+      font-size: 18px;
+      font-weight: 800;
+      text-align: right;
+    }
+
+    #trading-lone-tab-2-div-2 {
+      .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+        color: #000;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 52px;
+        width: 110px;
+        border-radius: 0;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 52px;
+        width: 110px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $trading-lone-tab-1-button-background-color;
+        min-width: 110px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;;
+      }
+
+      #trading-lone-tab-2-div-2-subdiv-1 {
+        display: inline-block;
+        position: relative;
+        border: 1px solid $trading-lone-tab-1-border-color;
+        width: 196px;
+        height: 52px;
+        vertical-align: middle;
+
+        h6:nth-child(1) {
+          font-size: 21px;
+          font-weight: bold;
+          padding: 0 12px;
+          height: 52px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h6:nth-child(2) {
+          font-size: 21px; 
+          font-weight: bold; 
+          padding: 0 12px; 
+          height: 52px; 
+          position: absolute; 
+          top: 25%; 
+          right:0; 
+          display: table-cell; 
+          vertical-align: middle;
+        }
+      }
+
+      #trading-lone-tab-2-div-2-subdiv-2 {
+        display: inline-block; 
+        position: relative; 
+        width: 110px; 
+        height: 52px; 
+        vertical-align: middle;
+      }
+    }
+
+    #trading-lone-tab-2-div-3 {
+      margin-top: 7px;
+
+      #trading-lone-tab-2-div-3-subdiv-1 {
+        display: inline-block;
+        position: relative;
+        border: 1px solid $trading-lone-tab-1-border-color;
+        width: 196px;
+        height: 52px;
+        vertical-align: middle;
+
+        h6:nth-child(1) {
+          font-size: 21px;
+          font-weight: bold;
+          padding: 0 12px;
+          height: 52px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h6:nth-child(2) {
+          font-size: 21px; 
+          font-weight: bold; 
+          padding: 0 12px; 
+          height: 52px; 
+          position: absolute; 
+          top: 25%; 
+          right:0; 
+          display: table-cell; 
+          vertical-align: middle;
+        }
+      }
+
+      #trading-lone-tab-2-div-3-subdiv-2 {
+        display: inline-block;
+        width: 110px; 
+        height: 52px; 
+        vertical-align: middle;
+
+        a {
+          width: 54px;
+          height: 52px;
+          font-size: 21px;
+          font-weight: bold;
+          display: inline-block;
+          border-radius: 0;
+          background-color: $trading-lone-tab-1-button-background-color;
+        }
+
+        a:nth-child(1) {
+          margin-right: 1px;
+        }
+
+        a:nth-child(2) {
+          margin-left: 1px;
+        }
+      }
+    }
+
+    #trading-lone-tab-2-div-4 {
+      height: 52px;
+      margin-top: 7px;
+
+      .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+        color: #000;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 52px;
+        width: 196px;
+        border-radius: 0;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        height: 52px;
+        width: 196px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $trading-lone-tab-1-button-background-color;
+        min-width: 196px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: $trading-lone-tab-1-button-background-color;
+      }
+    }
+
+    #trading-lone-tab-2-div-5 {
+      margin-top: 7px;
+      height: 52px;
+      border: 1px solid $trading-lone-tab-1-button-background-color;
+
+      div h6 {
+        font-size: 21px;
+        font-weight: bold;
+        padding: 15px 11px 0px 11px;
+      }
+    }
+    
+    #trading-lone-tab-2-div-6 {
+      margin-top: 14px;
+
+      #trading-lone-tab-2-div-6-button-1 {
+        width: 153px;
+        height: 52px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 0;
+        margin-right: 3px;
+        background-color: $trading-lone-tab-1-button-1-background-color;
+      }
+
+      #trading-lone-tab-2-div-6-button-2 {
+        width: 153px;
+        height: 52px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 0;
+        margin-left: 3px;
+        background-color: $trading-lone-tab-2-button-2-background-color;
+      }
+    }
+
+    #trading-lone-tab-2-div-7 {
+      margin-top: 32px;
+
+      #trading-lone-tab-2-div-7-sub-1 {
+        h6 {
+          font-size: 18px;
+          display: inline-block;
+        }
+
+        h6:nth-child(2) {
+          float: right;
+        }
+      }
+
+      #trading-lone-tab-2-div-7-sub-2 {
+        h6 {
+          font-size: 18px;
+          display: inline-block;
+        }
+
+        h6:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+
+    #trading-lone-tab-2-div-8 {
+      margin-top: 272px;
+      position: fixed;
+      bottom: 12px;
+
+      button {
+        width: 311px;
+        height: 52px;
+        border-radius: 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: $trading-lone-tab-1-button-border-color;
+        border: 2px solid $trading-lone-tab-1-button-border-color;
+
+        &:nth-child(1) {
+          margin-bottom: 7px;
+        }
       }
     }
   }
