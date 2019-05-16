@@ -287,7 +287,70 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
-                  
+                  <div id="trading-lone-tab3-div-1">
+                    <div class="row px-0 py-0 mx-0 my-0">
+                      <div class="col-6 px-0 py-0 text-left">
+                        <h6 class="font-weight-bold">
+                          미체결 주문(1)
+                        </h6>
+                      </div>
+                      <div class="col-6 px-0 py-0 text-right">
+                        <a href="#" class="text-right font-weight-bold">
+                          <u>전체보기</u>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="trading-lone-tab-3-div-2">
+                    <input type="checkbox" class="option-input radio" />
+                    <ul class="mb-0">
+                      <li>
+                        <div class="row mx-0 my-0 px-0 py-0">
+                          <h6 class="text-left px-0 py-0">
+                            매도
+                          </h6>
+                          <h6>
+                            04.16 10:01:56
+                          </h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row mx-0 my-0 px-0 py-0">
+                          <h6 class="text-left px-0 py-0">
+                            주문가격
+                          </h6>
+                          <h6>
+                            200,000 KRW
+                          </h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row mx-0 my-0 px-0 py-0">
+                          <h6 class="text-left px-0 py-0">
+                            주문수량
+                          </h6>
+                          <h6>
+                            0.58236151 ETH
+                          </h6>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row mx-0 my-0 px-0 py-0">
+                          <h6 class="text-left px-0 py-0">
+                            미체결량
+                          </h6>
+                          <h6>
+                            0.58236151 ETH
+                          </h6>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="trading-lone-tab-3-div-3">
+                    <button class="btn">
+                      선택주문취소
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
