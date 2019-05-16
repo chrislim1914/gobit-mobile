@@ -38,7 +38,7 @@
         <div class="col-6 mt-3 text-right">
           <ul class="list-inline">
             <li class="list-inline-item">
-              <h6 class="text-white">
+              <h6 class="text-white" id="banner-number-0">
                 비트코인 캐시
               </h6>
             </li>

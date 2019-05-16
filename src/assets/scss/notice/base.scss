@@ -26,9 +26,28 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 415px) and (max-width: 640px) {
   .app-notice {
     height: 65px;
+  }
+
+  #notice-row {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .app-notice {
+    height: 65px;
+  }
+
+  #notice-text {
+    font-size: 13px;
+  }
+
+  #megaphone-icon {
+    height: 24px;
+    width: 24px;
   }
 
   #notice-row {

@@ -4,10 +4,10 @@
     <div class="container-fluid">
       <div id="notice-row" class="row">
         <div class="col-1 text-center">
-          <img src="~img/megaphone24x24.png" alt="Gobit notice megaphone icon">
+          <img src="~img/megaphone24x24.png" id="megaphone-icon" alt="Gobit notice megaphone icon">
         </div>
         <div class="col-10">
-          <h6 class="text-white">
+          <h6 class="text-white" id="notice-text">
             [견본견본] 견본견본견본견본견본 5 (견본)
           </h6>
         </div>
