@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div id="banner-row" class="row">
         <div class="col-1 mt-3 text-right">
-          <img src="~img/flash24x24.png" alt="Gobit banner flash icon" class="img-fluid">
+          <img src="~img/flash24x24.png" alt="Gobit banner flash icon">
         </div>
         <div class="col-4">
           <div class="row">
@@ -52,7 +52,7 @@
         </div>
         <div class="col-1 mt-3 text-center">
           <a id="banner-close" href="#" @click="hideBanner">
-            <img src="~img/exit24x24.png" alt="Gobit banner close icon" class="img-fluid">
+            <img src="~img/exit24x24.png" alt="Gobit banner close icon">
           </a>
         </div>
       </div>

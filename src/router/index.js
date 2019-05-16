@@ -112,7 +112,7 @@ export default new Router({
       component: Commission
     },
     {
-      path: '/exchange/:market',
+      path: '/main',
       name: 'Exchange',
       component: Exchange
     },

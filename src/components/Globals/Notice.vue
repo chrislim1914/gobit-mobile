@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div id="notice-row" class="row">
         <div class="col-1 text-center">
-          <img src="~img/megaphone24x24.png" alt="Gobit notice megaphone icon" class="img-fluid">
+          <img src="~img/megaphone24x24.png" alt="Gobit notice megaphone icon">
         </div>
         <div class="col-10">
           <h6 class="text-white">
@@ -13,7 +13,7 @@
         </div>
         <div class="col-1 text-center">
           <a id="notice-close" @click="hideNotice">
-            <img src="~img/exit24x24.png" alt="Gobit notice close icon" class="img-fluid">
+            <img src="~img/exit24x24.png" alt="Gobit notice close icon">
           </a>
         </div>
       </div>

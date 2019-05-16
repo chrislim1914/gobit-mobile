@@ -2,8 +2,8 @@
   <!-- exchange table -->
   <div class="app-exchangetable">
     <div id="exchange-table-holder">
-      <div id="exchange-table-content">
-        <table id="exchange-table" cellpadding="0" cellspacing="0">
+      <div id="exchange-table-content" class="table-responsive">
+        <table id="exchange-table" class="table" cellpadding="0" cellspacing="0">
           <tr id="exchange-table-head-row">
             <th class="position-relative">
               지수
@@ -26,7 +26,7 @@
               <img src="~img/double-arrow.png" alt="Gobit table header arrow" class="img-fluid position-absolute" style="top:17px;">
             </th>
           </tr>
-          <tr class="exchange-table-body-row" :key="index" v-for="index in 5">
+          <tr class="exchange-table-body-row" v-for="a in 5" :key="'a' + a">
             <td class="position-relative rt">
               &uarr;999
             </td>
@@ -49,7 +49,7 @@
               137,816 천원
             </td>
           </tr>
-          <tr class="exchange-table-body-row" :key="index" v-for="index in 5">
+          <tr class="exchange-table-body-row" v-for="b in 5" :key="'b' + b">
             <td class="position-relative bt">
               &uarr;999
             </td>

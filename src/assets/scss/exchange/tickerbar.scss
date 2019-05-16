@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 415px) and (max-width: 640px) {
   #exchange-tickerbar-holder {
     height: 95px;
     background-color: $exchange-tickerbar-background-color;
@@ -52,7 +52,7 @@
       display: table;
       table-layout: fixed;
     }
-    
+
     ul li {
       margin: 0px !important;
       display: table-cell;
@@ -73,6 +73,48 @@
     font-size: 19px;
     text-align: right;
     padding-right: 50px;
+  }
+
+  .exchange-tickerbar-bt {
+    color: $exchange-tickerbar-negative-value-color;
+  }
+
+}
+@media (min-width: 360px) and (max-width: 414px) {
+  #exchange-tickerbar-holder {
+    height: 95px;
+    background-color: $exchange-tickerbar-background-color;
+  }
+
+  #exchange-tickerbar-content {
+    padding: 22px 20px 22px 20px;
+
+    ul {
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+    }
+
+    ul li {
+      margin: 0px !important;
+      display: table-cell;
+    }
+
+    ul li h6 {
+      margin-bottom: 0px;
+    }
+  }
+
+  .exchange-tickerbar-label {
+    color: $exchange-tickerbar-label-color;
+    font-size: 19px;
+    text-align: left;
+  }
+
+  .exchange-tickerbar-label-value {
+    font-size: 19px;
+    text-align: right;
+    padding-right: 15px;
   }
 
   .exchange-tickerbar-bt {
