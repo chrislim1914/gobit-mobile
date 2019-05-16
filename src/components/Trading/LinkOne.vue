@@ -4,7 +4,7 @@
       <div id="trading-lone-content">
         <div class="container-fluid px-0">
           <div class="row mx-0">
-            <div id="trading-lone-left">
+            <div id="trading-lone-left" class="px-0">
               <table id="trading-lone-table-1">
                 <tr :key="index" v-for="index in 10">
                   <td id="trading-lone-table-1-d1">
@@ -28,7 +28,7 @@
                 </tr>
               </table>
             </div>
-            <div id="trading-lone-right" class="px-0">
+            <div id="trading-lone-right" style="position: fixed; right: 0;">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link font-weight-bold active" id="one" data-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">
@@ -48,21 +48,21 @@
               </ul>
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
-                  <ul id="trading-lone-tab-1" class="my-0">
-                    <li>
-                      구분
-                      <img src="~img/info32x32.png" alt="Gobit info" class="img-fluid">
-                    </li>
-                    <li>
-                      <input type="checkbox" class="option-input radio" name="example" />
-                      지정가
-                    </li>
-                    <li>
-                      <input type="checkbox" class="option-input radio" name="example" />
-                      시장가
-                    </li>
-                  </ul>
                   <div id="trading-lone-tab-1-div-1">
+                    <ul id="trading-lone-tab-1" class="my-0">
+                      <li>
+                        구분
+                        <img src="~img/info32x32.png" alt="Gobit info" class="img-fluid">
+                      </li>
+                      <li>
+                        <input type="checkbox" class="option-input radio" name="example" />
+                        지정가
+                      </li>
+                      <li>
+                        <input type="checkbox" class="option-input radio" name="example" />
+                        시장가
+                      </li>
+                    </ul>
                     <h6 id="trading-lone-tab-1-text-1" class="mb-0 font-weight-bold">
                       주문가능
                     </h6>
@@ -119,13 +119,19 @@
                       </div>
                     </div>
                   </div>
-                  <div id="trading-lone-tab-1-div-5">
-                    <h6 class="mb-0">
-                      총액
-                    </h6>
-                    <h6 class="mb-0">
-                      0 KRW
-                    </h6>
+                  <div id="trading-lone-tab-1-div-5" class="debugger">
+                    <div class="row">
+                      <div class="col-6">
+                        <h6 class="mb-0 text-left">
+                          총액
+                        </h6>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="mb-0 text-right">
+                          0 KRW
+                        </h6>
+                      </div>
+                    </div>
                   </div>
                   <div id="trading-lone-tab-1-div-6">
                     <button id="trading-lone-tab-1-div-6-button-1" class="btn">
