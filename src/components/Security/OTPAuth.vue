@@ -1,8 +1,5 @@
 <template>
   <div class="app-otpauth">
-    <!-- topbar -->
-    <topbar titlename="OTP 설정"></topbar>
-    <!-- end of topbar -->
     <!-- otp container -->
     <div class="otp-container">
       <!-- 1. Google Authenticator 설치 -->

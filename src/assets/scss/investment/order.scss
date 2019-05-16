@@ -93,7 +93,8 @@
         border-bottom: 1px solid $bheadright-font-color;
         td {
           padding: 18.5px 10px;
-          border: 1px solid $bheadright-font-color;
+          border-right: 1px solid $bheadright-font-color;
+          border-bottom: 1px solid $bheadright-font-color;
           text-align: right;
         }        
         img {
