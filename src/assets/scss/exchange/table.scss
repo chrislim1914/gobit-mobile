@@ -200,8 +200,11 @@
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
+  #exchange-table-holder {
+    width: 100%;
+  }
   #exchange-table {
-    width: 404px;
+    width: 410px;
     border-spacing: 0px;
   }
 
