@@ -91,6 +91,9 @@ import AccountAuth from '@/components/Security/AccountAuth'
 import OTPAuth from '@/components/Security/OTPAuth'
 import MobileAuthorize from '@/components/Security/MobileAuthorize'
 
+// Home Page
+import HomePage from '@/components/Homepage/Index'
+
 Vue.use(Router)
 
 export default new Router({
@@ -136,6 +139,11 @@ export default new Router({
           name: 'ForgotPasswordForm'
         }
       ]
+    },
+    {
+      path: '/',
+      name: 'HomePage',
+      component: HomePage
     },
     {
       path: '/security',
