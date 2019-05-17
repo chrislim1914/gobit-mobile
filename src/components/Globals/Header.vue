@@ -4,7 +4,7 @@
     <div id="header-row">
       <div class="px-0">
         <div class="logo">
-          <img src="~img/gobit-logo.png" alt="gobit logo" id="gobit-logo">
+          <img src="~img/gobit-logo.png" alt="gobit main logo" id="gobit-logo">
         </div>
       </div>
       <div class="px-0">
