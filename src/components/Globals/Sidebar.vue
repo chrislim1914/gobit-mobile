@@ -1,12 +1,14 @@
 <template>
   <!-- header -->
-  <div class="app-sidebar">
+  <div class="app-sidebar" v-show="!showSelf">
     <div class="user-status">
       <div class="user-login">
         <div class="ul-l">홍길동<span>님</span></div>
         <div class="ul-r">
           <p>로그아웃</p>
-          <img src="~img/close.png"  alt="close">
+          <a href="#" v-on:click="toggleSelf">
+            <img src="~img/close.png"  alt="close">
+          </a>
         </div>
       </div>
       <div class="user-level">
@@ -161,7 +163,8 @@ export default {
       showItExchange: true,
       showItInvest: true,
       showItDepo: true,
-      showItService: true
+      showItService: true,
+      showSelf: true
     }
   },
   methods: {
@@ -176,6 +179,9 @@ export default {
     },
     toggleService () {
       this.showItService = !this.showItService
+    },
+    toggleSelf () {
+      this.showSelf = !this.showSelf
     }
   }
 }
