@@ -3,10 +3,10 @@
   <div class="app-banner fixed-bottom" :class="{'d-none': !isBannerShown, 'mb-65': isNoticeShown, 'mb-0': !isNoticeShown}">
     <div class="container-fluid">
       <div id="banner-row" class="row">
-        <div class="col-1 mt-3 text-right">
-          <img src="~img/flash24x24.png" alt="Gobit banner flash icon" class="img-fluid">
+        <div id="col-one" class="col-1 mt-sm-3">
+          <img src="~img/flash24x24.png" alt="Gobit banner flash icon">
         </div>
-        <div class="col-4">
+        <div id="col-two" class="col-5 col-sm-4">
           <div class="row">
             <div class="col-12">
               <h6 id="banner-symbol-1" class="text-white">
@@ -35,10 +35,10 @@
             </div>
           </div>
         </div>
-        <div class="col-6 mt-3 text-right">
+        <div id="col-three" class="col-5 col-sm-6 mt-sm-3 text-left text-sm-right">
           <ul class="list-inline">
             <li class="list-inline-item">
-              <h6 class="text-white">
+              <h6 class="text-white" id="banner-number-0">
                 비트코인 캐시
               </h6>
             </li>
@@ -50,9 +50,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-1 mt-3 text-center">
+        <div id="col-four" class="col-1 col-sm-1 mt-sm-3 text-center">
           <a id="banner-close" href="#" @click="hideBanner">
-            <img src="~img/exit24x24.png" alt="Gobit banner close icon" class="img-fluid">
+            <img src="~img/exit24x24.png" alt="Gobit banner close icon" id="close-icon">
           </a>
         </div>
       </div>

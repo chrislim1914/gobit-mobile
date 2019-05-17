@@ -73,9 +73,6 @@ export default {
   },
   beforeMount () {
     this.activemarket = this.$route.params.market
-  },
-  mounted () {
-    this.$refs.firstsymbol.focus()
   }
 }
 </script>

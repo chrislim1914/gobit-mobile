@@ -59,7 +59,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 415px) and (max-width: 640px) {
   #exchange-symbol-holder {
     height: 70px;
     border-bottom: 2px solid $exchange-symbol-bottom-border-color;
@@ -91,6 +91,66 @@
 
   #exchange-symbol-preference {
     margin-left: 120px;
+    padding-top: 7px;
+  }
+
+  .exchange-symbol-preference-chkbox {
+    top: 5px;
+    right: 20px;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: $exchange-symbol-checkbox-unselected-background-color;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    &:checked {
+      background-image: url('~img/checked24x24.png');
+      background-position: center;
+      background-color: $exchange-symbol-checkbox-selected-background-color;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  #exchange-symbol-preference-label {
+    font-size: 15px;
+  }
+
+  #exchange-symbol-holder {
+    height: 52px;
+    border-bottom: 2px solid $exchange-symbol-bottom-border-color;
+  }
+
+  #exchange-symbol-content {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .list-group {
+    padding-top: 13px;
+  }
+
+  .list-group-item {
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 0px !important;
+    border: 1px solid $exchange-symbol-border-color;
+    color: $exchange-symbol-border-inactive-color;
+    background-color: $exchange-symbol-button-background-color;
+  }
+
+  .active {
+    color: $exchange-symbol-border-active-color;
+    border: 2px solid $exchange-symbol-border-active-color;
+  }
+
+  #exchange-symbol-preference {
+    margin-left: 83px;
     padding-top: 7px;
   }
 

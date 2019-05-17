@@ -51,10 +51,72 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 415px) and (max-width: 640px) {
   .app-banner {
     height: 85px;
     margin-bottom: 64px;
+  }
+
+  #banner-row {
+    padding-top: 15px;
+  }
+
+  #banner-close {
+    font-size: 15px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .app-banner {
+    height: 85px;
+    margin-bottom: 64px;
+  }
+
+  #close-icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  #col-one {
+    max-width: 7.333333%;
+  }
+
+  #col-two {
+    max-width: 37.666667%;
+  }
+
+  #col-three {
+    max-width: 46%;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  #col-four {
+    max-width: 7.333333%;
+  }
+
+  #banner-symbol-1 {
+    font-size: 13px;
+  }
+
+  #banner-symbol-2 {
+    font-size: 13px;
+  }
+
+  #banner-number-0 {
+    font-size: 13px;
+  }
+
+  #banner-number-1 {
+    font-size: 13px;
+  }
+
+  #banner-number-2 {
+    font-size: 13px;
+  }
+
+  #banner-badge {
+    font-size: 10px;
   }
 
   #banner-row {

@@ -50,7 +50,7 @@
   tr td {
     padding: 11px 0px 12px 0px;
     vertical-align: 0;
-    
+
     &:nth-child(1) {
       font-size: 16px;
       padding-left: 20px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 41px) and (max-width: 640px) {
   #exchange-table {
     width: 640px;
     border-spacing: 0px;
@@ -148,7 +148,7 @@
   tr td {
     padding: 11px 0px 12px 0px;
     vertical-align: 0;
-    
+
     &:nth-child(1) {
       font-size: 16px;
       padding-left: 20px;
@@ -184,6 +184,109 @@
 
     &:last-child {
       font-size: 19px;
+      padding-left: 15px;
+      padding-right: 20px;
+      text-align: right;
+    }
+  }
+
+  .rt {
+    color: $exchange-table-body-red-text-color;
+  }
+
+  .bt {
+    color: $exchange-table-body-blue-text-color;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  #exchange-table-holder {
+    width: 100%;
+  }
+  #exchange-table {
+    width: 410px;
+    border-spacing: 0px;
+  }
+
+  #exchange-table-head-row {
+    height: 40px;
+    border-bottom: 1px solid $exchange-table-header-bottom-border-color;
+  }
+
+  tr th {
+    font-size: 11px;
+    color: $exchange-table-header-label-color;
+    padding: 10px 0px 10px 0px;
+
+    &:nth-child(1) {
+      width: auto;
+      padding-left: 18px;
+    }
+
+    &:nth-child(2) {
+      width: auto;
+      padding-left: 25px;
+    }
+
+    &:nth-child(3) {
+      width: auto;
+      padding-right: 15px;
+      text-align: right;
+    }
+
+    &:nth-child(4) {
+      width: 87px;
+      padding-left: 30px;
+    }
+
+    &:last-child {
+      width: auto;
+      padding-right: 30px;
+      text-align: right;
+    }
+  }
+
+  tr td {
+    padding: 11px 0px 12px 0px;
+    vertical-align: 0;
+
+    &:nth-child(1) {
+      font-size: 11px;
+      padding-left: 22px;
+      vertical-align: inherit !important;
+    }
+
+    &:nth-child(2) {
+      font-size: 11px;
+      padding-left: 10px;
+      line-height: 0.9 !important;
+
+      span {
+        font-size: 10px;
+        display: block;
+        width: 25%;
+      }
+    }
+
+    &:nth-child(3) {
+      font-size: 11px;
+      text-align: right;
+    }
+
+    &:nth-child(4) {
+      font-size: 11px;
+      padding-left: 40px;
+      text-align: right;
+      line-height: 0.9 !important;
+
+      span {
+        font-size: 10px;
+        text-align: right;
+      }
+    }
+
+    &:last-child {
+      font-size: 11px;
       padding-left: 15px;
       padding-right: 20px;
       text-align: right;

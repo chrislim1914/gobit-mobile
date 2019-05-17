@@ -4,16 +4,16 @@
     <div class="container-fluid">
       <div id="notice-row" class="row">
         <div class="col-1 text-center">
-          <img src="~img/megaphone24x24.png" alt="Gobit notice megaphone icon" class="img-fluid">
+          <img src="~img/megaphone24x24.png" id="megaphone-icon" alt="Gobit notice megaphone icon">
         </div>
-        <div class="col-10">
-          <h6 class="text-white">
+        <div class="col-9 col-sm-10 mt-1">
+          <h6 class="text-white" id="notice-text">
             [견본견본] 견본견본견본견본견본 5 (견본)
           </h6>
         </div>
-        <div class="col-1 text-center">
+        <div class="col-2 col-sm-1 text-center">
           <a id="notice-close" @click="hideNotice">
-            <img src="~img/exit24x24.png" alt="Gobit notice close icon" class="img-fluid">
+            <img src="~img/exit24x24.png" alt="Gobit notice close icon" id="close-icon">
           </a>
         </div>
       </div>

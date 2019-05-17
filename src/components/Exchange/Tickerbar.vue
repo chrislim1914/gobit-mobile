@@ -26,7 +26,7 @@
           </li>
         </ul>
         <ul class="list-inline mb-0">
-          <li class="list-inline-item">
+          <li class="list-inline-item pt-13px">
             <h6 class="exchange-tickerbar-label font-weight-bold">
               총평가
             </h6>

@@ -19,7 +19,7 @@
 
   .customer-service-link-text {
     font-size: 18px;
-    padding: 25px 35px;
+    padding: 25px 20px;
   }
 
   #customer-service-link-row {
@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 639px) {
+@media (min-width: 415px) and (max-width: 639px) {
   #customer-service-header-row {
     height: 55px;
   }
@@ -43,11 +43,43 @@
 
   .customer-service-link-text {
     font-size: 18px;
-    padding: 25px 35px;
+    padding: 25px 20px;
   }
 
   #customer-service-link-row {
     height: 122px;
+  }
+
+  .col-4:nth-child(-n+2) {
+    border-right: 1px solid $customerservice-divider-color;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+  #customer-service-header-row {
+    height: 55px;
+  }
+
+  #customer-service-header {
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .customer-service-link-text {
+    font-size: 13px;
+    padding: 25px 0;
+  }
+
+  .customer-service-link-img {
+    height: 30px;
+    width: 30px;
+  }
+
+  #customer-service-link-row {
+    height: 122px;
+    .col-4 {
+      max-width: 29.333333% !important
+    }
   }
 
   .col-4:nth-child(-n+2) {
