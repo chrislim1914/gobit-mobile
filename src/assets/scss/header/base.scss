@@ -10,7 +10,7 @@
     color: $font-dusty-gray;
   }
   a:hover {
-    text-decoration: none; 
+    text-decoration: none;
   }
   .holder-container {
     padding: 21px 20px 18px 20px;
@@ -34,7 +34,7 @@
     padding: 0 10px;
     li:nth-child(1) {
       padding-right: 10px;
-    }    
+    }
     img {
       width: 28px;
       margin-top: -6px;
@@ -51,7 +51,7 @@
       color: $font-dusty-gray;
     }
     a:hover {
-      text-decoration: none; 
+      text-decoration: none;
     }
     .holder-container {
       padding: 21px 20px 18px 20px;
@@ -75,16 +75,16 @@
       padding: 0 10px;
       li:nth-child(1) {
         padding-right: 10px;
-      }    
+      }
       img {
         width: 28px;
         margin-top: -6px;
       }
     }
-  }  
+  }
 }
 
-@media (min-width: 414px) and (max-width: 639px) {
+@media (min-width: 415px) and (max-width: 639px) {
   .app-header {
     width: 100%;
     margin: 0;
@@ -92,10 +92,10 @@
       color: $font-dusty-gray;
     }
     a:hover {
-      text-decoration: none; 
+      text-decoration: none;
     }
     .holder-container {
-      padding: 21px 0 18px 10px;
+      padding: 21px 20px 18px 20px;
       display: inline-block;
       width: 100%;
     }
@@ -106,12 +106,12 @@
       }
     }
     .text-holder {
-      position: absolute;
-      width: 94%;
-      text-align: right;
-      padding-top: 5px;
+      margin-top: -33px;
       li {
-        padding:  0 5px;
+        padding-right: 10px;
+      }
+      li:last-child {
+        padding-right: 0;
       }
     }
     .menu {
@@ -121,7 +121,7 @@
         margin-top: -2px;
       }
     }
-  }  
+  }
 }
 
 @media (min-width: 320px) and (max-width: 413px) {
@@ -132,7 +132,7 @@
       color: $font-dusty-gray;
     }
     a:hover {
-      text-decoration: none; 
+      text-decoration: none;
     }
     .holder-container {
       padding: 21px 10px 18px 10px;
@@ -161,9 +161,52 @@
         margin-top: -2px;
       }
     }
-  }  
+  }
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+  .app-header {
+    width: auto;
+    height: 60px;
+    margin: 0px 20px 0px 20px;
+
+    .holder-container {
+      bottom: 16px;
+      position: relative;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-top: 25px;
+    }
+
+    .img-holder {
+      padding-right: 0;
+    }
+
+    #gobit-logo {
+      height: 30px;
+      width: 60px;
+      margin-top: 5px;
+    }
+
+    .group-header {
+      margin-top: 0;
+
+      a {
+        font-size: 13px;
+      }
+
+      li {
+        padding-right: 0;
+      }
+    }
+
+    .menu img {
+      width: 26px;
+      height: 23px;
+    }
+  }
+}
 
 
 

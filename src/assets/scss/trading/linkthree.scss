@@ -1,13 +1,160 @@
 /*
   trading link three stylesheet
 */
+@import '../libs/colors.scss';
 
 @media (min-width: 641px) and (max-width: 767px) {
-  
+  #trading-lthree-controls {
+    padding: 0px 20px 0px 20px;
+    position: relative;
+
+    button {
+      width: 75px;
+      height: 75px;
+      font-size: 10px;
+      border-radius: 0;
+      background-color: $trading-lthree-button-background-color;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    #trading-lthree-graph-button {
+      position: absolute;
+      top: 10px;
+      right: 100px;;
+    }
+
+    #trading-lthree-settings-button {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .dropdown2 {
+      display: inline-block;
+      margin-left: 30px;
+
+      a {
+        color: #000;
+        font-weight: bold;
+        border-radius: 0;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        background-color: transparent;
+
+        &::after {
+          margin-left: 50px;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .dropdown {
+      display: inline-block;
+      padding-top: 30px;
+      
+      a {
+        color: #000;
+        font-weight: bold;
+        border-radius: 0;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        background-color: transparent;
+
+        &::after {
+          margin-left: 50px;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 360px) and (max-width: 640px) {
-  
+  #trading-lthree-controls {
+    padding: 0px 20px 0px 20px;
+    position: relative;
+
+    button {
+      width: 75px;
+      height: 75px;
+      font-size: 10px;
+      border-radius: 0;
+      background-color: $trading-lthree-button-background-color;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    #trading-lthree-graph-button {
+      position: absolute;
+      top: 10px;
+      right: 100px;;
+    }
+
+    #trading-lthree-settings-button {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .dropdown2 {
+      display: inline-block;
+      margin-left: 30px;
+
+      a {
+        color: #000;
+        font-weight: bold;
+        border-radius: 0;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        background-color: transparent;
+
+        &::after {
+          margin-left: 50px;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .dropdown {
+      display: inline-block;
+      padding-top: 30px;
+      
+      a {
+        color: #000;
+        font-weight: bold;
+        border-radius: 0;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        background-color: transparent;
+
+        &::after {
+          margin-left: 50px;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
 }
 
 .debugger {
