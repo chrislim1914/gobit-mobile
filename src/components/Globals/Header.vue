@@ -1,9 +1,9 @@
 <template>
   <!-- header -->
   <div class="app-header">
-    <div class="holder-container">
+    <div  class="holder-container">
       <div class="img-holder">
-        <img src="~img/gobit-logo.png" alt="gobit logo">
+        <img src="~img/gobit-logo.png" alt="gobit logo" id="gobit-logo">
       </div>
       <div class="text-holder">
         <ul class="list-inline group-header mb-0">
