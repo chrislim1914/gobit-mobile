@@ -81,6 +81,10 @@
 
 }
 @media (min-width: 360px) and (max-width: 414px) {
+  .app-exchangetickerbar {
+    width: 100%;
+  }
+
   #exchange-tickerbar-holder {
     height: 80px;
     background-color: $exchange-tickerbar-background-color;
