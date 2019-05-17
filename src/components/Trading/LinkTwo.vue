@@ -117,7 +117,7 @@
                   체결량
                 </h6>
               </li>
-              <li :key="index" v-for="index in 6">
+              <li :key="index" v-for="index in 7">
                 <h6 class="rt">
                   187,750
                 </h6>
@@ -125,7 +125,7 @@
                   23.500
                 </h6>
               </li>
-              <li :key="index" v-for="index in 6">
+              <li :key="index" v-for="index in 7">
                 <h6 class="rt">
                   187,600
                 </h6>
