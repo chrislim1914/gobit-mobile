@@ -3,14 +3,12 @@
     <topHeader></topHeader>
     <!-- start body -->
       <!-- start slider -->
-      <vueper-slides fixed-height="300px" :arrows="false">
+      <vueper-slides fixed-height="300px" :arrows="false" :bullets="false">
         <vueper-slide
           v-for="i in 4"
           :key="i"
-          :style="'background-color: ' + ['#ff5252', '#42b983'][i % 2]">
-          <div slot="slideContent">
-          Complex content with vueJS {{ 1 === 1 ? 'interpreted' : 'non-interpreted' }} compilable content & <span v-pre>{{ mustaches }}</span>.
-          </div>
+          :image="'/static/carousel-bg.png'"
+          >
         </vueper-slide>
       </vueper-slides>
       <div class="lower-car">
