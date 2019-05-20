@@ -17,36 +17,129 @@
       <!-- end slider -->
 
       <!-- start card slider -->
+      <!-- <div class="card-holder">
+        <ul>
+          <li>
+            <div class="cards">
+              <div class="card-title">
+                [1부마켓] 5월 승급코인
+              </div>
+              <div id="firstmarket" ref="firstmarket" class="card-slide">
+                <div class="card-item">
+                  <div class="card-head card-1">
+                    <div class="coin-name">
+                      <img src="~img/kaiber23x32.png" alt="kaiber logo"> 카이버네트워크
+                    </div>
+                    <div class="coin-start">
+                      스타트업 펀딩 블록체인 플랫폼
+                    </div>
+                  </div>
+                  <div class="card-detail">
+                    <div>
+                      <p><span>코인심볼</span>KNC <span class="last-span">플랫폼</span>ERC 20</p>
+                      <p><span>최초발행</span>2014년 3월 22일</p>
+                      <p><span>총발행량</span>1,000,000,000 DSN</p>
+                    </div>
+                    <div class="div-second-part">
+                      <p><span>홈페이지</span>https://projectwith.io</p>
+                      <p><span>참고자료</span>카이버네트워크 백서.pdf</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item card-back">
+                  <img src="~img/coinbit292x342.png" alt="coinbit292x342">
+                </div>
+              </div>
+              <div class="btn-nav">
+                <button id="left-button" @click="swipeLeft">
+                  <img :src="imageleft" alt="active icon">
+                </button>
+                <button id="right-button"  @click="swipeRight">
+                  <img :src="imageright" alt="inactive icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cards">
+              <div class="card-title">
+                [1부마켓] 5월 승급코인
+              </div>
+              <div id="secondmarket" ref="secondmarket" class="card-slide">
+                <div class="card-item">
+                  <div class="card-head card-2">
+                    <div class="coin-name">
+                      <img src="~img/kaiber23x32.png" alt="kaiber logo"> 카이버네트워크
+                    </div>
+                    <div class="coin-start">
+                      스타트업 펀딩 블록체인 플랫폼
+                    </div>
+                  </div>
+                  <div class="card-detail">
+                    <div>
+                      <p><span>코인심볼</span>KNC <span class="last-span">플랫폼</span>ERC 20</p>
+                      <p><span>최초발행</span>2014년 3월 22일</p>
+                      <p><span>총발행량</span>1,000,000,000 DSN</p>
+                    </div>
+                    <div class="div-second-part">
+                      <p><span>홈페이지</span>https://projectwith.io</p>
+                      <p><span>참고자료</span>카이버네트워크 백서.pdf</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item card-back">
+                  <img src="~img/btc292x342.png" alt="btc292x342">
+                </div>
+              </div>
+              <div class="btn-nav">
+                <button id="left-button" @click="swipeLeftsecond">
+                  <img :src="imageleftsecond" alt="active icon">
+                </button>
+                <button id="right-button"  @click="swipeRightsecond">
+                  <img :src="imagerightsecond" alt="inactive icon">
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div> -->
       <div class="card-holder">
         <div class="cards">
           <div class="card-title">
             [1부마켓] 5월 승급코인
           </div>
-          <div class="card-head">
-            <div class="coin-name">
-              <img src="~img/kaiber23x32.png" alt="kaiber logo"> 카이버네트워크
+          <div id="firstmarket" ref="firstmarket" class="card-slide">
+            <div class="card-item">
+              <div class="card-head card-1">
+                <div class="coin-name">
+                  <img src="~img/kaiber23x32.png" alt="kaiber logo"> 카이버네트워크
+                </div>
+                <div class="coin-start">
+                  스타트업 펀딩 블록체인 플랫폼
+                </div>
+              </div>
+              <div class="card-detail">
+                <div>
+                  <p><span>코인심볼</span>KNC <span class="last-span">플랫폼</span>ERC 20</p>
+                  <p><span>최초발행</span>2014년 3월 22일</p>
+                  <p><span>총발행량</span>1,000,000,000 DSN</p>
+                </div>
+                <div class="div-second-part">
+                  <p><span>홈페이지</span>https://projectwith.io</p>
+                  <p><span>참고자료</span>카이버네트워크 백서.pdf</p>
+                </div>
+              </div>
             </div>
-            <div class="coin-start">
-              스타트업 펀딩 블록체인 플랫폼
-            </div>
-          </div>
-          <div class="card-detail">
-            <div>
-              <p><span>코인심볼</span>KNC <span class="last-span">플랫폼</span>ERC 20</p>
-              <p><span>최초발행</span>2014년 3월 22일</p>
-              <p><span>총발행량</span>1,000,000,000 DSN</p>
-            </div>
-            <div>
-              <p><span>홈페이지</span>https://projectwith.io</p>
-              <p><span>참고자료</span>카이버네트워크 백서.pdf</p>
+            <div class="card-item card-back">
+              <img src="~img/coinbit292x342.png" alt="coinbit292x342">
             </div>
           </div>
           <div class="btn-nav">
-            <button>
-              <img src="~img/slider-button-active16x16.png" alt="active icon">
+            <button id="left-button" @click="swipeLeft">
+              <img :src="imageleft" alt="active icon">
             </button>
-             <button>
-              <img src="~img/slider-button-inactive16x16.png" alt="inactive icon">
+             <button id="right-button"  @click="swipeRight">
+              <img :src="imageright" alt="inactive icon">
             </button>
           </div>
         </div>
@@ -54,31 +147,38 @@
           <div class="card-title">
             [1부마켓] 5월 승급코인
           </div>
-          <div class="card-head">
-            <div class="coin-name">
-              <img src="~img/kaiber23x32.png" alt="kaiber logo"> 카이버네트워크
+          <div id="secondmarket" ref="secondmarket" class="card-slide">
+            <div class="card-item">
+              <div class="card-head card-2">
+                <div class="coin-name">
+                  <img src="~img/kaiber23x32.png" alt="kaiber logo"> 카이버네트워크
+                </div>
+                <div class="coin-start">
+                  스타트업 펀딩 블록체인 플랫폼
+                </div>
+              </div>
+              <div class="card-detail">
+                <div>
+                  <p><span>코인심볼</span>KNC <span class="last-span">플랫폼</span>ERC 20</p>
+                  <p><span>최초발행</span>2014년 3월 22일</p>
+                  <p><span>총발행량</span>1,000,000,000 DSN</p>
+                </div>
+                <div class="div-second-part">
+                  <p><span>홈페이지</span>https://projectwith.io</p>
+                  <p><span>참고자료</span>카이버네트워크 백서.pdf</p>
+                </div>
+              </div>
             </div>
-            <div class="coin-start">
-              스타트업 펀딩 블록체인 플랫폼
-            </div>
-          </div>
-          <div class="card-detail">
-            <div>
-              <p><span>코인심볼</span>KNC <span class="last-span">플랫폼</span>ERC 20</p>
-              <p><span>최초발행</span>2014년 3월 22일</p>
-              <p><span>총발행량</span>1,000,000,000 DSN</p>
-            </div>
-            <div>
-              <p><span>홈페이지</span>https://projectwith.io</p>
-              <p><span>참고자료</span>카이버네트워크 백서.pdf</p>
+            <div class="card-item card-back">
+              <img src="~img/btc292x342.png" alt="btc292x342">
             </div>
           </div>
           <div class="btn-nav">
-            <button>
-              <img src="~img/slider-button-active16x16.png" alt="active icon">
+            <button id="left-button" @click="swipeLeftsecond">
+              <img :src="imageleftsecond" alt="active icon">
             </button>
-             <button>
-              <img src="~img/slider-button-inactive16x16.png" alt="inactive icon">
+             <button id="right-button"  @click="swipeRightsecond">
+              <img :src="imagerightsecond" alt="inactive icon">
             </button>
           </div>
         </div>
@@ -240,7 +340,7 @@
             <img src="~img/down-arrow16x16.png"  alt="down-arrow16x16">
           </div>
         </div>
-        <div class="collapse" id="coinlisting">
+        <div class="collapse collapse-div" id="coinlisting">
           <div>
             <a href="">
               <ul>
@@ -391,6 +491,62 @@ export default {
     'exchangeMarketSelection': ExchangeMarketSelection,
     'exchange-table': Table,
     'symbolbar': Symbolbar
+  },
+  data () {
+    return {
+      imageleft: '',
+      imageright: '',
+      imageleftsecond: '',
+      imagerightsecond: '',
+      active: '/static/slider-button-active16x16.png',
+      inactive: '/static/slider-button-inactive16x16.png'
+    }
+  },
+  methods: {
+    scrollTo (element, scrollPixels, duration) {
+      var fn
+      const scrollPos = element.scrollLeft
+      if (!((scrollPos === 0 || scrollPixels > 0) && (element.clientWidth + scrollPos === element.scrollWidth || scrollPixels < 0))) {
+        const startTime =
+          'now' in window.performance
+            ? performance.now()
+            : new Date().getTime()
+
+        fn = function scroll (timestamp) {
+          const timeElapsed = timestamp - startTime
+          const progress = Math.min(timeElapsed / duration, 1)
+          element.scrollLeft = scrollPos + scrollPixels * progress
+          if (timeElapsed < duration) {
+            window.requestAnimationFrame(scroll)
+          }
+        }
+        window.requestAnimationFrame(fn)
+      }
+    },
+    swipeLeft () {
+      const firstmarket = this.$refs.firstmarket
+      this.scrollTo(firstmarket, -300, 800)
+      this.imageleft = this.active
+      this.imageright = this.inactive
+    },
+    swipeRight () {
+      const firstmarket = this.$refs.firstmarket
+      this.scrollTo(firstmarket, 300, 800)
+      this.imageleft = this.inactive
+      this.imageright = this.active
+    },
+    swipeLeftsecond () {
+      const secondmarket = this.$refs.secondmarket
+      this.scrollTo(secondmarket, -300, 800)
+      this.imageleftsecond = this.active
+      this.imagerightsecond = this.inactive
+    },
+    swipeRightsecond () {
+      const secondmarket = this.$refs.secondmarket
+      this.scrollTo(secondmarket, 300, 800)
+      this.imageleftsecond = this.inactive
+      this.imagerightsecond = this.active
+    }
   }
 }
 </script>

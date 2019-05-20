@@ -14,7 +14,7 @@ a:hover {
   .lower-car {
     background-color: $bg-ebony;
     font-size: 19.5px;
-    padding: 15.9px 20px;
+    padding: 15.9px 20px 2px 20px;
     margin-top: -1px;
     p {
       color: $font-white;
@@ -26,10 +26,112 @@ a:hover {
       margin-right: 32px;
     }
   }
+  // .card-holder {
+  //   text-align: center;
+  //   display: inline-block;
+  //   padding: 33px 20px 0 20px;
+  //   width: 100%;
+  //   background-color: $bg-athens-gray;
+  //   ul {
+  //     margin: 0;
+  //     padding: 0;
+  //     li {
+  //       display: inline-block;
+  //       margin-right: 16px;
+  //     }
+  //     li:last-child {
+  //       margin-left: 0;
+  //     }
+  //   }
+  //   .cards {
+  //     max-width: 100%;
+  //   }
+  //   .card-title {
+  //     text-align: left;
+  //     font-size: 20px;
+  //     font-weight: 600;
+  //     padding: 14.5px 59px 14.5px 20px;
+  //     color: $font-ebony;
+  //     background-color: $bg-frosted-mint;
+  //   }
+  //   .card-1 {
+  //     background-color: $bg-cerulean-blue;
+  //   }
+  //   .card-2 {
+  //     background-color: $bg-red-ribbon;
+  //   }
+  //   .card-head {      
+  //     text-align: center;
+  //     padding: 32px 0 26px 0;
+  //     margin-top: -10px;
+  //     .coin-name {
+  //       color: $font-white;
+  //       font-size: 28px;
+  //       font-weight: 900;
+  //       img {
+  //         margin-top: -10px;
+  //       }
+  //     }
+  //     .coin-start {
+  //       color: $font-spindle;
+  //       padding-top: 15px;
+  //     }
+  //   }
+  //   .card-detail {
+  //     text-align: left;
+  //     background-color: $bg-white;
+  //     font-size: 15px;
+  //     padding: 9px 0 45px 15px;
+  //     span {
+  //       color: $font-black;
+  //       margin-right: 9px;
+  //     }
+  //     p {
+  //       color: $font-shuttle-gray;
+  //       margin-bottom: 0.5rem;
+  //     }
+  //     .div-second-part {
+  //       margin-top: 16px;
+  //     }
+  //     .last-span {
+  //       padding-left: 29px;
+  //     }
+  //     div:nth-child(3) {
+  //       padding-top: 10px;
+  //     }
+  //   }
+  //   .btn-nav {
+  //     position: absolute;
+  //     width: 292px;
+  //     text-align: center;
+  //     padding: 2px 0 19px 0;
+  //     margin-top: -46px;
+  //     button {
+  //       border: none;background-color: transparent;
+  //     }
+  //   }
+  //   .card-slide {
+  //     overflow: hidden;
+  //     white-space: nowrap;
+  //     margin-top: -11px;
+  //     .card-back {
+  //       text-align: center;
+  //       margin-top: -265px;
+  //       img {
+  //         margin-top: -220px;
+  //       }
+  //     }
+  //     .card-item {
+  //       display: inline-block;
+  //       width: 100%;
+  //     }
+  //   }
+  // }
+  
   .card-holder {
     display: inline-flex;
     width: 100%;
-    padding: 33px 20px 23px 20px;
+    padding: 33px 20px 0 20px;
     background-color: $bg-athens-gray;
     .cards {
       float: left;
@@ -47,8 +149,29 @@ a:hover {
       color: $font-ebony;
       background-color: $bg-frosted-mint;
     }
-    .card-head {
+    .card-1 {
       background-color: $bg-cerulean-blue;
+    }
+    .card-2 {
+      background-color: $bg-red-ribbon;
+    }
+    .card-slide {
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: -11px;
+      .card-back {
+        text-align: center;
+        margin-top: -265px;
+        img {
+          margin-top: -220px;
+        }
+      }
+      .card-item {
+        display: inline-block;
+        width: 292px;
+      }
+    }
+    .card-head {      
       text-align: center;
       padding: 32px 0 26px 0;
       margin-top: -10px;
@@ -68,29 +191,33 @@ a:hover {
     .card-detail {
       background-color: $bg-white;
       font-size: 15px;
-      padding: 9px 0 0 15px;
+      padding: 9px 0 45px 15px;
       span {
         color: $font-black;
         margin-right: 9px;
       }
       p {
         color: $font-shuttle-gray;
+        margin-bottom: 0.5rem;
+      }
+      .div-second-part {
+        margin-top: 16px;
       }
       .last-span {
         padding-left: 29px;
       }
-      div:nth-child(2) {
+      div:nth-child(3) {
         padding-top: 10px;
       }
     }
     .btn-nav {
-      background-color: $bg-white;
+      position: absolute;
+      width: 292px;
       text-align: center;
-      padding: 16px 0 19px 0;
-      margin-top: -16px;
+      padding: 2px 0 19px 0;
+      margin-top: -46px;
       button {
-        border: none;
-        background-color: $bg-white;
+        border: none;background-color: transparent;
       }
     }
   }
@@ -179,6 +306,7 @@ a:hover {
         ul {
           margin-left: 16px;
           display: inline-block;
+          margin-bottom: 0;
           li {
             display: inline;
             font-size: 20px;
@@ -202,7 +330,7 @@ a:hover {
         }
       }
     }
-    .collapse {
+    .collapse-div {
       background-color: $bg-aqua-spring;
       text-align: center;
       a {
@@ -262,8 +390,8 @@ a:hover {
           margin-bottom: 18px;
         }
         p {
-          color: $font-shark; 
-          padding: 0;        
+          color: $font-shark;
+          margin-bottom: 0;
         }
       }
     }
@@ -320,137 +448,9 @@ a:hover {
       }
     }
     .card-holder {
-    display: inline-flex;
-    width: 100%;
-    padding: 33px 20px 23px 20px;
-    background-color: $bg-athens-gray;
-    .cards {
-      float: left;
-      width: 292px;
-      margin-right: 16px;
-    }
-    .cards:last-child {
-      margin: 0;
-    }
-    .card-title {
-      text-align: left;
-      font-size: 20px;
-      font-weight: 600;
-      padding: 14.5px 20px;
-      color: $font-ebony;
-      background-color: $bg-frosted-mint;
-    }
-    .card-head {
-      background-color: $bg-cerulean-blue;
-      text-align: center;
-      padding: 32px 0 26px 0;
-      .coin-name {
-        color: $font-white;
-        font-size: 28px;
-        font-weight: 900;
-        img {
-          margin-top: -10px;
-        }
-      }
-      .coin-start {
-        color: $font-spindle;
-        padding-top: 15px;
-      }
-    }
-    .card-detail {
-      background-color: $bg-white;
-      font-size: 15px;
-      padding: 9px 0 0 15px;
-      span {
-        color: $font-black;
-        margin-right: 9px;
-      }
-      p {
-        color: $font-shuttle-gray;
-      }
-      .last-span {
-        padding-left: 29px;
-      }
-      div:nth-child(2) {
-        padding-top: 10px;
-      }
-    }
-    .btn-nav {
-      background-color: $bg-white;
-      text-align: center;
-      padding: 16px 0 19px 0;
-      button {
-        border: none;
-        background-color: $bg-white;
-      }
-    }
-  }
-  .coin-list-holder {
-    padding: 28px 20px 39px 20px;
-    background-color: $bg-athens-gray;
-    .coin-list-title {
-      font-size: 20px;
-      font-weight: 600;
-      background-color: $bg-karry;
-      color: $font-ebony;
-      padding: 14px 20px;
-    }
-    .coin-list {
-      padding: 35px 18px 15px 18px;      
-      background-color: $bg-white;
-      .coin-row {
-        display: inline-flex;
-        width: 100%;
-        padding: 35px 0 0 0;
-        .cl-icon {
-          text-align: center;
-          float: left;
-          width: 7.44%;
-          img {
-            margin-top: 4px;
-            width: 23px;
-            height: 28px;
-          }
-        }
-        .cl-info {
-          float: left;
-          width: 46.28%;
-          p {
-            margin-top: -6px;
-            font-size: 19.5px;
-            font-weight: 600;
-          }
-          p:nth-child(2) {
-            font-size: 17.5px;
-          }
-        }
-        .cl-detail {
-          float: left;
-          width: 25.95%;
-          color: $bg-niagara;
-          font-weight: 600;
-          font-size: 20px;
-        }
-        .cl-btn {
-          float: left;
-          width: 20.33%;        
-          button {
-            border: none;
-            color: $font-white;
-            background-color: $bg-niagara;
-            padding: 6px 21.3px;
-          }
-        }
-      }
-      .coin-row:nth-child(1) {
-        padding: 0;
-      }
-    }
-  }
-    .card-holder {
       display: inline-flex;
       width: 100%;
-      padding: 33px 20px 23px 20px;
+      padding: 33px 20px 0 20px;
       background-color: $bg-athens-gray;
       .cards {
         float: left;
@@ -468,10 +468,32 @@ a:hover {
         color: $font-ebony;
         background-color: $bg-frosted-mint;
       }
-      .card-head {
+      .card-1 {
         background-color: $bg-cerulean-blue;
+      }
+      .card-2 {
+        background-color: $bg-red-ribbon;
+      }
+      .card-slide {
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: -11px;
+        .card-back {
+          text-align: center;
+          margin-top: -265px;
+          img {
+            margin-top: -220px;
+          }
+        }
+        .card-item {
+          display: inline-block;
+          width: 292px;
+        }
+      }
+      .card-head {      
         text-align: center;
         padding: 32px 0 26px 0;
+        margin-top: -10px;
         .coin-name {
           color: $font-white;
           font-size: 28px;
@@ -488,28 +510,33 @@ a:hover {
       .card-detail {
         background-color: $bg-white;
         font-size: 15px;
-        padding: 9px 0 0 15px;
+        padding: 9px 0 45px 15px;
         span {
           color: $font-black;
           margin-right: 9px;
         }
         p {
           color: $font-shuttle-gray;
+          margin-bottom: 0.5rem;
+        }
+        .div-second-part {
+          margin-top: 16px;
         }
         .last-span {
           padding-left: 29px;
         }
-        div:nth-child(2) {
+        div:nth-child(3) {
           padding-top: 10px;
         }
       }
       .btn-nav {
-        background-color: $bg-white;
+        position: absolute;
+        width: 292px;
         text-align: center;
-        padding: 16px 0 19px 0;
+        padding: 2px 0 19px 0;
+        margin-top: -46px;
         button {
-          border: none;
-          background-color: $bg-white;
+          border: none;background-color: transparent;
         }
       }
     }
@@ -598,6 +625,7 @@ a:hover {
           ul {
             margin-left: 16px;
             display: inline-block;
+            margin-bottom: 0;
             li {
               display: inline;
               font-size: 20px;
@@ -621,7 +649,7 @@ a:hover {
           }
         }
       }
-      .collapse {
+      .collapse-div {
         background-color: $bg-aqua-spring;
         text-align: center;
         a {
@@ -681,8 +709,8 @@ a:hover {
             margin-bottom: 18px;
           }
           p {
-            color: $font-shark; 
-            padding: 0;        
+            color: $font-shark;
+            margin-bottom: 0;
           }
         }
       }
@@ -730,48 +758,92 @@ a:hover {
       padding: 15.9px 20px;
     }
     .card-holder {
-      .card-title {
-        font-size: 18px;
-        font-weight: 600;
-        padding: 14.5px 20px;
+      display: inline-flex;
+      width: 100%;
+      padding: 33px 20px 0 20px;
+      background-color: $bg-athens-gray;
+      .cards {
+        width: 50%;
       }
-      .card-head {
+      .cards:last-child {
+        margin: 0;
+      }
+      .card-title {
+        font-size: 16px;
+      }
+      .card-1 {
+        background-color: $bg-cerulean-blue;
+      }
+      .card-2 {
+        background-color: $bg-red-ribbon;
+      }
+      .card-slide {
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: -11px;
+        .card-back {
+          text-align: center;
+          img {
+            width: 252px;
+            height: 308px;
+            margin-top: -188px;
+            margin-left: -36px;
+          }
+        }
+        .card-item {
+          display: inline-block;
+          width: 292px;
+        }
+      }
+      .card-head {      
+        text-align: center;
+        padding: 32px 0 26px 0;
+        margin-top: -10px;
+        width: 252px;
         .coin-name {
+          color: $font-white;
           font-size: 20px;
-          font-weight: 800;
+          font-weight: 900;
           img {
             margin-top: -10px;
           }
         }
         .coin-start {
-          font-size: 12px;
+          color: $font-spindle;
+          padding-top: 15px;
         }
       }
       .card-detail {
+        width: 252px;
         background-color: $bg-white;
         font-size: 12px;
-        padding: 9px 0 0 15px;
+        padding: 9px 0 45px 15px;
         span {
           color: $font-black;
           margin-right: 9px;
         }
         p {
           color: $font-shuttle-gray;
+          margin-bottom: 0.5rem;
+        }
+        .div-second-part {
+          margin-top: 16px;
         }
         .last-span {
           padding-left: 29px;
         }
-        div:nth-child(2) {
+        div:nth-child(3) {
           padding-top: 10px;
         }
       }
       .btn-nav {
-        background-color: $bg-white;
+        position: absolute;
+        width: 292px;
         text-align: center;
-        padding: 16px 0 19px 0;
+        padding: 2px 0 19px 0;
+        margin-top: -46px;
         button {
-          border: none;
-          background-color: $bg-white;
+          border: none;background-color: transparent;
         }
       }
     }
@@ -828,7 +900,26 @@ a:hover {
       }
     }
     .new-coin-holder {
-      .collapse {
+      .top-coin {
+        ul {
+          li {
+            display: inline;
+            font-size: 18px;
+            font-weight: 500;
+          }
+          li:nth-child(1) {
+            font-size: 22px;
+            font-weight: 800;
+            font-style: italic;
+            padding-right: 13px;
+          }
+          li:nth-child(2) {
+            font-size: 18px;
+            padding-right: 13px;
+          }
+        }
+      }
+      .collapse-div {
         ul {
           li:nth-child(1) {
             width: 10%;
@@ -916,20 +1007,59 @@ a:hover {
       padding: 15.9px 20px;
     }
     .card-holder {
+      display: inline-flex;
+      width: 100%;
+      padding: 33px 10px 0 10px;
+      background-color: $bg-athens-gray;
       .cards {
-        width: 50%;
+        float: left;
+        width: 48%;
+        margin-right: 16px;
       }
       .cards:last-child {
         margin: 0;
       }
       .card-title {
+        text-align: left;
         font-size: 12px;
+        font-weight: 600;
+        padding: 14.5px 20px;
+        color: $font-ebony;
+        background-color: $bg-frosted-mint;
       }
-      .card-head {
-        .coin-name {
-          font-size: 18px;
+      .card-1 {
+        background-color: $bg-cerulean-blue;
+      }
+      .card-2 {
+        background-color: $bg-red-ribbon;
+      }
+      .card-slide {
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: -11px;
+        .card-back {
+          background-color: $bg-coinbit;
+          text-align: left;
           img {
-            margin-top: -9px;
+            margin-top: -171px;
+            width: 189px;
+            height: 292px;
+          }
+        }
+        .card-item {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      .card-head {      
+        text-align: center;
+        padding: 32px 0 26px 0;
+        margin-top: -10px;
+        .coin-name {
+          color: $font-white;
+          font-size: 14px;
+          font-weight: 900;
+          img {
             width: 10%;
           }
         }
@@ -938,24 +1068,35 @@ a:hover {
         }
       }
       .card-detail {
-        font-size: 10px;
+        background-color: $bg-white;
+        font-size: 12px;
+        padding: 9px 0 45px 10px;
         span {
-          margin-right: 5px;
+          color: $font-black;
+          margin-right: 4px;
+        }
+        p {
+          color: $font-shuttle-gray;
+          margin-bottom: 0.5rem;
+        }
+        .div-second-part {
+          margin-top: 16px;
         }
         .last-span {
-          padding-left: 20px;
+          padding-left: 5px;
         }
-        div:nth-child(2) {
+        div:nth-child(3) {
           padding-top: 10px;
         }
       }
       .btn-nav {
-        background-color: $bg-white;
+        position: absolute;
+        width: 46%;
         text-align: center;
-        padding: 16px 0 19px 0;
+        padding: 2px 0 19px 0;
+        margin-top: -46px;
         button {
-          border: none;
-          background-color: $bg-white;
+          border: none;background-color: transparent;
         }
       }
     }
@@ -1012,7 +1153,7 @@ a:hover {
     }
     .new-coin-holder {
       .new-coin {
-        padding: 16px 10px 0 10px;
+        padding: 16px 10px 16px 10px;
         .top20 {
           float: left;
           width: 142px;
@@ -1048,8 +1189,9 @@ a:hover {
           }
         }
       }
-      .collapse {
+      .collapse-div {
         ul {
+          margin-bottom: 0;
           li {
             display: inline-block;
             font-size: 14px;
