@@ -547,6 +547,12 @@ export default {
       this.imageleftsecond = this.inactive
       this.imagerightsecond = this.active
     }
+  },
+  mounted () {
+    this.imageleft = this.active
+    this.imageright = this.inactive
+    this.imageleftsecond = this.active
+    this.imagerightsecond = this.inactive
   }
 }
 </script>
