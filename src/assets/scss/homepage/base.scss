@@ -316,12 +316,12 @@ a:hover {
         border: 2px solid $border-steel-blue;
         color: $font-white;
         border-radius: 0;
-        padding: 19px 142px;
+        height: 72px;
+        width: 435px;
         margin-top: 30px;
       }
       button:last-child {
         margin-top: 15px;
-        padding: 19px 154px;
       }
     }
   }
@@ -635,12 +635,12 @@ a:hover {
           border: 2px solid $border-steel-blue;
           color: $font-white;
           border-radius: 0;
-          padding: 19px 142px;
+          height: 72px;
+          width: 435px;
           margin-top: 30px;
         }
         button:last-child {
           margin-top: 15px;
-          padding: 19px 154px;
         }
       }
     }
@@ -886,12 +886,12 @@ a:hover {
           border: 2px solid $border-steel-blue;
           color: $font-white;
           border-radius: 0;
-          padding: 19px 142px;
+          height: 72px;
+          width: 435px;
           margin-top: 30px;
         }
         button:last-child {
           margin-top: 15px;
-          padding: 19px 154px;
         }
       }
     }
@@ -1148,16 +1148,20 @@ a:hover {
         button {
           font-size: 16px;
           font-weight: 500;
-          padding: 19px 83px;
+          height: 72px;
+          width: 379px;
           margin-top: 30px;
         }
         button:last-child {
           margin-top: 15px;
-          padding: 19px 93px;
         }
       }
     }
   }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+
 }
 
 .debugger {
