@@ -9,11 +9,11 @@
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.generic-title {
-  text-align: left;
-  padding-left: 10px;
+  .generic-title {
+    text-align: left;
+    padding-left: 10px;
+    margin-top: -9px;
+  }
 }
 
 .w-header-holder {
@@ -66,9 +66,10 @@
       width: 26px;
       margin-top: -0.2em;
     }
-    label {
+    .label-inside {
       margin-left: -3em;
       color: $thead-gray-font-color;
+      margin-top: 16px;
     }
     input[type="text"] {
       padding: 14.5px 70px 14.5px 20px;
@@ -76,12 +77,13 @@
       width: 486px;
       border: 2px solid $thead-gray-border-color;
     }
-    input[type="submit"]{
-      margin-left: 0.56em;
+    button {
+      margin-left: 1.4em;
       color: $white-font-color;
       background-color: $submit-bg-color;
       border: none;
-      padding: 16.5px 28.5px;
+      width: 109px;
+      height: 72px;
     }
     .w-head-lower {
       color: $thead-gray-font-color;
@@ -117,12 +119,225 @@
   }
 }
 
-@media (min-width: 641px) and (max-width: 767px) {
-  
+@media (min-width: 640px) and (max-width: 767px) {
+  .w-header-holder {
+    padding: 12px 20px 0 20px;
+    font-size: 26px;
+    background-color: $withdraw-h-bg-color;
+    .w-head-up {
+      width: 100%;
+      display: flex;
+      padding-top: 10px;
+      .w-head-left {
+        width: 30%;
+      }
+      .w-head-right {
+        display: block;
+        position: relative;
+        width: 70%;
+        text-align: right;
+        padding: 0;
+        span {
+          font-weight: 600;
+        }
+        label {
+          margin-left: 10px;
+        }
+        label:last-child {
+          margin-right: 0;
+        }
+        .option-input {
+          top: 5px;
+          right: 20px;
+          width: 1.3em;
+          height: 1.3em;
+          border-radius: 50%;
+          vertical-align: middle;
+          border: 1px solid $radio-button-border-color;
+          -webkit-appearance: none;
+          outline: none;
+          cursor: pointer;
+        }      
+        .option-input:checked {
+          background-image: url('~img/checked32x32.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          border: 2px solid $radio-button-color;
+        }
+      }
+      img {
+        vertical-align: middle;
+        width: 26px;
+        margin-top: -0.2em;
+      }
+      .label-inside {
+        margin-left: -3em;
+        color: $thead-gray-font-color;
+        margin-top: 16px;
+      }
+      input[type="text"] {
+        padding: 14.5px 70px 14.5px 20px;
+        color:  $thead-gray-font-color;
+        width: 486px;
+        border: 2px solid $thead-gray-border-color;
+      }
+      button {
+        margin-left: 1.4em;
+        color: $white-font-color;
+        background-color: $submit-bg-color;
+        border: none;
+        width: 109px;
+        height: 72px;
+      }
+      .w-head-lower {
+        color: $thead-gray-font-color;
+        font-size: 20px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  .w-body-container {
+    padding: 11px 20px 25px 20px;
+    .w-body-data {
+      display: flex;
+      font-size: 20px;
+      padding-top: 13px;
+      .w-body-data-l {
+        float: left;
+        width: 50%;
+        span {
+          color: $thead-gray-font-color
+        }
+      }
+      .w-body-data-r {
+        float: left;
+        width: 50%;
+        text-align: right;
+        span {
+          font-weight: 600;
+        }
+      }
+      .makeit-green {
+        color: $thead-green-font-color;
+      }
+    }
+  }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
-  
+@media (min-width: 540px) and (max-width: 639px) {
+  .w-header-holder {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 539px) {
+  .w-header-holder {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .w-header-holder {
+    font-size: 16px;
+    .w-head-up {
+      width: 100%;
+      display: flex;
+      padding-top: 10px;
+      .w-head-left {
+        width: 30%;
+      }
+      .w-head-right {
+        display: block;
+        position: relative;
+        width: 70%;
+        text-align: right;
+        padding: 0;
+        span {
+          font-weight: 600;
+        }
+        label {
+          margin-left: 10px;
+        }
+        label:last-child {
+          margin-right: 0;
+        }
+        .option-input {
+          top: 5px;
+          right: 20px;
+          width: 1.3em;
+          height: 1.3em;
+          border-radius: 50%;
+          vertical-align: middle;
+          border: 1px solid $radio-button-border-color;
+          -webkit-appearance: none;
+          outline: none;
+          cursor: pointer;
+        }      
+        .option-input:checked {
+          background-image: url('~img/checked32x32.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          border: 2px solid $radio-button-color;
+        }
+      }
+      img {
+        vertical-align: middle;
+        width: 26px;
+        margin-top: -0.2em;
+      }
+      .label-inside {
+        margin-left: -3em;
+        color: $thead-gray-font-color;
+        margin-top: 14px;
+      }
+      input[type="text"] {
+        padding: 14.5px 70px 14.5px 20px;
+        color:  $thead-gray-font-color;
+        width: 81%;
+        border: 2px solid $thead-gray-border-color;
+        height: 51px;
+      }
+      button {
+        margin-left: 1.4em;
+        color: $white-font-color;
+        background-color: $submit-bg-color;
+        border: none;
+        width: 109px;
+        height: 51px;
+      }
+      .w-head-lower {
+        color: $thead-gray-font-color;
+        font-size: 20px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  .w-body-container {
+    padding: 11px 20px 25px 20px;
+    .w-body-data {
+      display: flex;
+      font-size: 16px;
+      padding-top: 13px;
+      .w-body-data-l {
+        float: left;
+        width: 50%;
+        span {
+          color: $thead-gray-font-color
+        }
+      }
+      .w-body-data-r {
+        float: left;
+        width: 50%;
+        text-align: right;
+        span {
+          font-weight: 600;
+        }
+      }
+      .makeit-green {
+        color: $thead-green-font-color;
+      }
+    }
+  }
 }
 
 .debugger {

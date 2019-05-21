@@ -39,11 +39,9 @@
           </div>
         </div>
         <div class="w-head-up">
-          <form action="">
-              <input type="text" name="search" placeholder="출금수량 (최소 0.02)" >
-              <label for="search">ETH</label>
-              <input class="wh-btn" type="submit" value="최대">
-          </form>
+          <input type="text" name="search" placeholder="출금수량 (최소 0.02)" >
+          <label class="label-inside" for="search">ETH</label>
+          <button>최대</button>
         </div>
         <div class="w-head-up">
           <div class="w-head-lower">
