@@ -26,107 +26,6 @@ a:hover {
       margin-right: 32px;
     }
   }
-  // .card-holder {
-  //   text-align: center;
-  //   display: inline-block;
-  //   padding: 33px 20px 0 20px;
-  //   width: 100%;
-  //   background-color: $bg-athens-gray;
-  //   ul {
-  //     margin: 0;
-  //     padding: 0;
-  //     li {
-  //       display: inline-block;
-  //       margin-right: 16px;
-  //     }
-  //     li:last-child {
-  //       margin-left: 0;
-  //     }
-  //   }
-  //   .cards {
-  //     max-width: 100%;
-  //   }
-  //   .card-title {
-  //     text-align: left;
-  //     font-size: 20px;
-  //     font-weight: 600;
-  //     padding: 14.5px 59px 14.5px 20px;
-  //     color: $font-ebony;
-  //     background-color: $bg-frosted-mint;
-  //   }
-  //   .card-1 {
-  //     background-color: $bg-cerulean-blue;
-  //   }
-  //   .card-2 {
-  //     background-color: $bg-red-ribbon;
-  //   }
-  //   .card-head {      
-  //     text-align: center;
-  //     padding: 32px 0 26px 0;
-  //     margin-top: -10px;
-  //     .coin-name {
-  //       color: $font-white;
-  //       font-size: 28px;
-  //       font-weight: 900;
-  //       img {
-  //         margin-top: -10px;
-  //       }
-  //     }
-  //     .coin-start {
-  //       color: $font-spindle;
-  //       padding-top: 15px;
-  //     }
-  //   }
-  //   .card-detail {
-  //     text-align: left;
-  //     background-color: $bg-white;
-  //     font-size: 15px;
-  //     padding: 9px 0 45px 15px;
-  //     span {
-  //       color: $font-black;
-  //       margin-right: 9px;
-  //     }
-  //     p {
-  //       color: $font-shuttle-gray;
-  //       margin-bottom: 0.5rem;
-  //     }
-  //     .div-second-part {
-  //       margin-top: 16px;
-  //     }
-  //     .last-span {
-  //       padding-left: 29px;
-  //     }
-  //     div:nth-child(3) {
-  //       padding-top: 10px;
-  //     }
-  //   }
-  //   .btn-nav {
-  //     position: absolute;
-  //     width: 292px;
-  //     text-align: center;
-  //     padding: 2px 0 19px 0;
-  //     margin-top: -46px;
-  //     button {
-  //       border: none;background-color: transparent;
-  //     }
-  //   }
-  //   .card-slide {
-  //     overflow: hidden;
-  //     white-space: nowrap;
-  //     margin-top: -11px;
-  //     .card-back {
-  //       text-align: center;
-  //       margin-top: -265px;
-  //       img {
-  //         margin-top: -220px;
-  //       }
-  //     }
-  //     .card-item {
-  //       display: inline-block;
-  //       width: 100%;
-  //     }
-  //   }
-  // }
   
   .card-holder {
     display: inline-flex;
@@ -763,7 +662,7 @@ a:hover {
       padding: 33px 20px 0 20px;
       background-color: $bg-athens-gray;
       .cards {
-        width: 50%;
+        width: 48%;
       }
       .cards:last-child {
         margin: 0;
@@ -838,7 +737,7 @@ a:hover {
       }
       .btn-nav {
         position: absolute;
-        width: 292px;
+        width: 45%;
         text-align: center;
         padding: 2px 0 19px 0;
         margin-top: -46px;
