@@ -439,25 +439,25 @@ export default {
     },
     swipeLeft () {
       const firstmarket = this.$refs.firstmarket
-      this.scrollTo(firstmarket, -300, 800)
+      this.scrollTo(firstmarket, -400, 800)
       this.imageleft = this.active
       this.imageright = this.inactive
     },
     swipeRight () {
       const firstmarket = this.$refs.firstmarket
-      this.scrollTo(firstmarket, 300, 800)
+      this.scrollTo(firstmarket, 400, 800)
       this.imageleft = this.inactive
       this.imageright = this.active
     },
     swipeLeftsecond () {
       const secondmarket = this.$refs.secondmarket
-      this.scrollTo(secondmarket, -300, 800)
+      this.scrollTo(secondmarket, -400, 800)
       this.imageleftsecond = this.active
       this.imagerightsecond = this.inactive
     },
     swipeRightsecond () {
       const secondmarket = this.$refs.secondmarket
-      this.scrollTo(secondmarket, 300, 800)
+      this.scrollTo(secondmarket, 400, 800)
       this.imageleftsecond = this.inactive
       this.imagerightsecond = this.active
     }
