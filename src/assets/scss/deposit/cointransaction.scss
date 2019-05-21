@@ -235,9 +235,825 @@
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
+  .app-cointransaction {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .generic-title {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .trans-hr {
+    margin: 0 auto;
+    width: 94%;
+  }
+  
+  .transaction {
+    height: 100%;
+    .t-head {    
+      background-color: $t-head-bg-color;
+      .t-head-up {
+        display: flex;
+        padding: 36px 0 25px 0;
+        .t-head-left {
+          width: 30%;
+          color:  $thead-black-font-color;
+          padding-left: 20px;
+          .t-head-left-data {
+            padding: 10px 0 0 0;
+            font-size: 24px;
+          }
+        }
+        .t-head-right {
+          padding-right: 20px;
+          width: 70%;
+          .t-head-right-up {        
+            font-size: 33px;
+            text-align: right;
+            color:  $thead-green-font-color;
+          }
+          .t-head-right-down {
+            font-size: 24px;
+            text-align: right;
+            color:  $thead-gray-font-color;
+            margin-top: -3px;
+          }
+        }
+      }
+      .t-head-middle {
+        display: flex;
+        color:  $thead-black-font-color;
+        font-size: 20px;
+        .t-middle-left {
+          padding-left: 20px;
+          width: 30%;
+        }
+        .t-middle-right {
+          text-align: right;
+          width: 70%;
+          padding-right: 20px;
+          .arrow {
+            margin-right: 1px;
+          }
+          span {
+            font-weight: 800;
+          }
+        }
+        .second-part {
+          padding-right: 60px;
+        }
+      }
+      .bar {
+        padding-bottom: 19px;
+      }
+      .t-head-lower {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 24px;
+        ul {
+          display: inline-flex;
+          margin: 0;
+          li {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 8px 84px;
+            float: left;
+            border-right: 2px solid $thead-gray-border-color;
+            a {
+              text-decoration: none;
+              color: $thead-green-font-color;
+            }
+            img {
+              margin-right: 8px;
+            }
+          }
+          li:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .no-trans {
+    text-align: center;
+    font-size: 22px;
+    color: $thead-gray-font-color;
+    padding: 120px 0;
+  }
+  .t-body-head {
+    display: flex;
+    padding: 20.5px 0;
+    .t-body-head-left {
+      float: left;
+      width: 50%;
+      padding: 0 0 0 20px;
+      font-size: 25px;
+    }
+    .t-body-head-right {
+      float: left;
+      width: 50%;
+      text-align: right;
+      padding: 0 20px 0 0;
+      font-size: 18px;
+      select {
+        font-size: 18px;
+        border: none;
+        background-color: $dropdown-bg-color;
+        display: inline-block;
+        font: inherit;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin: 0;      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      select.minimal {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+    }
+    border-bottom: 2px solid $thead-gray-border-color;
+  }
+  .t-body-data {
+    .deposit-holder {
+      display: flex;
+      padding: 21px 20px 20px 20px;
+      .type {
+        float: left;
+        width: 30%;
+        font-size: 25px;
+        color: $deposit-font-color; 
+      }
+      .value  {
+        float: left;
+        width: 70%;
+        font-size: 25px;
+        text-align: right;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .trans-holder {
+      color: $thead-gray-font-color; 
+      display: flex;
+      padding-bottom: 16px;
+      .date {
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+        font-size: 18px;
+      }
+      .tokrw {
+        float: left;
+        width: 70%;
+        padding-right: 20px;
+        font-size: 20px;
+        text-align: right;
+      }
+    }
+    .trans-list-data {
+      padding: 0px 20px;
+      font-size: 22px;
+      border-bottom: 2px solid $thead-gray-border-color;
+      .tld-up {
+        display: flex;
+        width: 100%;
+        padding: 54px 0 25px 0;
+      }
+      .tld-down {
+        display: flex;
+        width: 100%;
+        padding-bottom: 53px;
+      }
+      .t-id {
+        float: left;
+        width: 15%;
+      }
+      .t-addr {
+        float: left;
+        padding: 5px 5px;
+        width: 85%;
+        font-size: 18px;
+        word-break:break-all;
+        a {
+          color: $thead-gray-font-color;
+          text-decoration: underline solid $thead-gray-font-color;
+        }
+      }
+      .tc-result {
+        float: left;
+        width: 85%;
+      }
+    }
+  }
 }
 
-@media (min-width: 320px) and (max-width: 639px) {
+@media (min-width: 540px) and (max-width: 639px) {
+  .app-cointransaction {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .generic-title {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .trans-hr {
+    margin: 0 auto;
+    width: 94%;
+  }
+  
+  .transaction {
+    height: 100%;
+    .t-head {
+      .t-head-lower {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 24px;
+        ul {
+          display: inline-flex;
+          margin: 0;
+          li {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 8px 60px 8px 0;
+            float: left;
+            border-right: 2px solid $thead-gray-border-color;
+            a {
+              text-decoration: none;
+              color: $thead-green-font-color;
+            }
+            img {
+              margin-right: 8px;
+              margin-top: -7px;
+            }
+          }
+          li:last-child {
+            border: none;
+            padding: 8px 0 8px 60px;
+          }
+        }
+      }
+    }
+  }
+  .no-trans {
+    text-align: center;
+    font-size: 22px;
+    color: $thead-gray-font-color;
+    padding: 120px 0;
+  }
+  .t-body-head {
+    display: flex;
+    padding: 20.5px 0;
+    .t-body-head-left {
+      float: left;
+      width: 50%;
+      padding: 0 0 0 20px;
+      font-size: 25px;
+    }
+    .t-body-head-right {
+      float: left;
+      width: 50%;
+      text-align: right;
+      padding: 0 20px 0 0;
+      font-size: 18px;
+      select {
+        font-size: 18px;
+        border: none;
+        background-color: $dropdown-bg-color;
+        display: inline-block;
+        font: inherit;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin: 0;      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      select.minimal {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+    }
+    border-bottom: 2px solid $thead-gray-border-color;
+  }
+  .t-body-data {
+    .deposit-holder {
+      display: flex;
+      padding: 21px 20px 20px 20px;
+      .type {
+        float: left;
+        width: 30%;
+        font-size: 25px;
+        color: $deposit-font-color; 
+      }
+      .value  {
+        float: left;
+        width: 70%;
+        font-size: 25px;
+        text-align: right;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .trans-holder {
+      color: $thead-gray-font-color; 
+      display: flex;
+      padding-bottom: 16px;
+      .date {
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+        font-size: 18px;
+      }
+      .tokrw {
+        float: left;
+        width: 70%;
+        padding-right: 20px;
+        font-size: 20px;
+        text-align: right;
+      }
+    }
+    .trans-list-data {
+      padding: 0px 20px;
+      font-size: 22px;
+      border-bottom: 2px solid $thead-gray-border-color;
+      .tld-up {
+        display: flex;
+        width: 100%;
+        padding: 54px 0 25px 0;
+      }
+      .tld-down {
+        display: flex;
+        width: 100%;
+        padding-bottom: 53px;
+      }
+      .t-id {
+        float: left;
+        width: 15%;
+      }
+      .t-addr {
+        float: left;
+        padding: 5px 5px;
+        width: 85%;
+        font-size: 18px;
+        word-break:break-all;
+        a {
+          color: $thead-gray-font-color;
+          text-decoration: underline solid $thead-gray-font-color;
+        }
+      }
+      .tc-result {
+        float: left;
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media (min-width: 414px) and (max-width: 539px) {
+  .app-cointransaction {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .generic-title {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .trans-hr {
+    margin: 0 auto;
+    width: 94%;
+  }
+  
+  .transaction {
+    height: 100%;
+    .t-head {
+      .t-head-lower {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 18px;
+        font-weight: 600;
+        ul {
+          display: inline-flex;
+          margin: 0;
+          li {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 8px 60px 8px 0;
+            float: left;
+            border-right: 2px solid $thead-gray-border-color;
+            a {
+              text-decoration: none;
+              color: $thead-green-font-color;
+            }
+            img {
+              margin-right: 8px;
+              margin-top: -7px;
+            }
+          }
+          li:last-child {
+            border: none;
+            padding: 8px 0 8px 60px;
+          }
+        }
+      }
+    }
+  }
+  .no-trans {
+    text-align: center;
+    font-size: 22px;
+    color: $thead-gray-font-color;
+    padding: 120px 0;
+  }
+  .t-body-head {
+    display: flex;
+    padding: 20.5px 0;
+    .t-body-head-left {
+      float: left;
+      width: 50%;
+      padding: 0 0 0 20px;
+      font-size: 25px;
+    }
+    .t-body-head-right {
+      float: left;
+      width: 50%;
+      text-align: right;
+      padding: 0 20px 0 0;
+      font-size: 18px;
+      select {
+        font-size: 18px;
+        border: none;
+        background-color: $dropdown-bg-color;
+        display: inline-block;
+        font: inherit;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin: 0;      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      select.minimal {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+    }
+    border-bottom: 2px solid $thead-gray-border-color;
+  }
+  .t-body-data {
+    .deposit-holder {
+      display: flex;
+      padding: 21px 20px 20px 20px;
+      .type {
+        float: left;
+        width: 30%;
+        font-size: 25px;
+        color: $deposit-font-color; 
+      }
+      .value  {
+        float: left;
+        width: 70%;
+        font-size: 25px;
+        text-align: right;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .trans-holder {
+      color: $thead-gray-font-color; 
+      display: flex;
+      padding-bottom: 16px;
+      .date {
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+        font-size: 18px;
+      }
+      .tokrw {
+        float: left;
+        width: 70%;
+        padding-right: 20px;
+        font-size: 20px;
+        text-align: right;
+      }
+    }
+    .trans-list-data {
+      padding: 0px 20px;
+      font-size: 22px;
+      border-bottom: 2px solid $thead-gray-border-color;
+      .tld-up {
+        display: flex;
+        width: 100%;
+        padding: 54px 0 25px 0;
+      }
+      .tld-down {
+        display: flex;
+        width: 100%;
+        padding-bottom: 53px;
+      }
+      .t-id {
+        float: left;
+        width: 15%;
+      }
+      .t-addr {
+        float: left;
+        padding: 5px 5px;
+        width: 85%;
+        font-size: 18px;
+        word-break:break-all;
+        a {
+          color: $thead-gray-font-color;
+          text-decoration: underline solid $thead-gray-font-color;
+        }
+      }
+      .tc-result {
+        float: left;
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .app-cointransaction {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .generic-title {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .trans-hr {
+    margin: 0 auto;
+    width: 94%;
+  }
+  
+  .transaction {
+    height: 100%;
+    .t-head {
+      .t-head-up {
+        display: flex;
+        padding: 36px 0 25px 0;
+        .t-head-left {
+          width: 30%;
+          color:  $thead-black-font-color;
+          padding-left: 20px;
+          .t-head-left-data {
+            padding: 10px 0 0 0;
+            font-size: 16px;
+          }
+        }
+        .t-head-right {
+          padding-right: 20px;
+          width: 70%;
+          .t-head-right-up {        
+            font-size: 26px;
+            text-align: right;
+            color:  $thead-green-font-color;
+          }
+          .t-head-right-down {
+            font-size: 20px;
+            text-align: right;
+            color:  $thead-gray-font-color;
+            margin-top: -3px;
+          }
+        }
+      }
+      .t-head-middle {
+        display: flex;
+        color:  $thead-black-font-color;
+        font-size: 18px;
+        .t-middle-left {
+          padding-left: 20px;
+          width: 30%;
+        }
+        .t-middle-right {
+          text-align: right;
+          width: 70%;
+          padding-right: 20px;
+          .arrow {
+            margin-right: 1px;
+          }
+          span {
+            font-weight: 800;
+          }
+        }
+        .second-part {
+          padding-right: 60px;
+        }
+      }
+      .t-head-lower {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 18px;
+        font-weight: 600;
+        ul {
+          display: inline-flex;
+          margin: 0;
+          li {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 8px 30px 8px 0;
+            float: left;
+            border-right: 2px solid $thead-gray-border-color;
+            a {
+              text-decoration: none;
+              color: $thead-green-font-color;
+            }
+            img {
+              margin-right: 8px;
+              margin-top: -7px;
+            }
+          }
+          li:last-child {
+            border: none;
+            padding: 8px 0 8px 30px;
+          }
+        }
+      }
+    }
+  }
+  .no-trans {
+    text-align: center;
+    font-size: 22px;
+    color: $thead-gray-font-color;
+    padding: 120px 0;
+  }
+  .t-body-head {
+    display: flex;
+    padding: 20.5px 0;
+    .t-body-head-left {
+      float: left;
+      width: 50%;
+      padding: 10px 0 0 20px;
+      font-size: 18px;
+    }
+    .t-body-head-right {
+      float: left;
+      width: 50%;
+      text-align: right;
+      padding: 0 20px 0 0;
+      font-size: 18px;
+      select {
+        font-size: 18px;
+        border: none;
+        background-color: $dropdown-bg-color;
+        display: inline-block;
+        font: inherit;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin: 0;      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      select.minimal {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+    }
+    border-bottom: 2px solid $thead-gray-border-color;
+  }
+  .t-body-data {
+    .deposit-holder {
+      display: flex;
+      padding: 21px 20px 20px 20px;
+      .type {
+        float: left;
+        width: 30%;
+        font-size: 25px;
+        color: $deposit-font-color; 
+      }
+      .value  {
+        float: left;
+        width: 70%;
+        font-size: 25px;
+        text-align: right;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .trans-holder {
+      color: $thead-gray-font-color; 
+      display: flex;
+      padding-bottom: 16px;
+      .date {
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+        font-size: 18px;
+      }
+      .tokrw {
+        float: left;
+        width: 70%;
+        padding-right: 20px;
+        font-size: 20px;
+        text-align: right;
+      }
+    }
+    .trans-list-data {
+      padding: 0px 20px;
+      font-size: 22px;
+      border-bottom: 2px solid $thead-gray-border-color;
+      .tld-up {
+        display: flex;
+        width: 100%;
+        padding: 54px 0 25px 0;
+      }
+      .tld-down {
+        display: flex;
+        width: 100%;
+        padding-bottom: 53px;
+      }
+      .t-id {
+        float: left;
+        width: 15%;
+      }
+      .t-addr {
+        float: left;
+        padding: 5px 5px;
+        width: 85%;
+        font-size: 18px;
+        word-break:break-all;
+        a {
+          color: $thead-gray-font-color;
+          text-decoration: underline solid $thead-gray-font-color;
+        }
+      }
+      .tc-result {
+        float: left;
+        width: 85%;
+      }
+    }
+  }
 }
 
 .debugger {

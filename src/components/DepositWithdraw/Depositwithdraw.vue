@@ -31,7 +31,7 @@
       <div class="for-money">
         <img src="~img/krw32x32.png" alt="krw32x32" class="money-icon">원화
         <div class="money-lastline">
-          0<img src="~img/right-arrow32x32.png" alt="krw32x32" class="money-arrow">
+          124,456<img src="~img/right-arrow32x32.png" alt="krw32x32" class="money-arrow">
         </div>
       </div>
       <!-- end for-money -->

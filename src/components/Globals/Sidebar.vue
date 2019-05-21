@@ -21,7 +21,7 @@
             </li>
         </ul>
       </div>
-      <div class="user-logout">
+      <!-- <div class="user-logout">
         <div class="ul-l">가입이메일</div>
         <div class="ul-r">
           <a href="#" class="signup">회원가입</a>
@@ -29,7 +29,7 @@
             <img src="~img/close.png"  alt="close">
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- menus -->
     <div class="user-menu">

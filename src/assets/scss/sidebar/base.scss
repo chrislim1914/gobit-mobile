@@ -950,6 +950,191 @@
     }
   }
 }
+@media (min-width: 320px) and (max-width: 359px) {
+  .app-sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 320px;
+    width: 320px;
+    background-color: $header-background-color;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    .user-status {
+      .user-login {
+        display: flex;
+        padding: 13px 20px;
+        .ul-l {
+          font-size: 22px;
+          font-weight: 600;
+          float: left;
+          width: 50%;
+          color: $ul-l-font-color;
+          span {
+            font-size: 15px;
+            color: $ul-l-span-font-color;
+          }
+        }
+        .ul-r {
+          font-size: 21px;
+          display: flex;
+          float: right;
+          width: 50%;
+          color: $ul-r-font-color;
+          p {
+            text-align: right;
+            margin-right: 20px;
+          }
+          a {
+            margin: 0;
+          }
+          img {
+            width: 33px;
+            height: 33px;
+          }
+        }
+      }
+      .user-level {
+        display: inline-block;
+        width: 100%;
+        ul {
+          li {
+            display: inline-block;
+            width: 50%;
+            background-color: $ul-security-level-bg-color;
+            color: $white-font-color;
+            border-right: 1px solid $white-font-color;
+            padding: 11.75px 20px;
+            font-size: 14px;
+          }
+          li:last-child {
+            border-right: none;
+          }
+          span {
+            font-size: 20px;
+            color: $lv-font-color;
+            padding-left: 13px;
+          }
+        }
+        a {
+          color: $white-font-color;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+      .user-logout {
+        display: flex;
+        padding: 13px 20px;
+        border-bottom: 2px solid $ul-l-font-color;
+        .ul-l {
+          font-size: 20px;
+          font-weight: 600;
+          float: left;
+          width: 50%;
+          color: $ul-l-font-color;
+          span {
+            font-size: 15px;
+            color: $ul-l-span-font-color;
+          }
+        }
+        .ul-r {
+          display: flex;
+          float: right;
+          width: 50%;
+          color: $ul-r-font-color;
+          .signup {
+            margin-right: 20px;
+            font-size: 14px;
+            color: $ul-r-font-color;
+            border: 1px solid $ul-l-font-color;
+            padding: 12px 5px;
+          }
+          a:last-child {
+            margin-left: 0;
+            padding: 0;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+          img {
+            margin: 0;
+            width: 37px;
+            height: 37px;
+          }
+        }
+      }
+    }
+    .user-menu {  
+      margin-top: -6px;
+      .side-exchange {
+        .side-echange-head {
+          font-size: 20px;
+          font-weight: 800;
+          padding: 14.5px 20px;
+          img {
+            margin-top: -0.4em;
+            margin-left: 0.5em;
+          }
+        }
+        .dd-sub-menus {
+          background-color: $dd-sub-menu-bg-color;
+          font-size: 19px;
+          border-top: 1px solid $dd-sub-menu-border-color;
+          .sub-menus {
+            font-size: 19px;
+            padding: 14.5px 20px;
+            border-bottom: 1px solid $dd-sub-menu-border-color;
+            a {
+              color: $thead-black-font-color;
+            }
+            a:hover {
+              text-decoration: none;
+            }
+          }
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+      .other-menus {
+        margin: 0 20px;
+        padding: 7.5px 20px;
+        border-top: 2px solid $other-menu-border-color;
+        .service-menu {
+          font-size: 20px;
+          margin: 28.5px 0;
+          a {
+            color: $thead-black-font-color;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .app-download {
+        display: block;
+        padding: 0 20px 32px 20px;
+        .app-d-box {
+          font-size: 18px;
+          color: $app-d-color;
+          font-weight: 600;
+          text-align: center;
+          width: 100%;
+          border: 1px solid $app-d-color;
+          margin-bottom: 17px;
+          padding: 10.5px 0;
+        }
+        a {
+          color: $app-d-color;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 
 .debugger {
   border: 1px solid red;

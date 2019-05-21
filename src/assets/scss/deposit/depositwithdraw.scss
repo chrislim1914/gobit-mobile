@@ -201,7 +201,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 639px) {
+@media (min-width: 540px) and (max-width: 639px) {
   .search {
     .search-input {
       width: 90%;
@@ -225,6 +225,192 @@
     }
     .right-side {
       width: 100%;
+    }  
+  }
+}
+
+@media (min-width: 414px) and (max-width: 539px) {
+  .search {
+    .search-input {
+      width: 90%;
+    }
+  }
+  .deposit-container {
+    .total-assets {
+      text-align: center;
+      .assets-left {
+        width: 100%;  
+      }
+      .assets-right {
+        width: 100%;
+        text-align: center;
+      }
+    }    
+  }
+  .for-coin {
+    .coin-holder {
+      width: 100%;
+    }
+    .right-side {
+      width: 100%;
+    }  
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .search {
+    display: flex;
+    border-bottom: 2px solid $search-border-color;
+    color: $search-border-color;
+    font-size: 20px;
+    padding: 14.5px 0;
+    .search-img {
+      position: relative;
+      float: left;
+      width: 30px;
+      height: 30px;
+      left: 5px;
+    }
+    .search-input-box {
+      position: relative;
+      left: 5px;
+      width: 98.7%;
+    }
+    .search-input {
+      width: 80%;
+      border: none;
+      color: $search-font-color;
+      padding-left: 10px;
+    }
+  }
+  .deposit-container {
+    .total-assets {
+      text-align: center;
+      .assets-left {
+        width: 100%;  
+      }
+      .assets-right {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .hold-coin {
+      position: relative;
+      top: -5px;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 21px;
+      padding: 23px 20px 17px 20px;
+      border-bottom: 2px solid $border-color;
+      .container {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        border: 1px solid $check-box-border-color;
+        border-radius: 50%;
+      }
+      .container input:checked ~ .checkmark {
+        background-color: $search-border-color;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      .container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid $fee-bg-color;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    .for-money {
+      position: relative;
+      top: -5px;
+      font-size: 23px;
+      padding: 27px 20px;
+      border-bottom: 1px solid $border-color;
+      .money-lastline {
+        float: right;
+        .money-arrow {
+          margin-left: 10px;
+        }
+      }
+      .money-icon {
+        background-color: $coin-holder-bg-color;
+        border-radius: 50%;
+        padding: 10px 10px;
+        margin-right: 14px;
+        width: 14%;
+      }
+    }
+  }
+  .for-coin {
+    position: relative;
+    display: flex;
+    top: -5px;
+    font-size: 18px;
+    border-bottom: 1px solid $border-color;
+    .coin-holder {
+      width: 50%;
+      float: left;
+      padding: 35px 0 35px 20px;
+      .coin-icon{
+        background-color: $coin-holder-bg-color;
+        border-radius: 50%;
+        padding: 5px 5px;
+        margin-right: 14px;
+        width: 32%;
+      }
+    }
+    .right-side {
+      float: left;
+      width: 50%;
+      text-align: right;
+      padding: 30px 0;
+      .convert-holder {
+        float: left;
+        font-size: 16px;
+        width: 80.5%;
+        .ctop {
+          font-size: 18px;
+        }
+        .cdown{
+          color: $check-box-border-color;
+        }
+      }
+      .coin-arrow {
+        float: left;
+        width: 19.5%;
+        height: 100%;
+        padding: 7px 18px 7px 0;
+      }
     }  
   }
 }
