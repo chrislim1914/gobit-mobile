@@ -98,7 +98,7 @@
       margin: 0;
       padding: 0;
       width: 69%;
-      overflow: scroll;
+      overflow: hidden;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
       -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -360,6 +360,13 @@
 }
 
 @media (min-width: 540px) and (max-width: 639px) {
+  .menu-handler {
+    display: flex;
+    .menus {
+      font-size : 18px;
+    }
+  }
+  
   .h-head {
     font-size: 18px;
   }
@@ -459,7 +466,121 @@
     }
   }
 }
-@media (min-width: 420px) and (max-width: 539px) {
+
+@media (min-width: 414px) and (max-width: 539px) {
+  .menu-handler {
+    display: flex;
+    .menus {
+      font-size : 18px;
+    }
+  }
+  .h-head {
+    font-size: 18px;
+  }
+  
+  .h-table-data {
+    .t-header {
+      .btn-to-left {
+        padding: 8.5px 0;
+        left: 168px;
+      }
+      .btn-to-right {
+        padding: 8.5px 0;
+        right: 0;
+      }
+      .th-title {
+        width: 20%;
+        font-size: 14px;
+      }
+      .center{
+        width: 60%;
+      }
+      .internal{
+        font-weight: 600;
+        height: 100%;
+        font-size: 14px;
+        padding: 10px 16px;
+      }
+      .internal:last-child {
+        border-right: none;
+      }
+      .freeze{
+        width: 30%;
+        left: -1px;
+        position: absolute;
+        display: inline-flex;
+        text-align: center;
+      }
+      .frezze-column-1 {
+        word-break: break-all;
+        background-color: $history-dd-bg-color;
+        border-right: 1px solid $bheadright-font-color;
+        border-bottom: 1px solid $bheadright-font-color;
+        padding: 3px 16px;
+        p {
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .frezze-column-2 {
+        word-break: break-all;
+        background-color: $history-dd-bg-color;
+        border-right: 1px solid $bheadright-font-color;
+        border-bottom: 1px solid $bheadright-font-color;
+        padding: 17.8px 29px;
+      }
+      .outer {
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        left: 0;
+      }
+      .internal-data-holder {
+        display: inline-block;
+        width: 100%;
+        .internal-data {
+          font-weight: 600;
+          height: 100%;
+          display: inline-block;
+          font-size: 14px;
+          border-right: 1px solid $bheadright-font-color;
+          padding: 17.8px 11px;
+          border-bottom: 1px solid $bheadright-font-color;
+          text-align: right;
+        }
+        .internal-data:last-child {
+          border-right: none;
+        }
+        .red {
+          color: $history-red-font-color;
+        }
+        .blue {
+          color: $history-blue-font-color;
+        }
+      }
+      .small {
+        width: 20%;
+        padding: 10px 10px;
+      }
+      .medium {
+      width: 55%;
+      margin-left: -7px;
+      }
+      .medium-data {
+        width: 55.2%;
+        margin-left: -7px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .menu-handler {
+    display: flex;
+    .menus {
+      font-size : 18px;
+    }
+  }
   .h-head {
     font-size: 18px;
   }

@@ -133,10 +133,279 @@
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-
+  .menu-handler {
+    display: flex;
+    .menus {
+      float: left;
+      padding: 12px 0;
+      width: 33.333%;
+      text-align: center;
+      font-size : 23px;
+      border-bottom: 2px solid $fee-tab-inactive-color;
+      a {
+        color: $thead-black-font-color;      
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    .active {
+      color: $fee-head-font-color;
+      border-bottom: 2px solid $fee-tab-active-color;
+      a {
+        color: $fee-head-font-color;
+      }
+    }
+  }
+  
+  .o-head {
+    display: flex;
+    padding: 25px 20px 22px 20px;
+    font-size: 24px;
+    .oh-l {
+      float: left;
+      width: 50%;
+    }
+    .oh-r {
+      font-size: 22px;
+      float: left;
+      width: 50%;
+      text-align: right;
+      a {      
+        color: $white-font-color;
+        background-color: $button-bg-color;
+        padding: 11.5px 7.1px;
+      }
+      a:hover {
+        text-decoration: none;
+    }
+  }
+      
+  }
+  
+  .order-body {
+    table {
+      width: 100%;
+      text-align: center;
+      thead {
+        border-top: 2px solid $bheadright-font-color;
+        border-bottom: 2px solid $bheadright-font-color;
+        th {
+          border-right: 1px solid $bheadright-font-color;
+          border-bottom: 1px solid $bheadright-font-color;
+          font-weight: 500;
+          padding: 9px 0;
+        }
+        th:nth-child(1) {
+          width: 8.28%;
+        }
+        th:nth-child(2) {
+          width: 18.75%;
+        }
+        th:nth-child(3) {
+          width: 28.13%;
+        }
+        th:nth-child(4) {
+          width: 28.13%;
+        }
+        th:nth-child(5) {
+          width: 16.72%;
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 1px solid $bheadright-font-color;
+          td {
+            padding: 18.5px 10px;
+            border-right: 1px solid $bheadright-font-color;
+            border-bottom: 1px solid $bheadright-font-color;
+            text-align: right;
+          }        
+          img {
+            vertical-align: middle;
+            width: 24px;
+            margin-top: -0.2em;
+          }
+          .option-input {
+            top: 5px;
+            right: 20px;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid $radio-button-border-color;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+          }      
+          .option-input:checked {
+            background-image: url('~img/checked32x32.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid $radio-button-color;
+          }
+        }
+      }
+      .no-border {
+        border-right: none;
+        padding: 0 20px;
+      }
+      .to-center {
+        text-align: center;
+      }
+    }
+  }
 }
 
-@media (min-width: 360px) and (max-width: 639px) {
+@media (min-width: 540px) and (max-width: 639px) {
+  .menu-handler {
+    display: flex;
+    .menus {
+      font-size : 18px;
+    }
+  }
+  
+  .o-head {
+    display: flex;
+    padding: 25px 20px 22px 20px;
+    font-size: 24px;
+    .oh-l {
+      float: left;
+      width: 50%;
+    }
+    .oh-r {
+      font-size: 22px;
+      float: left;
+      width: 50%;
+      text-align: right;
+      a {      
+        color: $white-font-color;
+        background-color: $button-bg-color;
+        padding: 11.5px 7.1px;
+      }
+      a:hover {
+        text-decoration: none;
+    }
+  }
+      
+  }
+  
+  .order-body {
+    table {
+      width: 100%;
+      text-align: center;
+      thead {
+        border-top: 2px solid $bheadright-font-color;
+        border-bottom: 2px solid $bheadright-font-color;
+        th {
+          border-right: 1px solid $bheadright-font-color;
+          border-bottom: 1px solid $bheadright-font-color;
+          font-weight: 500;
+          padding: 9px 0;
+        }
+        th:nth-child(1) {
+          width: 8.28%;
+        }
+        th:nth-child(2) {
+          width: 18.75%;
+        }
+        th:nth-child(3) {
+          width: 28.13%;
+        }
+        th:nth-child(4) {
+          width: 28.13%;
+        }
+        th:nth-child(5) {
+          width: 16.72%;
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 1px solid $bheadright-font-color;
+          td {
+            padding: 18.5px 10px;
+            border-right: 1px solid $bheadright-font-color;
+            border-bottom: 1px solid $bheadright-font-color;
+            text-align: right;
+          }        
+          img {
+            vertical-align: middle;
+            width: 24px;
+            margin-top: -0.2em;
+          }
+          .option-input {
+            top: 5px;
+            right: 20px;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid $radio-button-border-color;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+          }      
+          .option-input:checked {
+            background-image: url('~img/checked32x32.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid $radio-button-color;
+          }
+        }
+      }
+      .no-border {
+        border-right: none;
+        padding: 0 20px;
+      }
+      .to-center {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 414px) and (max-width: 6539px) {
+  .menu-handler {
+    display: flex;
+    .menus {
+      font-size : 18px;
+    }
+  }
+  
+  .o-head {
+    font-size: 18px;
+    .oh-r {
+      font-size: 16px;
+    }      
+  }
+  
+  .order-body {
+    table {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .menu-handler {
+    display: flex;
+    .menus {
+      font-size : 18px;
+    }
+  }
+  
+  .o-head {
+    font-size: 18px;
+    .oh-r {
+      font-size: 16px;
+    }      
+  }
+  
+  .order-body {
+    table {
+      font-size: 12px;
+    }
+  }
 }
 
 .debugger {

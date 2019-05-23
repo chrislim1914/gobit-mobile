@@ -32,7 +32,7 @@
     position: relative;
     float: right;
     width: 9%;
-    text-align: center;
+    text-align: right;
   }
   .menu-icon {
     position: relative;
@@ -56,14 +56,14 @@
 @media (min-width: 420px) and (max-width: 639px) {
   .topbar-container {
     img {
-      width: 32px;
-      height: 32px;
+      height: 26px;
     }
     .back {
       width: 15%;
     }
     .title {
       width: 65%;
+      margin-top: -12px;
     }
     .home-icon {
       width: 10%;
@@ -77,20 +77,21 @@
 @media (min-width: 320px) and (max-width: 419px) {
   .topbar-container {
     img {
-      width: 32px;
-      height: 32px;
+      height: 26px;
     }
     .back {
-      width: 15%;
+      width: 20%;
     }
     .title {
       width: 55%;
+      margin-top: -12px;
     }
     .home-icon {
-      width: 15%;
+      width: 10%;
+      text-align: right;
     }
     .menu-icon {
-      width: 15%;
+      width: 10%;
     }
   }
 }
