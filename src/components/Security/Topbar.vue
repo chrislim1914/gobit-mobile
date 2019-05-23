@@ -19,6 +19,9 @@
             <h6 v-if="$route.path === '/security/mobile_authorize'">
               휴대폰 재인증
             </h6>
+            <h6 v-if="$route.path === '/security/deactivate_account'">
+              계좌 인증
+            </h6>
           </li>
           <li>
             <img src="~img/home32x32.png" class="img-fluid" alt="Gobit security topbar home icon">

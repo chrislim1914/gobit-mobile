@@ -73,12 +73,10 @@
           linear-gradient(45deg, transparent 50%, $thead-black-font-color 50%),
           linear-gradient(135deg, $thead-black-font-color 50%, transparent 50%);
         background-position:
-          calc(100% - 20px) calc(1em + 2px),
-          calc(100% - 15px) calc(1em + 2px),
-          calc(100% - 2.5em) 0.5em;
+          calc(100% - 25px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
         background-size:
-          5px 5px,
-          5px 5px,
+          10px 10px,
+          10px 10px,
           1px 1.5em;
         background-repeat: no-repeat;
       }
@@ -147,12 +145,10 @@
             linear-gradient(45deg, transparent 50%, $thead-black-font-color 50%),
             linear-gradient(135deg, $thead-black-font-color 50%, transparent 50%);
           background-position:
-            calc(100% - 20px) calc(1em + 2px),
-            calc(100% - 15px) calc(1em + 2px),
-            calc(100% - 2.5em) 0.5em;
+            calc(100% - 25px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
           background-size:
-            5px 5px,
-            5px 5px,
+            10px 10px,
+            10px 10px,
             1px 1.5em;
           background-repeat: no-repeat;
         }
@@ -161,14 +157,14 @@
   }
 }
 
-@media (min-width: 420px) and (max-width: 639px) {
+@media (min-width: 540px) and (max-width: 639px) {
   .bank-info {
     border-top: 2px solid $account-auth-border-color;
     padding: 37px 20px;
     display: inline-block;
     width: 100%;
     .form-elem-container {
-      display: block;
+      display: flex;
       padding-bottom: 25px;
       input[type=text] {
         width: 100%;
@@ -185,17 +181,16 @@
         border: none;
       }
       .lbl-box {
-        text-align: center;
         float: left;
-        width: 100%;
+        width: 21%;
         label {
-          font-size: 27px;
+          font-size: 22px;
           line-height: 69px;
         }
       }
       .inp-box {
         float: left;
-        width: 100%;
+        width: 79%;
         input {
           font-size: 20px;
           width: 100%;
@@ -217,19 +212,16 @@
           box-sizing: border-box;
           -webkit-appearance: none;
           -moz-appearance: none;
-          margin-bottom: 25px;
         }
         select.minimal {
           background-image:
             linear-gradient(45deg, transparent 50%, $thead-black-font-color 50%),
             linear-gradient(135deg, $thead-black-font-color 50%, transparent 50%);
           background-position:
-            calc(100% - 20px) calc(1em + 2px),
-            calc(100% - 15px) calc(1em + 2px),
-            calc(100% - 2.5em) 0.5em;
+            calc(100% - 25px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
           background-size:
-            5px 5px,
-            5px 5px,
+            10px 10px,
+            10px 10px,
             1px 1.5em;
           background-repeat: no-repeat;
         }
@@ -238,14 +230,14 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 419px) {
+@media (min-width: 414px) and (max-width: 539px) {
   .bank-info {
     border-top: 2px solid $account-auth-border-color;
     padding: 37px 20px;
     display: inline-block;
     width: 100%;
     .form-elem-container {
-      display: block;
+      display: flex;
       padding-bottom: 25px;
       input[type=text] {
         width: 100%;
@@ -262,17 +254,16 @@
         border: none;
       }
       .lbl-box {
-        text-align: center;
         float: left;
-        width: 100%;
+        width: 31%;
         label {
-          font-size: 27px;
+          font-size: 22px;
           line-height: 69px;
         }
       }
       .inp-box {
         float: left;
-        width: 100%;
+        width: 79%;
         input {
           font-size: 20px;
           width: 100%;
@@ -294,19 +285,89 @@
           box-sizing: border-box;
           -webkit-appearance: none;
           -moz-appearance: none;
-          margin-bottom: 25px;
         }
         select.minimal {
           background-image:
             linear-gradient(45deg, transparent 50%, $thead-black-font-color 50%),
             linear-gradient(135deg, $thead-black-font-color 50%, transparent 50%);
           background-position:
-            calc(100% - 20px) calc(1em + 2px),
-            calc(100% - 15px) calc(1em + 2px),
-            calc(100% - 2.5em) 0.5em;
+            calc(100% - 25px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
           background-size:
-            5px 5px,
-            5px 5px,
+            10px 10px,
+            10px 10px,
+            1px 1.5em;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .bank-info {
+    border-top: 2px solid $account-auth-border-color;
+    padding: 37px 20px;
+    display: inline-block;
+    width: 100%;
+    .form-elem-container {
+      display: flex;
+      padding-bottom: 25px;
+      input[type=text] {
+        width: 100%;
+        font-size: 18px;
+        padding: 19px 20px;
+        border: 1px solid $thead-black-font-color;
+      }
+      input[type=submit] {
+        width: 100%;
+        font-size: 20px;
+        padding: 19px 20px;
+        color: $white-font-color;
+        background-color: $account-auth-border-color;
+        border: none;
+      }
+      .lbl-box {
+        float: left;
+        width: 31%;
+        label {
+          font-size: 18px;
+          line-height: 69px;
+        }
+      }
+      .inp-box {
+        float: left;
+        width: 79%;
+        input {
+          font-size: 18px;
+          width: 100%;
+          padding: 19px 0;
+          text-align: center;
+          border: 1px solid $thead-black-font-color;
+        }
+        select {
+          border: 1px solid $thead-black-font-color;
+          font-size: 23px;
+          width: 100%;
+          padding: 16px 0;
+          text-align: center;
+          display: inline-block;
+          line-height: 1.5em;
+          margin: 0;      
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+        }
+        select.minimal {
+          background-image:
+            linear-gradient(45deg, transparent 50%, $thead-black-font-color 50%),
+            linear-gradient(135deg, $thead-black-font-color 50%, transparent 50%);
+          background-position:
+            calc(100% - 25px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+          background-size:
+            10px 10px,
+            10px 10px,
             1px 1.5em;
           background-repeat: no-repeat;
         }

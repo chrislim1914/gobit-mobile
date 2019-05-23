@@ -8,8 +8,45 @@
   padding: 0;
   vertical-align: middle;
 }
+#security-topbar-holder {
+  height: 85px;
+  border-bottom: 3px $account-auth-border-color solid;
+}
 
-@media (min-width: 641px) and (max-width: 767px) {
+#security-topbar-content {
+  padding: 25px 20px 0px 20px;
+}
+
+ul {
+  display: inline-block;
+  width: 100%;
+  li {
+    display: inline-block;
+    width: 10%;
+    h6 {
+      color: $security-lvl-span-font-color;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    &:nth-child(2) {
+      width: 67%;
+      text-align: center;
+    }
+
+    &:nth-child(3) {
+      width: 10%;
+      text-align: right;
+    }
+
+    &:nth-child(4) {
+      width: 10%;
+      text-align: right;
+    }
+  }
+} 
+
+@media (min-width: 640px) and (max-width: 767px) {
   #security-topbar-holder {
     height: 85px;
     border-bottom: 3px $account-auth-border-color solid;
@@ -19,31 +56,37 @@
     padding: 25px 20px 0px 20px;
   }
 
-  ul li {
-    display: inline;
-
-    h6 {
-      display: inline;
-      color: $security-lvl-span-font-color;
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    &:nth-child(2) {
-      padding-left: 180px;
-    }
-
-    &:nth-child(3) {
-      padding-left: 83px;
-    }
-
-    &:nth-child(4) {
-      padding-left: 28px;
+  ul {
+    display: inline-block;
+    width: 100%;
+    li {
+      display: inline-block;
+      width: 10%;
+      h6 {
+        color: $security-lvl-span-font-color;
+        font-size: 30px;
+        font-weight: bold;
+      }
+  
+      &:nth-child(2) {
+        width: 67%;
+        text-align: center;
+      }
+  
+      &:nth-child(3) {
+        width: 10%;
+        text-align: right;
+      }
+  
+      &:nth-child(4) {
+        width: 10%;
+        text-align: right;
+      }
     }
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 540px) and (max-width: 639px) {
   #security-topbar-holder {
     height: 85px;
     border-bottom: 3px $account-auth-border-color solid;
@@ -53,27 +96,116 @@
     padding: 25px 20px 0px 20px;
   }
 
-  ul li {
-    display: inline;
-
-    h6 {
-      font-size: 30px;
-      display: inline;
-      color: $security-lvl-span-font-color;
-      font-size: 30px;
-      font-weight: bold;
+  ul {
+    display: inline-block;
+    width: 100%;
+    li {
+      display: inline-block;
+      width: 10%;
+      h6 {
+        color: $security-lvl-span-font-color;
+        font-size: 30px;
+        font-weight: bold;
+      }
+  
+      &:nth-child(2) {
+        width: 66%;
+        text-align: center;
+      }
+  
+      &:nth-child(3) {
+        width: 10%;
+        text-align: right;
+      }
+  
+      &:nth-child(4) {
+        width: 10%;
+        text-align: right;
+      }
     }
+  }
+}
 
-    &:nth-child(2) {
-      padding-left: 180px;
+@media (min-width: 414px) and (max-width: 539px) {
+  #security-topbar-holder {
+    height: 85px;
+    border-bottom: 3px $account-auth-border-color solid;
+  }
+
+  #security-topbar-content {
+    padding: 25px 20px 0px 20px;
+  }
+
+  ul {
+    display: inline-block;
+    width: 100%;
+    li {
+      display: inline-block;
+      width: 10%;
+      h6 {
+        color: $security-lvl-span-font-color;
+        font-size: 30px;
+        font-weight: bold;
+      }
+  
+      &:nth-child(2) {
+        width: 65%;
+        text-align: center;
+      }
+  
+      &:nth-child(3) {
+        width: 10%;
+        text-align: right;
+      }
+  
+      &:nth-child(4) {
+        width: 10%;
+        text-align: right;
+      }
     }
+  }
+}
 
-    &:nth-child(3) {
-      padding-left: 83px;
-    }
+@media (min-width: 320px) and (max-width: 413px) {
+  #security-topbar-holder {
+    height: 85px;
+    border-bottom: 3px $account-auth-border-color solid;
+  }
 
-    &:nth-child(4) {
-      padding-left: 28px;
+  #security-topbar-content {
+    padding: 25px 20px 0px 20px;
+  }
+
+  ul {
+    display: inline-block;
+    width: 100%;
+    li {
+      display: inline-block;
+      width: 10%;
+      h6 {
+        color: $security-lvl-span-font-color;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+      }
+  
+      &:nth-child(2) {
+        width: 63%;
+        text-align: center;
+      }
+  
+      &:nth-child(3) {
+        width: 10%;
+        text-align: right;
+      }
+  
+      &:nth-child(4) {
+        width: 10%;
+        text-align: right;
+      }
     }
   }
 }
