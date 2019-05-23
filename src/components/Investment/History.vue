@@ -38,7 +38,7 @@
     <!-- history data-table -->
     <div class="h-table-data">
       <div class="t-header">
-          <div>
+          <div class="btn-holder">
             <button v-on:click="toggleRight" v-show="!showItleft" class="btn-to-left" id="left-button" @click="swipeLeft">
               <img src="~img/block-arrow-left-16x16.png" alt="back icon">
             </button>
@@ -54,14 +54,74 @@
             <div class="internal small">
               종류
             </div>
-            <div class="internal medium">
+            <div class="internal centerd-text medium">
               수수료
             </div>
-            <div class="internal medium">
+            <div class="internal centerd-text medium">
               정산금액(수수료반영)
             </div>
           </div>
           <!-- this is the body -->
+          <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small blue">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
+          <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small red">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
+           <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small red">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
           <div class="outer">
             <div class="freeze">
               <div class="frezze-column-1">
@@ -91,8 +151,8 @@
               <div class="frezze-column-2">ETH</div>
             </div>
             <div class="internal-data-holder">
-              <div class="internal-data small blue">
-                매도
+              <div class="internal-data small red">
+                출금
               </div>
               <div class="internal-data medium-data ">
                 1,000.00 KRW
@@ -111,8 +171,28 @@
               <div class="frezze-column-2">ETH</div>
             </div>
             <div class="internal-data-holder">
-              <div class="internal-data small blue">
-                매도
+              <div class="internal-data small red">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
+           <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small red">
+                출금
               </div>
               <div class="internal-data medium-data ">
                 1,000.00 KRW
@@ -131,8 +211,28 @@
               <div class="frezze-column-2">ETH</div>
             </div>
             <div class="internal-data-holder">
-              <div class="internal-data small blue">
-                매도
+              <div class="internal-data small red">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
+           <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small red">
+                출금
               </div>
               <div class="internal-data medium-data ">
                 1,000.00 KRW
@@ -151,8 +251,28 @@
               <div class="frezze-column-2">ETH</div>
             </div>
             <div class="internal-data-holder">
-              <div class="internal-data small blue">
-                매도
+              <div class="internal-data small red">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
+           <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small red">
+                출금
               </div>
               <div class="internal-data medium-data ">
                 1,000.00 KRW
@@ -171,8 +291,8 @@
               <div class="frezze-column-2">ETH</div>
             </div>
             <div class="internal-data-holder">
-              <div class="internal-data small blue">
-                종류
+              <div class="internal-data small red">
+                출금
               </div>
               <div class="internal-data medium-data ">
                 1,000.00 KRW
@@ -191,8 +311,8 @@
               <div class="frezze-column-2">ETH</div>
             </div>
             <div class="internal-data-holder">
-              <div class="internal-data small blue">
-                종류
+              <div class="internal-data small red">
+                출금
               </div>
               <div class="internal-data medium-data ">
                 1,000.00 KRW
@@ -211,8 +331,48 @@
               <div class="frezze-column-2">ETH</div>
             </div>
             <div class="internal-data-holder">
-              <div class="internal-data small blue">
-                종류
+              <div class="internal-data small red">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
+           <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small red">
+                출금
+              </div>
+              <div class="internal-data medium-data ">
+                1,000.00 KRW
+              </div>
+              <div class="internal-data medium ">
+                0.125849554 ETH
+              </div>
+            </div>
+          </div>
+          <div class="outer">
+            <div class="freeze">
+              <div class="frezze-column-1">
+                <p>19.04.16</p>
+                <p>09:55</p>
+              </div>
+              <div class="frezze-column-2">ETH</div>
+            </div>
+            <div class="internal-data-holder">
+              <div class="internal-data small red">
+                출금
               </div>
               <div class="internal-data medium-data ">
                 1,000.00 KRW
