@@ -28,7 +28,7 @@
         </div>
       </div>
       <div id="login-links-row" class="row font-weight-bold">
-        <div class="col-5 text-right">
+        <div class="col-4 text-right">
           <a href="#" id="login-link-1">
             회원가입
           </a>
@@ -36,7 +36,7 @@
         <div class="col-0 text-center mx-0 px-0">
           <h6 id="login-link-line">|</h6>
         </div>
-        <div class="col-5 text-left">
+        <div class="col-4 text-left">
           <a href="#" id="login-link-2">
             비밀번호 찾기
           </a>
