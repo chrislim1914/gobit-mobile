@@ -21,7 +21,11 @@
           <p>핸드폰 인증 <span>완료</span></p>
           <p>코인 입출금 한도 상향</p>
         </div>
-        <div class="fw-box-r"><a href="">인증하기</a></div>
+        <div class="fw-box-r">
+          <router-link to="/security/mobile_authorize">
+            인증하기
+          </router-link>
+        </div>
       </div>
       <div class="f-w-box">
         <div class="fw-box-l"><p>3 단계</p></div>
@@ -29,7 +33,11 @@
           <p>계좌 인증 <span>완료</span></p>
           <p>원화 입출금 가능</p>
         </div>
-        <div class="fw-box-r"><a href="">인증하기</a></div>
+        <div class="fw-box-r">
+          <router-link to="/security/accountauth">
+            인증하기
+          </router-link>
+        </div>
       </div>
       <div class="f-w-box ">
         <div class="fw-box-l"><p>4 단계</p></div>
@@ -37,7 +45,11 @@
           <p>OTP 인증 <span>완료</span></p>
           <p>입출금 한도 상향</p>
         </div>
-        <div class="fw-box-r"><a href="">인증하기</a></div>
+        <div class="fw-box-r">
+          <router-link to="/security/otpauth">
+            인증하기
+          </router-link>
+        </div>
       </div>
     </div>
     <!-- 4-way security -->

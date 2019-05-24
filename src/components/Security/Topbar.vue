@@ -24,20 +24,37 @@
             </h6>
           </li>
           <li>
-            <img src="~img/home32x32.png" class="img-fluid" alt="Gobit security topbar home icon">
+            <router-link to="/main">
+              <img src="~img/home32x32.png" class="img-fluid" alt="Gobit security topbar home icon">
+            </router-link>
           </li>
           <li>
-            <img src="~img/menu.png" class="img-fluid" alt="Gobit security topbar menu icon">
+            <img  v-on:click="toggleSidebar" src="~img/menu.png" class="img-fluid" alt="Gobit security topbar menu icon">
           </li>
         </ul>
       </div>
     </div>
+    <sidebar v-show="!showSidebar"></sidebar>
   </div>
 </template>
 
 <script>
+import Sidebar from '../Globals/Sidebar'
 export default {
-  name: 'SecurityTopbar'
+  name: 'SecurityTopbar',
+  components: {
+    'sidebar': Sidebar
+  },
+  data () {
+    return {
+      showSidebar: true
+    }
+  },
+  methods: {
+    toggleSidebar () {
+      this.showSidebar = !this.showSidebar
+    }
+  }
 }
 </script>
 
