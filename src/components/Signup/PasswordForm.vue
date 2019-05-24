@@ -1,6 +1,6 @@
 <template>
   <!-- signup form -->
-  <div class="app-signup-passwordform debugger">
+  <div class="app-signup-passwordform">
     <div class="container-fluid px-0 py-0">
       <div id="signup-passwordform-row" class="row">
         <div class="col-12">

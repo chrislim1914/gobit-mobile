@@ -3,6 +3,86 @@
 */
 @import '../libs/_colors.scss';
 
+#app-signup-form-field-row,
+  #app-signup-message-row {
+    padding: 55px 20px 0px 20px;
+  }
+
+  #app-signup-form-field-row {
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-subheader {
+      margin-top: 35px;
+      font-size: 22px;
+    }
+
+    #signup-email-field {
+      width: 100%;
+      height: 70px;
+      margin-top: 30px;
+      border-radius: 0px;
+
+      &::placeholder {
+        color: $signup-field-placeholder-color;
+      }
+    }
+
+    #signup-button {
+      width: 100%;
+      height: 70px;
+      font-size: 22.5px;
+      margin-top: 30px;
+      border-radius: 0px;
+      color: $signup-button-text-color;
+      background-color: $signup-button-background-color;
+    }
+
+    #signup-link {
+      margin-top: 45px;
+      font-size: 22px;
+    }
+
+    #signup-signin-link {
+      color: $signup-signin-link-color;
+    }
+  }
+
+  #app-signup-message-row {
+    #signup-title {
+      color: $signup-title-color;
+      font-size: 28px;
+    }
+
+    #signup-email {
+      color: $signup-email-color;
+      font-size: 28px;
+      padding: 50px 0px 40px 0px;
+    }
+
+    #signup-message-1 {
+      font-size: 22px;
+    }
+
+    #signup-message-2 {
+      color: $signup-message-text-color;
+      font-size: 18px;
+    }
+
+    #signup-message-3, #signup-message-4, #signup-message-5 {
+      margin-top: 45px;
+      font-size: 22px;
+    }
+
+    #signup-message-5 {
+      a {
+        color: $signup-mail-color;
+      }
+    }
+  }
+
 @media (min-width: 640px) and (max-width: 767px) {
   #app-signup-form-field-row,
   #app-signup-message-row {
