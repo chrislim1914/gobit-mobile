@@ -6,7 +6,7 @@
 .app-exchangefeeder {
   width: 100%;
   margin: 0;
-  padding: 9px 0;
+  padding: 8px 0 3px 0;
   display: inline-block;
   width: 100%;
   .exchange-div {
@@ -16,6 +16,7 @@
     color: $font-slidedata-gray-scarpa-flow;
     p {
       font-size: 15px;
+      margin-bottom: 0;
       span {
         font-weight: 600;
         margin-left: 19px;
@@ -36,7 +37,7 @@
   .app-exchangefeeder {
     width: 100%;
     margin: 0;
-    padding: 9px 0;
+    padding: 8px 0 3px 0;
     display: inline-block;
     width: 100%;
     .exchange-div {
@@ -46,6 +47,7 @@
       color: $font-slidedata-gray-scarpa-flow;
       p {
         font-size: 15px;
+        margin-bottom: 0;
         span {
           font-weight: 600;
           margin-left: 19px;
@@ -67,7 +69,7 @@
   .app-exchangefeeder {
     width: 100%;
     margin: 0;
-    padding: 9px 0;
+    padding: 8px 0 3px 0;
     display: inline-block;
     width: 100%;
     .exchange-div {
@@ -77,6 +79,7 @@
       color: $font-slidedata-gray-scarpa-flow;
       p {
         font-size: 15px;
+        margin-bottom: 0;
         span {
           font-weight: 600;
           margin-left: 19px;
@@ -98,7 +101,7 @@
   .app-exchangefeeder {
     width: 100%;
     margin: 0;
-    padding: 9px 0;
+    padding: 8px 0 3px 0;
     display: inline-block;
     width: 100%;
     .exchange-div {
@@ -108,6 +111,7 @@
       color: $font-slidedata-gray-scarpa-flow;
       p {
         font-size: 12px;
+        margin-bottom: 0;
         span {
           font-weight: 600;
           margin-left: 19px;
@@ -128,7 +132,7 @@
 @media (min-width: 320px) and (max-width: 413px) {
   .app-exchangefeeder {
     margin: 0;
-    padding: 9px 0;
+    padding: 8px 0 3px 0;
     display: inline-block;
     width: 100%;
     .exchange-div {
@@ -138,6 +142,7 @@
       color: $font-slidedata-gray-scarpa-flow;
       p {
         font-size: 12px;
+        margin-bottom: 0;
         span {
           font-weight: 600;
           margin-left: 5px;
