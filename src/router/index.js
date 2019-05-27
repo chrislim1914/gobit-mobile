@@ -95,11 +95,31 @@ import AccountDeactivate from '@/components/Security/AccountDeactivate'
 // Home Page
 import HomePage from '@/components/Homepage/Index'
 
+// newe trading
+import NewTrading from '@/components/NewTrading/Index'
+import CoinInfo from '@/components/NewTrading/CoinInfo'
+import FirstLink from '@/components/NewTrading/FirstLink'
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [
+    {
+      path: '/newtrade',
+      component: NewTrading,
+      children: [
+        {
+          path: 'coin_info',
+          component: CoinInfo,
+          name: 'CoinInfo'
+        },
+        {
+          path: 'first_link',
+          component: FirstLink,
+          name: 'FirstLink'
+        }
+      ]
+    },
     {
       path: '*',
       name: 'FourOFour',

@@ -1,0 +1,272 @@
+/*
+  trading topbar stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-tradingtopbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+//  for topbar
+.topbar-container {
+  display: flex;
+  padding: 23px 0;
+  .back {
+    position: relative;
+    float: left;
+    padding-left: 12px;
+    width: 7%;
+  }
+  .title {
+    text-align: left;
+    position: relative;
+    float: left;
+    width: 85%;
+    font-size: 30px;
+    color: $fee-head-font-color;
+    margin-top: -6px;
+    img {
+      margin-left: -4px;
+      margin-top: 12px;
+      &:last-child {
+        margin-top: -4px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .home-icon {
+    position: relative;
+    float: right;
+    width: 9%;
+    text-align: right;
+    margin-top: 7px;
+    right: 16px;
+  }
+  .menu-icon {
+    position: relative;
+    float: right;
+    width: 9%;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .topbar-container {
+    display: flex;
+    padding: 23px 0;
+    .back {
+      position: relative;
+      float: left;
+      padding-left: 12px;
+      width: 7%;
+    }
+    .title {
+      text-align: left;
+      position: relative;
+      float: left;
+      width: 85%;
+      font-size: 30px;
+      color: $fee-head-font-color;
+      margin-top: -6px;
+      img {
+        margin-left: -4px;
+        margin-top: 12px;
+        &:last-child {
+          margin-top: -4px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .home-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-top: 7px;
+      right: 16px;
+    }
+    .menu-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-right: 20px;
+      margin-top: 7px;
+    }
+  }
+}
+
+@media (min-width: 540px) and (max-width: 639px) {
+  .topbar-container {
+    display: flex;
+    padding: 23px 0;
+    .back {
+      position: relative;
+      float: left;
+      padding-left: 12px;
+      width: 7%;
+    }
+    .title {
+      text-align: left;
+      position: relative;
+      float: left;
+      width: 85%;
+      font-size: 30px;
+      color: $fee-head-font-color;
+      margin-top: -6px;
+      img {
+        margin-left: -4px;
+        margin-top: 12px;
+        &:last-child {
+          margin-top: -4px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .home-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-top: 7px;
+      right: 16px;
+    }
+    .menu-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-right: 20px;
+      margin-top: 7px;
+    }
+  }
+}
+
+@media (min-width: 414px) and (max-width: 539px) {
+  .topbar-container {
+    display: flex;
+    padding: 20px 0;
+    .back {
+      position: relative;
+      float: left;
+      padding-left: 12px;
+      width: 9%;
+      img {
+        height: 24px;
+      }
+    }
+    .title {
+      text-align: left;
+      position: relative;
+      float: left;
+      width: 83%;
+      font-size: 20px;
+      font-weight: 600;
+      color: $fee-head-font-color;
+      margin-top: 0;
+      img {
+        margin-left: -4px;
+        margin-top: 3px;
+        &:last-child {
+          margin-top: -7px;
+          margin-left: 10px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .home-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-top: 1px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .menu-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-right: 20px;
+      margin-top: 3px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .topbar-container {
+    display: flex;
+    padding: 20px 0;
+    .back {
+      position: relative;
+      float: left;
+      padding-left: 12px;
+      width: 9%;
+      img {
+        height: 24px;
+      }
+    }
+    .title {
+      text-align: left;
+      position: relative;
+      float: left;
+      width: 83%;
+      font-size: 15px;
+      font-weight: 600;
+      color: $fee-head-font-color;
+      margin-top: 6px;
+      img {
+        width: 8px;
+        height: 8px;
+        margin-left: -4px;
+        margin-top: 3px;
+        &:last-child {
+          margin-top: -10px;
+          margin-left: 10px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .home-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-top: 1px;
+      margin-right: 10px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .menu-icon {
+      position: relative;
+      float: right;
+      width: 9%;
+      text-align: right;
+      margin-right: 20px;
+      margin-top: 3px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

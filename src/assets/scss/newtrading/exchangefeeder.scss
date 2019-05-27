@@ -1,0 +1,160 @@
+/*
+  trading topbar stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-exchangefeeder {
+  width: 100%;
+  margin: 0;
+  padding: 9px 0;
+  display: inline-block;
+  width: 100%;
+  .exchange-div {
+    margin-left: 20px;
+    float: left;
+    margin-right: 40px;
+    color: $font-slidedata-gray-scarpa-flow;
+    p {
+      font-size: 15px;
+      span {
+        font-weight: 600;
+        margin-left: 19px;
+        &:last-child {
+          font-size: 11.5px;
+          margin-left: 0;
+          font-weight: 500;
+        }
+      }
+    }
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .app-exchangefeeder {
+    width: 100%;
+    margin: 0;
+    padding: 9px 0;
+    display: inline-block;
+    width: 100%;
+    .exchange-div {
+      margin-left: 20px;
+      float: left;
+      margin-right: 40px;
+      color: $font-slidedata-gray-scarpa-flow;
+      p {
+        font-size: 15px;
+        span {
+          font-weight: 600;
+          margin-left: 19px;
+          &:last-child {
+            font-size: 11.5px;
+            margin-left: 0;
+            font-weight: 500;
+          }
+        }
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) and (max-width: 639px) {
+  .app-exchangefeeder {
+    width: 100%;
+    margin: 0;
+    padding: 9px 0;
+    display: inline-block;
+    width: 100%;
+    .exchange-div {
+      margin-left: 20px;
+      float: left;
+      margin-right: 40px;
+      color: $font-slidedata-gray-scarpa-flow;
+      p {
+        font-size: 15px;
+        span {
+          font-weight: 600;
+          margin-left: 19px;
+          &:last-child {
+            font-size: 11.5px;
+            margin-left: 0;
+            font-weight: 500;
+          }
+        }
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 414px) and (max-width: 539px) {
+  .app-exchangefeeder {
+    width: 100%;
+    margin: 0;
+    padding: 9px 0;
+    display: inline-block;
+    width: 100%;
+    .exchange-div {
+      margin-left: 20px;
+      float: left;
+      margin-right: 26px;
+      color: $font-slidedata-gray-scarpa-flow;
+      p {
+        font-size: 12px;
+        span {
+          font-weight: 600;
+          margin-left: 19px;
+          &:last-child {
+            font-size: 8.5px;
+            margin-left: 0;
+            font-weight: 500;
+          }
+        }
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .app-exchangefeeder {
+    margin: 0;
+    padding: 9px 0;
+    display: inline-block;
+    width: 100%;
+    .exchange-div {
+      margin-left: 20px;
+      float: left;
+      margin-right: 16px;
+      color: $font-slidedata-gray-scarpa-flow;
+      p {
+        font-size: 12px;
+        span {
+          font-weight: 600;
+          margin-left: 5px;
+          &:last-child {
+            font-size: 8.5px;
+            margin-left: 0;
+            font-weight: 500;
+          }
+        }
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}

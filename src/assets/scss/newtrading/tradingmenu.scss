@@ -1,0 +1,251 @@
+/*
+  trading topbar stylesheet
+*/
+@import '../libs/_colors.scss';
+
+.app-tradingmenu {
+  margin: 0;
+  width: 100%;
+  background-color: $bg-menu-bg-color;
+  .menu-holder {
+    display: inline-block;
+    padding: 13px 20px;
+    color: $font-menu-inactive-color;
+    font-size: 22px;
+    text-align: center;
+    width: 93.5%;
+    ul {
+      display: inline;
+      li {
+        text-align: center;
+        list-style: none;
+        float: left;
+        width: 20%;
+        .active {
+          color: $white-font-color;
+          font-weight: 600;
+        }
+        a {
+          color: $font-menu-inactive-color;
+          text-decoration: none;
+        }
+        &:nth-child(1) {
+          width: 15%;
+        }
+        &:nth-child(2) {
+          width: 23%;
+        }
+        &:nth-child(3) {
+          width: 20%;
+        }
+        &:nth-child(4) {
+          width: 21.5%;
+          text-align: right;
+        }
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .app-tradingmenu {
+    margin: 0;
+    width: 100%;
+    background-color: $bg-menu-bg-color;
+    .menu-holder {
+      display: inline-block;
+      padding: 13px 20px;
+      color: $font-menu-inactive-color;
+      font-size: 22px;
+      text-align: center;
+      width: 93.5%;
+      ul {
+        display: inline;
+        li {
+          text-align: center;
+          list-style: none;
+          float: left;
+          width: 20%;
+          .active {
+            color: $white-font-color;
+            font-weight: 600;
+          }
+          a {
+            color: $font-menu-inactive-color;
+            text-decoration: none;
+          }
+          &:nth-child(1) {
+            width: 15%;
+          }
+          &:nth-child(2) {
+            width: 23%;
+          }
+          &:nth-child(3) {
+            width: 20%;
+          }
+          &:nth-child(4) {
+            width: 21.5%;
+            text-align: right;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) and (max-width: 639px) {
+  .app-tradingmenu {
+    margin: 0;
+    width: 100%;
+    background-color: $bg-menu-bg-color;
+    .menu-holder {
+      display: inline-block;
+      padding: 13px 20px;
+      color: $font-menu-inactive-color;
+      font-size: 19px;
+      text-align: center;
+      width: 100%;
+      ul {
+        display: inline;
+        li {
+          text-align: center;
+          list-style: none;
+          float: left;
+          width: 20%;
+          .active {
+            color: $white-font-color;
+            font-weight: 600;
+          }
+          a {
+            color: $font-menu-inactive-color;
+            text-decoration: none;
+          }
+          &:nth-child(1) {
+            width: 15%;
+          }
+          &:nth-child(2) {
+            width: 23%;
+          }
+          &:nth-child(3) {
+            width: 20%;
+          }
+          &:nth-child(4) {
+            width: 21.5%;
+            text-align: right;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 414px) and (max-width: 539px) {
+  .app-tradingmenu {
+    margin: 0;
+    width: 100%;
+    background-color: $bg-menu-bg-color;
+    .menu-holder {
+      display: inline-block;
+      padding: 13px 20px;
+      color: $font-menu-inactive-color;
+      font-size: 17px;
+      text-align: center;
+      width: 100%;
+      ul {
+        display: inline;
+        li {
+          text-align: center;
+          list-style: none;
+          float: left;
+          width: 20%;
+          .active {
+            color: $white-font-color;
+            font-weight: 600;
+          }
+          a {
+            color: $font-menu-inactive-color;
+            text-decoration: none;
+          }
+          &:nth-child(1) {
+            width: 15%;
+          }
+          &:nth-child(2) {
+            width: 23%;
+          }
+          &:nth-child(3) {
+            width: 20%;
+          }
+          &:nth-child(4) {
+            width: 21.5%;
+            text-align: left;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 413px) {
+  .app-tradingmenu {
+    margin: 0;
+    width: 100%;
+    background-color: $bg-menu-bg-color;
+    .menu-holder {
+      display: inline-block;
+      padding: 13px 20px;
+      color: $font-menu-inactive-color;
+      font-size: 13px;
+      text-align: center;
+      width: 100%;
+      ul {
+        display: inline;
+        li {
+          text-align: center;
+          list-style: none;
+          float: left;
+          width: 20%;
+          .active {
+            color: $white-font-color;
+            font-weight: 600;
+          }
+          a {
+            color: $font-menu-inactive-color;
+            text-decoration: none;
+          }
+          &:nth-child(1) {
+            width: 15%;
+          }
+          &:nth-child(2) {
+            width: 23%;
+          }
+          &:nth-child(3) {
+            width: 20%;
+          }
+          &:nth-child(4) {
+            width: 21.5%;
+            text-align: left;
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.debugger {
+  border: 1px solid red;
+}
