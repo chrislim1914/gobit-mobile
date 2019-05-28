@@ -99,6 +99,7 @@ import HomePage from '@/components/Homepage/Index'
 import NewTrading from '@/components/NewTrading/Index'
 import CoinInfo from '@/components/NewTrading/CoinInfo'
 import FirstLink from '@/components/NewTrading/FirstLink'
+import SecondLink from '@/components/NewTrading/SecondLink'
 Vue.use(Router)
 
 export default new Router({
@@ -122,6 +123,11 @@ export default new Router({
           path: 'first_link',
           component: FirstLink,
           name: 'FirstLink'
+        },
+        {
+          path: 'second_link',
+          component: SecondLink,
+          name: 'SecondLink'
         }
       ]
     },

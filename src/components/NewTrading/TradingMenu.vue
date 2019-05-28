@@ -8,7 +8,9 @@
           </router-link>
         </li>
         <li>
-          <a href="#">호가</a>
+          <router-link to="/newtrade/second_link" :class="{ 'active': $route.path === '/newtrade/second_link' }">
+              호가<img src="~img/and-inactive12x12.png" alt="menu icon">
+          </router-link>
         </li>
         <li>
           <a href="#">차트</a>
