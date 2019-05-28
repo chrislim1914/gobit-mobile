@@ -31,7 +31,7 @@
   border: none;
   cursor: pointer;
   height: 52px;
-  width: 110px;
+  width: 100%;
   border-radius: 0;
 }
 
@@ -40,11 +40,15 @@
   position: relative;
   display: inline-block;
   height: 52px;
-  width: 110px;
+  width: 100%;
   img {
     position: absolute;
     top: 17px;
     right: 8px;
+  }
+  a {
+    width: 100%;    
+    text-align: left;
   }
 }
 
@@ -52,7 +56,7 @@
   display: none;
   position: absolute;
   background-color: $trading-lone-tab-1-button-background-color;
-  min-width: 110px;
+  min-width: 100%;
   z-index: 1;
 }
 
@@ -80,6 +84,28 @@
 .lg-dropdown {
   width: 100% !important;
   text-align: left;
+}
+
+.gray {
+  color: $font-boulder;
+}
+.make-some-margin-bottom {
+  height: 58px !important;
+}
+.sell-btn {
+  color: $font-white;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 12px;
+  float: right;
+  width: 49.5%;
+  button {
+    background-color: $trading-lone-tab-2-button-2-background-color;
+    color: $bg-white;
+    width: 100%;
+    height: 58px;
+    border: none;
+  }
 }
 
 .app-firstlink {
@@ -198,6 +224,7 @@
               }
               &:nth-child(1) {
                 text-align: left;
+                color: $font-boulder;
               }
             }
           }
@@ -232,6 +259,11 @@
             float: right;
             width: 35%;
             text-align: right;
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              margin-bottom: 0;
+            }
             button {
               margin-top: 10px;
               float: left;
@@ -267,6 +299,14 @@
               color: $font-slidedata-black;
               font-weight: 600;
             }
+            button {
+              width: 100%;
+              height: 58px;
+              font-weight: 600;
+              border: none;
+              color: $font-white;
+              background-color: $bg-niagara;
+            }
           }
           .bdh-equal {
             color: $font-white;
@@ -274,7 +314,7 @@
             font-size: 22px;
             margin-top: 12px;
             float: left;
-            width: 153px;            
+            width: 49.5%;
             button {
               background-color: $bg-button-l;
               color: $bg-white;
@@ -313,10 +353,25 @@
             display: inline-block;
             width: 100%;
           }
+          .bdh-2-last {
+            margin-top: 182px;
+            position: absolute;
+            width: 48.5%;
+            button {
+              width: 100%;
+              height: 52px;
+              background-color: transparent;
+              border: 2px solid $border-green;
+              color: $border-green;
+            }
+            &:last-child {
+              margin-top: 263px;
+            }
+          }
           .bdh-last {
             margin-top: 290px;
             button {
-              width: 311px;
+              width: 100%;
               height: 52px;
               background-color: transparent;
               border: 2px solid $border-green;
@@ -428,11 +483,15 @@
     position: relative;
     display: inline-block;
     height: 52px;
-    width: 110px;
+    width: 100%;
     img {
       position: absolute;
       top: 17px;
       right: 8px;
+    }
+    a {
+      width: 100%;    
+      text-align: left;
     }
   }
   
@@ -468,6 +527,13 @@
   .lg-dropdown {
     width: 100% !important;
     text-align: left;
+  }
+
+  .gray {
+    color: $font-boulder;
+  }
+  .make-some-margin-bottom {
+    height: 58px !important;
   }
   
   .app-firstlink {
@@ -586,6 +652,7 @@
                 }
                 &:nth-child(1) {
                   text-align: left;
+                  color: $font-boulder;
                 }
               }
             }
@@ -636,6 +703,14 @@
               float: left;
               width: 100%;
               margin-top: 10px;
+              button {
+                width: 100%;
+                height: 58px;
+                font-weight: 600;
+                border: none;
+                color: $font-white;
+                background-color: $bg-niagara;
+              }
               label {
                 position: absolute;
                 margin-left: 10px;
@@ -686,6 +761,21 @@
                   height: 58px;
                   border: none;
                 }
+              }
+            }
+            .bdh-2-last {
+              margin-top: 182px;
+              position: absolute;
+              width: 48.5%;
+              button {
+                width: 100%;
+                height: 52px;
+                background-color: transparent;
+                border: 2px solid $border-green;
+                color: $border-green;
+              }
+              &:last-child {
+                margin-top: 263px;
               }
             }
             .min-order-text {
@@ -862,6 +952,13 @@
     width: 100% !important;
     text-align: left;
   }
+
+  .gray {
+    color: $font-boulder;
+  }
+  .make-some-margin-bottom {
+    height: 58px !important;
+  }
   
   .app-firstlink {
     margin: 0;
@@ -979,6 +1076,7 @@
                 }
                 &:nth-child(1) {
                   text-align: left;
+                  color: $font-boulder;
                 }
               }
             }
@@ -1029,6 +1127,14 @@
               float: left;
               width: 100%;
               margin-top: 10px;
+              button {
+                width: 100%;
+                height: 58px;
+                font-weight: 600;
+                border: none;
+                color: $font-white;
+                background-color: $bg-niagara;
+              }
               label {
                 position: absolute;
                 margin-left: 10px;
@@ -1102,6 +1208,21 @@
                 background-color: transparent;
                 border: 2px solid $border-green;
                 color: $border-green;
+              }
+            }
+            .bdh-2-last {
+              margin-top: 182px;
+              position: absolute;
+              width: 48.5%;
+              button {
+                width: 100%;
+                height: 52px;
+                background-color: transparent;
+                border: 2px solid $border-green;
+                color: $border-green;
+              }
+              &:last-child {
+                margin-top: 263px;
               }
             }
           }
@@ -1256,6 +1377,13 @@
     width: 100% !important;
     text-align: left;
   }
+
+  .gray {
+    color: $font-boulder;
+  }
+  .make-some-margin-bottom {
+    height: 58px !important;
+  }
   
   .app-firstlink {
     margin: 0;
@@ -1373,6 +1501,7 @@
                 }
                 &:nth-child(1) {
                   text-align: left;
+                  color: $font-boulder;
                 }
               }
             }
@@ -1424,6 +1553,14 @@
               float: left;
               width: 100%;
               margin-top: 10px;
+              button {
+                width: 100%;
+                height: 58px;
+                font-weight: 600;
+                border: none;
+                color: $font-white;
+                background-color: $bg-niagara;
+              }
               label {
                 position: absolute;
                 margin-left: 10px;
@@ -1478,14 +1615,14 @@
             }
             .min-order-text {
               font-weight: 500;
-              font-size: 18px;
+              font-size: 14px;
               padding-top: 28px;
               display: inline-block;
               width: 100%;
             }
             .fees-text {
               font-weight: 500;
-              font-size: 18px;
+              font-size: 14px;
               display: inline-block;
               width: 100%;
             }
@@ -1497,6 +1634,21 @@
                 background-color: transparent;
                 border: 2px solid $border-green;
                 color: $border-green;
+              }
+            }
+            .bdh-2-last {
+              margin-top: 12px;
+              position: absolute;
+              width: 48.5%;
+              button {
+                width: 100%;
+                height: 52px;
+                background-color: transparent;
+                border: 2px solid $border-green;
+                color: $border-green;
+              }
+              &:last-child {
+                margin-top: 70px;
               }
             }
           }
@@ -1651,6 +1803,13 @@
     width: 100% !important;
     text-align: left;
   }
+
+  .gray {
+    color: $font-boulder;
+  }
+  .make-some-margin-bottom {
+    height: 58px !important;
+  }
   
   .app-firstlink {
     margin: 0;
@@ -1773,6 +1932,7 @@
                 }
                 &:nth-child(1) {
                   text-align: center;
+                  color: $font-boulder;
                 }
               }
             }
@@ -1808,6 +1968,9 @@
               float: right;
               width: 100%;
               text-align: center;
+              p {
+                font-weight: 500;
+              }
               button {
                 margin-top: 10px;
                 float: left;
@@ -1824,6 +1987,14 @@
               float: left;
               width: 100%;
               margin-top: 10px;
+              button {
+                width: 100%;
+                height: 58px;
+                font-weight: 600;
+                border: none;
+                color: $font-white;
+                background-color: $bg-niagara;
+              }
               label {
                 position: absolute;
                 margin-left: 10px;
@@ -1878,14 +2049,14 @@
             }
             .min-order-text {
               font-weight: 500;
-              font-size: 18px;
-              padding-top: 28px;
+              font-size: 12px;
+              padding-top: 14px;
               display: inline-block;
               width: 100%;
             }
             .fees-text {
               font-weight: 500;
-              font-size: 18px;
+              font-size: 12px;
               display: inline-block;
               width: 100%;
             }
@@ -1897,6 +2068,21 @@
                 background-color: transparent;
                 border: 2px solid $border-green;
                 color: $border-green;
+              }
+            }
+            .bdh-2-last {
+              margin-top: 9px;
+              position: absolute;
+              width: 48.5%;
+              button {
+                width: 100%;
+                height: 52px;
+                background-color: transparent;
+                border: 2px solid $border-green;
+                color: $border-green;
+              }
+              &:last-child {
+                margin-top: 66px;
               }
             }
           }

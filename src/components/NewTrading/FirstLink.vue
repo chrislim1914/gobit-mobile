@@ -240,7 +240,7 @@
               </ul>
               <div class="buy-detail-holder">
                 <div>
-                  <div class="bdh-left">주문가능</div>
+                  <div class="bdh-left gray">주문가능</div>
                   <div class="bdh-right">0 KRW</div>
                 </div>
                 <div>
@@ -299,7 +299,7 @@
                      <button>매수</button>
                   </div>
                 </div>
-                <div class="min-order-text">
+                <div class="min-order-text gray">
                   <div class="bdh-left">
                     최소주문금액
                   </div>
@@ -307,7 +307,7 @@
                     500 KRW
                   </div>
                 </div>
-                 <div class="fees-text">
+                 <div class="fees-text gray">
                   <div class="bdh-left">
                     수수료(부가세포함)
                   </div>
@@ -337,8 +337,11 @@
               </ul>
               <div class="buy-detail-holder">
                 <div>
-                  <div class="bdh-left">주문가능</div>
-                  <div class="bdh-right">0 KRW</div>
+                  <div class="bdh-left gray make-some-margin-bottom">주문가능</div>
+                  <div class="bdh-right">
+                    0 ETH
+                    <p>&asymp; 0 KRW</p>
+                    </div>
                 </div>
                 <div>
                   <div class="bdh-left">
@@ -388,15 +391,18 @@
                   <label for="">총액</label>
                   <input type="text" value="0 KRW" />
                 </div>
+                <div class="bdh-centre">
+                  <button>로그인</button>
+                </div>
                 <div>
                   <div class="bdh-equal">
                     <button>초기화</button>
                   </div>
-                  <div class="bdh-equal">
-                     <button>매수</button>
+                  <div class="sell-btn">
+                     <button>매도</button>
                   </div>
                 </div>
-                <div class="min-order-text">
+                <div class="min-order-text gray">
                   <div class="bdh-left">
                     최소주문금액
                   </div>
@@ -404,7 +410,7 @@
                     500 KRW
                   </div>
                 </div>
-                 <div class="fees-text">
+                 <div class="fees-text gray">
                   <div class="bdh-left">
                     수수료(부가세포함)
                   </div>
@@ -412,7 +418,10 @@
                     0.05%
                   </div>
                 </div>
-                <div class="bdh-last">
+                <div class="bdh-2-last">
+                  <button>현재가 전액 매도</button>
+                </div>
+                <div class="bdh-2-last">
                   <button>호가 주문</button>
                 </div>
               </div>

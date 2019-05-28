@@ -114,6 +114,11 @@ export default new Router({
           name: 'CoinInfo'
         },
         {
+          path: '',
+          component: FirstLink,
+          name: 'FirstLink'
+        },
+        {
           path: 'first_link',
           component: FirstLink,
           name: 'FirstLink'
