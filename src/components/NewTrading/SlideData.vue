@@ -12,19 +12,21 @@
       <div class="slide-data-holder">
         <ul>
           <li>
-            <h1>190,150</h1>
+            <p>190,150</p>
             <p>
               전일대비
               <span>1.88%</span>
               <img src="~img/dup_rt16x16.png" alt="Gobit trading coin information dropup arrow icon" class="img-fluid">
-                3,500
+              <span>3,500</span>
             </p>
           </li>
           <li>
-            <p>고가<span>(KRW)</span></p>
-            <p class="paint-it-red">6,456,123</p>
-            <p>고가<span>(KRW)</span></p>
-            <p class="paint-it-blue">6,456,000</p>
+            <div>
+              <p>고가<span>(KRW)</span><span class="paint-it-red">6,456,123</span></p>
+            </div>
+            <div>
+              <p>고가<span>(KRW)</span><span class="paint-it-blue">6,456,123</span></p>
+            </div>            
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="app-tradingtopbar">
+  <div class="app-tradingtopbar debugger">
     <div class="topbar-container">
       <div class="back">
         <img src="~img/back-arrow32x32.png" alt="back icon">
