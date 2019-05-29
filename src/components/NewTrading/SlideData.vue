@@ -13,12 +13,11 @@
         <ul>
           <li>
             <h1>190,150</h1>
-            <p>전일대비<span>1.88%</span></p>
             <p>
-              <span>
+              전일대비
+              <span>1.88%</span>
               <img src="~img/dup_rt16x16.png" alt="Gobit trading coin information dropup arrow icon" class="img-fluid">
-              3,500
-            </span>
+                3,500
             </p>
           </li>
           <li>

@@ -76,10 +76,8 @@
     .sl-p-right {
       float: right;
       width: 31.3%;
-      padding: 0 10px;
-      position: absolute;
+      padding: 146px 10px 0 10px;
       right: 0;
-      bottom: 92px;
       .slp-r-data {
         display: inline-block;
         border-bottom: 2px solid $history-htable-border-color;
@@ -263,10 +261,8 @@
       .sl-p-right {
         float: right;
         width: 31.3%;
-        padding: 0 10px;
-        position: absolute;
+        padding: 146px 10px 0 10px;
         right: 0;
-        bottom: 92px;
         .slp-r-data {
           display: inline-block;
           border-bottom: 2px solid $history-htable-border-color;
@@ -451,8 +447,7 @@
       .sl-p-right {
         float: left;
         width: 31.3%;      
-        padding: 0 10px;
-        margin-top: 130px;
+        padding: 120px 10px 0 10px;
         .slp-r-data {
           display: inline-block;
           border-bottom: 2px solid $history-htable-border-color;
@@ -654,9 +649,7 @@
         float: right;
         width: 31.3%;
         padding: 0 10px;
-        position: absolute;
-        right: 0;
-        bottom: 60px;
+        padding: 171px 10px 0 10px;
         .slp-r-data {
           display: inline-block;
           border-bottom: 2px solid $history-htable-border-color;
@@ -857,10 +850,7 @@
       .sl-p-right {
         float: right;
         width: 31.3%;
-        padding: 0 10px;
-        position: absolute;
-        right: 0;
-        bottom: 60px;
+        padding: 205px 10px 0 10px !important;
         .slp-r-data {
           display: inline-block;
           border-bottom: 2px solid $history-htable-border-color;

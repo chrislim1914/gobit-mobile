@@ -85,6 +85,7 @@
           <div class="slrp-d-c red">1.96%</div>
           <div class="slrp-d-l">당일저가</div>
           <div class="slrp-d-r blue">123,456</div>
+          <div class="slrp-d-c blue">1.96%</div>
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@
         </button>
       </div>
     </div>
-    <div class="chert-holder">
+    <div class="chart-holder">
       <VueTradingView style="width: 100%; bottom: 0;" :options="{
           symbol: 'NASDAQ:AAPL',
           theme: 'light',

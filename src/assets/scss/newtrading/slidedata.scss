@@ -54,6 +54,12 @@
               padding: 0;
               margin: 0;
             }
+            p{
+              text-align: left;
+            }
+            img {
+              margin-left: 25px;
+            }
           }
           &:nth-child(2) {
             p {
@@ -171,22 +177,13 @@
                 text-align: left;
                 font-size: 34px;
                 font-weight: 600;
-                color: $font-slidedata-red;
-              }
+                color: $font-slidedata-red;                
+              }              
               p {
                 text-align: left;
-                font-size: 18px;
-                float: left;
-                color: $font-slidedata-gray-scarpa-flow;
-                margin-top: 10px;
-                &:last-child {
-                    float: right;
-                    font-size: 20px;
-                  span {
-                    font-weight: 600;
-                    padding: 0;
-                  }
-                }
+              }
+              img {
+                margin-left: 25px;
               }
               span {
                 margin-left: 17px;
@@ -286,32 +283,17 @@
                 font-size: 32px;
                 font-weight: 600;
                 color: $font-slidedata-red;
-              }
+              }              
               p {
                 text-align: left;
-                font-size: 16px;
-                float: left;
-                color: $font-slidedata-gray-scarpa-flow;
-                margin-top: 10px;
-                &:last-child {
-                    float: right;
-                    font-size: 18px;
-                  span {
-                    font-weight: 600;
-                    padding: 0;
-                  }
-                }
+              }
+              img {
+                margin-left: 25px;
               }
               span {
-                margin-left: 17px;
+                margin-left: 5px;
                 font-size: 18px;
                 color: $font-slidedata-red;
-                &:last-child {
-                  float: right;
-                  font-size: 18px;
-                  font-weight: 600;
-                  padding: 0;
-                }
               }
             }
             &:nth-child(2) {
@@ -357,7 +339,7 @@
       padding: 27px 20px 20px 20px;
       border-bottom: 2px solid $border-gray-gallery;
       .nav-btn {
-        margin-top: 63px;
+        margin-top: 75px;
         position: absolute;
         width: 90%;
         button {
@@ -401,11 +383,14 @@
                 color: $font-slidedata-red;
               }
               p {
-                margin-left: 60px;
+                margin-left: 50px;
                 font-size: 16px;
                 float: left;
                 color: $font-slidedata-gray-scarpa-flow;
                 margin-top: 10px;
+                img {
+                  margin-left: 13px;
+                }
                 &:last-child {
                     float: left;
                     font-size: 18px;
@@ -431,19 +416,19 @@
               padding-top: 10px;
               p {
                 float: left;
-                text-align: left;
+                text-align: center;
                 font-size: 16px;
-                padding-left: 90px;
+                padding-left: 72px;
                 margin-bottom: 0;
                 &:nth-child(2) {
                   font-size: 18px;
                   font-weight: 600;
                 }
                 &:nth-child(3) {
-                  padding-top: 10px;
+                  padding-top: 0;
                 }
                 &:last-child {
-                  padding-top: 10px;
+                  padding-top: 0;
                   font-size: 18px;
                   font-weight: 600;
                 }
