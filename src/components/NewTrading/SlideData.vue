@@ -26,7 +26,7 @@
             </div>
             <div>
               <p>고가<span>(KRW)</span><span class="paint-it-blue">6,456,123</span></p>
-            </div>            
+            </div>
           </li>
         </ul>
       </div>
