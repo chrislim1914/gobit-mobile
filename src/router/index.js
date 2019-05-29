@@ -100,6 +100,7 @@ import NewTrading from '@/components/NewTrading/Index'
 import CoinInfo from '@/components/NewTrading/CoinInfo'
 import FirstLink from '@/components/NewTrading/FirstLink'
 import SecondLink from '@/components/NewTrading/SecondLink'
+import TradingChart from '@/components/NewTrading/Chart'
 Vue.use(Router)
 
 export default new Router({
@@ -128,6 +129,11 @@ export default new Router({
           path: 'second_link',
           component: SecondLink,
           name: 'SecondLink'
+        },
+        {
+          path: 'chart',
+          component: TradingChart,
+          name: 'TradingChart'
         }
       ]
     },

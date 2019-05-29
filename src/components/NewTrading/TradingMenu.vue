@@ -13,7 +13,9 @@
           </router-link>
         </li>
         <li>
-          <a href="#">차트</a>
+           <router-link to="/newtrade/chart" :class="{ 'active': $route.path === '/newtrade/chart' }">
+              차트
+          </router-link>
         </li>
         <li>
           <a href="#">체결기록</a>
