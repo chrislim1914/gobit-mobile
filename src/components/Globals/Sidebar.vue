@@ -40,13 +40,19 @@
         </div>
         <div class="collapse dd-sub-menus" id="exchangemenu">
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 1부마켓</a>
+            <router-link to="/main">
+              <span>&#766;</span> 1부마켓
+            </router-link>
           </div>
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 2부마켓</a>
+            <router-link to="/main">
+              <span>&#766;</span> 2부마켓
+            </router-link>
           </div>
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 3부마켓</a>
+            <router-link to="/main">
+              <span>&#766;</span> 3부마켓
+            </router-link>
           </div>
         </div>
       </div>
@@ -80,13 +86,29 @@
         </div>
         <div class="collapse dd-sub-menus" id="depositmenu">
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 보유코인 </a>
+            <router-link to="/deposit">
+              <span>&#766;</span> 페이지금
+            </router-link>
           </div>
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 거래내역</a>
+             <router-link to="/deposit/coin-transaction">
+              <span>&#766;</span> 보증금 거래
+            </router-link>
           </div>
           <div class="sub-menus">
-            <a href=""><span>&#766;</span> 미체결</a>
+             <router-link to="/deposit/wallet">
+              <span>&#766;</span> 지갑
+            </router-link>
+          </div>
+          <div class="sub-menus">
+             <router-link to="/deposit/new-address">
+              <span>&#766;</span> 새로운 지갑
+            </router-link>
+          </div>
+          <div class="sub-menus">
+            <router-link to="/deposit/withdraw">
+              <span>&#766;</span> 탈퇴
+            </router-link>
           </div>
         </div>
       </div>

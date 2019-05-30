@@ -2,22 +2,6 @@
   <!-- depositwithdraw wallet address -->
   <div class="app-walletaddress">
     <div class="app-walletaddress">
-      <!-- start topbar -->
-      <div class="topbar-container">
-        <div class="back">
-          <img src="~img/back-arrow32x32.png" alt="back icon">
-        </div>
-        <div class="title generic-title">
-          NEO 입금하기
-        </div>
-        <div class="home-icon">
-          <img src="~img/home32x32.png" alt="back icon">
-        </div>
-        <div class="menu-icon">
-          <img src="~img/menu.png" alt="back icon">
-        </div>
-      </div>
-      <!-- end topbar -->
       <!-- notes -->
       <div class="dw-notes">회원님에게 할당된 아래 주소로 네오를 입금할 수 있습니다</div>
       <!-- notes -->

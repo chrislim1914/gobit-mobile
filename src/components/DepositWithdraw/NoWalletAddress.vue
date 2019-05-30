@@ -2,22 +2,6 @@
   <!-- depositwithdraw without address -->
   <div class="app-nowalletaddress">
     <div class="app-walletaddress">
-      <!-- start topbar -->
-      <div class="topbar-container">
-        <div class="back">
-          <img src="~img/back-arrow32x32.png" alt="back icon">
-        </div>
-        <div class="title generic-title">
-          NEO 입금하기
-        </div>
-        <div class="home-icon">
-          <img src="~img/home32x32.png" alt="back icon">
-        </div>
-        <div class="menu-icon">
-          <img src="~img/menu.png" alt="back icon">
-        </div>
-      </div>
-      <!-- end topbar -->
       <!-- address header -->
       <div class="address-head-holder">
         <div class="address-head-l">내 <span>NEO</span> 입금 주소</div>

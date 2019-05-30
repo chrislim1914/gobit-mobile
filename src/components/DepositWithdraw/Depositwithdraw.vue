@@ -1,7 +1,6 @@
 <template>
   <!-- depositwithdraw -->
   <div class="app-depositwithdraw">
-    <topbar></topbar>
     <!-- search -->
     <div class="search">
       <div class="col-sm-12">
@@ -103,12 +102,8 @@
 </template>
 
 <script>
-import Topbar from './Topbar'
 export default {
-  name: 'Depositwithdraw',
-  components: {
-    'topbar': Topbar
-  }
+  name: 'Depositwithdraw'
 }
 </script>
 
