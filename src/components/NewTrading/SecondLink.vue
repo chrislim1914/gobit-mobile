@@ -5,22 +5,17 @@
       <div class="sl-p-left">
         <table>
           <tr>
-            <td><div class="reverse-progressbar" style="width: 100%"></div><p>100</p></td>
-            <td>148,456</td>
-            <td>0.15%</td>
-          </tr>
-          <tr>
             <td><div class="reverse-progressbar" style="width: 50%"></div><p>50</p></td>
             <td>148,456</td>
             <td>0.15%</td>
           </tr>
           <tr>
-            <td>12.987</td>
+            <td><div class="reverse-progressbar" style="width: 12.987%"></div><p>12.987</p></td>
             <td>148,456</td>
             <td>0.15%</td>
           </tr>
           <tr>
-            <td>12.987</td>
+            <td><div class="reverse-progressbar" style="width: 12.987%"></div><p>12.987</p></td>
             <td>148,456</td>
             <td>0.15%</td>
           </tr>

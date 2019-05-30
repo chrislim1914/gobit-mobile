@@ -18,7 +18,9 @@
           </router-link>
         </li>
         <li>
-          <a href="#">체결기록</a>
+          <router-link to="/newtrade/fourth_link" :class="{ 'active': $route.path === '/newtrade/fourth_link' }">
+              체결기록
+          </router-link>
         </li>
         <li>
           <router-link to="/newtrade/coin_info" :class="{ 'active': $route.path === '/newtrade/coin_info' }">

@@ -101,6 +101,7 @@ import CoinInfo from '@/components/NewTrading/CoinInfo'
 import FirstLink from '@/components/NewTrading/FirstLink'
 import SecondLink from '@/components/NewTrading/SecondLink'
 import TradingChart from '@/components/NewTrading/Chart'
+import FourthLink from '@/components/NewTrading/FourthLink'
 Vue.use(Router)
 
 export default new Router({
@@ -110,11 +111,6 @@ export default new Router({
       path: '/newtrade',
       component: NewTrading,
       children: [
-        {
-          path: 'coin_info',
-          component: CoinInfo,
-          name: 'CoinInfo'
-        },
         {
           path: '',
           component: FirstLink,
@@ -134,6 +130,16 @@ export default new Router({
           path: 'chart',
           component: TradingChart,
           name: 'TradingChart'
+        },
+        {
+          path: 'fourth_link',
+          component: FourthLink,
+          name: 'FourthLink'
+        },
+        {
+          path: 'coin_info',
+          component: CoinInfo,
+          name: 'CoinInfo'
         }
       ]
     },
@@ -218,6 +224,11 @@ export default new Router({
       path: '/investment',
       component: Investment,
       children: [
+        {
+          path: '',
+          component: InvestmentBalance,
+          name: 'InvestmentBalance'
+        },
         {
           path: 'balance',
           component: InvestmentBalance,
