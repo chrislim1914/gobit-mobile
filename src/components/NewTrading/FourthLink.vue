@@ -2,8 +2,8 @@
   <div class="app-fourthlink">
     <div class="fourth-tab-menu">
       <ul>
-        <li><a :class="[ choosen === '실시간 체결기록' ? 'active-fourth' : 'inactive-fourth']" @click="choosen='실시간 체결기록'">실시간 체결기록</a></li>
-        <li><a :class="[ choosen === '일자별 체결기록' ? 'active-fourth' : 'inactive-fourth']" @click="choosen='일자별 체결기록'">일자별 체결기록</a></li>
+        <li><a :class="[ choosen === '실시간 체결기록' ? 'active-fourth' : '']" @click="choosen='실시간 체결기록'">실시간 체결기록</a></li>
+        <li><a :class="[ choosen === '일자별 체결기록' ? 'active-fourth' : '']" @click="choosen='일자별 체결기록'">일자별 체결기록</a></li>
       </ul>
       <div class="fourth-tab-container">
         <div class="fourth-tab-1" v-if="choosen ==='실시간 체결기록'">

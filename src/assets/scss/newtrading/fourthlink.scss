@@ -11,7 +11,7 @@
     text-align: center;
     padding: 32px 0 0 0;
     .active-fourth {
-      border: 2px solid $chart-dropdown-black;
+      border: 2px solid $chart-dropdown-black !important;
     }
     .inactive-fourth {      
       border: 2px solid $fourth-tab-border-inactive;
@@ -35,9 +35,15 @@
         text-align: right;
         a {
           padding: 10.5px 79.9px;
+          border: 2px solid $fourth-tab-border-inactive;
+          border-right: none;
         }
         &:nth-child(2) {
           text-align: left;
+          a {
+            border: 2px solid $fourth-tab-border-inactive;
+            border-left: none;
+          }
         }
       }
     }
@@ -189,7 +195,7 @@
       text-align: center;
       padding: 32px 0 0 0;
       .active-fourth {
-        border: 2px solid $chart-dropdown-black;
+        border: 2px solid $chart-dropdown-black !important;
       }
       .inactive-fourth {      
         border: 2px solid $fourth-tab-border-inactive;
@@ -213,9 +219,15 @@
           text-align: right;
           a {
             padding: 10.5px 79.9px;
+            border: 2px solid $fourth-tab-border-inactive;
+            border-right: none;
           }
           &:nth-child(2) {
             text-align: left;
+            a {
+              border: 2px solid $fourth-tab-border-inactive;
+              border-left: none;
+            }
           }
         }
       }
@@ -368,7 +380,7 @@
       text-align: center;
       padding: 32px 0 0 0;
       .active-fourth {
-        border: 2px solid $chart-dropdown-black;
+        border: 2px solid $chart-dropdown-black !important;
       }
       .inactive-fourth {      
         border: 2px solid $fourth-tab-border-inactive;
@@ -391,10 +403,16 @@
           font-size: 18px;
           text-align: right;
           a {
-            padding: 10.5px 59px;
+            padding: 10.5px 59.9px;
+            border: 2px solid $fourth-tab-border-inactive;
+            border-right: none;
           }
           &:nth-child(2) {
             text-align: left;
+            a {
+              border: 2px solid $fourth-tab-border-inactive;
+              border-left: none;
+            }
           }
         }
       }
@@ -570,10 +588,16 @@
           font-size: 18px;
           text-align: right;
           a {
-            padding: 10.5px 29px;
+            padding: 10.5px 29.9px;
+            border: 2px solid $fourth-tab-border-inactive;
+            border-right: none;
           }
           &:nth-child(2) {
             text-align: left;
+            a {
+              border: 2px solid $fourth-tab-border-inactive;
+              border-left: none;
+            }
           }
         }
       }
@@ -750,9 +774,15 @@
           text-align: right;
           a {
             padding: 10.5px 19px;
+            border: 2px solid $fourth-tab-border-inactive;
+            border-right: none;
           }
           &:nth-child(2) {
             text-align: left;
+            a {
+              border: 2px solid $fourth-tab-border-inactive;
+              border-left: none;
+            }
           }
         }
       }
@@ -895,6 +925,7 @@
     }
   }
 }
+
 .debugger {
   border: 1px solid red;
 }
